@@ -1,0 +1,20 @@
+---
+// Small grey card: gold icon inline with a gold title, then a short text.
+interface Props { icon: string; title: string; text: string }
+const { icon, title, text } = Astro.props;
+---
+<article class="feature">
+  <header>
+    <img src={icon} alt="" width="40" height="40" loading="lazy" />
+    <h3>{title}</h3>
+  </header>
+  <p>{text}</p>
+</article>
+
+<style>
+  .feature { min-width: 0; padding: 36px 20px 32px 16px; background: #fafafa; border-radius: 12px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08); }
+  header { display: grid; grid-template-columns: 40px 1fr; gap: 14px; align-items: center; margin-bottom: 26px; }
+  img { width: 40px; height: 40px; border-radius: 4px; }
+  h3 { font-family: var(--font-body); font-weight: 400; font-size: 18px; line-height: 1.4; color: var(--gold); }
+  p { margin: 0; padding-left: 4px; font-size: 14px; line-height: 1.45; color: var(--text); }
+</style>

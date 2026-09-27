@@ -1,0 +1,27 @@
+---
+// White rounded card with a gold icon, title, text and optional bullet list. Extra content via the default slot.
+interface Props { icon?: string; title: string; text?: string; bullets?: string[]; meta?: string; iconPosition?: 'top' | 'inline' }
+const { icon, title, text, bullets = [], meta, iconPosition = 'top' } = Astro.props;
+---
+<article class:list={['card', 'icon-card', iconPosition]}>
+  <header>
+    {icon && <img src={icon} alt="" width="44" height="44" loading="lazy" />}
+    <h3>{title}</h3>
+    {meta && <span class="meta">{meta}</span>}
+  </header>
+  {text && <p>{text}</p>}
+  {bullets.length > 0 && <ul>{bullets.map((b) => <li>{b}</li>)}</ul>}
+  <slot />
+</article>
+
+<style>
+  .icon-card { padding: 28px 28px 32px; }
+  header { display: grid; gap: 14px; margin-bottom: 10px; }
+  .inline header { grid-template-columns: auto 1fr; align-items: center; }
+  .inline h3 { color: var(--gold); font-size: 16px; font-weight: 400; }
+  img { width: 44px; height: 44px; border-radius: 8px; }
+  h3 { font-size: 18px; line-height: 1.35; }
+  .meta { font-size: 12px; color: var(--muted); }
+  p { margin: 0; font-size: 14px; line-height: 1.45; }
+  ul { margin: 14px 0 0; padding-left: 18px; font-size: 14px; line-height: 1.5; }
+</style>

@@ -1,0 +1,11 @@
+---
+// Gold-light rounded label ("THE GLOBAL STANDARD", "ALL DOCUMENTATION CUSTOMIZED ...").
+interface Props { text: string; as?: 'span' | 'p'; size?: 'sm' | 'md' }
+const { text, as: Tag = 'span', size = 'sm' } = Astro.props;
+---
+<Tag class:list={['pill', size]}>{text}</Tag>
+
+<style>
+  .pill { display: inline-block; padding: 1px 32px; border-radius: 999px; background: var(--gold-light); color: #4b5320; font-family: var(--font-heading); font-size: 16px; line-height: 22px; letter-spacing: 0.3px; text-transform: uppercase; }
+  .md { padding: 0 42px; font-size: 18px; line-height: 24px; }
+</style>

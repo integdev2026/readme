@@ -1,0 +1,37 @@
+---
+// "What is ISO X?" block: badge + heading + paragraphs on the left, 2x2 feature cards on the right.
+import FeatureCard from './FeatureCard.astro';
+import type { Feature } from './shared';
+
+interface Props { eyebrow: string; title: string; paragraphs: string[]; features: Feature[] }
+const { eyebrow, title, paragraphs, features } = Astro.props;
+---
+<section class="section intro" id="learnmore">
+  <div class="container grid">
+    <div class="copy">
+      <span class="badge">{eyebrow}</span>
+      <h2>{title}</h2>
+      {paragraphs.map((p) => <p>{p}</p>)}
+    </div>
+    <div class="features">
+      {features.map((f) => <FeatureCard {...f} />)}
+    </div>
+  </div>
+</section>
+
+<style>
+  .intro { padding: 60px 0 40px; scroll-margin-top: 20px; }
+  .grid { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: 32px; align-items: start; }
+  .badge { display: inline-block; padding: 1px 34px; border-radius: 999px; background: var(--gold-light); font-family: var(--font-heading); font-size: 16px; line-height: 1.4; color: #4b5320; text-transform: uppercase; }
+  h2 { margin: 6px 0 20px; font-size: 40px; line-height: 1.2; font-weight: 400; }
+  p { margin: 0 0 19px; font-size: 14px; line-height: 1.42; color: var(--ink); }
+  .features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 42px 26px; padding-top: 30px; }
+  @media (max-width: 860px) {
+    .grid { grid-template-columns: 1fr; }
+    .features { padding-top: 0; gap: 20px; }
+    h2 { font-size: 32px; }
+  }
+  @media (max-width: 560px) {
+    .features { grid-template-columns: 1fr; }
+  }
+</style>

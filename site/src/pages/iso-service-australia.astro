@@ -1,0 +1,216 @@
+---
+import Base from '../layouts/Base.astro';
+import ContactBand from '../components/ContactBand.astro';
+import CenterHero from '../components/iso-service-australia/CenterHero.astro';
+import ProcessSteps from '../components/iso-service-australia/ProcessSteps.astro';
+import Faq from '../components/iso-service-australia/Faq.astro';
+
+const img = (id: string) => `/images/iso-service-australia/icon-${id}.webp`;
+
+const why = [
+  { icon: 'ce6b54', title: 'Quality Excellence' },
+  { icon: '153f8b', title: 'Process Improvement' },
+  { icon: '24d773', title: 'Risk Management' },
+  { icon: '405fa1', title: 'Global Recognition' },
+];
+
+const standards = [
+  {
+    id: '9001', title: 'ISO 9001', sub: 'Quality Management Systems',
+    text: 'The world’s most recognized quality management standard. Demonstrates your commitment to quality and customer satisfaction.',
+    industries: 'All industries',
+    benefits: ['Improved customer satisfaction', 'Enhanced operational efficiency', 'Better decision making', 'Competitive advantage', 'Increased market opportunities'],
+  },
+  {
+    id: '14001', title: 'ISO 14001', sub: 'Environmental Management Systems',
+    text: 'A leading standard for managing environmental responsibilities. Supports organisations to reduce environmental impacts, improve resource use, and build stronger stakeholder trust.',
+    industries: 'All industries',
+    benefits: ['Reduced environmental impact', 'Improved resource efficiency', 'Lower operational costs', 'Enhanced reputation and stakeholder confidence', 'Access to new markets and tenders'],
+  },
+  {
+    id: '27001', title: 'ISO 27001', sub: 'Information Security Management Systems',
+    text: 'The global benchmark for protecting sensitive information. Helps organisations manage cyber risks, safeguard data, and ensure confidentiality, integrity, and availability.',
+    industries: 'All industries',
+    benefits: ['Protection against data breaches', 'Stronger risk management', 'Improved legal and regulatory compliance', 'Increased customer and stakeholder trust', 'Enhanced business resilience'],
+  },
+  {
+    id: '45001', title: 'ISO 45001', sub: 'Occupational Health & Safety Management Systems',
+    text: 'A standard designed to create safer workplaces. Helps organisations identify hazards, reduce OHS risks, and improve employee wellbeing and productivity.',
+    industries: 'All industries',
+    benefits: ['Reduced workplace injuries and incidents', 'Improved legal and regulatory compliance', 'Higher employee morale and productivity', 'Stronger safety culture', 'Enhanced reputation and client confidence'],
+  },
+  {
+    id: '13485', title: 'ISO 13485', sub: 'Medical Device Quality Management Systems',
+    text: 'A globally accepted standard for ensuring the safety and effectiveness of medical devices. Supports organisations in meeting strict regulatory and quality requirements across the product lifecycle.',
+    industries: 'Medical device',
+    benefits: ['Improved patient safety', 'Stronger regulatory compliance (FDA, TGA, EU, etc.)', 'Higher product quality and consistency', 'Increased market access', 'Greater trust from regulators and customers'],
+  },
+];
+
+// Grid order matches the live page (row by row).
+const benefits = [
+  { icon: '153f8b', title: 'Business Growth', text: 'Access new markets and win more contracts with internationally recognized certification.' },
+  { icon: '187f81', title: 'Customer Confidence', text: 'Demonstrate commitment to quality and build trust with customers and stakeholders.' },
+  { icon: '334a55', title: 'Enhanced Security', text: 'Stand out from competitors and meet tender requirements with ISO certification.' },
+  { icon: '30076e', title: 'Cost Reduction', text: 'Improve efficiency, reduce waste, and lower operational costs through better processes.' },
+  { icon: 'ce6b54', title: 'Enhanced Security', text: 'Identify and eliminate inefficiencies with systematic quality management.' },
+  { icon: '405fa1', title: 'Global Recognition', text: 'Achieve international credibility and expand into global markets confidently.' },
+];
+
+// FAQ copied verbatim from the live ISO page (it currently carries the ISO 13485 FAQ set).
+const faqs = [
+  { q: 'What does ISO 13485 mean for your business?', a: 'ISO 13485 is the global standard for Quality Management Systems (QMS) in the medical device sector. It ensures your business meets regulatory requirements and consistently delivers safe, effective medical devices, building trust with stakeholders.' },
+  { q: 'Why is ISO 13485 important for my business?', a: 'ISO 13485 certification:\nDemonstrates compliance with global medical device regulations.\nImproves product quality and patient safety.\nBuilds trust with regulators, customers, and stakeholders.\nOpens access to international markets.' },
+  { q: 'Who needs ISO 13485 certification?', a: 'Manufacturers, suppliers, and service providers in the medical device supply chain including design, production, installation, and servicing should implement ISO 13485.' },
+  { q: 'What are the key requirements of ISO 13485?', a: 'The standard focuses on:\nRisk management throughout the product lifecycle.\nRegulatory compliance.\nDocumented processes for design, production, and post-market activities.\nContinual improvement of the QMS.' },
+  { q: 'What does ISO 13485 certification involve?', a: 'The process includes:\nGap analysis and planning.\nImplementing QMS aligned with ISO 13485.\nInternal audits and management reviews.\nCertification audit by an accredited body.' },
+  { q: 'What is the typical timeline for ISO 13485 certification?', a: 'The timeline for ISO 13485 certification usually ranges from 4 to 8 months, depending on your organization’s size, complexity, and readiness. We help streamline the process to meet your goals efficiently.' },
+  { q: 'Which regulators recognize ISO 13485?', a: 'ISO 13485 is widely accepted by major regulators, including:\nFDA (Food and Drug Administration) – U.S.\nTGA (Therapeutic Goods Administration) – Australia\nHealth Canada – Canada\nEuropean Commission (CE Marking) – EU\nMHRA (Medicines and Healthcare products Regulatory Agency) – UK\nPMDA (Pharmaceuticals and Medical Devices Agency) – Japan' },
+  { q: 'How much does ISO 13485 certification cost?', a: 'The cost of ISO 13485 certification varies based on your organization\'s size, complexity, certification scope, and associated consulting and certification body fees. At IntegPro, we provide transparent pricing and customized solutions to meet your needs.' },
+  { q: 'Do we need a consultant for ISO 13485?', a: 'While you can implement ISO 13485 internally, working with IntegPro ensures:\nFaster implementation.\nExpert guidance on regulatory compliance.\nReduced risk of non-conformities.' },
+  { q: 'What should you do after getting certified?', a: 'After achieving ISO 13485 certification, you need to maintain compliance through regular internal audits, continuous improvement initiatives, and periodic surveillance audits conducted by the certification body.' },
+  { q: 'How does ISO 13485 integrate with other standards?', a: 'ISO 13485 can be integrated with:\nISO 9001 (Quality Management)\nISO 14971 (Risk Management for Medical Devices)\nISO 27001 (Information Security) This creates a comprehensive compliance framework.' },
+  { q: 'What kind of support does IntegPro offer?', a: 'IntegPro provides comprehensive support, including end-to-end ISO 13485 implementation, guidance on regulatory compliance, staff training and awareness programs, and ongoing assistance for audits and system maintenance.' },
+];
+---
+<Base
+  title="ISO | Integpro"
+  description="Streamline compliance with expert ISO auditing, gap analysis, and integrated management systems support. Boost efficiency, reduce risk, Partner with integPRO."
+  noindex
+>
+  <CenterHero
+    title='Achieve <span class="gold">ISO Certification</span> with <span class="gold">Confidence</span>'
+    text="Expert guidance from gap analysis to certification. We make ISO compliance straightforward, efficient, and aligned with your business goals."
+    actions={[{ label: 'Get Started', href: '#contact' }]}
+    stats={[{ value: '200+', label: 'Projects' }, { value: '5+', label: 'Years' }, { value: '100%', label: 'Success' }]}
+    bg="/images/iso-service-australia/hero-bg.webp"
+  />
+
+  <section class="section why">
+    <div class="container">
+      <div class="section-head light">
+        <h2>Why <span class="gold">ISO</span> Certification?</h2>
+        <p class="wide">ISO standards provide internationally recognized frameworks for quality management, risk mitigation, and operational excellence across all industries.</p>
+      </div>
+      <div class="mini-grid">
+        {why.map((w) => (
+          <article class="mini">
+            <img src={img(w.icon)} alt="" width="44" height="44" loading="lazy" />
+            <h3>{w.title}</h3>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section services">
+    <div class="container">
+      <div class="section-head light">
+        <h2>Our ISO <span class="gold">Services</span></h2>
+        <p>Comprehensive consulting and training for all major ISO standards.</p>
+      </div>
+      <div class="tabs">
+        {standards.map((s, i) => <input type="radio" name="iso-std" id={`std-${s.id}`} checked={i === 0} />)}
+        <div class="tab-bar" role="tablist">
+          {standards.map((s) => <label for={`std-${s.id}`} role="tab">{s.id}</label>)}
+        </div>
+        {standards.map((s) => (
+          <div class={`tab-panel panel-${s.id}`} role="tabpanel">
+            <div>
+              <h3>{s.title}</h3>
+              <p class="sub">{s.sub}</p>
+              <p>{s.text}</p>
+              <p class="industries"><strong>Industries:</strong> {s.industries}</p>
+            </div>
+            <div>
+              <p class="sub">Key Benefits:</p>
+              <ul class="checks">{s.benefits.map((b) => <li>{b}</li>)}</ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section benefits">
+    <div class="container">
+      <div class="section-head light">
+        <h2><span class="gold">Benefits</span> of ISO Certification</h2>
+        <p class="wide">Transform your business with internationally recognized quality standards.</p>
+      </div>
+      <div class="card-grid">
+        {benefits.map((b) => (
+          <article class="card benefit">
+            <img src={img(b.icon)} alt="" width="48" height="48" loading="lazy" />
+            <h3>{b.title}</h3>
+            <p>{b.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <ProcessSteps sub="A proven approach to ISO certification. Typical timeline: 4–6 months." />
+
+  <Faq items={faqs} />
+
+  <ContactBand
+    title='<span class="gold">Get Started</span>'
+    sub="Contact us for a free consultation and assessment."
+  />
+</Base>
+
+<style>
+  .section-head.light h2 { font-weight: 400; }
+  .section-head .wide { max-width: 640px; }
+
+  .why { padding-top: 100px; }
+  .mini-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .mini { display: grid; justify-items: center; gap: 22px; padding: 34px 16px 40px; background: #fff; border-radius: 16px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06); text-align: center; }
+  .mini img { width: 48px; height: 48px; border-radius: 50%; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); }
+  .mini h3 { font-family: var(--font-body); font-size: 15px; }
+
+  .services { padding-top: 40px; }
+  .tabs input { position: absolute; opacity: 0; pointer-events: none; }
+  .tab-bar { display: grid; grid-template-columns: repeat(5, 1fr); background: #fff; border-radius: 999px; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); }
+  .tab-bar label { height: 34px; display: grid; place-items: center; border-radius: 999px; cursor: pointer; font-family: var(--font-heading); font-size: 18px; color: var(--ink); }
+  .tab-panel { display: none; grid-template-columns: 1fr 1fr; gap: 80px; margin-top: 32px; padding: 44px 56px 46px; background: var(--bg-faq); border-radius: var(--radius-card); }
+  .tab-panel h3 { font-weight: 400; font-size: 20px; color: var(--gold); }
+  .tab-panel p { margin: 22px 0 0; font-size: 15px; line-height: 1.5; max-width: 370px; }
+  .tab-panel .sub { margin-top: 8px; font-style: italic; font-weight: 700; color: var(--ink); font-size: 16px; letter-spacing: -0.3px; }
+  .tab-panel > div:last-child .sub { margin-top: 36px; }
+  .industries { padding-top: 26px; border-top: 1px solid #e0e0e0; max-width: 324px; }
+  .industries strong { font-weight: 400; color: var(--ink); }
+  .checks { list-style: none; margin: 22px 0 0; padding: 0; font-size: 15px; line-height: 1.5; }
+  .checks li::before { content: '✔'; margin-right: 6px; color: var(--gold-light); font-size: 13px; }
+  #std-9001:checked ~ .tab-bar label[for='std-9001'],
+  #std-14001:checked ~ .tab-bar label[for='std-14001'],
+  #std-27001:checked ~ .tab-bar label[for='std-27001'],
+  #std-45001:checked ~ .tab-bar label[for='std-45001'],
+  #std-13485:checked ~ .tab-bar label[for='std-13485'] { background: var(--gold-gradient); }
+  #std-9001:checked ~ .panel-9001,
+  #std-14001:checked ~ .panel-14001,
+  #std-27001:checked ~ .panel-27001,
+  #std-45001:checked ~ .panel-45001,
+  #std-13485:checked ~ .panel-13485 { display: grid; }
+  .tabs input:focus-visible ~ .tab-bar { outline: 2px solid var(--gold); outline-offset: 4px; }
+
+  .benefits { padding-top: 120px; }
+  .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .card { background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
+  .benefit { display: grid; justify-items: center; align-content: start; padding: 28px 40px 60px; text-align: center; }
+  .benefit img { width: 48px; height: 48px; border-radius: 6px; }
+  .benefit h3 { margin-top: 16px; font-size: 20px; letter-spacing: 0.8px; }
+  .benefit p { margin: 14px 0 0; font-size: 14px; line-height: 1.4; }
+
+  @media (max-width: 860px) {
+    .mini-grid { grid-template-columns: 1fr 1fr; }
+    .card-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 760px) {
+    .tab-bar label { font-size: 14px; }
+    .tab-panel { grid-template-columns: 1fr; gap: 0; padding: 28px 24px; }
+    .card-grid { grid-template-columns: 1fr; }
+    .benefits, .why { padding-top: 56px; }
+  }
+</style>

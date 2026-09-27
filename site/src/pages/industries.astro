@@ -1,0 +1,132 @@
+---
+import Base from '../layouts/Base.astro';
+import ContactBand from '../components/ContactBand.astro';
+import CenterHero from '../components/iso-service-australia/CenterHero.astro';
+import ProcessSteps from '../components/iso-service-australia/ProcessSteps.astro';
+import Faq from '../components/iso-service-australia/Faq.astro';
+import { company } from '../data/site';
+
+const img = (id: string) => `/images/industries/icon-${id}.webp`;
+
+// Grid order matches the live page (row by row).
+const industries = [
+  { icon: '62a189', title: 'Defence & DISP', text: 'DISP compliance for defense contractors', href: '/disp' },
+  { icon: '9b9169', title: 'Construction', text: 'Quality, safety & environmental compliance', href: '/iso-service-australia' },
+  { icon: '41e2bc', title: 'Medical Devices', text: 'TGA compliance & ISO 13485 certification', href: '/medical-iso' },
+  { icon: '14b95a', title: 'Government & Public', text: 'Compliance audits & governance frameworks', href: '/free-consultation' },
+  { icon: '0f67ec', title: 'Manufacturing', text: 'Quality, safety & environmental compliance', href: '/free-consultation' },
+  { icon: 'f7591b', title: 'Information & ICT', text: 'Cyber security & ISO 27001 compliance', href: '/free-consultation' },
+];
+
+// Case studies: client names are placeholders (company policy). Real names/logos will come from Wix CMS.
+const results = [
+  { name: 'Medical device client', sector: 'Medical Devices', value: '100%', sub: 'Expert EQMS implementation', text: 'Ensuring full compliance with ISO 13485, ISO 9001, and medical-device regulatory requirements. Streamlined processes, risk management integration, and end-to-end quality system deployment.' },
+  { name: 'Construction client', sector: 'Construction', value: 'Fully Implemented', sub: '100% achieved', text: 'Professional ISO consultation covering ISO 9001, ISO 14001, ISO 45001 and other relevant standards for the building sector. Full implementation, documentation, and compliance support.' },
+  { name: 'Government client', sector: 'Community', value: 'Quality Audit', sub: 'Comprehensive audit delivered', text: 'Comprehensive quality audit delivered for a state government agency, ensuring compliance with sector requirements, evaluating system performance, and providing clear recommendations.' },
+];
+
+const faqs = [
+  { q: 'What steps are involved in achieving ISO certification?', a: `Achieving ISO certification means your systems, processes, or products meet international standards for quality, safety, and efficiency. At IntegPRO, we guide you through every step, from preparation to certification. Contact us at ${company.email} to get started.` },
+  { q: 'What is ISO consulting?', a: 'ISO consulting involves providing expert guidance and support to businesses seeking ISO certification. Consultants help organizations understand the requirements of ISO standards, identify gaps in their current systems, develop and implement necessary processes, and prepare for certification audits.' },
+  { q: 'Why is ISO certification important?', a: 'ISO certification is important because it helps businesses improve their processes, increase efficiency, and enhance customer satisfaction. It also provides a competitive advantage by demonstrating compliance with internationally recognized standards, which can open up new market opportunities and build trust with stakeholders.' },
+  { q: 'How long does ISO certification take?', a: 'The duration of the ISO certification process can vary depending on the size and complexity of the organization, as well as the specific ISO standard being implemented. Generally, it can take several months to over a year to achieve certification, including the time needed for preparation, implementation, and auditing.' },
+  { q: 'What factors influence the cost of ISO consulting services?', a: `The cost of ISO consulting services depends on factors like your organization's size, the complexity of your systems, and the specific ISO standard. For a customized quote, contact IntegPRO at our Castle Hill, NSW, or St Peters, SA offices, or email ${company.email}.` },
+];
+---
+<Base
+  title="Industries | Integpro"
+  description="Discover IntegPRO's compliance solutions for renewable energy standards, ensuring efficiency and standards adherence."
+  noindex
+>
+  <CenterHero
+    title='<span class="gold">Industries</span> We Serve'
+    text="Tailored ISO & DISP solutions for Defence, Construction, Medical Devices, Government, and Manufacturing."
+    actions={[{ label: 'Free Gap Assessment', href: '/free-consultation' }, { label: 'View Services', href: '/iso-disp-services', primary: false }]}
+    stats={[{ value: '1,000+', label: 'Projects' }, { value: '7+', label: 'Years' }, { value: '100%', label: 'Success' }]}
+  />
+
+  <section class="section solutions">
+    <div class="container">
+      <div class="section-head">
+        <h2>Specialised <span class="gold">Industry Solutions</span></h2>
+        <p class="wide">Click any industry to see tailored compliance solutions, deliverables, and timelines</p>
+      </div>
+      <div class="card-grid">
+        {industries.map((it) => (
+          <article class="card industry">
+            <img src={img(it.icon)} alt="" width="48" height="48" loading="lazy" />
+            <h3>{it.title}</h3>
+            <p>{it.text}</p>
+            <a href={it.href} class="btn btn-outline learn">Learn More</a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section results">
+    <div class="container">
+      <div class="section-head">
+        <h2>Proven Result Across <span class="gold">Industries</span></h2>
+        <p class="wide">The story of the organisations achieving certification with our expert guidance &amp; support</p>
+      </div>
+      <div class="card-grid top">
+        {results.map((r) => (
+          <article class="card result">
+            <header>
+              <div><h3>{r.name}</h3><p class="sector">{r.sector}</p></div>
+              <span class="badge"><img src={img('334a55')} alt="" width="44" height="44" loading="lazy" /></span>
+            </header>
+            <div class="achievement">
+              <span>Achievement</span>
+              <strong>{r.value}</strong>
+              <small>{r.sub}</small>
+            </div>
+            <p>{r.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <ProcessSteps sub="A proven approach to ISO certification. Typical timeline: 4–6 months." bandOnly />
+
+  <Faq items={faqs} />
+
+  <ContactBand showDetails={false} />
+</Base>
+
+<style>
+  .section-head .wide { max-width: 680px; }
+  .section-head h2 { font-weight: 400; }
+  .results .section-head h2 { font-weight: 700; }
+
+  .solutions { padding-top: 40px; }
+  .card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .card-grid.top { align-items: start; }
+  .card { background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
+  .industry { display: flex; flex-direction: column; padding: 38px 40px 40px; }
+  .industry img { width: 48px; height: 48px; border-radius: 6px; }
+  .industry h3 { margin-top: 16px; font-size: 20px; letter-spacing: 0.8px; }
+  .industry p { margin: 8px 0 30px; font-size: 14px; line-height: 1.45; flex: 1; }
+  .learn { align-self: center; justify-content: center; min-width: 163px; color: var(--gold); }
+
+  .results { background: #fcfcfc; }
+  .result { padding: 32px 24px 48px 36px; }
+  .result header { display: flex; justify-content: space-between; gap: 12px; }
+  .result h3 { font-size: 20px; letter-spacing: 0.5px; }
+  .sector { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
+  .badge { flex: none; width: 48px; height: 48px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); overflow: hidden; }
+  .badge img { width: 48px; height: 48px; }
+  .achievement { display: grid; gap: 4px; margin: 44px 0 30px; padding: 16px 20px 20px 26px; background: var(--gold-light); border-left: 9px solid var(--gold); border-radius: 8px; font-size: 14px; }
+  .achievement strong { margin-top: 14px; font-family: var(--font-heading); font-weight: 400; font-size: 18px; color: var(--gold-dark); }
+  .achievement small { font-size: 14px; }
+  .result > p { margin: 0; font-size: 14px; line-height: 21px; }
+
+  @media (max-width: 860px) {
+    .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 760px) {
+    .card-grid { grid-template-columns: 1fr; }
+  }
+</style>

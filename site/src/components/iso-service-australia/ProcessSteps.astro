@@ -1,0 +1,44 @@
+---
+// "Our Process" band: six gold chevron steps (the live site uses a chevron PNG; recreated with clip-path).
+interface Props { sub: string; steps?: string[]; bandOnly?: boolean }
+const { sub, steps = ['Gap Analysis', 'Action Plan', 'Implementation', 'Governence', 'Submission', 'Ongoing Support'], bandOnly = false } = Astro.props;
+---
+<section class:list={['process', { 'band-only': bandOnly }]}>
+  <div class="head container">
+    <h2 class="gold">Our Process</h2>
+    <p>{sub}</p>
+  </div>
+  <div class="band">
+    <ol class="container steps">
+      {steps.map((s) => <li>{s}</li>)}
+    </ol>
+  </div>
+</section>
+
+<style>
+  .process { background: var(--bg-faq); padding: 72px 0 110px; }
+  .head { text-align: center; }
+  h2 { font-size: 40px; line-height: 1.3; }
+  .head p { margin: 8px 0 0; font-size: 16px; }
+  .band { margin-top: 44px; }
+  .band-only { background: #fff; padding-bottom: 0; }
+  .band-only .band { background: var(--bg-faq); padding: 42px 0 50px; margin-top: 36px; }
+  .steps { list-style: none; margin: 0 auto; padding: 0; display: flex; justify-content: center; }
+  li {
+    flex: 0 0 172px; height: 60px; margin-left: -18px; display: grid; place-items: center; padding: 0 16px 0 30px;
+    background: #dccfa3; color: var(--text); font-size: 16px; white-space: nowrap;
+    clip-path: polygon(0 0, 83% 0, 100% 50%, 83% 100%, 0 100%, 17% 50%);
+  }
+  li:first-child { margin-left: 0; }
+  @media (max-width: 1000px) {
+    .steps { flex-wrap: wrap; row-gap: 12px; }
+    li { flex-basis: 160px; font-size: 14px; }
+  }
+  @media (max-width: 760px) {
+    .process { padding: 56px 0 64px; }
+    h2 { font-size: 30px; }
+    .steps { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 0; }
+    li { margin: 0; min-width: 0; padding: 0 14px 0 26px; font-size: 13px; }
+    li:nth-child(odd) { margin-right: -6px; }
+  }
+</style>

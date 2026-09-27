@@ -1,0 +1,95 @@
+---
+import Base from '../layouts/Base.astro';
+import StandardPage from '../components/iso-standard-2/StandardPage.astro';
+import { icon } from '../components/iso-standard-2/data';
+
+const img = '/images/iso-13485-medical-devices-quality-management-system';
+
+const hero = {
+  title: '<span class="gold">ISO 13485</span> Medical Devices Quality Management System',
+  text: 'Manufacturers, importers, distributors and suppliers of medical devices operate in one of the most heavily regulated sectors in Australia. ISO 13485 provides a structured quality management framework that helps organisations demonstrate compliance, manage product risk and maintain control throughout the product lifecycle.',
+  // Tick lines as they appear on the live page (three ticks).
+  ticks: ['Full ISO 13485', 'Expert Gap Analysis & Documentation Proven First-Audit', 'Success Rate'],
+  image: `${img}/hero-exam-room.webp`,
+  imageAlt: 'Medical Examination Room',
+  learnHref: '#learnmore13485',
+};
+
+const intro = {
+  id: 'learnmore13485',
+  eyebrow: 'THE ENVIRONMENTAL STANDARD',
+  title: 'What is ISO 13485?',
+  features: [
+    { icon: icon('icon-globe'), title: 'Plan; Identify hazards', text: 'Assess risks, and set OH&S objectives' },
+    { icon: icon('icon-trend'), title: 'Do; Implement controls', text: 'Document processes, and train workers' },
+    { icon: icon('icon-clipboard'), title: 'Monitor performance', text: 'Audit processes, and respond to incidents' },
+    { icon: icon('icon-people'), title: 'Review', text: 'Review results and continuously improve the system' },
+  ],
+};
+
+const details = {
+  title: 'WHY <span class="gold">ISO 13485</span> MATTERS FOR YOUR BUSINESS?',
+  sub: "Safety is a business imperative. Here's why Australian organisations invest in ISO 13485",
+  pill: 'ALL DOCUMENTATION CUSTOMIZED TO YOUR INDUSTRY AND BUSINESS NEEDS',
+  cards: [
+    { icon: icon('icon-trend'), title: 'Achieve Regulatory Compliance', text: 'ISO 13485 helps medical device organisations establish the documented controls needed to meet regulatory requirements. A compliant quality management system supports TGA obligations, market access requirements, and regulatory inspections by demonstrating control over product quality and patient safety.' },
+    { icon: icon('icon-people'), title: 'Strengthen Product Quality and Safety', text: 'Medical devices must consistently perform as intended. ISO 13485 introduces controls across design, development, production, storage, and distribution to reduce quality failures and support safer outcomes for patients and end users.' },
+    { icon: icon('icon-award'), title: 'Improve Risk Management', text: 'Risk management is embedded throughout the ISO 13485 framework. By integrating processes aligned with ISO 14971, organisations can identify, assess and control risks before they result in product defects, adverse events or regulatory issues.' },
+    { icon: icon('icon-check'), title: 'Increase Market Access Opportunities', text: 'Many healthcare providers, manufacturers, distributors and international markets expect suppliers to operate under an ISO 13485-certified quality management system. Certification can support tender eligibility, customer requirements and export opportunities.' },
+    { icon: icon('icon-target'), title: 'Enhance Operational Control and Traceability', text: 'ISO 13485 establishes clear procedures, responsibilities and records across business operations. Improved traceability, document control and supplier management help organisations respond more effectively to audits, complaints and product investigations.' },
+    { icon: icon('icon-target'), title: 'Build Customer and Stakeholder Confidence', text: 'Certification demonstrates a commitment to quality, regulatory compliance and continual improvement. Customers, regulators and business partners gain greater confidence that products are developed and managed within a controlled and reliable system.' },
+  ],
+};
+
+const why = {
+  title: "integPRO'S <span class=\"gold\">ISO 13485</span> APPROACH",
+  sub: "We don't believe in one-size-fits-all templates. We build systems that fit your business.",
+  features: [
+    { icon: icon('icon-globe'), title: 'Regulatory Gap Assessment', text: 'We review your existing processes, documentation and compliance obligations against ISO 13485 requirements. This assessment identifies gaps, regulatory risks and priority actions needed to achieve certification readiness.' },
+    { icon: icon('icon-lock'), title: 'Implementation Roadmap', text: 'Every organisation starts from a different point. We develop a practical implementation plan that considers your products, regulatory requirements, resources and certification targets, ensuring a clear pathway to compliance.' },
+    { icon: icon('icon-trend'), title: 'QMS Documentation Development', text: 'We create the documentation required for an effective medical device quality management system, including policies, procedures, work instructions, forms and records tailored to your operations.' },
+    { icon: icon('icon-bank'), title: 'Risk Management Integration', text: 'Medical device risk management cannot be treated as a standalone activity. We help establish risk management processes aligned with ISO 14971 and integrate them throughout design, production and post-market activities.' },
+    { icon: icon('icon-people'), title: 'Training & Roll-Out', text: 'Successful implementation depends on staff understanding their responsibilities. We provide practical training, support process adoption and help integrate the quality management system into day-to-day operations.' },
+    { icon: icon('icon-search'), title: 'Internal Audit and Certification Readiness', text: 'Before certification, we conduct internal audits and readiness reviews to identify remaining gaps. This allows corrective actions to be completed and helps ensure a smoother certification audit process.' },
+  ],
+};
+
+const industries = {
+  title: 'ISO 13485 Across <span class="gold">Industries</span>',
+  sub: 'ISO 13485 is essential in high-risk and regulated industries:',
+  cards: [
+    { icon: icon('ind-defence'), title: 'Defence', text: 'Defence suppliers developing or manufacturing medical devices, field medical equipment or specialised healthcare technologies often require robust quality management systems. ISO 13485 supports quality, traceability and regulatory compliance expectations.' },
+    { icon: icon('ind-manufacturing'), title: 'Manufacturing', text: 'Manufacturing medical devices requires documented controls over production, equipment, supplier management and quality assurance. ISO 13485 provides the framework to maintain consistency and reduce quality-related risks.' },
+    { icon: icon('ind-construction'), title: 'Construction', text: 'Construction organisations involved in manufacturing, importing or supplying medical devices for healthcare infrastructure projects may benefit from ISO 13485 certification when regulatory compliance and product quality assurance are contractual requirements.' },
+    { icon: icon('ind-healthcare'), title: 'Healthcare', text: 'Medical device manufacturers, diagnostic companies and healthcare technology providers operate under strict regulatory requirements. ISO 13485 helps establish the quality management controls needed to ensure product safety, traceability and compliance.' },
+    { icon: icon('ind-professional'), title: 'Professional Services', text: 'Consultancies, testing laboratories, regulatory affairs providers and contract service organisations supporting medical device companies can leverage ISO 13485 principles to strengthen quality controls and meet client requirements.' },
+    { icon: icon('ind-technology'), title: 'Education & Training', text: 'Universities, research organisations and medical technology incubators developing healthcare products can use ISO 13485 to establish structured quality processes that support commercialisation, regulatory approval and future market entry.' },
+  ],
+};
+
+const cta = {
+  title: 'Not sure if ISO 13485 applies to your industry?',
+  paragraphs: [
+    'ISO 13485 is not only for large medical device manufacturers. It applies to organisations involved in the design, manufacture, importation, distribution, servicing, packaging or support of medical devices. From medical technology start-ups to established healthcare suppliers, a compliant quality management system helps demonstrate regulatory compliance, manage risk and maintain product quality throughout the device lifecycle.',
+    "At integPRO, we've helped organisations across the healthcare, manufacturing and medical technology sectors implement practical ISO 13485 systems that support TGA requirements, certification objectives and commercial growth.",
+  ],
+};
+---
+<Base
+  title="ISO 13485 Medical Devices Quality Manage | Integpro"
+  description="ISO 13485 certification and consulting for Australian medical device businesses. Build a compliant QMS, manage risk, and meet TGA requirements."
+  noindex
+>
+  <StandardPage hero={hero} intro={intro} details={details} why={why} industries={industries} cta={cta}>
+    <p>Medical device organisations are expected to maintain documented controls over product design, supplier management, risk management, production activities, traceability, complaint handling and post-market surveillance.</p>
+    <p>Without a compliant quality management system, businesses can face:</p>
+    <ul>
+      <li>Delays in product registration</li>
+      <li>Increased regulatory scrutiny</li>
+      <li>Non-conformities during audits</li>
+      <li>Product recalls and adverse events</li>
+      <li>Difficulties accessing international markets</li>
+    </ul>
+    <p>ISO 13485 provides the framework to address these requirements in a controlled and auditable manner.</p>
+  </StandardPage>
+</Base>

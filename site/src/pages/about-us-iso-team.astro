@@ -1,0 +1,249 @@
+---
+import Base from '../layouts/Base.astro';
+import Chevron from '../components/Chevron.astro';
+import Timeline from '../components/Timeline.astro';
+import ContactBand from '../components/ContactBand.astro';
+
+const img = (id: string) => `/images/about-us-iso-team/icon-${id}.webp`;
+
+const timeline = [
+  { label: '2019', icon: img('3144ee'), title: 'Foundation', text: 'IntegPro established in Sydney to help Australian businesses navigate ISO certification.' },
+  { label: '2020', icon: img('334a55'), title: 'Auditing', text: 'Expanded into Defence Industry Security Program consulting, becoming a trusted DISP advisor.' },
+  { label: '2021', icon: img('153f8b'), title: 'National Expansion', text: 'Grew to service clients nationwide across all major industries and sectors.' },
+  { label: '2022', icon: img('c67d3c'), title: '1000th Certification', text: 'Celebrated milestone achievement of delivering 1000+ successful certifications (ISDM /DISP/Maintenance)' },
+  { label: '2023', icon: img('d9c648'), title: 'Industry Leader', text: 'EQMS, 100% first-audit success rate, and Australia’s most trusted ISO & DISP consultancy.' },
+];
+
+// Grid order matches the live page (row by row).
+const values = [
+  { icon: '62a189', title: 'Integrity First', text: 'We provide honest, transparent advice without overselling. Your compliance journey is built on trust and ethical consulting practices.' },
+  { icon: '5f2954', title: 'Results-Driven', text: '100% first-audit success rate speaks for itself. We focus on practical outcomes, not just paperwork, delivering certifications that stick.' },
+  { icon: '092af2', title: 'Partnership Approach', text: 'We work alongside your team, building internal capability while delivering compliance. Your success is our success.' },
+  { icon: 'cbc8ec', title: 'Practical Expertise', text: 'No cookie-cutter solutions. We tailor every system to your industry, size, and operational reality, compliance that works for you.' },
+  { icon: '659b89', title: 'Continuous Improvement', text: 'Certification is the start, not the end. We help you leverage ISO and DISP for genuine business improvement and competitive advantage.' },
+  { icon: '41e2bc', title: 'Client-Centric', text: 'Your challenges, timelines, and budget matter. We adapt our service delivery to minimize disruption and maximize value.' },
+];
+
+const team = [
+  { photo: 'mehrdad', alt: 'Mehrdad Permeh, integPRO Managing Director', name: 'Mehrdad Permeh', role: 'Managing Director & Lead Consultant', bio: 'Lead and train teams in quality and Lean practices, manage integrated systems for ISO compliance, and drive continuous improvement through audits and risk-based strategies.' },
+  { photo: 'maria', alt: 'Maria Fernanda Bolivar, integPRO ISO Consultant', name: 'Maria Fernanda Bolivar', role: 'ISO Consultant', bio: 'Quality assurance expert with a science and business background, experienced across pharma, medical devices, and regulatory roles in Australia and Colombia.' },
+  { photo: 'parham', alt: 'Parham Karimi, integPRO DISP Consultant', name: 'Parham Karimi', role: 'DISP Consultant', bio: 'Engineering graduate focused on quality systems, aiming to build a career in Quality Engineering through expertise in process control, safety, and compliance.' },
+];
+
+// Grid order matches the live page (row by row). Stat labels are verbatim, including "Tranceparent".
+const reasons = [
+  { icon: '334a55', value: '1,000+', unit: 'Certifications', title: 'Certifications', text: '100% First-Audit Success Rate Every client we prepare achieves certification on their first audit attempt, no exceptions.' },
+  { icon: 'ce6b54', value: '6', unit: 'Industries', title: 'Industry Expertise', text: 'Deep experience across Defence, Construction, Medical Devices, Government, Manufacturing, and ICT.' },
+  { icon: '187f81', value: '100+', unit: 'Years Combined', title: 'Certified Expert Team', text: 'We work alongside your team, building internal capability while delivering compliance. Your success is our success.' },
+  { icon: '153f8b', value: '25+', unit: 'Years', title: 'Proven Track Record', text: 'No cookie-cutter solutions. We tailor every system to your industry, size, and operational reality, compliance that works for you.' },
+  { icon: 'c67d3c', value: '100%', unit: 'Tranceparent', title: 'Fixed-Price Transparency', text: 'Clear packages with defined deliverables, timelines, and costs, no hidden fees or surprises.' },
+  { icon: '30076e', value: '100%', unit: 'Time Saved', title: 'Efficiency-Focused', text: 'Minimize disruption to your operations while maximizing compliance value and business improvement.' },
+];
+
+// Lines kept exactly as they appear on the live page; the first part of each line is highlighted in gold there.
+const certs = [
+  { title: 'ISO Lead Auditor Certifications', lines: [['ISO 9001', ':2015 Lead Auditor'], ['ISO 14001', ':2015 Lead Auditor'], ['ISO 45001', ':2018 Lead Auditor'], ['ISO 27001', ':2022 Lead Auditor'], ['ISO 13485', ':2016 Lead Auditor']] },
+  { title: 'Industry Accreditations', lines: [['DISP', ' Consultants'], ['TGA Manufacturing', ' Principles Essential'], ['Eight Practitioners', ' Australian'], ['Defence', ' Industry']] },
+  { title: 'Professional Memberships', lines: [['Quality Society', ' of Australasia (QSA)'], ['Defence Industry', ' Security Program (AIM)'], ['Association International', ' Register of Certificated Auditors']] },
+];
+---
+<Base
+  title="ISO Certification and Integrated Management Systems | integPRO Services"
+  description="Discover expert support for ISO certifications and integrated management systems. Explore how integPRO can help your business succeed."
+  noindex
+>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Building <span class="gold">Compliant Futures</span> Since 2019</h1>
+        <p>IntegPro is Australia’s leading ISO certification and DISP compliance consulting firm. For over 25 years, we’ve helped businesses across Defence, Construction, Medical Devices, Government, and Manufacturing achieve and maintain world-class management systems.</p>
+        <div class="actions">
+          <a href="#team" class="btn btn-primary">Meet Our Team<Chevron /></a>
+          <a href="#values" class="btn btn-outline">Our Values</a>
+        </div>
+      </div>
+      <img src="/images/team.webp" alt="The integPRO ISO experts team" width="453" height="351" fetchpriority="high" />
+    </div>
+  </section>
+
+  <section class="section history">
+    <div class="container">
+      <div class="section-head light">
+        <h2><span class="gold">25+</span> Years of Excellence</h2>
+        <p class="wide">From a small Sydney consultancy to Australia’s leading ISO &amp; DISP certification partner</p>
+      </div>
+      <div class="tl-wrap"><Timeline items={timeline} /></div>
+      <div class="today">
+        <h2>Today, IntegPro Stands as Australia’s Most Trusted ISO &amp; DISP Consultancy</h2>
+        <p>We’ve maintained our founding commitment to practical, results-driven consulting while expanding our expertise across all major industries and compliance frameworks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section values" id="values">
+    <div class="container">
+      <div class="section-head light">
+        <h2>Our Core <span class="gold">Values</span></h2>
+        <p class="wide">The principles that guide every client engagement and certification journey</p>
+      </div>
+      <div class="card-grid">
+        {values.map((v) => (
+          <article class="card feature">
+            <img src={img(v.icon)} alt="" width="48" height="48" loading="lazy" />
+            <h3>{v.title}</h3>
+            <p>{v.text}</p>
+          </article>
+        ))}
+      </div>
+      <div class="mission">
+        <h2>Our Mission</h2>
+        <p>To empower Australian businesses with world-class management systems that deliver genuine competitive advantage, operational excellence, and sustainable compliance.</p>
+        <blockquote>“We don’t just deliver certifications, we build compliant, high-performing organizations.”</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="section team" id="team">
+    <div class="container">
+      <div class="section-head light">
+        <h2>Meet the <span class="gold">IntegPro Team</span></h2>
+        <p class="wide">Certified professionals with deep industry expertise and a passion for compliance excellence</p>
+      </div>
+      <div class="team-grid">
+        {team.map((m) => (
+          <article class="member">
+            <img class="photo" src={`/images/about-us-iso-team/${m.photo}.webp`} alt={m.alt} width="171" height="143" loading="lazy" />
+            <h3>{m.name}</h3>
+            <p class="role">{m.role}</p>
+            <p class="bio">{m.bio}</p>
+            <!-- Personal LinkedIn profile URLs are not in the capture; icon is decorative until they are supplied. -->
+            <img class="li" src={img('36ef26')} alt="" width="28" height="28" loading="lazy" />
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head light">
+        <h2>Why Choose <span class="gold">IntegPro</span>?</h2>
+        <p class="wide">The IntegPro difference: expertise, transparency, and results</p>
+      </div>
+      <div class="card-grid">
+        {reasons.map((r) => (
+          <article class="card feature">
+            <div class="feature-top">
+              <img src={img(r.icon)} alt="" width="48" height="48" loading="lazy" />
+              <span class="stat">{r.value}<br />{r.unit}</span>
+            </div>
+            <h3>{r.title}</h3>
+            <p>{r.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section certs">
+    <div class="container">
+      <div class="section-head light">
+        <h2><span class="gold">Certified</span> Excellence</h2>
+        <p class="wide">Our team holds the highest industry certifications and accreditations</p>
+      </div>
+      <div class="card-grid">
+        {certs.map((c) => (
+          <article class="card feature">
+            <img src={img('334a55')} alt="" width="48" height="48" loading="lazy" />
+            <h3>{c.title}</h3>
+            <ul>{c.lines.map(([g, rest]) => <li><span class="gold">{g}</span>{rest}</li>)}</ul>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <ContactBand />
+</Base>
+
+<style>
+  .section-head.light h2 { font-weight: 400; }
+  .section-head .wide { max-width: 680px; }
+
+  /* Hero */
+  .hero { padding: 56px 0 40px; }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 453px); gap: 60px; align-items: center; }
+  .hero-grid > * { min-width: 0; }
+  .hero h1 { font-size: 40px; line-height: 1.4; max-width: 400px; }
+  .hero p { margin: 8px 0 0; max-width: 420px; font-size: 15px; line-height: 1.5; color: var(--text); }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+  .actions .btn { min-width: 184px; justify-content: center; }
+  .hero img { width: 100%; }
+
+  /* Timeline (shared component, widened to match the live layout) */
+  .history { padding-top: 60px; }
+  .tl-wrap :global(.timeline) { max-width: 920px; }
+  .tl-wrap :global(.timeline::before) { background: #968244; width: 3px; }
+  .tl-wrap :global(.tl-card) { padding: 26px 34px 28px; background: #fafafa; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); }
+  .tl-wrap :global(.timeline li) { padding-bottom: 20px; }
+  .tl-wrap :global(.timeline li:nth-child(n + 2)) { margin-top: -80px; }
+  .tl-wrap :global(.label) { font-family: var(--font-body); font-size: 24px; letter-spacing: -0.5px; }
+  .tl-wrap :global(.title) { margin: 10px 0 0; padding-bottom: 20px; border-bottom: 1px solid #d9d9d9; }
+  .tl-wrap :global(.title img) { width: 43px; height: 42px; }
+  .tl-wrap :global(.title h3) { font-family: var(--font-body); font-size: 18px; margin-top: 16px; }
+  .tl-wrap :global(.tl-card p) { margin-top: 16px; font-size: 15px; line-height: 1.5; }
+  .tl-wrap :global(.timeline li::after) { width: 22px; height: 22px; top: 2px; background: var(--gold-light); border-color: var(--gold); }
+  .tl-wrap :global(.timeline .l::after) { right: -11px; }
+  .tl-wrap :global(.timeline .r::after) { left: -11px; }
+
+  .today { margin: 40px auto 0; max-width: 930px; padding: 34px 40px 34px; border-radius: 16px; background: #4b5320; color: #fff; text-align: center; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); }
+  .today h2 { color: #fff; font-weight: 400; font-size: 40px; line-height: 1.2; }
+  .today p { margin: 22px 0 0; font-size: 15px; line-height: 1.5; }
+
+  /* Cards */
+  .card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .card { background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
+  .feature { padding: 36px 40px 56px; }
+  .feature img { width: 48px; height: 48px; border-radius: 6px; }
+  .feature h3 { margin-top: 18px; font-size: 20px; line-height: 1.4; letter-spacing: 0.8px; }
+  .feature p { margin: 6px 0 0; font-size: 14px; line-height: 1.45; }
+  .feature ul { list-style: none; margin: 14px 0 0; padding: 0; font-size: 14px; line-height: 1.4; }
+  .feature-top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .stat { margin-top: 12px; font-size: 12px; text-align: right; color: var(--ink); }
+
+  .values { padding-top: 60px; }
+  .mission { margin-top: 44px; padding: 34px 40px 44px; background: #fff; border-radius: 16px; box-shadow: var(--shadow-card); text-align: center; color: #4b5320; }
+  .mission h2 { color: #4b5320; font-weight: 400; font-size: 40px; line-height: 1.3; }
+  .mission p { margin: 12px auto 0; max-width: 850px; font-size: 15px; line-height: 1.5; }
+  .mission blockquote { margin: 18px 0 0; font-style: italic; font-weight: 700; font-size: 16px; color: var(--text); }
+
+  /* Team */
+  .team { background: var(--bg-faq); padding-top: 40px; }
+  .team .section-head { margin-bottom: 40px; }
+  .team-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+  .member { display: flex; flex-direction: column; align-items: center; padding: 38px 34px 24px; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06); text-align: center; }
+  .photo { width: 171px; height: 143px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); }
+  .member h3 { margin-top: 30px; font-family: var(--font-body); font-size: 16px; color: var(--gold); }
+  .role { margin: 4px 0 0; font-size: 14px; color: var(--ink); }
+  .bio { flex: 1; margin: 24px 0 0; padding-bottom: 24px; border-bottom: 1px solid var(--line); font-size: 16px; line-height: 1.4; text-align: left; }
+  .li { width: 28px; height: 28px; margin-top: 16px; opacity: 0.7; }
+
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+    .card-grid, .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 760px) {
+    .hero h1 { font-size: 32px; }
+    .card-grid, .team-grid { grid-template-columns: 1fr; }
+    .feature { padding: 28px 28px 40px; }
+    .today { padding: 28px 22px; }
+    .today h2, .mission h2 { font-size: 28px; }
+    .mission { padding: 28px 22px 32px; }
+  }
+  @media (max-width: 640px) {
+    .tl-wrap :global(.timeline li:nth-child(n + 2)) { margin-top: 0; }
+    .tl-wrap :global(.tl-card) { padding: 20px 20px 22px; }
+    .tl-wrap :global(.timeline::before) { left: 10px; }
+    .tl-wrap :global(.timeline .l::after), .tl-wrap :global(.timeline .r::after) { left: 0; right: auto; }
+  }
+</style>

@@ -1,0 +1,345 @@
+---
+import Base from '../layouts/Base.astro';
+import Chevron from '../components/Chevron.astro';
+import SectionHead from '../components/SectionHead.astro';
+import ContactBand from '../components/ContactBand.astro';
+
+const img = (n: string) => `/images/iso-disp-services/${n}.webp`;
+
+const isoPackages = [
+  {
+    icon: 'icon-award', timeline: '3-6 months', title: 'ISO 9001 Quality Management',
+    items: ['Gap analysis report', 'Quality manual and procedures', 'Process documentation', 'Internal audit program', 'Management review framework'],
+    outcome: ['ISO 9001 Certificate', 'Customer Satisfaction and Business Growth', 'Continues Improvement and Enhance Efficiency', 'Standardisation of Business Process'],
+    href: '/iso-9001-compliance-certification-sydney',
+  },
+  {
+    icon: 'icon-shield', timeline: '4-8 months', title: 'ISO 27001 Information Security',
+    items: ['Information security policy', 'Risk assessment and treatment plan', 'Statement of Applicability (SoA)', 'Security controls implementation', 'ISMS documentation'],
+    outcome: ['ISO 27001 Certificate', 'Information Security', 'Data Protection and Privacy Compliance', 'Protection of Intellectual Porosities'],
+    href: '/iso-27001-information-security-management-system',
+  },
+  {
+    icon: 'icon-environment', timeline: '3-6 months', title: 'ISO 14001 Environmental Management',
+    items: ['Environmental aspects register', 'Legal compliance matrix', 'Environmental policy and objectives', 'Operational controls', 'EMS documentation'],
+    outcome: ['ISO 14001 Certificate', 'Enhance Sustainability', 'Legal Compliance relevant to Environmental Protection', 'Protect Environment and minimise impacts'],
+    href: '/iso-14001-compliance-certification',
+  },
+  {
+    icon: 'icon-health-safety', timeline: '3-6 months', title: 'ISO 45001 Occupational Health & Safety',
+    items: ['Hazard identification & risk assessment', 'OH&S policy & objectives', 'Legal & compliance register', 'Worker consultation framework', 'OHSMS documentation'],
+    outcome: ['ISO 45001 Certificate', 'Legal Compliance relevant to Workplace Health and Safety', 'Positive and safe culture', 'Confidence to manage complex and high-risk operations'],
+    href: '/iso-45001-occupational-health-safety',
+  },
+  {
+    icon: 'icon-growth', timeline: '3-6 months', title: 'ISO 13485 Medical Devices Quality Management System', wide: true,
+    items: ['Regulatory & compliance gap analysis (TGA / FDA / EU MDR aligned)', 'Quality policy & quality objectives', 'Risk management framework (ISO 14971 aligned)', 'Design & development controls documentation', 'QMS procedures & records for medical devices'],
+    outcome: ['ISO 13485 Certificate', 'Compliance with regulatory requirements', 'Robust Design Control and Risk Management', 'Customer Satisfaction and Business Growth', 'Continues Improvement and Enhance Efficiency', 'Full control and minimise Adverse Events'],
+    href: '/iso-13485-medical-devices-quality-management-system',
+  },
+];
+
+// Level 3 "Best for" reads "Level 2 defense contractors" on the live page; kept verbatim.
+const dispLevels = [
+  {
+    title: 'DISP Entry Level', sub: 'Basic security for unclassified defense information',
+    items: ['Security plan development', 'Personnel security clearances', 'Physical security assessment', 'Information security controls', 'Annual compliance reporting'],
+    timeline: '3-6 months', bestFor: 'Entry-level defense contractors',
+  },
+  {
+    title: 'DISP Level 1', sub: 'The factors of implementation are increased',
+    items: ['Everything in Entry Level', 'Additional Questioning in Gap Analysis', 'Further Provisions in Governance Documentation', 'Additional Cyber Security Policies', 'E8 Maturity Level Increased (Cyber)'],
+    timeline: '6-8 months', bestFor: 'Level 1 defense contractors',
+  },
+  {
+    title: 'DISP Level 2', sub: 'It will grant access to SECRET information.',
+    items: ['Everything in Entry Level, Level 1', 'Adjust Deliverables To: Level 2 Requirements', 'Mandatory Site Inspection'],
+    timeline: '12 months+', bestFor: 'Level 2 defense contractors',
+  },
+  {
+    title: 'DISP Level 3', sub: 'Requires significant expansion of project scope.',
+    items: ['Everything in Entry Level, Level 1, Level 2', 'Adjust Deliverables To: Level 3 Requirements', 'Custom Package', 'For organisations involved in the most classified technologies, operations and defence works.'],
+    timeline: '12 months+', bestFor: 'Level 2 defense contractors',
+  },
+];
+
+const ecosystem = [
+  { icon: 'icon-document', title: 'Gap Analysis & Auditing', text: 'Identify compliance gaps before certification', items: ['Current state assessment', 'Gap identification', 'Action plan development', 'Pre-audit simulation'] },
+  { icon: 'icon-checkbox', title: 'Documentation Services', text: 'Professional policy and procedure development', items: ['Manuals & policies', 'Work instructions', 'Forms & templates', 'Process maps'] },
+  { icon: 'icon-book', title: 'Training Academy', text: 'Build internal capability and expertise', items: ['Internal auditor courses', 'Lead auditor programs', 'Management training', 'Custom workshops'] },
+  { icon: 'icon-book', title: 'One System Management', text: 'Combine multiple standards efficiently', items: ['ISO Standards', 'Unified documentation', 'Reduced audit burden', 'Cost optimization'] },
+  { icon: 'icon-book', title: 'Enterprise Quality Management Software (EQMS)', text: 'Digitise and automate your management systems', items: ['Centralised Digital Hub', 'Automated Workflows & CAPA', 'Real-time Analytics & Dashboards', 'Continuous Audit Readiness'], wide: true },
+];
+
+// "Extra Consulting Hours" appears twice on the live page; kept as-is.
+const addOns = ['Extra Consulting Hours', 'Extra Consulting Hours', 'Annual surveillance support', 'No Fee', 'Maintenance', 'Learning Management System'];
+
+const journey = [
+  { n: 1, time: '1-2 weeks', icon: 'icon-search', kicker: 'Comprehensive assessment', title: 'Gap Analysis & Scoping', outcome: 'A clear, strategic roadmap for the certification journey.' },
+  { n: 2, time: '4-8 weeks', icon: 'icon-document', kicker: 'Creating the foundational paperwork', title: 'Documentation Development', outcome: 'A complete, standard-compliant documentation suite.' },
+  { n: 3, time: '6-12 weeks', icon: 'icon-checkbox', kicker: 'The team is trained on the updated processes', title: 'Implementation & Training', outcome: 'An operational management system integrated into daily workflows.' },
+  { n: 4, time: '2-4 weeks', icon: 'icon-shield', kicker: 'verification step', title: 'Internal Audits & Management Review', outcome: 'Validated system performance ready for external review.' },
+  { n: 5, time: '2-4 weeks', icon: 'icon-award', kicker: 'Stage 1 and Stage 2 verification audits', title: 'Certification Audit', outcome: 'Official ISO/BSI certification achieved.' },
+  { n: 6, time: 'Ongoing', icon: 'icon-team', kicker: 'An indefinite commitment to maintain compliance', title: 'Ongoing Support', outcome: 'Sustained certification and continuous process refinement.' },
+];
+---
+<Base
+  title="ISO Certification and Integrated Management Systems | integPRO Services"
+  description="Discover expert support for ISO certifications and integrated management systems. Explore how integPRO can help your business succeed."
+  noindex
+>
+  <div class="svc">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Expert <span class="gold">ISO &amp; DISP</span> Consulting Services</h1>
+        <p>From gap analysis through to certification and ongoing compliance, IntegPro delivers structured, transparent service packages for Australian businesses seeking ISO certification and DISP compliance.</p>
+        <div class="actions">
+          <a href="#servicepackages" class="btn btn-primary">Service Packages<Chevron /></a>
+          <a href="#gapassessment" class="btn btn-outline">Gap Assessment</a>
+        </div>
+      </div>
+      <div class="hero-cards">
+        <div class="hero-card">
+          <img src={img('icon-award')} alt="" width="43" height="43" />
+          <div>
+            <small>ISO Certification Consultancy &amp; Maintenance</small>
+            <strong>9001, 14001, 45001, 27001, 13485</strong>
+            <span class="tick">Full Implementation Support</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src={img('icon-shield')} alt="" width="43" height="43" />
+          <div>
+            <small>DISP Compliance</small>
+            <strong>Levels EL-3</strong>
+            <span class="tick">Defense Contractor Ready</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ISO packages -->
+  <section class="section iso" id="servicepackages">
+    <div class="container">
+      <SectionHead title="Complete ISO Implementation" sub="Structured, transparent service delivery with clear deliverables, timelines, and outcomes." />
+      <div class="iso-grid">
+        {isoPackages.map((p) => (
+          <article class:list={['iso-card', { wide: p.wide }]}>
+            <header>
+              <img src={img(p.icon)} alt="" width="43" height="43" loading="lazy" />
+              <p class="timeline"><span>Timeline:</span><strong>{p.timeline}</strong></p>
+            </header>
+            <h3>{p.title}</h3>
+            <p class="get">What you get:</p>
+            <ul class="dots">{p.items.map((i) => <li>{i}</li>)}</ul>
+            <div class="outcome">
+              <p class="tick">Outcome</p>
+              <ul>{p.outcome.map((o) => <li>- {o}</li>)}</ul>
+            </div>
+            <div class="card-actions">
+              <a href="/free-consultation" class="btn btn-quote">Get Quote</a>
+              <a href={p.href} class="btn btn-olive">Start Your Certification<Chevron /></a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- DISP -->
+  <section class="section disp">
+    <div class="container">
+      <SectionHead title="Defense Industry Security Program" sub="Comprehensive DISP consulting for all security levels—from entry-level to Top Secret" />
+      <div class="disp-grid">
+        {dispLevels.map((d) => (
+          <article class="disp-card">
+            <header>
+              <h3>{d.title}</h3>
+              <p>{d.sub}</p>
+            </header>
+            <p class="deliv">Service Deliverables:</p>
+            <ul class="dots">{d.items.map((i) => <li>{i}</li>)}</ul>
+            <div class="disp-foot">
+              <p class="timeline-row"><span>Timeline:</span><strong>{d.timeline}</strong></p>
+              <div class="best"><small>Best for</small><span>{d.bestFor}</span></div>
+              <a href="/free-consultation" class="btn btn-primary">Enquire now<Chevron /></a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecosystem, add-ons, journey -->
+  <section class="section eco">
+    <div class="container">
+      <SectionHead title="Complete Service Ecosystem" sub="Additional services to support your management system journey" />
+      <div class="eco-grid">
+        {ecosystem.map((e) => (
+          <article class:list={['eco-card', { wide: e.wide }]}>
+            <img src={img(e.icon)} alt="" width="42" height="42" loading="lazy" />
+            <h3>{e.title}</h3>
+            <p>{e.text}</p>
+            <ol>{e.items.map((i, n) => <li>{n + 1}.{i}</li>)}</ol>
+          </article>
+        ))}
+      </div>
+
+      <h2 class="sub-title">Optional Add-on</h2>
+      <ul class="addons">{addOns.map((a) => <li>{a}</li>)}</ul>
+
+      <div id="gapassessment" class="journey-head">
+        <SectionHead title="Six-Step Certification Journey" sub="A proven, structured approach with clear milestones, deliverables, and outcomes at every stage" />
+      </div>
+      <ol class="journey">
+        {journey.map((j) => (
+          <li style={`--row: ${j.n}`} class={j.n % 2 ? 'l' : 'r'}>
+            <div class="step">
+              <div class="step-top"><span class="num">{j.n}</span><span class="time">{j.time}</span></div>
+              <div class="step-title">
+                <img src={img(j.icon)} alt="" width="43" height="43" loading="lazy" />
+                <div><small>{j.kicker}</small><h3>{j.title}</h3></div>
+              </div>
+              <p class="tick">{j.outcome}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <ContactBand title='Start Your <span class="gold">Certification</span> Journey Today' />
+  </div>
+</Base>
+
+<style>
+  .svc :global(.section-head) { max-width: none; }
+  .svc :global(.section-head h2) { font-weight: 400; }
+  .svc :global(.section-head p) { max-width: 680px; }
+  .tick { position: relative; padding-left: 20px; }
+  .tick::before { content: ''; position: absolute; left: 0; top: 0.2em; width: 13px; height: 13px; background: url('/images/iso-disp-services/tick.webp') center / contain no-repeat; }
+
+  /* Hero */
+  .hero { padding: 100px 0 60px; }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 482px); gap: 60px; align-items: start; }
+  .hero-grid > * { min-width: 0; }
+  .hero h1 { font-weight: 400; font-size: 40px; line-height: 48px; max-width: 420px; }
+  .hero h1 + p { margin: 8px 0 0; max-width: 360px; font-size: 16px; line-height: 22.4px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+  .actions .btn { height: 34px; padding: 0 26px; }
+  .hero-cards { display: grid; gap: 20px; padding-top: 8px; }
+  .hero-card { display: flex; gap: 10px; align-items: flex-start; padding: 22px 28px 20px; background: #fafafa; border-radius: 12px; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06); }
+  .hero-card img { width: 43px; height: 43px; border-radius: 6px; margin-top: 4px; }
+  .hero-card small { display: block; font-size: 12px; line-height: 16.8px; }
+  .hero-card strong { display: block; font-weight: 400; font-size: 18px; line-height: 25.2px; color: var(--gold); }
+  .hero-card .tick { display: block; font-size: 14px; line-height: 19.6px; margin-top: 4px; }
+
+  /* ISO packages */
+  .iso { padding-top: 40px; }
+  .iso-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+  .iso-card { display: flex; flex-direction: column; padding: 30px 32px 32px; background: #fafafa; border-radius: 16px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+  .iso-card.wide { grid-column: 1 / -1; padding-inline: 56px 36px; }
+  .iso-card header { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; }
+  .iso-card header img { width: 43px; height: 43px; border-radius: 6px; }
+  .iso-card h3 { margin-top: 12px; font-family: var(--font-body); font-size: 18px; line-height: 25.2px; color: var(--gold); }
+  .timeline { display: grid; margin: 10px 0 0; font-size: 12px; line-height: 16.8px; flex: none; }
+  .timeline strong { color: var(--text); }
+  .get { margin: 28px 0 6px; font-size: 16px; }
+  .dots { list-style: none; margin: 0; padding: 0; font-size: 16px; line-height: 22.4px; }
+  .dots li::before { content: '• '; color: var(--gold); }
+  .outcome { margin-top: 32px; padding: 14px 22px 22px 10px; background: rgba(182, 232, 227, 0.3); border-radius: 16px; font-size: 12px; line-height: 16.8px; flex: 1; }
+  .wide .outcome { padding-left: 36px; }
+  .outcome p { margin: 0 0 6px 0; }
+  .outcome ul { list-style: none; margin: 0; padding-left: 20px; }
+  .card-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 16px; }
+  .wide .card-actions { justify-content: flex-end; margin-top: 20px; }
+  .btn-quote { height: 30px; padding: 0 24px; background: #fff; color: var(--gold); border: 2px solid var(--text); }
+  .btn-quote:hover { background: var(--gold-light); }
+  .btn-olive { height: 30px; padding: 0 20px; background: #4b5320; border-color: #4b5320; color: #fff; }
+  .btn-olive:hover { background: #363c17; }
+
+  /* DISP */
+  .disp { background: var(--bg-faq); }
+  .disp-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  .disp-card { display: flex; flex-direction: column; padding: 14px 14px 38px 14px; background: #fff; border-radius: 12px; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06); }
+  .disp-card header { padding: 10px 10px 12px; border-radius: 6px; background: linear-gradient(90deg, #26334a 0%, #6f7552 100%); color: #fff; }
+  .disp-card h3 { font-family: var(--font-body); font-weight: 400; font-size: 18px; line-height: 25.2px; color: #fff; }
+  .disp-card header p { margin: 4px 0 0; font-size: 12px; line-height: 16.8px; }
+  .deliv { margin: 38px 0 6px 1px; font-weight: 700; font-size: 16px; }
+  .disp-card .dots { margin-left: 1px; }
+  .disp-foot { margin-top: auto; padding-top: 36px; }
+  .timeline-row { display: flex; justify-content: space-between; margin: 0 0 8px; font-size: 12px; }
+  .best { display: grid; gap: 4px; padding: 18px 10px 20px; background: rgba(150, 130, 68, 0.3); border-radius: 6px; }
+  .best small { font-size: 12px; }
+  .best span { font-size: 16px; line-height: 22.4px; }
+  .disp-foot .btn { width: 100%; justify-content: center; height: 30px; margin-top: 16px; }
+
+  /* Ecosystem */
+  .eco-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+  .eco-card { display: flex; flex-direction: column; align-items: center; padding: 30px 14px 32px; background: #fff; border-radius: 12px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07); text-align: center; }
+  .eco-card.wide { grid-column: 1 / -1; }
+  .eco-card img { width: 42px; height: 42px; border-radius: 6px; }
+  .eco-card h3 { margin-top: 18px; font-family: var(--font-body); font-size: 16px; line-height: 22.4px; color: var(--text); }
+  .eco-card p { margin: 12px 0 0; font-size: 16px; line-height: 22.4px; max-width: 200px; }
+  .eco-card.wide p { max-width: none; }
+  .eco-card ol { list-style: none; margin: 26px 0 0; padding: 0; text-align: left; font-size: 16px; line-height: 22.4px; }
+  .eco-card.wide ol { text-align: center; margin-top: 10px; }
+
+  .sub-title { margin: 90px 0 18px; text-align: center; font-weight: 400; font-size: 40px; line-height: 48px; }
+  .addons { list-style: none; margin: 0 auto; padding: 0; max-width: 894px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 30px; }
+  .addons li { display: grid; place-items: center; min-height: 80px; padding: 8px 16px; background: #dccea2; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05); font-weight: 700; font-size: 16px; text-align: center; color: var(--text); }
+
+  /* Journey */
+  .journey-head { margin-top: 90px; scroll-margin-top: 20px; }
+  .journey-head :global(.section-head) { max-width: none; margin-bottom: 80px; }
+  .journey { position: relative; list-style: none; margin: 0 auto; padding: 0; max-width: 914px; display: grid; grid-template-columns: 1fr 1fr; column-gap: 54px; }
+  .journey li:not(:last-child)::before { content: ''; position: absolute; top: 12px; bottom: -12px; width: 4px; background: var(--gold); }
+  .journey li.l::before { right: -29px; }
+  .journey li.r::before { left: -29px; }
+  .journey li { position: relative; grid-row: var(--row); }
+  .journey li.l { grid-column: 1; }
+  .journey li.r { grid-column: 2; }
+  .journey li::after { z-index: 1; content: ''; position: absolute; top: 2px; width: 16px; height: 16px; border-radius: 50%; background: var(--gold-light); border: 3px solid var(--gold); }
+  .journey li.l::after { right: -35px; }
+  .journey li.r::after { left: -35px; }
+  .step { display: flex; flex-direction: column; height: calc(100% - 0px); min-height: 225px; padding: 24px 34px 32px 30px; background: #fafafa; border-radius: 12px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+  .step-top { display: flex; justify-content: space-between; align-items: baseline; }
+  .num { font-size: 24px; line-height: 1; color: var(--gold); }
+  .time { font-size: 14px; }
+  .step-title { display: flex; gap: 10px; align-items: flex-start; margin-top: 6px; padding-bottom: 24px; }
+  .step-title img { width: 43px; height: 43px; border-radius: 6px; flex: none; }
+  .step-title small { display: block; font-size: 12px; line-height: 16.8px; color: #000; margin-top: 2px; }
+  .step-title h3 { font-family: var(--font-body); font-weight: 400; font-size: 18px; line-height: 25.2px; color: var(--gold); }
+  .step .tick { display: flex; gap: 4px; align-items: flex-start; margin: 0 0 0 52px; padding-top: 22px; padding-left: 0; border-top: 1px solid #d9d9d9; font-size: 16px; line-height: 22.4px; color: #000; }
+  .step .tick::before { position: static; flex: none; margin-top: 4px; }
+
+  @media (max-width: 1000px) {
+    .disp-grid, .eco-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 860px) {
+    .hero { padding-top: 48px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+    .iso-grid { grid-template-columns: minmax(0, 1fr); }
+    .iso-card.wide { padding-inline: 32px; }
+    .wide .card-actions { justify-content: center; }
+    .addons { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .journey { grid-template-columns: minmax(0, 1fr); padding-left: 32px; }
+    .journey li.l::before, .journey li.r::before { left: -26px; right: auto; bottom: -36px; }
+    .journey li, .journey li.l, .journey li.r { grid-column: 1; grid-row: auto; margin-bottom: 24px; }
+    .journey li.l::after, .journey li.r::after { left: -32px; right: auto; }
+    .step { min-height: 0; }
+  }
+  @media (max-width: 760px) {
+    .hero h1 { font-size: 32px; line-height: 40px; }
+    .sub-title { font-size: 28px; line-height: 36px; margin-top: 64px; }
+    .journey-head { margin-top: 64px; }
+    .journey-head :global(.section-head) { margin-bottom: 40px; }
+    .disp-grid, .eco-grid, .addons { grid-template-columns: minmax(0, 1fr); }
+    .iso-card, .iso-card.wide { padding: 24px 20px; }
+    .step { padding: 20px; }
+    .step .tick { margin-left: 0; }
+  }
+</style>

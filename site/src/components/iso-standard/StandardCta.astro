@@ -1,0 +1,40 @@
+---
+// Closing grey card: gold question, text and CTA button on the left, stats panel on the right.
+import Chevron from '../Chevron.astro';
+import { standardStats } from './shared';
+
+interface Props { title: string; text: string }
+const { title, text } = Astro.props;
+---
+<section class="cta-wrap">
+  <div class="container">
+    <div class="cta">
+      <div class="copy">
+        <h2>{title}</h2>
+        <p>{text}</p>
+        <a href="/free-consultation" class="btn btn-primary">Speak with an expert<Chevron /></a>
+      </div>
+      <dl class="stats">
+        {standardStats.map((s) => <div><dt>{s.value}</dt><dd>{s.label}</dd></div>)}
+      </dl>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-wrap { padding: 30px 0 56px; }
+  .cta { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 438px); gap: 48px; align-items: center; max-width: 942px; margin: 0 auto; padding: 38px 38px 44px 27px; background: #fafafa; border-radius: 16px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07); }
+  h2 { font-family: var(--font-body); font-size: 18px; line-height: 1.4; color: var(--gold); }
+  p { margin: 22px 0 24px; font-size: 14px; line-height: 1.42; color: var(--text); }
+  .btn { margin-left: -5px; height: 34px; padding: 0 32px; }
+  .stats { display: flex; justify-content: center; gap: 0; margin: 0; padding: 60px 20px; background: #fff; border-radius: 12px; }
+  .stats > div { width: 30%; }
+  .stats > div:first-child { width: 34%; }
+  dt { font-weight: 700; font-size: 20px; color: var(--gold); }
+  dd { margin: 2px 0 0; max-width: 80px; font-size: 14px; color: var(--text); }
+  @media (max-width: 760px) {
+    .cta { grid-template-columns: 1fr; gap: 24px; padding: 28px 20px; }
+    .stats { padding: 28px 16px; justify-content: space-around; }
+    .stats > div, .stats > div:first-child { width: auto; }
+  }
+</style>

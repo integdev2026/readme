@@ -1,0 +1,16 @@
+---
+// Centred light-weight section heading used on the ISO standard pages (gold words via <span class="gold">).
+interface Props { title: string; sub?: string }
+const { title, sub } = Astro.props;
+---
+<div class="head">
+  <h2 set:html={title} />
+  {sub && <p>{sub}</p>}
+</div>
+
+<style>
+  .head { text-align: center; max-width: 920px; margin: 0 auto 26px; }
+  h2 { font-size: 40px; line-height: 1.4; font-weight: 400; color: var(--text); }
+  p { margin: 8px auto 0; max-width: 640px; font-size: 16px; line-height: 1.4; color: var(--ink); }
+  @media (max-width: 760px) { h2 { font-size: 28px; line-height: 1.3; } }
+</style>

@@ -1,0 +1,83 @@
+---
+import Base from '../layouts/Base.astro';
+import StandardHero from '../components/iso-standard/StandardHero.astro';
+import StandardIntro from '../components/iso-standard/StandardIntro.astro';
+import DeliverableGrid from '../components/iso-standard/DeliverableGrid.astro';
+import FeatureGrid from '../components/iso-standard/FeatureGrid.astro';
+import StandardCta from '../components/iso-standard/StandardCta.astro';
+import { icons } from '../components/iso-standard/shared';
+---
+<Base
+  title="ISO 45001 OH&S Certification for Austral | Integpro"
+  description="Achieve ISO 45001 compliance and build a safer workplace. Expert OH&S management system consulting for Australian businesses. Book a free consultation."
+  noindex
+>
+  <StandardHero
+    title='<span class="gold">ISO 45001</span> Health &amp; Safety Management System'
+    text="ISO 45001 is an international standard that brings structure and accountability to occupational health and safety. It's not just about compliance, it's about creating a workplace culture where safety is embedded in every decision, from operational risk management to worker consultation."
+    ticks={['Full ISO 45001', 'Expert Gap Analysis & Documentation Proven First-Audit', 'Success Rate']}
+    image="/images/iso-45001-occupational-health-safety/hero-safety-manual.webp"
+    imageAlt="A health and safety manual on an office desk"
+  />
+
+  <!-- Eyebrow reads "The Environmental Standard" on the live page (copied from ISO 14001); kept verbatim. -->
+  <StandardIntro
+    eyebrow="The Environmental Standard"
+    title="What is ISO 45001?"
+    paragraphs={[
+      "ISO 45001 is the international standard for occupational health and safety management systems (OHSMS). It replaces the older OHSAS 18001 standard and provides a framework for organisations to systematically manage risks to workers' health and safety.",
+      'Unlike general safety guidelines, ISO 45001 creates accountability through documented processes, management responsibility, and continuous improvement. It applies to organisations of any size and across any industry, from small manufacturing facilities to large construction projects to office-based technology companies.',
+    ]}
+    features={[
+      { icon: icons.globe, title: 'Plan; Identify hazards', text: 'Assess risks, and set OH&S objectives' },
+      { icon: icons.trend, title: 'Do; Implement controls', text: 'Document processes, and train workers' },
+      { icon: icons.clipboard, title: 'Monitor performance', text: 'Audit processes, and respond to incidents' },
+      { icon: icons.people, title: 'Review', text: 'Review results and continuously improve the system' },
+    ]}
+  />
+
+  <DeliverableGrid
+    title='WHY <span class="gold">ISO 45001</span> MATTERS FOR YOUR BUSINESS?'
+    sub="Safety is a business imperative. Here's why Australian organisations invest in ISO 45001"
+    note="All documentation customized to your industry and business needs"
+    cards={[
+      { icon: icons.trend, title: 'Reduce Workplace Incidents and Costs', text: "Work-related injuries and illness have financial and human costs. ISO 45001 systematically identifies hazards before they cause harm, reducing incidents, workers' compensation claims, and insurance premiums" },
+      { icon: icons.people, title: 'Meet Legal and Regulatory Obligations', text: 'Australian workplaces must comply with the Work Health and Safety Act 2011 (Cth) and state-based WHS legislation. ISO 45001 provides the documented framework to demonstrate compliance with these legal duties, protecting your organisation and its leaders.' },
+      { icon: icons.award, title: 'Build Trust with Clients and Partners', text: 'Many commercial contracts now require ISO 45001 certification, especially in construction, mining, defence, and manufacturing. It signals to clients and partners that your organisation takes safety seriously and can be trusted with high-risk work.' },
+      { icon: icons.checkbox, title: 'Attract and Retain Talented Staff', text: 'Employees want to work for organisations that protect their wellbeing. A strong OH&S culture improves retention, reduces absenteeism, and boosts morale.' },
+      { icon: icons.target, title: 'Improve Operational Efficiency', text: 'Safe operations are efficient operations. When hazards are controlled, processes documented, and workers trained, downtime decreases and productivity increases.' },
+    ]}
+  />
+
+  <FeatureGrid
+    title={'integPRO\'S <span class="gold">ISO 45001</span> APPROACH'}
+    sub="We don't believe in one-size-fits-all templates. We build systems that fit your business."
+    cards={[
+      { icon: icons.globe, title: 'Discovery & Assessment', text: 'We visit your workplace, interview staff across all levels, and understand your current hazards, controls, and gaps. This gives us the full picture.' },
+      { icon: icons.lock, title: 'Roadmap & Planning', text: "We develop a realistic implementation roadmap tailored to your operations, timeline, and resources. We're honest about effort required." },
+      { icon: icons.trend, title: 'Documentation Development', text: 'We draft your OH&S policy, procedures, hazard registers, and compliance documentation—customised to your industry and risk profile.' },
+      { icon: icons.bank, title: 'Worker Engagement', text: 'We facilitate worker consultation sessions to capture frontline insights and build buy-in for the system. Safety only works if workers trust it.' },
+      { icon: icons.people, title: 'Training & Roll-Out', text: 'We train your team on the new system, explain the "why" behind each process, and support the transition to daily practice.' },
+      { icon: icons.search, title: 'Internal Audit Preparation', text: 'We conduct mock audits against the ISO 45001 standard, identify remaining gaps, and prepare your team for certification audits.' },
+    ]}
+  />
+
+  <DeliverableGrid
+    title='ISO 45001 Across <span class="gold">Industries</span>'
+    sub="ISO 45001 is essential in high-risk and regulated industries:"
+    cards={[
+      { icon: icons.defence, title: 'Defence', text: 'Defence contractors must meet strict security and safety protocols. ISO 45001 often integrates with DISP compliance requirements.' },
+      { icon: icons.manufacturing, title: 'Manufacturing', text: 'Chemical handling, machinery operation, repetitive strain, and complex workflows demand rigorous hazard control and incident prevention.' },
+      { icon: icons.construction, title: 'Construction', text: 'Hazard-intensive environments with multiple contractors, complex equipment, and weather exposure. ISO 45001 is increasingly required by principal contractors and clients.' },
+      { icon: icons.healthcare, title: 'Healthcare', text: 'Medical device manufacturers operate under strict quality and safety standards. ISO 45001 complements ISO 13485 certification.' },
+      { icon: icons.professional, title: 'Professional Services', text: 'Even low-hazard environments face ergonomic risks, mental health considerations, and emergency response protocols. ISO 45001 provides the framework.' },
+      { icon: icons.education, title: 'Education & Training', text: 'Effective ISO 45001 implementation depends on your workforce understanding the system and their role in it. We provide comprehensive training to ensure adoption and engagement.' },
+    ]}
+  />
+
+  <!-- Heading says "ISO 14001" on the live page (copied from the ISO 14001 page); kept verbatim pending a copy fix. -->
+  <StandardCta
+    title="Not sure if ISO 14001 applies to your industry?"
+    text="ISO 45001 isn't just a checkbox, it's a commitment to your workforce and your business. At integPRO, we've helped construction firms, manufacturers, mining operations, and defence contractors build systems that keep people safe and operations running smoothly."
+  />
+</Base>

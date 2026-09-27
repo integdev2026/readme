@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Chevron from '../components/Chevron.astro';
+import ContactBand from '../components/ContactBand.astro';
 import { company } from '../data/site';
 
 const stats = [
@@ -211,25 +212,11 @@ const faqSchema = {
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-head">
-        <h2>Start <span class="gold">Your Certification</span> Journey</h2>
-        <p class="wide">Contact us today for a free consultation and gap analysis. Let’s discuss how we can help you achieve certification excellence.</p>
-      </div>
-      <!-- Interim: opens the visitor's email app. To be switched to Wix Forms. -->
-      <form class="contact-form" action={`mailto:${company.email}`} method="post" enctype="text/plain">
-        <label>First name<input name="first_name" autocomplete="given-name" required /></label>
-        <label>Last name<input name="last_name" autocomplete="family-name" required /></label>
-        <label>Email<input type="email" name="email" autocomplete="email" required /></label>
-        <label>Phone<input type="tel" name="phone" autocomplete="tel" /></label>
-        <label class="full">Company<input name="company" autocomplete="organization" /></label>
-        <label class="full">How can we help?<textarea name="message" rows="5" required></textarea></label>
-        <button type="submit" class="btn btn-primary">Submit<Chevron /></button>
-      </form>
-    </div>
-  </section>
+  <ContactBand
+    title='Start <span class="gold">Your Certification</span> Journey'
+    sub="Contact us today for a free consultation and gap analysis. Let’s discuss how we can help you achieve certification excellence."
+    showDetails={false}
+  />
 
   <!-- FAQ -->
   <section class="section faq-wrap">
@@ -337,15 +324,6 @@ const faqSchema = {
   .quote figcaption { display: grid; margin-top: 30px; font-size: 14px; }
   .quote figcaption strong { font-weight: 400; color: var(--ink); }
 
-  /* Contact */
-  .contact { background: var(--bg-grey); }
-  .contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; max-width: 760px; margin: 0 auto; padding: 40px; background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
-  .contact-form label { display: grid; gap: 8px; font-size: 14px; color: var(--ink); }
-  .contact-form .full { grid-column: 1 / -1; }
-  .contact-form input, .contact-form textarea { font: inherit; font-size: 16px; padding: 10px 14px; border: 1px solid #cfcfcf; border-radius: 8px; background: #fff; color: var(--ink); }
-  .contact-form input:focus, .contact-form textarea:focus { outline: 2px solid var(--gold); border-color: transparent; }
-  .contact-form button { justify-self: start; height: 40px; }
-
   /* FAQ */
   .faq { background: var(--bg-faq); padding: 20px 56px 16px; }
   .faq h2 { text-align: center; font-size: 48px; line-height: 57.6px; margin-bottom: 30px; }
@@ -377,7 +355,6 @@ const faqSchema = {
     .team h2, .partner h2 { font-size: 30px; line-height: 38px; }
     .partner-stats { flex-direction: column; }
     .partner-stats div { width: auto; }
-    .contact-form { grid-template-columns: 1fr; padding: 24px; }
     .faq { padding: 16px 20px; }
     .faq h2 { font-size: 36px; }
   }

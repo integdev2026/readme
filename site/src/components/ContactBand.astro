@@ -1,0 +1,59 @@
+---
+// Closing "Start Your Certification Journey" block with enquiry form and contact details.
+import Chevron from './Chevron.astro';
+import { company } from '../data/site';
+
+interface Props { title?: string; sub?: string; showDetails?: boolean }
+const {
+  title = 'Start <span class="gold">Your Certification</span> Journey Today',
+  sub = 'Multiple ways to connect with our expert team. Choose what works best for you.',
+  showDetails = true,
+} = Astro.props;
+---
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <h2 set:html={title} />
+      <p class="wide">{sub}</p>
+    </div>
+    <!-- Interim: opens the visitor's email app. To be switched to Wix Forms. -->
+    <form class="contact-form" action={`mailto:${company.email}`} method="post" enctype="text/plain">
+      <label>First name<input name="first_name" autocomplete="given-name" required /></label>
+      <label>Last name<input name="last_name" autocomplete="family-name" required /></label>
+      <label>Email<input type="email" name="email" autocomplete="email" required /></label>
+      <label>Phone<input type="tel" name="phone" autocomplete="tel" /></label>
+      <label class="full">Company<input name="company" autocomplete="organization" /></label>
+      <label class="full">How can we help?<textarea name="message" rows="5" required></textarea></label>
+      <button type="submit" class="btn btn-primary">Submit<Chevron /></button>
+    </form>
+    {showDetails && (
+      <div class="details">
+        <h3>Get in touch</h3>
+        <dl>
+          <div><dt>Phone</dt><dd><a href={`tel:${company.phone.replace(/\s/g, '')}`}>{company.phone}</a></dd></div>
+          <div><dt>Email</dt><dd><a href={`mailto:${company.email}`}>{company.email}</a></dd></div>
+          <div><dt>Location</dt><dd>{company.location}</dd></div>
+        </dl>
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .contact { background: var(--bg-grey); }
+  .section-head .wide { max-width: 680px; }
+  .contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; max-width: 760px; margin: 0 auto; padding: 40px; background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
+  .contact-form label { display: grid; gap: 8px; font-size: 14px; color: var(--ink); }
+  .contact-form .full { grid-column: 1 / -1; }
+  .contact-form input, .contact-form textarea { font: inherit; font-size: 16px; padding: 10px 14px; border: 1px solid #cfcfcf; border-radius: 8px; background: #fff; color: var(--ink); }
+  .contact-form input:focus, .contact-form textarea:focus { outline: 2px solid var(--gold); border-color: transparent; }
+  .contact-form button { justify-self: start; height: 40px; }
+  .details { max-width: 760px; margin: 32px auto 0; padding: 20px 28px; background: #f3f3f3; border-radius: 12px; }
+  .details h3 { font-family: var(--font-body); font-weight: 400; font-size: 14px; color: var(--gold); margin-bottom: 12px; }
+  .details dl { display: grid; gap: 12px; margin: 0; }
+  .details dt { font-size: 12px; color: var(--ink); }
+  .details dd { margin: 2px 0 0; font-size: 13px; }
+  @media (max-width: 760px) {
+    .contact-form { grid-template-columns: 1fr; padding: 24px; }
+  }
+</style>

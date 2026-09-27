@@ -1,0 +1,102 @@
+---
+import Base from '../layouts/Base.astro';
+import StandardHero from '../components/iso-standard/StandardHero.astro';
+import StandardIntro from '../components/iso-standard/StandardIntro.astro';
+import DeliverableGrid from '../components/iso-standard/DeliverableGrid.astro';
+import FeatureGrid from '../components/iso-standard/FeatureGrid.astro';
+import StandardCta from '../components/iso-standard/StandardCta.astro';
+import { icons } from '../components/iso-standard/shared';
+---
+<Base
+  title="ISO 14001 Environmental Management | Integpro"
+  description="ISO 14001 environmental management consulting for Australian businesses. Reduce costs, manage risk, improve compliance. Talk to an expert today."
+  noindex
+>
+  <StandardHero
+    title='Achieve <span class="gold">ISO 14001</span> Certification'
+    text="Demonstrate your commitment to environmental sustainability with a robust Environmental Management System designed to improve performance, manage risks, and support continual improvement."
+    ticks={['Full ISO 14001', 'Expert Gap Analysis & Documentation Proven First-Audit', 'Success Rate']}
+    image="/images/iso-14001-compliance-certification/hero-seedling.webp"
+    imageAlt="A green seedling growing in an office setting"
+  />
+
+  <StandardIntro
+    eyebrow="The Environmental Standard"
+    title="What is ISO 14001?"
+    paragraphs={[
+      'ISO 14001 is the internationally recognized standard for Environmental Management Systems (EMS). It provides organizations with a structured framework to identify, manage, monitor, and improve their environmental performance while meeting compliance obligations and sustainability objectives.',
+      'The standard adopts a risk-based approach to environmental management, helping organizations address environmental aspects such as waste generation, energy consumption, emissions, resource use, and pollution prevention. ISO 14001 enables businesses of all sizes to reduce their environmental footprint and demonstrate environmental responsibility.',
+      "Whether you're seeking to meet customer requirements, improve sustainability performance, achieve regulatory compliance, or strengthen your corporate reputation, ISO 14001 certification demonstrates a commitment to environmental stewardship and continual improvement.",
+    ]}
+    features={[
+      { icon: icons.globe, title: 'Globally Recognised', text: 'Accepted worldwide as the leading benchmark for environmental management and sustainability performance.' },
+      { icon: icons.trend, title: 'Risk-Based Approach', text: 'Proactive identification, evaluation, and control of environmental risks and impacts.' },
+      { icon: icons.clipboard, title: 'Continuous Improvement', text: 'A systematic approach to enhancing environmental performance, reducing waste, and increasing efficiency.' },
+      { icon: icons.people, title: 'Compliance', text: 'Support for meeting regulatory requirements while achieving long-term environmental and business objectives.' },
+    ]}
+  />
+
+  <DeliverableGrid
+    title='What <span class="gold">You Get</span>?'
+    sub="Everything you need to achieve and maintain ISO 14001 certification, expertly tailored to your organization's environmental objectives and compliance requirements."
+    note="All documentation customized to your industry and business needs"
+    cards={[
+      {
+        icon: icons.trend, title: 'Gap Analysis Report',
+        text: 'Comprehensive assessment of your current environmental management practices against ISO 14001 requirements.',
+        bullets: ['Review of existing environmental processes and controls', 'Identification of compliance and EMS gaps', 'Environmental risk and opportunity assessment', 'Prioritized implementation roadmap'],
+      },
+      {
+        icon: icons.people, title: 'EMS Documentation',
+        text: 'Complete EMS documentation package customized to your organization, industry, and environmental aspects.',
+        bullets: ['Environmental policy and objectives', 'Context of the organization and EMS scope', 'Environmental aspects and impacts register', 'Procedures, forms, and operational controls'],
+      },
+      {
+        icon: icons.award, title: 'Process Documentation',
+        text: 'Structured environmental management processes, controls, and operational procedures.',
+        bullets: ['Waste, emissions, and resource management procedures', 'Environmental compliance registers', 'Roles and responsibilities matrix', 'Monitoring, measurement, and reporting frameworks'],
+      },
+      {
+        icon: icons.checkbox, title: 'Internal Audit Program',
+        text: 'Comprehensive internal audit framework to maintain EMS effectiveness and ISO 14001 compliance.',
+        bullets: ['Annual environmental audit schedule', 'Audit checklists and reporting templates', 'Internal auditor guidance and training materials', 'Nonconformity and corrective action tracking'],
+      },
+      {
+        icon: icons.target, title: 'Management Review',
+        text: 'Structured approach to leadership oversight, environmental performance evaluation, and continual improvement.',
+        bullets: ['Management review meeting templates', 'Environmental performance dashboards and KPIs', 'Objectives and targets review framework', 'Corrective action and improvement tracking'],
+      },
+    ]}
+  />
+
+  <FeatureGrid
+    title='Why <span class="gold">Your Business</span> Needs ISO 14001?'
+    sub="Everything you need to achieve and maintain ISO 14001 certification, expertly crafted for your organization."
+    cards={[
+      { icon: icons.globe, title: 'Environmental Compliance', text: 'Meet environmental legislation, regulations, and compliance obligations while reducing the risk of non-compliance and penalties.' },
+      { icon: icons.lock, title: 'Strengthen Stakeholder Confidence', text: 'Demonstrate your commitment to environmental responsibility and sustainability to customers, regulators, investors, and the community.' },
+      { icon: icons.trend, title: 'Enhance Business Opportunities', text: 'Access new contracts, supply chains, and procurement opportunities that require or favor ISO 14001 certification.' },
+      { icon: icons.bank, title: 'Reduce Environmental Impact', text: 'Identify and manage environmental aspects to minimize waste, emissions, pollution, and resource consumption.' },
+      { icon: icons.people, title: 'Improve Operational Efficiency', text: 'Optimize resource use, reduce environmental risks, and drive cost savings through better environmental management practices.' },
+      { icon: icons.search, title: 'Support Sustainable Growth', text: 'Embed continual improvement and sustainability into your operations to create long-term value for your business and the environment.' },
+    ]}
+  />
+
+  <DeliverableGrid
+    title='ISO 14001 Across <span class="gold">Industries</span>'
+    sub="Our consultants have deep experience implementing ISO 14001 Environmental Management Systems across diverse sectors, ensuring industry‑specific requirements are met."
+    cards={[
+      { icon: icons.defence, title: 'Defence', text: 'Strengthen environmental compliance and sustainability practices within defence supply chains and regulated environments.', bullets: ['Environmental risk management', 'Compliance with contractual obligations', 'Sustainable operational practices'] },
+      { icon: icons.manufacturing, title: 'Manufacturing', text: 'Reduce waste, improve resource efficiency, and minimize environmental impacts across production processes.', bullets: ['Energy and resource management', 'Waste reduction and recycling initiatives', 'Pollution prevention and compliance'] },
+      { icon: icons.construction, title: 'Construction', text: 'Manage environmental risks on projects while meeting regulatory and client sustainability requirements.', bullets: ['Environmental management plans', 'Waste and emissions control', 'Support for government and infrastructure projects'] },
+      { icon: icons.healthcare, title: 'Healthcare', text: 'Reduce environmental impacts while maintaining safe and compliant healthcare operations.', bullets: ['Clinical waste management', 'Environmental risk controls', 'Sustainability initiatives'] },
+      { icon: icons.professional, title: 'Professional Services', text: 'Strengthen your environmental credentials and meet client sustainability expectations.', bullets: ['ESG alignment', 'Environmental performance monitoring', 'Continual improvement programs'] },
+      { icon: icons.education, title: 'Education & Training', text: 'Promote environmental stewardship across schools, universities, and training organizations.', bullets: ['Waste reduction programs', 'Energy and resource efficiency', 'Environmental management planning'] },
+    ]}
+  />
+
+  <StandardCta
+    title="Not sure if ISO 14001 applies to your industry?"
+    text="ISO 14001 is designed for organizations of all sizes and industries. Whether you operate in manufacturing, construction, healthcare, logistics, education, defence, or professional services, an Environmental Management System can help improve sustainability, reduce environmental impacts, and meet compliance obligations. Our experts will help you understand how ISO 14001 can benefit your business."
+  />
+</Base>

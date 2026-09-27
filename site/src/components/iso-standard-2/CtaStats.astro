@@ -1,0 +1,33 @@
+---
+// Closing "Not sure if ... applies to your industry?" panel with a CTA button and headline figures.
+import Chevron from '../Chevron.astro';
+import StatRow from './StatRow.astro';
+interface Props { title: string; paragraphs: string[]; href?: string; label?: string }
+const { title, paragraphs, href = '/free-consultation', label = 'Speak with an expert' } = Astro.props;
+---
+<section class="cta-wrap">
+  <div class="container">
+    <div class="cta">
+      <div class="copy">
+        <h2>{title}</h2>
+        {paragraphs.map((p) => <p>{p}</p>)}
+        <a href={href} class="btn btn-primary">{label}<Chevron /></a>
+      </div>
+      <div class="stats"><StatRow /></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-wrap { padding: 44px 0 54px; }
+  .cta { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 438px); gap: 20px; align-items: stretch; max-width: 942px; margin: 0 auto; padding: 50px 38px 44px 27px; background: var(--bg-grey); border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06); }
+  h2 { font-family: var(--font-body); font-weight: 700; font-size: 18px; line-height: 25.2px; color: var(--gold); margin-bottom: 20px; }
+  p { margin: 0 0 20px; font-size: 14px; line-height: 19.6px; color: var(--text); }
+  .btn { margin: 4px 0 0 -5px; padding: 0 32px; }
+  .stats { display: grid; place-items: center; min-height: 190px; background: #fff; border-radius: 12px; margin-top: -12px; }
+  @media (max-width: 760px) {
+    .cta { grid-template-columns: 1fr; padding: 32px 24px; }
+    .stats { margin-top: 8px; min-height: 0; padding: 28px 16px; }
+    .btn { margin-left: 0; }
+  }
+</style>

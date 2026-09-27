@@ -1,0 +1,179 @@
+---
+import Base from '../layouts/Base.astro';
+import Chevron from '../components/Chevron.astro';
+import ContactBand from '../components/ContactBand.astro';
+import Pill from '../components/iso-standard-2/Pill.astro';
+import FeatureCard from '../components/iso-standard-2/FeatureCard.astro';
+import StatRow from '../components/iso-standard-2/StatRow.astro';
+import { icon } from '../components/iso-standard-2/data';
+
+const features = [
+  { icon: icon('icon-eu'), title: 'EU Medical Quality', text: 'Helping medical device manufacturers and other providers achieve EU MDR compliance' },
+  { icon: icon('icon-people'), title: 'Industry Experience', text: 'Former auditors and quality managers with real-world healthcare experience.' },
+  { icon: icon('icon-trend'), title: 'Proven Results', text: 'Track record of first-time certification success and sustained compliance.', wide: true },
+];
+
+// Step labels verbatim from the live page (including "Governence").
+const steps = ['Gap Analysis', 'Action Plan', 'Implementation', 'Governence', 'Submission', 'Ongoing Support'];
+
+// FAQ answers come from the live page's FAQPage structured data. Line 1 is the lead; further lines are list items.
+const faqs = [
+  { q: 'What does ISO 13485 mean for your business?', a: 'ISO 13485 is the global standard for Quality Management Systems (QMS) in the medical device sector. It ensures your business meets regulatory requirements and consistently delivers safe, effective medical devices, building trust with stakeholders.' },
+  { q: 'Why is ISO 13485 important for my business?', a: 'ISO 13485 certification:\nDemonstrates compliance with global medical device regulations.\nImproves product quality and patient safety.\nBuilds trust with regulators, customers, and stakeholders.\nOpens access to international markets.' },
+  { q: 'Who needs ISO 13485 certification?', a: 'Manufacturers, suppliers, and service providers in the medical device supply chain including design, production, installation, and servicing should implement ISO 13485.' },
+  { q: 'What are the key requirements of ISO 13485?', a: 'The standard focuses on:\nRisk management throughout the product lifecycle.\nRegulatory compliance.\nDocumented processes for design, production, and post-market activities.\nContinual improvement of the QMS.' },
+  { q: 'What does ISO 13485 certification involve?', a: 'The process includes:\nGap analysis and planning.\nImplementing QMS aligned with ISO 13485.\nInternal audits and management reviews.\nCertification audit by an accredited body.' },
+  { q: 'What is the typical timeline for ISO 13485 certification?', a: 'The timeline for ISO 13485 certification usually ranges from 4 to 8 months, depending on your organization’s size, complexity, and readiness. We help streamline the process to meet your goals efficiently.' },
+  { q: 'Which regulators recognize ISO 13485?', a: 'ISO 13485 is widely accepted by major regulators, including:\nFDA (Food and Drug Administration) – U.S.\nTGA (Therapeutic Goods Administration) – Australia\nHealth Canada – Canada\nEuropean Commission (CE Marking) – EU\nMHRA (Medicines and Healthcare products Regulatory Agency) – UK\nPMDA (Pharmaceuticals and Medical Devices Agency) – Japan' },
+  { q: 'How much does ISO 13485 certification cost?', a: "The cost of ISO 13485 certification varies based on your organization's size, complexity, certification scope, and associated consulting and certification body fees. At IntegPro, we provide transparent pricing and customized solutions to meet your needs." },
+  { q: 'Do we need a consultant for ISO 13485?', a: 'While you can implement ISO 13485 internally, working with IntegPro ensures:\nFaster implementation.\nExpert guidance on regulatory compliance.\nReduced risk of non-conformities.' },
+  { q: 'What should you do after getting certified?', a: 'After achieving ISO 13485 certification, you need to maintain compliance through regular internal audits, continuous improvement initiatives, and periodic surveillance audits conducted by the certification body.' },
+  { q: 'How does ISO 13485 integrate with other standards?', a: 'ISO 13485 can be integrated with:\nISO 9001 (Quality Management)\nISO 14971 (Risk Management for Medical Devices)\nISO 27001 (Information Security) This creates a comprehensive compliance framework.' },
+  { q: 'What kind of support does IntegPro offer?', a: 'IntegPro provides comprehensive support, including end-to-end ISO 13485 implementation, guidance on regulatory compliance, staff training and awareness programs, and ongoing assistance for audits and system maintenance.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+---
+<Base
+  title="Medical Device iso | Integpro"
+  description="Specialised ISO 13485 consulting for medical device manufacturers – ensure TGA & EU MDR compliance, streamlined QMS implementation, and first-time certification success."
+  noindex
+>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- Hero -->
+  <section class="med-hero">
+    <img class="bg" src="/images/medical-iso/hero-medical-bg.webp" alt="" width="1000" height="333" fetchpriority="high" />
+    <div class="container hero-copy">
+      <h1><span class="gold">Medical Device</span> Quality Excellence</h1>
+      <p>Specialised ISO 13485 consulting, TGA compliance, and quality management systems for medical device manufacturers and sponsor manufacturers organizations.</p>
+      <a href="#medicaldevicelandingform" class="btn btn-primary">Get Started<Chevron /></a>
+    </div>
+  </section>
+
+  <!-- Trusted partner -->
+  <section class="partner">
+    <div class="container partner-grid">
+      <div class="partner-copy">
+        <Pill text="ISO 13485" size="md" />
+        <h2>Your Trusted <span class="gold">Medical Quality Partner</span></h2>
+        <p>Helping medical device manufacturers and healthcare providers achieve regulatory compliance and operational excellence.</p>
+        <StatRow />
+      </div>
+      <div class="feature-grid">
+        {features.map((f) => <FeatureCard {...f} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process">
+    <div class="container">
+      <h2 class="gold">Our Process</h2>
+      <p class="sub">A structured approach to medical device quality management certification.. Typical timeline: 4–6 months.</p>
+      <ol class="steps">
+        {steps.map((s) => <li>{s}</li>)}
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-wrap">
+    <div class="container faq">
+      <h2 class="gold">FAQ</h2>
+      {faqs.map((f) => {
+        const [lead, ...items] = f.a.split('\n');
+        return (
+          <details>
+            <summary><h3>{f.q}</h3></summary>
+            <div class="answer">
+              <p>{lead}</p>
+              {items.length > 0 && <ul>{items.map((i) => <li>{i}</li>)}</ul>}
+            </div>
+          </details>
+        );
+      })}
+    </div>
+  </section>
+
+  <div id="medicaldevicelandingform">
+    <ContactBand
+      title='<span class="gold">Get Started</span>'
+      sub="Contact us for a free consultation and assessment."
+    />
+  </div>
+</Base>
+
+<style>
+  /* Hero */
+  .med-hero { position: relative; overflow: hidden; min-height: 483px; display: grid; align-items: center; }
+  .med-hero .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .med-hero::before { content: ''; position: absolute; inset: 0; z-index: 1; background: rgba(255, 255, 255, 0.72); }
+  .hero-copy { position: relative; z-index: 2; text-align: center; padding: 60px 0 70px; }
+  .med-hero h1 { font-size: 55px; line-height: 1.3; color: var(--ink); }
+  .med-hero p { max-width: 660px; margin: 22px auto 44px; font-size: 16px; line-height: 22.4px; color: var(--text); }
+  .med-hero .btn { padding: 0 32px; }
+
+  /* Partner */
+  .partner { padding: 46px 0 62px; }
+  .partner-grid { display: grid; grid-template-columns: minmax(0, 370px) minmax(0, 1fr); gap: 20px; align-items: start; }
+  .partner-copy { padding-left: 12px; }
+  .partner-copy h2 { margin: 26px 0 8px; font-weight: 400; font-size: 40px; line-height: 54px; color: var(--ink); }
+  .partner-copy h2 .gold { display: block; }
+  .partner-copy p { margin: 0 0 48px; font-size: 16px; line-height: 22.4px; color: var(--text); }
+  .feature-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 42px 26px; }
+
+  /* Process */
+  .process { padding: 64px 0 110px; background: var(--bg-faq); text-align: center; }
+  .process h2 { font-size: 40px; line-height: 1.3; }
+  .process .sub { margin: 16px 0 50px; font-size: 16px; color: var(--ink); }
+  .steps { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0; list-style: none; margin: 0 auto; padding: 0; max-width: 940px; }
+  .steps li {
+    display: grid; place-items: center; height: 60px; margin-right: -18px; padding: 0 20px 0 26px;
+    background: var(--gold-light); color: var(--text); font-size: 15px; white-space: nowrap;
+    clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%, 22px 50%);
+  }
+  .steps li:last-child { margin-right: 0; }
+
+  #medicaldevicelandingform :global(.contact) { background: #fff; }
+
+  /* FAQ */
+  .faq-wrap { padding: 68px 0 64px; }
+  .faq { background: var(--bg-faq); padding: 20px 56px 16px; }
+  .faq h2 { text-align: center; font-size: 48px; line-height: 57.6px; margin-bottom: 20px; }
+  .faq details { border-bottom: 1px solid var(--line); }
+  .faq summary { list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 26px 0; cursor: pointer; }
+  .faq summary h3 { font-family: var(--font-body); font-weight: 400; font-size: 16px; line-height: 22px; color: var(--ink); }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: '+'; flex: none; font-size: 22px; color: var(--gold); transition: transform 0.2s; }
+  .faq details[open] summary::after { transform: rotate(45deg); }
+  .answer { padding-bottom: 24px; font-size: 14px; line-height: 21px; }
+  .answer p { margin: 0; }
+  .answer ul { margin: 8px 0 0; padding-left: 22px; }
+
+  @media (max-width: 900px) {
+    .partner-grid { grid-template-columns: 1fr; gap: 32px; }
+    .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 12px; }
+    .steps li:nth-child(3) { margin-right: 0; }
+  }
+  @media (max-width: 760px) {
+    .med-hero { min-height: 380px; }
+    .med-hero h1 { font-size: 34px; }
+    .med-hero p { margin: 16px auto 28px; }
+    .partner-copy { padding-left: 0; }
+    .partner-copy h2 { font-size: 30px; line-height: 40px; }
+    .partner-copy p { margin-bottom: 28px; }
+    .feature-grid { grid-template-columns: 1fr; gap: 16px; }
+    .process { padding: 48px 0 60px; }
+    .process h2 { font-size: 32px; }
+    .steps { grid-template-columns: 1fr; max-width: 280px; }
+    .steps li, .steps li:nth-child(3) { margin-right: 0; font-size: 16px; clip-path: polygon(0 0, 50% 14px, 100% 0, 100% calc(100% - 14px), 50% 100%, 0 calc(100% - 14px)); height: 64px; padding: 14px 16px 0; }
+    .faq-wrap { padding: 40px 0; }
+    .faq { padding: 16px 20px; }
+    .faq h2 { font-size: 36px; }
+  }
+</style>

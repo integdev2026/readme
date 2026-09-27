@@ -1,0 +1,27 @@
+---
+// Three-column grid of DeliverableCards with a centred heading and an optional gold note pill.
+import Heading from './Heading.astro';
+import DeliverableCard from './DeliverableCard.astro';
+import type { Deliverable } from './shared';
+
+interface Props { title: string; sub?: string; cards: Deliverable[]; note?: string }
+const { title, sub, cards, note } = Astro.props;
+---
+<section class="section deliverables">
+  <div class="container">
+    <Heading title={title} sub={sub} />
+    <div class="grid">{cards.map((c) => <DeliverableCard {...c} />)}</div>
+    {note && <p class="note">{note}</p>}
+  </div>
+</section>
+
+<style>
+  .deliverables { padding: 40px 0 56px; }
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 15px; align-items: start; }
+  .note { max-width: 724px; margin: 38px auto 0; padding: 0 16px; border-radius: 999px; background: var(--gold-light); text-align: center; font-family: var(--font-heading); font-size: 16px; line-height: 1.5; color: #4b5320; text-transform: uppercase; }
+  @media (max-width: 860px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 560px) {
+    .grid { grid-template-columns: 1fr; }
+    .note { font-size: 13px; padding: 4px 16px; border-radius: 16px; }
+  }
+</style>
