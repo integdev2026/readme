@@ -1,0 +1,1564 @@
+{
+  "url": "https://www.integpro.com.au/blog/categories/disp-compliance",
+  "title": "DISP Compliance",
+  "canonical": "https://www.integpro.com.au/blog/categories/disp-compliance",
+  "meta": {
+    "description": "If your business is working with—or wants to work with—the Australian Department of Defence, DISP Compliance is essential. In this section, you’ll find clear, practical content to help you understand, apply for, and maintain membership in the Defence Industry Security Program (DISP).",
+    "robots": "index",
+    "og:title": "DISP Compliance",
+    "og:description": "If your business is working with—or wants to work with—the Australian Department of Defence, DISP Compliance is essential. In this section, you’ll find clear, practical content to help you understand, apply for, and maintain membership in the Defence Industry Security Program (DISP).",
+    "og:image": "https://static.wixstatic.com/media/6d9105_9aa2321502244a09b5abcc35ae1edf34~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85/6d9105_9aa2321502244a09b5abcc35ae1edf34~mv2.jpg",
+    "og:image:width": "1000",
+    "og:image:height": "667",
+    "og:url": "https://www.integpro.com.au/blog/categories/disp-compliance",
+    "og:site_name": "Integpro",
+    "og:type": "website",
+    "google-site-verification": "eoaN_za6CafCb65fEkFJEnHfpLGlKQSHJGThzZjyKYk",
+    "msvalidate.01": "D501A2F8421C443890A1B4745C901888",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "DISP Compliance",
+    "twitter:description": "If your business is working with—or wants to work with—the Australian Department of Defence, DISP Compliance is essential. In this section, you’ll find clear, practical content to help you understand, apply for, and maintain membership in the Defence Industry Security Program (DISP).",
+    "twitter:image": "https://static.wixstatic.com/media/6d9105_9aa2321502244a09b5abcc35ae1edf34~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85/6d9105_9aa2321502244a09b5abcc35ae1edf34~mv2.jpg",
+    "viewport": "width=device-width, initial-scale=1",
+    "generator": "Wix.com Website Builder",
+    "format-detection": "telephone=no",
+    "skype_toolbar": "skype_toolbar_parser_compatible"
+  },
+  "lang": "en",
+  "pageHeight": 6337,
+  "nav": [
+    {
+      "text": "",
+      "href": "https://www.integpro.com.au/"
+    },
+    {
+      "text": "Home",
+      "href": "https://www.integpro.com.au/"
+    },
+    {
+      "text": "Services",
+      "href": "https://www.integpro.com.au/iso-disp-services"
+    },
+    {
+      "text": "ISO",
+      "href": "https://www.integpro.com.au/iso-service-australia"
+    },
+    {
+      "text": "DISP",
+      "href": "https://www.integpro.com.au/disp"
+    },
+    {
+      "text": "Medical Device iso",
+      "href": "https://www.integpro.com.au/medical-iso"
+    },
+    {
+      "text": "Industries",
+      "href": "https://www.integpro.com.au/industries"
+    },
+    {
+      "text": "About Us",
+      "href": "https://www.integpro.com.au/about-us-iso-team"
+    },
+    {
+      "text": "Blog",
+      "href": "https://www.integpro.com.au/blog"
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "https://www.integpro.com.au/privacy-policy"
+    },
+    {
+      "text": "Free Meeting",
+      "href": "https://www.integpro.com.au/free-consultation"
+    }
+  ],
+  "footer": "Since 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+  "sections": [
+    {
+      "id": "SITE_HEADER",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 94
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [],
+      "text": "Home\nServices\nIndustries\nAbout Us\nBlog\nPrivacy Policy\nFree Meeting",
+      "links": [
+        {
+          "text": "",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 230,
+            "y": 28,
+            "w": 135,
+            "h": 34
+          }
+        },
+        {
+          "text": "Home",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 414,
+            "y": 22,
+            "w": 77,
+            "h": 41
+          }
+        },
+        {
+          "text": "Services",
+          "href": "https://www.integpro.com.au/iso-disp-services",
+          "box": {
+            "x": 499,
+            "y": 22,
+            "w": 93,
+            "h": 41
+          }
+        },
+        {
+          "text": "ISO",
+          "href": "https://www.integpro.com.au/iso-service-australia",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "Medical Device iso",
+          "href": "https://www.integpro.com.au/medical-iso",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "Industries",
+          "href": "https://www.integpro.com.au/industries",
+          "box": {
+            "x": 600,
+            "y": 22,
+            "w": 104,
+            "h": 41
+          }
+        },
+        {
+          "text": "About Us",
+          "href": "https://www.integpro.com.au/about-us-iso-team",
+          "box": {
+            "x": 712,
+            "y": 22,
+            "w": 100,
+            "h": 41
+          }
+        },
+        {
+          "text": "Blog",
+          "href": "https://www.integpro.com.au/blog",
+          "box": {
+            "x": 819,
+            "y": 22,
+            "w": 67,
+            "h": 41
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.integpro.com.au/privacy-policy",
+          "box": {
+            "x": 894,
+            "y": 22,
+            "w": 132,
+            "h": 41
+          }
+        },
+        {
+          "text": "Free Meeting",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 1063,
+            "y": 22,
+            "w": 142,
+            "h": 40
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135,h_34,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+          "alt": "integpro logo",
+          "box": {
+            "x": 230,
+            "y": 28,
+            "w": 135,
+            "h": 34
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-mc47b34h",
+      "box": {
+        "x": 0,
+        "y": 94,
+        "w": 1440,
+        "h": 368
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Discover ISO Tips & DISP Updates",
+          "box": {
+            "x": 235,
+            "y": 133,
+            "w": 803,
+            "h": 67
+          }
+        }
+      ],
+      "text": "Discover ISO Tips & DISP Updates\n\nAt integPRO, we’re not just about certification, we’re about clarity, confidence, and continuous learning. That’s why we’ve launched integPRO Insight, a dedicated space where we share academic insights, practical guidance, explainer videos, and real-world case examples on all things ISO, compliance, risk, and management systems.\n\n \n\nWhether you're a business leader, compliance officer, or simply curious about how international standards shape industries like construction, defence, or healthcare, this is for you.",
+      "links": [],
+      "images": []
+    },
+    {
+      "id": "comp-m96eic6d",
+      "box": {
+        "x": 0,
+        "y": 462,
+        "w": 1440,
+        "h": 3396
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "DISP Membership Levels Explained: Entry, Level 1, 2, and 3",
+          "box": {
+            "x": 276,
+            "y": 814,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Steps to Get DISP Certified in Australia - A Clear Guide to the DISP Certification Process",
+          "box": {
+            "x": 600,
+            "y": 814,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Understanding ISO Certification and DISP Compliance",
+          "box": {
+            "x": 924,
+            "y": 814,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Understanding IntegPro Compliance Support Services Sydney",
+          "box": {
+            "x": 276,
+            "y": 1360,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Understanding DISP Certification Process in Australia",
+          "box": {
+            "x": 600,
+            "y": 1360,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "The Complete ISO Certification Guide Australia: Your Path to Compliance and Excellence",
+          "box": {
+            "x": 924,
+            "y": 1360,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Achieving ISO Certification and DISP Compliance: A Comprehensive Guide",
+          "box": {
+            "x": 276,
+            "y": 1906,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Security is not a product — it's a process",
+          "box": {
+            "x": 600,
+            "y": 1906,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Secure Your Defence Future with Expert DISP Consultancy",
+          "box": {
+            "x": 924,
+            "y": 1906,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Essential Guide to DISP Certification Process Australia",
+          "box": {
+            "x": 276,
+            "y": 2453,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Achieving ISO Certification and DISP Compliance: A Comprehensive Guide",
+          "box": {
+            "x": 600,
+            "y": 2453,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Convenient Online ISO Certification Process for Australian Businesses",
+          "box": {
+            "x": 924,
+            "y": 2453,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Elevate Your Defence Readiness: DISP Certification Made Simple with IntegPro",
+          "box": {
+            "x": 276,
+            "y": 2999,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Navigating the Defence Industry Security Program (DISP)",
+          "box": {
+            "x": 600,
+            "y": 2999,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "How to Get DISP Certification in Australia: Your Guide to Defence Industry Security Program Accreditation",
+          "box": {
+            "x": 924,
+            "y": 2999,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "The Importance of DISP Accreditation for Australian Businesses",
+          "box": {
+            "x": 276,
+            "y": 3545,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Strengthening Australia’s Defence Sector or DISP with ISO Compliance",
+          "box": {
+            "x": 600,
+            "y": 3545,
+            "w": 242,
+            "h": 92
+          }
+        }
+      ],
+      "text": "All Posts\nISO Certification\nDISP Compliance\nISO & Construction industry\nISO & Medical Industry\nThe Standards\nDISP Membership Levels Explained: Entry, Level 1, 2, and 3\nMost businesses that come to us about DISP have already worked out they need to join. What trips people up is the levels — Entry, Level 1, Level 2, and Level 3 aren't a simple ladder you climb one rung at a time. Each level unlocks access to a different tier of defence work, and jumping straight to the level a tender actually requires can save months. Here's what each level covers in practice, and how to work out which one your business needs. DISP Entry: The Starting Point f\n3 min read\nSteps to Get DISP Certified in Australia - A Clear Guide to the DISP Certification Process\nAchieving Defence Industry Security Program (DISP) certification is a critical step for Australian businesses aiming to work with the defence sector. The DISP certification process ensures that companies meet stringent security requirements, safeguarding sensitive defence information and assets. As someone deeply involved in guiding businesses through this journey, I understand the complexities and challenges that can arise. This post will walk you through the essential steps\n5 min read\nUnderstanding ISO Certification and DISP Compliance\nWhat ISO Services Mean for Your Business ISO stands for the International Organization for Standardization. It develops global standards that help businesses ensure their products, services, and systems are safe, reliable, and of good quality. ISO certification is a formal recognition that a company meets these standards. Why ISO Certification Matters ISO certification is often a requirement for businesses wanting to compete in government tenders or supply chains, especially\n3 min read\nUnderstanding IntegPro Compliance Support Services Sydney\nNavigating the complex world of ISO certification and Defence Industry Security Program (DISP) compliance can be daunting for many businesses. As someone deeply involved in helping organisations achieve and maintain these standards, I understand the challenges faced by SMEs and mid-sized companies in sectors like construction, defence, manufacturing, government supply, and medical devices. IntegPro offers tailored compliance support services designed to simplify these complex\n4 min read\nUnderstanding DISP Certification Process in Australia\nIn today’s competitive business environment, especially within sectors like construction, defence, manufacturing, government supply, and medical devices, achieving compliance with the Defence Industry Security Program (DISP) is essential. DISP certification is not just a regulatory requirement but a strategic asset that can open doors to lucrative government contracts and enhance your organisation’s security posture. At IntegPRO, we understand the complexities of DISP and ISO\n5 min read\nThe Complete ISO Certification Guide Australia: Your Path to Compliance and Excellence\nAchieving ISO certification is a significant milestone for any business aiming to enhance its operational standards, meet regulatory requirements, and gain a competitive edge in the market. For Australian SMEs and mid-sized businesses in sectors like construction, defence, manufacturing, government supply, and medical devices, understanding the certification process is crucial. This guide simplifies the complexities of ISO certification, providing you with clear, actionable i\n4 min read\nAchieving ISO Certification and DISP Compliance: A Comprehensive Guide\nUnderstanding ISO and Quality Services in Different Industries ISO standards provide a framework for managing quality, safety, and efficiency. They apply to many industries, including Defence, Construction, and Medical Devices. Each sector has unique challenges and regulations, so quality services must be tailored accordingly. In Defence, strict compliance with standards like ISO 9001 and DISP (Defence Industry Security Program) is critical. These standards ensure that suppli\n4 min read\nSecurity is not a product — it's a process\nSecurity is often misunderstood as a one-time purchase or a checklist to complete. The truth is, security is an ongoing journey. It requires constant attention, adaptation, and commitment. This philosophy guides everything we do at IntegPro for our Defence Industry Security Program (DISP) clients. Achieving DISP membership is not about ticking boxes on an application form. It is about creating a genuine security culture within your organisation. This culture protects classifi\n4 min read\nSecure Your Defence Future with Expert DISP Consultancy\nSecuring your place in the defence industry requires more than just quality products or services. It demands strict compliance with government standards and regulations. One of the key requirements for businesses aiming to work with the Australian Defence Force is DISP compliance. Navigating these standards can be complex, but expert consultancy can make the process clear and manageable. Understanding DISP and Its Importance for Defence Suppliers The Defence Industry Securi\n4 min read\nEssential Guide to DISP Certification Process Australia\nAchieving DISP certification is a critical step for many Australian businesses, especially those operating in sectors like defence, construction, manufacturing, government supply, and medical devices. This certification not only helps companies meet stringent regulatory requirements but also strengthens their operational performance and enhances their ability to win competitive tenders. At IntegPRO, we understand the complexities involved in navigating the DISP certification\n4 min read\nAchieving ISO Certification and DISP Compliance: A Comprehensive Guide\nTailored Compliance Solutions for Diverse Industries Each industry has its own set of compliance requirements, timelines, and deliverables. Understanding these nuances is critical to building effective management systems that not only meet standards but also improve business processes. Defence and DISP Compliance For defence contractors, DISP (Defence Industry Security Program) compliance is non-negotiable. It ensures that sensitive information and assets are protected accord\n3 min read\nConvenient Online ISO Certification Process for Australian Businesses\nIn today’s fast-paced business environment, Australian companies are increasingly seeking efficient ways to enhance their credibility and operational standards. One of the most effective methods to achieve this is through ISO certification. Traditionally, obtaining ISO certification involved lengthy paperwork, multiple in-person audits, and complex procedures. However, the online ISO certification process has revolutionised how businesses approach this essential accreditatio\n3 min read\nElevate Your Defence Readiness: DISP Certification Made Simple with IntegPro\nIn Australia’s defence sector, security isn’t optional—it’s foundational. If your business wants to work with the Department of Defence or handle sensitive information, DISP certification is your gateway. At IntegPro, we specialise in guiding organisations through the DISP membership process. We help them meet stringent security standards and unlock new opportunities across Sydney and Australia. What Is DISP? The Defence Industry Security Program (DISP) is a framework establi\n3 min read\nNavigating the Defence Industry Security Program (DISP)\nThe Defence Industry Security Program (DISP) is an accreditation framework managed by the Australian Government’s Defence Industry Security Office (DISO).\n3 min read\nHow to Get DISP Certification in Australia: Your Guide to Defence Industry Security Program Accreditation\nLearn what DISP means, how DISP membership works, and how to apply for the right DISP level to meet defence industry compliance. What Is...\n3 min read\nThe Importance of DISP Accreditation for Australian Businesses\nWhat Is DISP? Before you can pursue DISP accreditation, it's important to understand what the program involves and who it applies to. The...\n2 min read\nStrengthening Australia’s Defence Sector or DISP with ISO Compliance\nEmpowering Defence Organisations with Quality, Security & Resilience Through ISO Certification. In the highly sensitive and high-stakes world of defence, compliance, security, and operational excellence are non-negotiable. Defence organisations in Australia—whether public sector entities, prime contractors, or SMEs in the defence supply chain—face increasing pressure to demonstrate quality, protect information, and operate sustainably. That’s where ISO compliance becomes a po\n2 min read",
+      "links": [
+        {
+          "text": "All Posts",
+          "href": "https://www.integpro.com.au/blog",
+          "box": {
+            "x": 251,
+            "y": 504,
+            "w": 62,
+            "h": 22
+          }
+        },
+        {
+          "text": "ISO Certification",
+          "href": "https://www.integpro.com.au/blog/categories/iso-certification",
+          "box": {
+            "x": 353,
+            "y": 504,
+            "w": 117,
+            "h": 22
+          }
+        },
+        {
+          "text": "DISP Compliance",
+          "href": "https://www.integpro.com.au/blog/categories/disp-compliance",
+          "box": {
+            "x": 510,
+            "y": 504,
+            "w": 128,
+            "h": 22
+          }
+        },
+        {
+          "text": "ISO & Construction industry",
+          "href": "https://www.integpro.com.au/blog/categories/iso-construction-industry",
+          "box": {
+            "x": 678,
+            "y": 504,
+            "w": 196,
+            "h": 22
+          }
+        },
+        {
+          "text": "ISO & Medical Industry",
+          "href": "https://www.integpro.com.au/blog/categories/iso-medical-industry",
+          "box": {
+            "x": 914,
+            "y": 504,
+            "w": 162,
+            "h": 22
+          }
+        },
+        {
+          "text": "The Standards",
+          "href": "https://www.integpro.com.au/blog/categories/the-standards",
+          "box": {
+            "x": 291,
+            "y": 584,
+            "w": 105,
+            "h": 22
+          }
+        },
+        {
+          "text": "DISP Membership Levels Explained: Entry, Level 1, 2, and 3",
+          "href": "https://www.integpro.com.au/post/disp-membership-levels-explained-entry-level-1-2-and-3",
+          "box": {
+            "x": 276,
+            "y": 814,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Steps to Get DISP Certified in Australia - A Clear Guide to the DISP Certification Process",
+          "href": "https://www.integpro.com.au/post/steps-to-get-disp-certified-in-australia-a-clear-guide-to-the-disp-certification-process",
+          "box": {
+            "x": 600,
+            "y": 814,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Understanding ISO Certification and DISP Compliance",
+          "href": "https://www.integpro.com.au/post/understanding-iso-and-disp-services-for-australian-businesses",
+          "box": {
+            "x": 924,
+            "y": 814,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Understanding IntegPro Compliance Support Services Sydney",
+          "href": "https://www.integpro.com.au/post/understanding-integpro-compliance-support-services-sydney",
+          "box": {
+            "x": 276,
+            "y": 1360,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Understanding DISP Certification Process in Australia",
+          "href": "https://www.integpro.com.au/post/understanding-disp-certification-process-in-australia",
+          "box": {
+            "x": 600,
+            "y": 1360,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "The Complete ISO Certification Guide Australia: Your Path to Compliance and Excellence",
+          "href": "https://www.integpro.com.au/post/the-complete-iso-certification-guide-australia-your-path-to-compliance-and-excellence",
+          "box": {
+            "x": 924,
+            "y": 1360,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Achieving ISO Certification and DISP Compliance: A Comprehensive Guide",
+          "href": "https://www.integpro.com.au/post/iso-and-quality-services-from-assessment-to-finalisation-in-all-industries-across-australia",
+          "box": {
+            "x": 276,
+            "y": 1906,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Security is not a product — it's a process",
+          "href": "https://www.integpro.com.au/post/security-is-not-a-product-it-s-a-process",
+          "box": {
+            "x": 600,
+            "y": 1906,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Secure Your Defence Future with Expert DISP Consultancy",
+          "href": "https://www.integpro.com.au/post/secure-your-defence-future-with-expert-disp-consultancy-1",
+          "box": {
+            "x": 924,
+            "y": 1906,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Essential Guide to DISP Certification Process Australia",
+          "href": "https://www.integpro.com.au/post/essential-guide-to-disp-certification-process-australia",
+          "box": {
+            "x": 276,
+            "y": 2453,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Achieving ISO Certification and DISP Compliance: A Comprehensive Guide",
+          "href": "https://www.integpro.com.au/post/specialised-industry-solutions-for-iso-and-disp-compliance",
+          "box": {
+            "x": 600,
+            "y": 2453,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Convenient Online ISO Certification Process for Australian Businesses",
+          "href": "https://www.integpro.com.au/post/convenient-online-iso-certification-process-for-australian-businesses",
+          "box": {
+            "x": 924,
+            "y": 2453,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Elevate Your Defence Readiness: DISP Certification Made Simple with IntegPro",
+          "href": "https://www.integpro.com.au/post/elevate-your-defence-readiness-disp-certification-made-simple-with-integpro",
+          "box": {
+            "x": 276,
+            "y": 2999,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Navigating the Defence Industry Security Program (DISP)",
+          "href": "https://www.integpro.com.au/post/secure-your-defence-future-with-expert-disp-consultancy",
+          "box": {
+            "x": 600,
+            "y": 2999,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "How to Get DISP Certification in Australia: Your Guide to Defence Industry Security Program Accreditation",
+          "href": "https://www.integpro.com.au/post/how-to-get-disp-certification-in-australia-your-guide-to-defence-industry-security-program-accredit",
+          "box": {
+            "x": 924,
+            "y": 2999,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "The Importance of DISP Accreditation for Australian Businesses",
+          "href": "https://www.integpro.com.au/post/get-disp-accreditation-win-defence-contracts-a-guide-for-australian-businesses",
+          "box": {
+            "x": 276,
+            "y": 3545,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Strengthening Australia’s Defence Sector or DISP with ISO Compliance",
+          "href": "https://www.integpro.com.au/post/strengthening-australia-s-defence-sector-with-iso-compliance-disp",
+          "box": {
+            "x": 600,
+            "y": 3545,
+            "w": 242,
+            "h": 92
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_adb3776a87c64ba9ba94b60c008d3c4b~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_adb3776a87c64ba9ba94b60c008d3c4b~mv2.png",
+          "alt": "DISP Membership Levels Explained: Entry, Level 1, 2, and 3",
+          "box": {
+            "x": 251,
+            "y": 576,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_adb3776a87c64ba9ba94b60c008d3c4b~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_adb3776a87c64ba9ba94b60c008d3c4b~mv2.png",
+          "alt": "DISP Membership Levels Explained: Entry, Level 1, 2, and 3",
+          "box": {
+            "x": 251,
+            "y": 576,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_bd866d701575459ead6d02f9bc60dfd2~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_bd866d701575459ead6d02f9bc60dfd2~mv2.png",
+          "alt": "Steps to Get DISP Certified in Australia - A Clear Guide to the DISP Certification Process",
+          "box": {
+            "x": 575,
+            "y": 576,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_bd866d701575459ead6d02f9bc60dfd2~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_bd866d701575459ead6d02f9bc60dfd2~mv2.png",
+          "alt": "Steps to Get DISP Certified in Australia - A Clear Guide to the DISP Certification Process",
+          "box": {
+            "x": 575,
+            "y": 576,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png",
+          "alt": "Understanding ISO and DISP Services for Australian Businesses",
+          "box": {
+            "x": 899,
+            "y": 576,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png",
+          "alt": "Understanding ISO and DISP Services for Australian Businesses",
+          "box": {
+            "x": 899,
+            "y": 576,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png",
+          "alt": "Understanding IntegPro Compliance Support Services in Saint Peters",
+          "box": {
+            "x": 251,
+            "y": 1122,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png",
+          "alt": "Understanding IntegPro Compliance Support Services in Saint Peters",
+          "box": {
+            "x": 251,
+            "y": 1122,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_2865fef3d65f4e7b9a9d4624b9194ac3~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_2865fef3d65f4e7b9a9d4624b9194ac3~mv2.png",
+          "alt": "Understanding DISP Certification Process in Australia",
+          "box": {
+            "x": 575,
+            "y": 1122,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_2865fef3d65f4e7b9a9d4624b9194ac3~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_2865fef3d65f4e7b9a9d4624b9194ac3~mv2.png",
+          "alt": "Understanding DISP Certification Process in Australia",
+          "box": {
+            "x": 575,
+            "y": 1122,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png",
+          "alt": "The Complete ISO Certification Guide Australia: Your Path to Compliance and Excellence",
+          "box": {
+            "x": 899,
+            "y": 1122,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png",
+          "alt": "The Complete ISO Certification Guide Australia: Your Path to Compliance and Excellence",
+          "box": {
+            "x": 899,
+            "y": 1122,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png",
+          "alt": "ISO and Quality Services from Assessment to Finalisation in All Industries Across Australia",
+          "box": {
+            "x": 251,
+            "y": 1668,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png",
+          "alt": "ISO and Quality Services from Assessment to Finalisation in All Industries Across Australia",
+          "box": {
+            "x": 251,
+            "y": 1668,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_c30ab8f209d14fd7bf22a56081bf074d~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_c30ab8f209d14fd7bf22a56081bf074d~mv2.png",
+          "alt": "Security is not a product — it's a process",
+          "box": {
+            "x": 575,
+            "y": 1668,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_c30ab8f209d14fd7bf22a56081bf074d~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_c30ab8f209d14fd7bf22a56081bf074d~mv2.png",
+          "alt": "Security is not a product — it's a process",
+          "box": {
+            "x": 575,
+            "y": 1668,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_b6cc8fa6c9ed498c880222eca57b11aa~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_b6cc8fa6c9ed498c880222eca57b11aa~mv2.png",
+          "alt": "Secure Your Defence Future with Expert DISP Consultancy",
+          "box": {
+            "x": 899,
+            "y": 1668,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_b6cc8fa6c9ed498c880222eca57b11aa~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_b6cc8fa6c9ed498c880222eca57b11aa~mv2.png",
+          "alt": "Secure Your Defence Future with Expert DISP Consultancy",
+          "box": {
+            "x": 899,
+            "y": 1668,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_5205b0fa3e6a4291b22576c231c225c4~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_5205b0fa3e6a4291b22576c231c225c4~mv2.png",
+          "alt": "Essential Guide to DISP Certification Process Australia",
+          "box": {
+            "x": 251,
+            "y": 2214,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_5205b0fa3e6a4291b22576c231c225c4~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_5205b0fa3e6a4291b22576c231c225c4~mv2.png",
+          "alt": "Essential Guide to DISP Certification Process Australia",
+          "box": {
+            "x": 251,
+            "y": 2214,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_ce3b8942aec945aabe408dd593f9e330~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_ce3b8942aec945aabe408dd593f9e330~mv2.png",
+          "alt": "Specialised Industry Solutions for ISO and DISP Compliance",
+          "box": {
+            "x": 575,
+            "y": 2214,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_ce3b8942aec945aabe408dd593f9e330~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_ce3b8942aec945aabe408dd593f9e330~mv2.png",
+          "alt": "Specialised Industry Solutions for ISO and DISP Compliance",
+          "box": {
+            "x": 575,
+            "y": 2214,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_f40f7157e7fb459db21cfcab12fb2447~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_f40f7157e7fb459db21cfcab12fb2447~mv2.png",
+          "alt": "Convenient Online ISO Certification Process for Australian Businesses",
+          "box": {
+            "x": 899,
+            "y": 2214,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_f40f7157e7fb459db21cfcab12fb2447~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_f40f7157e7fb459db21cfcab12fb2447~mv2.png",
+          "alt": "Convenient Online ISO Certification Process for Australian Businesses",
+          "box": {
+            "x": 899,
+            "y": 2214,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_e8a8fb1c39534e8687c069f7d72a5d5c~mv2.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/6d9105_e8a8fb1c39534e8687c069f7d72a5d5c~mv2.jpg",
+          "alt": "Elevate Your Defence Readiness: DISP Certification Made Simple with IntegPro",
+          "box": {
+            "x": 251,
+            "y": 2761,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_e8a8fb1c39534e8687c069f7d72a5d5c~mv2.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/6d9105_e8a8fb1c39534e8687c069f7d72a5d5c~mv2.jpg",
+          "alt": "Elevate Your Defence Readiness: DISP Certification Made Simple with IntegPro",
+          "box": {
+            "x": 251,
+            "y": 2761,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/26bf6db7ffc24384a4920ef224ca1c9d.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/26bf6db7ffc24384a4920ef224ca1c9d.jpg",
+          "alt": "Navigating the Defence Industry Security Program (DISP)",
+          "box": {
+            "x": 575,
+            "y": 2761,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/26bf6db7ffc24384a4920ef224ca1c9d.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/26bf6db7ffc24384a4920ef224ca1c9d.jpg",
+          "alt": "Navigating the Defence Industry Security Program (DISP)",
+          "box": {
+            "x": 575,
+            "y": 2761,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_80a3a72c37d64bb0a7909a986bf65cd7~mv2.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/6d9105_80a3a72c37d64bb0a7909a986bf65cd7~mv2.jpg",
+          "alt": "How to Get DISP Certification in Australia: Your Guide to Defence Industry Security Program Accreditation",
+          "box": {
+            "x": 899,
+            "y": 2761,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_80a3a72c37d64bb0a7909a986bf65cd7~mv2.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/6d9105_80a3a72c37d64bb0a7909a986bf65cd7~mv2.jpg",
+          "alt": "How to Get DISP Certification in Australia: Your Guide to Defence Industry Security Program Accreditation",
+          "box": {
+            "x": 899,
+            "y": 2761,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_e3e97fb7258a4bec92b34690085b17b7~mv2.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/6d9105_e3e97fb7258a4bec92b34690085b17b7~mv2.jpg",
+          "alt": "The Importance of DISP Accreditation for Australian Businesses",
+          "box": {
+            "x": 251,
+            "y": 3307,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_e3e97fb7258a4bec92b34690085b17b7~mv2.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/6d9105_e3e97fb7258a4bec92b34690085b17b7~mv2.jpg",
+          "alt": "The Importance of DISP Accreditation for Australian Businesses",
+          "box": {
+            "x": 251,
+            "y": 3307,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_9c47f2c7b25748ba9488091cfe0eb44f~mv2.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/6d9105_9c47f2c7b25748ba9488091cfe0eb44f~mv2.jpg",
+          "alt": "Strengthening Australia’s Defence Sector or DISP with ISO Compliance",
+          "box": {
+            "x": 575,
+            "y": 3307,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_9c47f2c7b25748ba9488091cfe0eb44f~mv2.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/6d9105_9c47f2c7b25748ba9488091cfe0eb44f~mv2.jpg",
+          "alt": "Strengthening Australia’s Defence Sector or DISP with ISO Compliance",
+          "box": {
+            "x": 575,
+            "y": 3307,
+            "w": 292,
+            "h": 164
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-mc473aea",
+      "box": {
+        "x": 0,
+        "y": 3857,
+        "w": 1440,
+        "h": 947
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H4",
+          "text": "From Our YouTube & Instagram",
+          "box": {
+            "x": 389,
+            "y": 3868,
+            "w": 661,
+            "h": 45
+          }
+        }
+      ],
+      "text": "From Our YouTube & Instagram\nMore Video",
+      "links": [
+        {
+          "text": "More Video",
+          "href": "https://www.youtube.com/@integPRO-ISO",
+          "box": {
+            "x": 641,
+            "y": 4689,
+            "w": 158,
+            "h": 34
+          }
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "comp-mc47pv06",
+      "box": {
+        "x": 0,
+        "y": 4804,
+        "w": 1440,
+        "h": 1124
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [],
+      "text": "",
+      "links": [],
+      "images": []
+    },
+    {
+      "id": "SITE_FOOTER",
+      "box": {
+        "x": 0,
+        "y": 5928,
+        "w": 1440,
+        "h": 409
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(25, 35, 51)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H6",
+          "text": "Services",
+          "box": {
+            "x": 663,
+            "y": 5958,
+            "w": 113,
+            "h": 25
+          }
+        },
+        {
+          "tag": "H6",
+          "text": "Resources",
+          "box": {
+            "x": 839,
+            "y": 5960,
+            "w": 113,
+            "h": 25
+          }
+        },
+        {
+          "tag": "H6",
+          "text": "Company",
+          "box": {
+            "x": 1041,
+            "y": 5959,
+            "w": 113,
+            "h": 25
+          }
+        }
+      ],
+      "text": "Since 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+      "links": [
+        {
+          "text": "",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 263,
+            "y": 5973,
+            "w": 123,
+            "h": 31
+          }
+        },
+        {
+          "text": "ISO",
+          "href": "https://www.integpro.com.au/iso-service-australia",
+          "box": {
+            "x": 663,
+            "y": 6024,
+            "w": 24,
+            "h": 16
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 663,
+            "y": 6053,
+            "w": 32,
+            "h": 16
+          }
+        },
+        {
+          "text": "Medical",
+          "href": "https://www.integpro.com.au/medical-iso",
+          "box": {
+            "x": 664,
+            "y": 6082,
+            "w": 49,
+            "h": 16
+          }
+        },
+        {
+          "text": "Academy",
+          "href": "https://www.integpro.com.au/blog/categories/iso-certification",
+          "box": {
+            "x": 839,
+            "y": 5997,
+            "w": 59,
+            "h": 16
+          }
+        },
+        {
+          "text": "Blog",
+          "href": "https://www.integpro.com.au/blog/categories/iso-certification",
+          "box": {
+            "x": 839,
+            "y": 6025,
+            "w": 28,
+            "h": 16
+          }
+        },
+        {
+          "text": "Industries",
+          "href": "https://www.integpro.com.au/industries",
+          "box": {
+            "x": 839,
+            "y": 6085,
+            "w": 62,
+            "h": 16
+          }
+        },
+        {
+          "text": "Services",
+          "href": "https://www.integpro.com.au/iso-disp-services",
+          "box": {
+            "x": 1041,
+            "y": 5996,
+            "w": 54,
+            "h": 16
+          }
+        },
+        {
+          "text": "About",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 1041,
+            "y": 6024,
+            "w": 37,
+            "h": 16
+          }
+        },
+        {
+          "text": "Contact",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 1041,
+            "y": 6053,
+            "w": 49,
+            "h": 16
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 1041,
+            "y": 6084,
+            "w": 32,
+            "h": 16
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.linkedin.com/company/integ-pro/posts/?feedView=all",
+          "box": {
+            "x": 253,
+            "y": 6188,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.instagram.com/integpro.iso/",
+          "box": {
+            "x": 296,
+            "y": 6188,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.facebook.com/profile.php?id=61574845131374",
+          "box": {
+            "x": 339,
+            "y": 6188,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.youtube.com/@integPRO-ISO/",
+          "box": {
+            "x": 382,
+            "y": 6188,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 1041,
+            "y": 6284,
+            "w": 86,
+            "h": 16
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/iso%20sign%20(1).png",
+          "alt": "integpro branding sign",
+          "box": {
+            "x": -140,
+            "y": 5950,
+            "w": 362,
+            "h": 364
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+          "alt": "integpro logo",
+          "box": {
+            "x": 263,
+            "y": 5973,
+            "w": 123,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+          "alt": "LinkedIn",
+          "box": {
+            "x": 253,
+            "y": 6188,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+          "alt": "Instagram",
+          "box": {
+            "x": 296,
+            "y": 6188,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+          "alt": "Facebook",
+          "box": {
+            "x": 339,
+            "y": 6188,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+          "alt": "Youtube",
+          "box": {
+            "x": 382,
+            "y": 6188,
+            "w": 31,
+            "h": 31
+          }
+        }
+      ]
+    }
+  ],
+  "text": "Home\nServices\nIndustries\nAbout Us\nBlog\nPrivacy Policy\nFree Meeting\nDiscover ISO Tips & DISP Updates\n\nAt integPRO, we’re not just about certification, we’re about clarity, confidence, and continuous learning. That’s why we’ve launched integPRO Insight, a dedicated space where we share academic insights, practical guidance, explainer videos, and real-world case examples on all things ISO, compliance, risk, and management systems.\n\n \n\nWhether you're a business leader, compliance officer, or simply curious about how international standards shape industries like construction, defence, or healthcare, this is for you.\n\nAll Posts\nISO Certification\nDISP Compliance\nISO & Construction industry\nISO & Medical Industry\nThe Standards\nDISP Membership Levels Explained: Entry, Level 1, 2, and 3\nMost businesses that come to us about DISP have already worked out they need to join. What trips people up is the levels — Entry, Level 1, Level 2, and Level 3 aren't a simple ladder you climb one rung at a time. Each level unlocks access to a different tier of defence work, and jumping straight to the level a tender actually requires can save months. Here's what each level covers in practice, and how to work out which one your business needs. DISP Entry: The Starting Point f\n3 min read\nSteps to Get DISP Certified in Australia - A Clear Guide to the DISP Certification Process\nAchieving Defence Industry Security Program (DISP) certification is a critical step for Australian businesses aiming to work with the defence sector. The DISP certification process ensures that companies meet stringent security requirements, safeguarding sensitive defence information and assets. As someone deeply involved in guiding businesses through this journey, I understand the complexities and challenges that can arise. This post will walk you through the essential steps\n5 min read\nUnderstanding ISO Certification and DISP Compliance\nWhat ISO Services Mean for Your Business ISO stands for the International Organization for Standardization. It develops global standards that help businesses ensure their products, services, and systems are safe, reliable, and of good quality. ISO certification is a formal recognition that a company meets these standards. Why ISO Certification Matters ISO certification is often a requirement for businesses wanting to compete in government tenders or supply chains, especially\n3 min read\nUnderstanding IntegPro Compliance Support Services Sydney\nNavigating the complex world of ISO certification and Defence Industry Security Program (DISP) compliance can be daunting for many businesses. As someone deeply involved in helping organisations achieve and maintain these standards, I understand the challenges faced by SMEs and mid-sized companies in sectors like construction, defence, manufacturing, government supply, and medical devices. IntegPro offers tailored compliance support services designed to simplify these complex\n4 min read\nUnderstanding DISP Certification Process in Australia\nIn today’s competitive business environment, especially within sectors like construction, defence, manufacturing, government supply, and medical devices, achieving compliance with the Defence Industry Security Program (DISP) is essential. DISP certification is not just a regulatory requirement but a strategic asset that can open doors to lucrative government contracts and enhance your organisation’s security posture. At IntegPRO, we understand the complexities of DISP and ISO\n5 min read\nThe Complete ISO Certification Guide Australia: Your Path to Compliance and Excellence\nAchieving ISO certification is a significant milestone for any business aiming to enhance its operational standards, meet regulatory requirements, and gain a competitive edge in the market. For Australian SMEs and mid-sized businesses in sectors like construction, defence, manufacturing, government supply, and medical devices, understanding the certification process is crucial. This guide simplifies the complexities of ISO certification, providing you with clear, actionable i\n4 min read\nAchieving ISO Certification and DISP Compliance: A Comprehensive Guide\nUnderstanding ISO and Quality Services in Different Industries ISO standards provide a framework for managing quality, safety, and efficiency. They apply to many industries, including Defence, Construction, and Medical Devices. Each sector has unique challenges and regulations, so quality services must be tailored accordingly. In Defence, strict compliance with standards like ISO 9001 and DISP (Defence Industry Security Program) is critical. These standards ensure that suppli\n4 min read\nSecurity is not a product — it's a process\nSecurity is often misunderstood as a one-time purchase or a checklist to complete. The truth is, security is an ongoing journey. It requires constant attention, adaptation, and commitment. This philosophy guides everything we do at IntegPro for our Defence Industry Security Program (DISP) clients. Achieving DISP membership is not about ticking boxes on an application form. It is about creating a genuine security culture within your organisation. This culture protects classifi\n4 min read\nSecure Your Defence Future with Expert DISP Consultancy\nSecuring your place in the defence industry requires more than just quality products or services. It demands strict compliance with government standards and regulations. One of the key requirements for businesses aiming to work with the Australian Defence Force is DISP compliance. Navigating these standards can be complex, but expert consultancy can make the process clear and manageable. Understanding DISP and Its Importance for Defence Suppliers The Defence Industry Securi\n4 min read\nEssential Guide to DISP Certification Process Australia\nAchieving DISP certification is a critical step for many Australian businesses, especially those operating in sectors like defence, construction, manufacturing, government supply, and medical devices. This certification not only helps companies meet stringent regulatory requirements but also strengthens their operational performance and enhances their ability to win competitive tenders. At IntegPRO, we understand the complexities involved in navigating the DISP certification\n4 min read\nAchieving ISO Certification and DISP Compliance: A Comprehensive Guide\nTailored Compliance Solutions for Diverse Industries Each industry has its own set of compliance requirements, timelines, and deliverables. Understanding these nuances is critical to building effective management systems that not only meet standards but also improve business processes. Defence and DISP Compliance For defence contractors, DISP (Defence Industry Security Program) compliance is non-negotiable. It ensures that sensitive information and assets are protected accord\n3 min read\nConvenient Online ISO Certification Process for Australian Businesses\nIn today’s fast-paced business environment, Australian companies are increasingly seeking efficient ways to enhance their credibility and operational standards. One of the most effective methods to achieve this is through ISO certification. Traditionally, obtaining ISO certification involved lengthy paperwork, multiple in-person audits, and complex procedures. However, the online ISO certification process has revolutionised how businesses approach this essential accreditatio\n3 min read\nElevate Your Defence Readiness: DISP Certification Made Simple with IntegPro\nIn Australia’s defence sector, security isn’t optional—it’s foundational. If your business wants to work with the Department of Defence or handle sensitive information, DISP certification is your gateway. At IntegPro, we specialise in guiding organisations through the DISP membership process. We help them meet stringent security standards and unlock new opportunities across Sydney and Australia. What Is DISP? The Defence Industry Security Program (DISP) is a framework establi\n3 min read\nNavigating the Defence Industry Security Program (DISP)\nThe Defence Industry Security Program (DISP) is an accreditation framework managed by the Australian Government’s Defence Industry Security Office (DISO).\n3 min read\nHow to Get DISP Certification in Australia: Your Guide to Defence Industry Security Program Accreditation\nLearn what DISP means, how DISP membership works, and how to apply for the right DISP level to meet defence industry compliance. What Is...\n3 min read\nThe Importance of DISP Accreditation for Australian Businesses\nWhat Is DISP? Before you can pursue DISP accreditation, it's important to understand what the program involves and who it applies to. The...\n2 min read\nStrengthening Australia’s Defence Sector or DISP with ISO Compliance\nEmpowering Defence Organisations with Quality, Security & Resilience Through ISO Certification. In the highly sensitive and high-stakes world of defence, compliance, security, and operational excellence are non-negotiable. Defence organisations in Australia—whether public sector entities, prime contractors, or SMEs in the defence supply chain—face increasing pressure to demonstrate quality, protect information, and operate sustainably. That’s where ISO compliance becomes a po\n2 min read\nFrom Our YouTube & Instagram\nMore Video\n\nSince 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+  "media": [
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135,h_34,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135",
+    "https://www.integpro.com.au/blog/categories/h_34",
+    "https://www.integpro.com.au/blog/categories/al_c",
+    "https://www.integpro.com.au/blog/categories/q_85",
+    "https://www.integpro.com.au/blog/categories/usm_0.66_1.00_0.01",
+    "https://www.integpro.com.au/blog/categories/enc_avif",
+    "https://www.integpro.com.au/blog/categories/quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_270",
+    "https://www.integpro.com.au/blog/categories/h_68",
+    "https://static.wixstatic.com/media/6d9105_adb3776a87c64ba9ba94b60c008d3c4b~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_adb3776a87c64ba9ba94b60c008d3c4b~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_adb3776a87c64ba9ba94b60c008d3c4b~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_adb3776a87c64ba9ba94b60c008d3c4b~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_adb3776a87c64ba9ba94b60c008d3c4b~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_adb3776a87c64ba9ba94b60c008d3c4b~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_adb3776a87c64ba9ba94b60c008d3c4b~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_adb3776a87c64ba9ba94b60c008d3c4b~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_bd866d701575459ead6d02f9bc60dfd2~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_bd866d701575459ead6d02f9bc60dfd2~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_bd866d701575459ead6d02f9bc60dfd2~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_bd866d701575459ead6d02f9bc60dfd2~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_bd866d701575459ead6d02f9bc60dfd2~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_bd866d701575459ead6d02f9bc60dfd2~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_bd866d701575459ead6d02f9bc60dfd2~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_bd866d701575459ead6d02f9bc60dfd2~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_2865fef3d65f4e7b9a9d4624b9194ac3~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_2865fef3d65f4e7b9a9d4624b9194ac3~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_2865fef3d65f4e7b9a9d4624b9194ac3~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_2865fef3d65f4e7b9a9d4624b9194ac3~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_2865fef3d65f4e7b9a9d4624b9194ac3~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_2865fef3d65f4e7b9a9d4624b9194ac3~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_2865fef3d65f4e7b9a9d4624b9194ac3~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_2865fef3d65f4e7b9a9d4624b9194ac3~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_c30ab8f209d14fd7bf22a56081bf074d~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_c30ab8f209d14fd7bf22a56081bf074d~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_c30ab8f209d14fd7bf22a56081bf074d~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_c30ab8f209d14fd7bf22a56081bf074d~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_c30ab8f209d14fd7bf22a56081bf074d~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_c30ab8f209d14fd7bf22a56081bf074d~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_c30ab8f209d14fd7bf22a56081bf074d~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_c30ab8f209d14fd7bf22a56081bf074d~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_b6cc8fa6c9ed498c880222eca57b11aa~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_b6cc8fa6c9ed498c880222eca57b11aa~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_b6cc8fa6c9ed498c880222eca57b11aa~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_b6cc8fa6c9ed498c880222eca57b11aa~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_b6cc8fa6c9ed498c880222eca57b11aa~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_b6cc8fa6c9ed498c880222eca57b11aa~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_b6cc8fa6c9ed498c880222eca57b11aa~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_b6cc8fa6c9ed498c880222eca57b11aa~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_5205b0fa3e6a4291b22576c231c225c4~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_5205b0fa3e6a4291b22576c231c225c4~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_5205b0fa3e6a4291b22576c231c225c4~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_5205b0fa3e6a4291b22576c231c225c4~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_5205b0fa3e6a4291b22576c231c225c4~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_5205b0fa3e6a4291b22576c231c225c4~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_5205b0fa3e6a4291b22576c231c225c4~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_5205b0fa3e6a4291b22576c231c225c4~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_ce3b8942aec945aabe408dd593f9e330~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_ce3b8942aec945aabe408dd593f9e330~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_ce3b8942aec945aabe408dd593f9e330~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_ce3b8942aec945aabe408dd593f9e330~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_ce3b8942aec945aabe408dd593f9e330~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_ce3b8942aec945aabe408dd593f9e330~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_ce3b8942aec945aabe408dd593f9e330~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_ce3b8942aec945aabe408dd593f9e330~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_f40f7157e7fb459db21cfcab12fb2447~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_f40f7157e7fb459db21cfcab12fb2447~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_f40f7157e7fb459db21cfcab12fb2447~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_f40f7157e7fb459db21cfcab12fb2447~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_f40f7157e7fb459db21cfcab12fb2447~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_f40f7157e7fb459db21cfcab12fb2447~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_f40f7157e7fb459db21cfcab12fb2447~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_f40f7157e7fb459db21cfcab12fb2447~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_e8a8fb1c39534e8687c069f7d72a5d5c~mv2.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/6d9105_e8a8fb1c39534e8687c069f7d72a5d5c~mv2.jpg",
+    "https://static.wixstatic.com/media/6d9105_e8a8fb1c39534e8687c069f7d72a5d5c~mv2.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/6d9105_e8a8fb1c39534e8687c069f7d72a5d5c~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_e8a8fb1c39534e8687c069f7d72a5d5c~mv2.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/6d9105_e8a8fb1c39534e8687c069f7d72a5d5c~mv2.jpg",
+    "https://static.wixstatic.com/media/6d9105_e8a8fb1c39534e8687c069f7d72a5d5c~mv2.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/6d9105_e8a8fb1c39534e8687c069f7d72a5d5c~mv2.webp",
+    "https://static.wixstatic.com/media/26bf6db7ffc24384a4920ef224ca1c9d.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/26bf6db7ffc24384a4920ef224ca1c9d.jpg",
+    "https://static.wixstatic.com/media/26bf6db7ffc24384a4920ef224ca1c9d.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/26bf6db7ffc24384a4920ef224ca1c9d.webp",
+    "https://static.wixstatic.com/media/26bf6db7ffc24384a4920ef224ca1c9d.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/26bf6db7ffc24384a4920ef224ca1c9d.jpg",
+    "https://static.wixstatic.com/media/26bf6db7ffc24384a4920ef224ca1c9d.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/26bf6db7ffc24384a4920ef224ca1c9d.webp",
+    "https://static.wixstatic.com/media/6d9105_80a3a72c37d64bb0a7909a986bf65cd7~mv2.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/6d9105_80a3a72c37d64bb0a7909a986bf65cd7~mv2.jpg",
+    "https://static.wixstatic.com/media/6d9105_80a3a72c37d64bb0a7909a986bf65cd7~mv2.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/6d9105_80a3a72c37d64bb0a7909a986bf65cd7~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_80a3a72c37d64bb0a7909a986bf65cd7~mv2.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/6d9105_80a3a72c37d64bb0a7909a986bf65cd7~mv2.jpg",
+    "https://static.wixstatic.com/media/6d9105_80a3a72c37d64bb0a7909a986bf65cd7~mv2.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/6d9105_80a3a72c37d64bb0a7909a986bf65cd7~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_e3e97fb7258a4bec92b34690085b17b7~mv2.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/6d9105_e3e97fb7258a4bec92b34690085b17b7~mv2.jpg",
+    "https://static.wixstatic.com/media/6d9105_e3e97fb7258a4bec92b34690085b17b7~mv2.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/6d9105_e3e97fb7258a4bec92b34690085b17b7~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_e3e97fb7258a4bec92b34690085b17b7~mv2.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/6d9105_e3e97fb7258a4bec92b34690085b17b7~mv2.jpg",
+    "https://static.wixstatic.com/media/6d9105_e3e97fb7258a4bec92b34690085b17b7~mv2.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/6d9105_e3e97fb7258a4bec92b34690085b17b7~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_9c47f2c7b25748ba9488091cfe0eb44f~mv2.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/6d9105_9c47f2c7b25748ba9488091cfe0eb44f~mv2.jpg",
+    "https://static.wixstatic.com/media/6d9105_9c47f2c7b25748ba9488091cfe0eb44f~mv2.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/6d9105_9c47f2c7b25748ba9488091cfe0eb44f~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_9c47f2c7b25748ba9488091cfe0eb44f~mv2.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/6d9105_9c47f2c7b25748ba9488091cfe0eb44f~mv2.jpg",
+    "https://static.wixstatic.com/media/6d9105_9c47f2c7b25748ba9488091cfe0eb44f~mv2.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/6d9105_9c47f2c7b25748ba9488091cfe0eb44f~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/iso%20sign%20(1).png",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362",
+    "https://www.integpro.com.au/blog/categories/h_364",
+    "https://www.integpro.com.au/blog/categories/quality_auto/iso%20sign%20(1).png",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_724",
+    "https://www.integpro.com.au/blog/categories/h_728",
+    "https://www.integpro.com.au/blog/categories/q_90",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123",
+    "https://www.integpro.com.au/blog/categories/h_31",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_246",
+    "https://www.integpro.com.au/blog/categories/h_62",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31",
+    "https://www.integpro.com.au/blog/categories/quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31",
+    "https://www.integpro.com.au/blog/categories/quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31",
+    "https://www.integpro.com.au/blog/categories/quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31",
+    "https://www.integpro.com.au/blog/categories/quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_62"
+  ],
+  "videos": [],
+  "documents": [],
+  "styles": [
+    [
+      "h2 | open-sans-v2, sans-serif | 22px | 700 | 30.8px | normal | none | rgb(150, 130, 68)",
+      17
+    ],
+    [
+      "div | helvetica-w01-roman, sans-serif | 16px | 400 | 24px | normal | none | rgb(64, 64, 64)",
+      17
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 12px | 400 | normal | normal | none | rgb(64, 64, 64)",
+      17
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(255, 255, 255)",
+      12
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 14px | 400 | normal | 0.7px | none | rgb(64, 64, 64)",
+      6
+    ],
+    [
+      "a | helvetica-w01-roman, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(75, 83, 32)",
+      5
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(64, 64, 64)",
+      3
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 18px | 700 | 25.2px | normal | none | rgb(255, 255, 255)",
+      3
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | normal | 1.4px | none | rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 48px | 700 | 67.2px | normal | none | rgb(150, 130, 68)",
+      1
+    ],
+    [
+      "a | helvetica-w01-roman, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(150, 130, 68)",
+      1
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 32px | 700 | 44.8px | normal | none | rgb(150, 130, 68)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | normal | 1.4px | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 12px | 400 | 16.8px | normal | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 21px | normal | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "a | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(255, 255, 255)",
+      1
+    ]
+  ],
+  "colours": [
+    [
+      "text rgb(64, 64, 64)",
+      43
+    ],
+    [
+      "bg rgb(255, 255, 255)",
+      37
+    ],
+    [
+      "text rgb(150, 130, 68)",
+      20
+    ],
+    [
+      "text rgb(255, 255, 255)",
+      19
+    ],
+    [
+      "text rgb(75, 83, 32)",
+      5
+    ],
+    [
+      "bg rgba(255, 222, 95, 0)",
+      1
+    ],
+    [
+      "text rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "bg rgb(219, 206, 162)",
+      1
+    ],
+    [
+      "bg rgb(150, 130, 68)",
+      1
+    ],
+    [
+      "bg rgb(25, 35, 51)",
+      1
+    ]
+  ],
+  "cssVars": {},
+  "fontFaces": []
+}

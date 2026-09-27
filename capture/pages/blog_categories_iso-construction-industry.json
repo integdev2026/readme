@@ -1,0 +1,1696 @@
+{
+  "url": "https://www.integpro.com.au/blog/categories/iso-construction-industry",
+  "title": "ISO & Construction industry",
+  "canonical": "https://www.integpro.com.au/blog/categories/iso-construction-industry",
+  "meta": {
+    "description": "Explore how ISO standards strengthen compliance, safety, and quality in the construction industry. This category covers practical insights on implementing ISO 9001 (Quality), ISO 45001 (Work Health & Safety), and ISO 14001 (Environmental) within construction projects. Learn how certified systems can reduce site incidents, boost client trust, win more tenders, and streamline operations—helping construction businesses build stronger from the ground up.",
+    "robots": "index",
+    "og:title": "ISO & Construction industry",
+    "og:description": "Explore how ISO standards strengthen compliance, safety, and quality in the construction industry. This category covers practical insights on implementing ISO 9001 (Quality), ISO 45001 (Work Health & Safety), and ISO 14001 (Environmental) within construction projects. Learn how certified systems can reduce site incidents, boost client trust, win more tenders, and streamline operations—helping construction businesses build stronger from the ground up.",
+    "og:image": "https://static.wixstatic.com/media/6d9105_c91b39856b8c496fbd5f76a7a31ce970~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85/6d9105_c91b39856b8c496fbd5f76a7a31ce970~mv2.jpg",
+    "og:image:width": "1000",
+    "og:image:height": "667",
+    "og:url": "https://www.integpro.com.au/blog/categories/iso-construction-industry",
+    "og:site_name": "Integpro",
+    "og:type": "website",
+    "google-site-verification": "eoaN_za6CafCb65fEkFJEnHfpLGlKQSHJGThzZjyKYk",
+    "msvalidate.01": "D501A2F8421C443890A1B4745C901888",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "ISO & Construction industry",
+    "twitter:description": "Explore how ISO standards strengthen compliance, safety, and quality in the construction industry. This category covers practical insights on implementing ISO 9001 (Quality), ISO 45001 (Work Health & Safety), and ISO 14001 (Environmental) within construction projects. Learn how certified systems can reduce site incidents, boost client trust, win more tenders, and streamline operations—helping construction businesses build stronger from the ground up.",
+    "twitter:image": "https://static.wixstatic.com/media/6d9105_c91b39856b8c496fbd5f76a7a31ce970~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85/6d9105_c91b39856b8c496fbd5f76a7a31ce970~mv2.jpg",
+    "viewport": "width=device-width, initial-scale=1",
+    "generator": "Wix.com Website Builder",
+    "format-detection": "telephone=no",
+    "skype_toolbar": "skype_toolbar_parser_compatible"
+  },
+  "lang": "en",
+  "pageHeight": 6883,
+  "nav": [
+    {
+      "text": "",
+      "href": "https://www.integpro.com.au/"
+    },
+    {
+      "text": "Home",
+      "href": "https://www.integpro.com.au/"
+    },
+    {
+      "text": "Services",
+      "href": "https://www.integpro.com.au/iso-disp-services"
+    },
+    {
+      "text": "ISO",
+      "href": "https://www.integpro.com.au/iso-service-australia"
+    },
+    {
+      "text": "DISP",
+      "href": "https://www.integpro.com.au/disp"
+    },
+    {
+      "text": "Medical Device iso",
+      "href": "https://www.integpro.com.au/medical-iso"
+    },
+    {
+      "text": "Industries",
+      "href": "https://www.integpro.com.au/industries"
+    },
+    {
+      "text": "About Us",
+      "href": "https://www.integpro.com.au/about-us-iso-team"
+    },
+    {
+      "text": "Blog",
+      "href": "https://www.integpro.com.au/blog"
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "https://www.integpro.com.au/privacy-policy"
+    },
+    {
+      "text": "Free Meeting",
+      "href": "https://www.integpro.com.au/free-consultation"
+    }
+  ],
+  "footer": "Since 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+  "sections": [
+    {
+      "id": "SITE_HEADER",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 94
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [],
+      "text": "Home\nServices\nIndustries\nAbout Us\nBlog\nPrivacy Policy\nFree Meeting",
+      "links": [
+        {
+          "text": "",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 230,
+            "y": 28,
+            "w": 135,
+            "h": 34
+          }
+        },
+        {
+          "text": "Home",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 414,
+            "y": 22,
+            "w": 77,
+            "h": 41
+          }
+        },
+        {
+          "text": "Services",
+          "href": "https://www.integpro.com.au/iso-disp-services",
+          "box": {
+            "x": 499,
+            "y": 22,
+            "w": 93,
+            "h": 41
+          }
+        },
+        {
+          "text": "ISO",
+          "href": "https://www.integpro.com.au/iso-service-australia",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "Medical Device iso",
+          "href": "https://www.integpro.com.au/medical-iso",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "Industries",
+          "href": "https://www.integpro.com.au/industries",
+          "box": {
+            "x": 600,
+            "y": 22,
+            "w": 104,
+            "h": 41
+          }
+        },
+        {
+          "text": "About Us",
+          "href": "https://www.integpro.com.au/about-us-iso-team",
+          "box": {
+            "x": 712,
+            "y": 22,
+            "w": 100,
+            "h": 41
+          }
+        },
+        {
+          "text": "Blog",
+          "href": "https://www.integpro.com.au/blog",
+          "box": {
+            "x": 819,
+            "y": 22,
+            "w": 67,
+            "h": 41
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.integpro.com.au/privacy-policy",
+          "box": {
+            "x": 894,
+            "y": 22,
+            "w": 132,
+            "h": 41
+          }
+        },
+        {
+          "text": "Free Meeting",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 1063,
+            "y": 22,
+            "w": 142,
+            "h": 40
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135,h_34,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+          "alt": "integpro logo",
+          "box": {
+            "x": 230,
+            "y": 28,
+            "w": 135,
+            "h": 34
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-mc47b34h",
+      "box": {
+        "x": 0,
+        "y": 94,
+        "w": 1440,
+        "h": 368
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Discover ISO Tips & DISP Updates",
+          "box": {
+            "x": 235,
+            "y": 133,
+            "w": 803,
+            "h": 67
+          }
+        }
+      ],
+      "text": "Discover ISO Tips & DISP Updates\n\nAt integPRO, we’re not just about certification, we’re about clarity, confidence, and continuous learning. That’s why we’ve launched integPRO Insight, a dedicated space where we share academic insights, practical guidance, explainer videos, and real-world case examples on all things ISO, compliance, risk, and management systems.\n\n \n\nWhether you're a business leader, compliance officer, or simply curious about how international standards shape industries like construction, defence, or healthcare, this is for you.",
+      "links": [],
+      "images": []
+    },
+    {
+      "id": "comp-m96eic6d",
+      "box": {
+        "x": 0,
+        "y": 462,
+        "w": 1440,
+        "h": 3942
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Why ISO Consultants in Sydney Matter for ISO Compliance Services",
+          "box": {
+            "x": 276,
+            "y": 814,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Understanding ISO Compliance: A Guide to Key International Standards",
+          "box": {
+            "x": 600,
+            "y": 814,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "ISO 9001 for Construction Companies: What It Takes to Get Certified in Australia",
+          "box": {
+            "x": 924,
+            "y": 814,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Understanding ISO Certification and DISP Compliance",
+          "box": {
+            "x": 276,
+            "y": 1360,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Understanding IntegPro Compliance Support Services Sydney",
+          "box": {
+            "x": 600,
+            "y": 1360,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Why ISO Consultants in Sydney Are Essential for Your Business: Insights from ISO Compliance Experts",
+          "box": {
+            "x": 924,
+            "y": 1360,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Find ISO Consultants to Achieve Compliance with Sydney ISO Consultants",
+          "box": {
+            "x": 276,
+            "y": 1906,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "The Complete ISO Certification Guide Australia: Your Path to Compliance and Excellence",
+          "box": {
+            "x": 600,
+            "y": 1906,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Achieving ISO Certification and DISP Compliance: A Comprehensive Guide",
+          "box": {
+            "x": 924,
+            "y": 1906,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "How an ISO Compliance Review Can Help You Navigate New Tax Decisions in Australia’s Tough Financial Times",
+          "box": {
+            "x": 276,
+            "y": 2453,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "What You Need to Know About ISO 45001 for Workplace Safety",
+          "box": {
+            "x": 600,
+            "y": 2453,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "How Australian Businesses Can Achieve ISO Certification and Win More Contracts",
+          "box": {
+            "x": 924,
+            "y": 2453,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Why ISO Certification Is No Longer Optional in 2026",
+          "box": {
+            "x": 276,
+            "y": 2999,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Building Trust Through ISO Certification in the Construction Industry",
+          "box": {
+            "x": 600,
+            "y": 2999,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Understanding ISO Compliance and Cost Searches for Australian Businesses",
+          "box": {
+            "x": 924,
+            "y": 2999,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "How ISO 9001 Helps Medium Businesses Gain More Income in Sydney",
+          "box": {
+            "x": 276,
+            "y": 3545,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Choosing the Right ISO Certification Body in Australia - Australian ISO Certifiers Guide",
+          "box": {
+            "x": 600,
+            "y": 3545,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Getting ISO Certified in Australia: A Step-by-Step Guide to the ISO Certification Process Australia",
+          "box": {
+            "x": 924,
+            "y": 3545,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Steps to ISO Certification Process Australia",
+          "box": {
+            "x": 276,
+            "y": 4091,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "Ensuring Excellence: Construction Company ISO Certifications for Australian Construction",
+          "box": {
+            "x": 600,
+            "y": 4091,
+            "w": 242,
+            "h": 92
+          }
+        }
+      ],
+      "text": "All Posts\nISO Certification\nDISP Compliance\nISO & Construction industry\nISO & Medical Industry\nThe Standards\nWhy ISO Consultants in Sydney Matter for ISO Compliance Services\nAchieving ISO certification is a critical milestone for many businesses, especially those operating in sectors like construction, defence, manufacturing, government supply, and medical devices. These industries demand rigorous standards to ensure quality, safety, and regulatory compliance. However, navigating the complex landscape of ISO standards and DISP compliance can be daunting without expert guidance. This is where ISO consultants in Sydney play a vital role. They simpl\n4 min read\nUnderstanding ISO Compliance: A Guide to Key International Standards\nISO Certification: A Strategic Investment for Australian Businesses ISO certification is a critical strategic investment for Australian businesses seeking to improve operations, reduce risk, and win contracts. Whether you're pursuing ISO 9001 (Quality), ISO 14001 (Environment), ISO 45001 (Health & Safety), ISO 27001 (Information Security), or ISO 13485 (Medical Device), this guide explains what certification means and how integPRO can accelerate your compliance journey. What\n3 min read\nISO 9001 for Construction Companies: What It Takes to Get Certified in Australia\nMore construction tenders in Australia now list ISO 9001 as a prerequisite, not a nice-to-have. For firms bidding on government and infrastructure work, including roads, rail, metro, venues, and commercial builds, certification has quietly become a condition of entry rather than a competitive edge. If your business is turning down tenders because you can't tick that box, you're not alone, and you're not far from being able to. This guide walks through what ISO 9001 actually a\n3 min read\nUnderstanding ISO Certification and DISP Compliance\nWhat ISO Services Mean for Your Business ISO stands for the International Organization for Standardization. It develops global standards that help businesses ensure their products, services, and systems are safe, reliable, and of good quality. ISO certification is a formal recognition that a company meets these standards. Why ISO Certification Matters ISO certification is often a requirement for businesses wanting to compete in government tenders or supply chains, especially\n3 min read\nUnderstanding IntegPro Compliance Support Services Sydney\nNavigating the complex world of ISO certification and Defence Industry Security Program (DISP) compliance can be daunting for many businesses. As someone deeply involved in helping organisations achieve and maintain these standards, I understand the challenges faced by SMEs and mid-sized companies in sectors like construction, defence, manufacturing, government supply, and medical devices. IntegPro offers tailored compliance support services designed to simplify these complex\n4 min read\nWhy ISO Consultants in Sydney Are Essential for Your Business: Insights from ISO Compliance Experts\nIn today’s competitive business environment, achieving and maintaining ISO certification is more than just a badge of honour. It is a strategic asset that can open doors to new markets, improve operational efficiency, and ensure compliance with stringent regulatory requirements. As ISO compliance experts, we understand the complexities involved in navigating these standards, especially for SMEs and mid-sized businesses in sectors like construction, defence, manufacturing, gov\n4 min read\nFind ISO Consultants to Achieve Compliance with Sydney ISO Consultants\nAchieving ISO certification and DISP compliance is a critical step for businesses aiming to excel in competitive industries such as construction, defence, manufacturing, government supply, and medical devices. These certifications not only open doors to lucrative tenders but also ensure your operations meet stringent regulatory requirements and industry best practices. However, navigating the complex landscape of ISO standards and DISP compliance can be daunting without exper\n4 min read\nThe Complete ISO Certification Guide Australia: Your Path to Compliance and Excellence\nAchieving ISO certification is a significant milestone for any business aiming to enhance its operational standards, meet regulatory requirements, and gain a competitive edge in the market. For Australian SMEs and mid-sized businesses in sectors like construction, defence, manufacturing, government supply, and medical devices, understanding the certification process is crucial. This guide simplifies the complexities of ISO certification, providing you with clear, actionable i\n4 min read\nAchieving ISO Certification and DISP Compliance: A Comprehensive Guide\nUnderstanding ISO and Quality Services in Different Industries ISO standards provide a framework for managing quality, safety, and efficiency. They apply to many industries, including Defence, Construction, and Medical Devices. Each sector has unique challenges and regulations, so quality services must be tailored accordingly. In Defence, strict compliance with standards like ISO 9001 and DISP (Defence Industry Security Program) is critical. These standards ensure that suppli\n4 min read\nHow an ISO Compliance Review Can Help You Navigate New Tax Decisions in Australia’s Tough Financial Times\nIn recent years, Australian businesses have faced a series of financial challenges. New tax decisions have added complexity and pressure, especially for small and medium enterprises (SMEs) and mid-sized companies. These changes can affect cash flow, compliance costs, and overall business stability. In this environment, an ISO check-up can be a valuable tool to help your business stay resilient and compliant. An ISO check-up is a thorough review of your management systems agai\n4 min read\nWhat You Need to Know About ISO 45001 for Workplace Safety\nWorkplace safety is not just a legal requirement; it’s a commitment to your team’s wellbeing and your business’s success. ISO 45001 is the international standard that helps organisations build strong safety and health management systems. It guides businesses to protect workers, reduce risks, and meet compliance with confidence. Why Construction Businesses Should Prioritise ISO 45001 Construction sites are among the most hazardous workplaces. Managing safety risks effectivel\n3 min read\nHow Australian Businesses Can Achieve ISO Certification and Win More Contracts\nGetting ISO certified is a key step for many Australian businesses aiming to grow, improve their operations, and win more contracts. Over 500 companies across Australia have chosen integPRO to guide them through this process. With a 98% pass rate and a typical timeline of 3 to 6 months, integPRO offers expert support across the country. In this post, I’ll explain why ISO certification matters, how the process works, and how businesses in industries like construction, defence,\n4 min read\nWhy ISO Certification Is No Longer Optional in 2026\nIn 2026, ISO certification is no longer just a competitive advantage. It has become a baseline requirement for businesses aiming to win tenders and secure contracts. This shift is driven by the rise of AI-powered search engines, smarter procurement teams, and stricter compliance demands. If your business is not ISO certified, you risk being filtered out before a human even reviews your proposal. Eye-level view of a modern industrial facility with ISO certification banners I\n3 min read\nBuilding Trust Through ISO Certification in the Construction Industry\nWhy Reputation Matters in Construction In construction, your reputation affects every part of your business. It influences: The clients who choose to work with you The contracts you can bid for The partnerships you build with suppliers and subcontractors Your ability to attract skilled workers A strong reputation shows that you deliver projects on time, meet safety standards, and maintain high quality. Without it, even the best technical skills may not be enough to win co\n4 min read\nUnderstanding ISO Compliance and Cost Searches for Australian Businesses\nISO compliance is a critical factor for many Australian businesses, especially those in construction, defence, manufacturing, government supply, and medical devices. Achieving and maintaining ISO certification can open doors to new contracts, improve operational efficiency, and ensure regulatory obligations are met. However, one of the biggest concerns for businesses is understanding the costs involved in ISO compliance and how to manage them effectively. In this post, I will\n4 min read\nHow ISO 9001 Helps Medium Businesses Gain More Income in Sydney\nGrowing a medium-sized business in Sydney comes with many challenges. One of the biggest is standing out in a competitive market while managing costs and improving customer satisfaction. I’ve seen how adopting ISO 9001 can make a real difference for businesses aiming to increase their income and build stronger client relationships. ISO 9001 is a quality management system standard recognised worldwide. It helps businesses improve their processes, reduce errors, and deliver con\n4 min read\nChoosing the Right ISO Certification Body in Australia - Australian ISO Certifiers Guide\nChoosing the right ISO certification body is a critical step for any business aiming to achieve ISO certification and maintain compliance with industry standards. For Australian SMEs and mid-sized businesses in sectors like construction, defence, manufacturing, government supply, and medical devices, this decision can impact your ability to win tenders, meet regulatory requirements, and improve operational performance. With over 25 years of experience supporting businesses th\n4 min read\nGetting ISO Certified in Australia: A Step-by-Step Guide to the ISO Certification Process Australia\nAchieving ISO certification is a significant milestone for any business aiming to enhance its operational efficiency, meet regulatory requirements, and gain a competitive edge in tendering processes. For Australian SMEs and mid-sized businesses in sectors like construction, defence, manufacturing, government supply, and medical devices, understanding the ISO certification process Australia is crucial. This guide will walk you through the essential steps to get ISO certified,\n4 min read\nSteps to ISO Certification Process Australia\nAchieving ISO certification is a significant milestone for any business aiming to enhance its operational efficiency, meet regulatory requirements, and gain a competitive edge in the market. For Australian SMEs and mid-sized businesses, especially those in sectors like construction, defence, manufacturing, government supply, and medical devices, ISO certification is often a prerequisite to winning tenders and demonstrating compliance. At IntegPRO, we understand the complexiti\n5 min read\nEnsuring Excellence: Construction Company ISO Certifications for Australian Construction\nIn the competitive world of Australian construction, maintaining high standards is essential for success. One of the most effective ways to demonstrate quality, safety, and environmental responsibility is through obtaining recognized certifications. Among these, ISO certifications stand out as globally respected benchmarks that can elevate a construction company's reputation and operational efficiency. Achieving construction company certifications is not just about complianc\n4 min read",
+      "links": [
+        {
+          "text": "All Posts",
+          "href": "https://www.integpro.com.au/blog",
+          "box": {
+            "x": 251,
+            "y": 504,
+            "w": 62,
+            "h": 22
+          }
+        },
+        {
+          "text": "ISO Certification",
+          "href": "https://www.integpro.com.au/blog/categories/iso-certification",
+          "box": {
+            "x": 353,
+            "y": 504,
+            "w": 117,
+            "h": 22
+          }
+        },
+        {
+          "text": "DISP Compliance",
+          "href": "https://www.integpro.com.au/blog/categories/disp-compliance",
+          "box": {
+            "x": 510,
+            "y": 504,
+            "w": 128,
+            "h": 22
+          }
+        },
+        {
+          "text": "ISO & Construction industry",
+          "href": "https://www.integpro.com.au/blog/categories/iso-construction-industry",
+          "box": {
+            "x": 678,
+            "y": 504,
+            "w": 196,
+            "h": 22
+          }
+        },
+        {
+          "text": "ISO & Medical Industry",
+          "href": "https://www.integpro.com.au/blog/categories/iso-medical-industry",
+          "box": {
+            "x": 914,
+            "y": 504,
+            "w": 162,
+            "h": 22
+          }
+        },
+        {
+          "text": "The Standards",
+          "href": "https://www.integpro.com.au/blog/categories/the-standards",
+          "box": {
+            "x": 291,
+            "y": 584,
+            "w": 105,
+            "h": 22
+          }
+        },
+        {
+          "text": "Why ISO Consultants in Sydney Matter for ISO Compliance Services",
+          "href": "https://www.integpro.com.au/post/why-iso-consultants-in-sydney-matter-for-iso-compliance-services",
+          "box": {
+            "x": 276,
+            "y": 814,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Understanding ISO Compliance: A Guide to Key International Standards",
+          "href": "https://www.integpro.com.au/post/understanding-iso-compliance-a-guide-to-key-international-standards",
+          "box": {
+            "x": 600,
+            "y": 814,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "ISO 9001 for Construction Companies: What It Takes to Get Certified in Australia",
+          "href": "https://www.integpro.com.au/post/iso-9001-for-construction-companies-what-it-takes-to-get-certified-in-australia",
+          "box": {
+            "x": 924,
+            "y": 814,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Understanding ISO Certification and DISP Compliance",
+          "href": "https://www.integpro.com.au/post/understanding-iso-and-disp-services-for-australian-businesses",
+          "box": {
+            "x": 276,
+            "y": 1360,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Understanding IntegPro Compliance Support Services Sydney",
+          "href": "https://www.integpro.com.au/post/understanding-integpro-compliance-support-services-sydney",
+          "box": {
+            "x": 600,
+            "y": 1360,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Why ISO Consultants in Sydney Are Essential for Your Business: Insights from ISO Compliance Experts",
+          "href": "https://www.integpro.com.au/post/why-iso-consultants-in-sydney-are-essential-for-your-business-insights-from-iso-compliance-experts",
+          "box": {
+            "x": 924,
+            "y": 1360,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Find ISO Consultants to Achieve Compliance with Sydney ISO Consultants",
+          "href": "https://www.integpro.com.au/post/find-iso-consultants-to-achieve-compliance-with-sydney-iso-consultants",
+          "box": {
+            "x": 276,
+            "y": 1906,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "The Complete ISO Certification Guide Australia: Your Path to Compliance and Excellence",
+          "href": "https://www.integpro.com.au/post/the-complete-iso-certification-guide-australia-your-path-to-compliance-and-excellence",
+          "box": {
+            "x": 600,
+            "y": 1906,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Achieving ISO Certification and DISP Compliance: A Comprehensive Guide",
+          "href": "https://www.integpro.com.au/post/iso-and-quality-services-from-assessment-to-finalisation-in-all-industries-across-australia",
+          "box": {
+            "x": 924,
+            "y": 1906,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "How an ISO Compliance Review Can Help You Navigate New Tax Decisions in Australia’s Tough Financial Times",
+          "href": "https://www.integpro.com.au/post/how-an-iso-compliance-review-can-help-you-navigate-new-tax-decisions-in-australia-s-tough-financial",
+          "box": {
+            "x": 276,
+            "y": 2453,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "What You Need to Know About ISO 45001 for Workplace Safety",
+          "href": "https://www.integpro.com.au/post/what-you-need-to-know-about-iso-45001-for-workplace-safety",
+          "box": {
+            "x": 600,
+            "y": 2453,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "How Australian Businesses Can Achieve ISO Certification and Win More Contracts",
+          "href": "https://www.integpro.com.au/post/how-australian-businesses-can-achieve-iso-certification-and-win-more-contracts",
+          "box": {
+            "x": 924,
+            "y": 2453,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Why ISO Certification Is No Longer Optional in 2026",
+          "href": "https://www.integpro.com.au/post/why-iso-certification-is-no-longer-optional-in-2026",
+          "box": {
+            "x": 276,
+            "y": 2999,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Building Trust Through ISO Certification in the Construction Industry",
+          "href": "https://www.integpro.com.au/post/in-construction-your-reputation-is-everything-and-nothing-builds-it-faster-than-iso-certification",
+          "box": {
+            "x": 600,
+            "y": 2999,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Understanding ISO Compliance and Cost Searches for Australian Businesses",
+          "href": "https://www.integpro.com.au/post/understanding-iso-compliance-and-cost-searches-for-australian-businesses",
+          "box": {
+            "x": 924,
+            "y": 2999,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "How ISO 9001 Helps Medium Businesses Gain More Income in Sydney",
+          "href": "https://www.integpro.com.au/post/how-iso-9001-helps-medium-businesses-gain-more-income-in-sydney",
+          "box": {
+            "x": 276,
+            "y": 3545,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Choosing the Right ISO Certification Body in Australia - Australian ISO Certifiers Guide",
+          "href": "https://www.integpro.com.au/post/choosing-the-right-iso-certification-body-in-australia-australian-iso-certifiers-guide",
+          "box": {
+            "x": 600,
+            "y": 3545,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Getting ISO Certified in Australia: A Step-by-Step Guide to the ISO Certification Process Australia",
+          "href": "https://www.integpro.com.au/post/getting-iso-certified-in-australia-a-step-by-step-guide-to-the-iso-certification-process-australia",
+          "box": {
+            "x": 924,
+            "y": 3545,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Steps to ISO Certification Process Australia",
+          "href": "https://www.integpro.com.au/post/steps-to-iso-certification-process-australia",
+          "box": {
+            "x": 276,
+            "y": 4091,
+            "w": 242,
+            "h": 92
+          }
+        },
+        {
+          "text": "Ensuring Excellence: Construction Company ISO Certifications for Australian Construction",
+          "href": "https://www.integpro.com.au/post/ensuring-excellence-construction-iso-company-certifications-for-australian-construction",
+          "box": {
+            "x": 600,
+            "y": 4091,
+            "w": 242,
+            "h": 92
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_db43cca6f20e4a39ad02d8b01a54da07~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_db43cca6f20e4a39ad02d8b01a54da07~mv2.png",
+          "alt": "Why ISO Consultants in Sydney Matter for ISO Compliance Services",
+          "box": {
+            "x": 251,
+            "y": 576,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_db43cca6f20e4a39ad02d8b01a54da07~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_db43cca6f20e4a39ad02d8b01a54da07~mv2.png",
+          "alt": "Why ISO Consultants in Sydney Matter for ISO Compliance Services",
+          "box": {
+            "x": 251,
+            "y": 576,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/nsplsh_4ce9ba90b904431f84f9ee4e8eaf9fa1~mv2.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/nsplsh_4ce9ba90b904431f84f9ee4e8eaf9fa1~mv2.jpg",
+          "alt": "Understanding ISO Compliance: A Guide to Key International Standards",
+          "box": {
+            "x": 575,
+            "y": 576,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/nsplsh_4ce9ba90b904431f84f9ee4e8eaf9fa1~mv2.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/nsplsh_4ce9ba90b904431f84f9ee4e8eaf9fa1~mv2.jpg",
+          "alt": "Understanding ISO Compliance: A Guide to Key International Standards",
+          "box": {
+            "x": 575,
+            "y": 576,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_88bb689011dc44e49dcc6f42a2a0ba71~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_88bb689011dc44e49dcc6f42a2a0ba71~mv2.png",
+          "alt": "ISO 9001 for Construction Companies: What It Takes to Get Certified in Australia",
+          "box": {
+            "x": 899,
+            "y": 576,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_88bb689011dc44e49dcc6f42a2a0ba71~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_88bb689011dc44e49dcc6f42a2a0ba71~mv2.png",
+          "alt": "ISO 9001 for Construction Companies: What It Takes to Get Certified in Australia",
+          "box": {
+            "x": 899,
+            "y": 576,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png",
+          "alt": "Understanding ISO and DISP Services for Australian Businesses",
+          "box": {
+            "x": 251,
+            "y": 1122,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png",
+          "alt": "Understanding ISO and DISP Services for Australian Businesses",
+          "box": {
+            "x": 251,
+            "y": 1122,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png",
+          "alt": "Understanding IntegPro Compliance Support Services in Saint Peters",
+          "box": {
+            "x": 575,
+            "y": 1122,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png",
+          "alt": "Understanding IntegPro Compliance Support Services in Saint Peters",
+          "box": {
+            "x": 575,
+            "y": 1122,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_55c8bd8065ad4dd1b7a03109a0a19f7c~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_55c8bd8065ad4dd1b7a03109a0a19f7c~mv2.png",
+          "alt": "Why ISO Consultants in Sydney Are Essential for Your Business: Insights from ISO Compliance Experts",
+          "box": {
+            "x": 899,
+            "y": 1122,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_55c8bd8065ad4dd1b7a03109a0a19f7c~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_55c8bd8065ad4dd1b7a03109a0a19f7c~mv2.png",
+          "alt": "Why ISO Consultants in Sydney Are Essential for Your Business: Insights from ISO Compliance Experts",
+          "box": {
+            "x": 899,
+            "y": 1122,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_489e2a4513654309866420c5ae6e45a5~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_489e2a4513654309866420c5ae6e45a5~mv2.png",
+          "alt": "Find ISO Consultants to Achieve Compliance with Sydney ISO Consultants",
+          "box": {
+            "x": 251,
+            "y": 1668,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_489e2a4513654309866420c5ae6e45a5~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_489e2a4513654309866420c5ae6e45a5~mv2.png",
+          "alt": "Find ISO Consultants to Achieve Compliance with Sydney ISO Consultants",
+          "box": {
+            "x": 251,
+            "y": 1668,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png",
+          "alt": "The Complete ISO Certification Guide Australia: Your Path to Compliance and Excellence",
+          "box": {
+            "x": 575,
+            "y": 1668,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png",
+          "alt": "The Complete ISO Certification Guide Australia: Your Path to Compliance and Excellence",
+          "box": {
+            "x": 575,
+            "y": 1668,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png",
+          "alt": "ISO and Quality Services from Assessment to Finalisation in All Industries Across Australia",
+          "box": {
+            "x": 899,
+            "y": 1668,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png",
+          "alt": "ISO and Quality Services from Assessment to Finalisation in All Industries Across Australia",
+          "box": {
+            "x": 899,
+            "y": 1668,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_1eb1f9e5918b407ebc921cd3079b24f6~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_1eb1f9e5918b407ebc921cd3079b24f6~mv2.png",
+          "alt": "How an ISO Compliance Review Can Help You Navigate New Tax Decisions in Australia’s Tough Financial Times",
+          "box": {
+            "x": 251,
+            "y": 2214,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_1eb1f9e5918b407ebc921cd3079b24f6~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_1eb1f9e5918b407ebc921cd3079b24f6~mv2.png",
+          "alt": "How an ISO Compliance Review Can Help You Navigate New Tax Decisions in Australia’s Tough Financial Times",
+          "box": {
+            "x": 251,
+            "y": 2214,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_f65d65578db74b4fb3df08fbf26e4c46~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_f65d65578db74b4fb3df08fbf26e4c46~mv2.png",
+          "alt": "What You Need to Know About ISO 45001 for Workplace Safety",
+          "box": {
+            "x": 575,
+            "y": 2214,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_f65d65578db74b4fb3df08fbf26e4c46~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_f65d65578db74b4fb3df08fbf26e4c46~mv2.png",
+          "alt": "What You Need to Know About ISO 45001 for Workplace Safety",
+          "box": {
+            "x": 575,
+            "y": 2214,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_9b6bd4f969e8404c90c11f7711d6fef7~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_9b6bd4f969e8404c90c11f7711d6fef7~mv2.png",
+          "alt": "How Australian Businesses Can Achieve ISO Certification and Win More Contracts",
+          "box": {
+            "x": 899,
+            "y": 2214,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_9b6bd4f969e8404c90c11f7711d6fef7~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_9b6bd4f969e8404c90c11f7711d6fef7~mv2.png",
+          "alt": "How Australian Businesses Can Achieve ISO Certification and Win More Contracts",
+          "box": {
+            "x": 899,
+            "y": 2214,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_5c32d6d312634f4fa260c21c76858992~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_5c32d6d312634f4fa260c21c76858992~mv2.png",
+          "alt": "ISO Certification",
+          "box": {
+            "x": 251,
+            "y": 2761,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_5c32d6d312634f4fa260c21c76858992~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_5c32d6d312634f4fa260c21c76858992~mv2.png",
+          "alt": "ISO Certification",
+          "box": {
+            "x": 251,
+            "y": 2761,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_e27b81da1413409cafdf057cbe865008~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_e27b81da1413409cafdf057cbe865008~mv2.png",
+          "alt": "In construction, your reputation is everything and nothing builds it faster than ISO certification",
+          "box": {
+            "x": 575,
+            "y": 2761,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_e27b81da1413409cafdf057cbe865008~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_e27b81da1413409cafdf057cbe865008~mv2.png",
+          "alt": "In construction, your reputation is everything and nothing builds it faster than ISO certification",
+          "box": {
+            "x": 575,
+            "y": 2761,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_a03f7146f86b488fb85050650880499a~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_a03f7146f86b488fb85050650880499a~mv2.png",
+          "alt": "Understanding ISO Compliance and Cost Searches for Australian Businesses",
+          "box": {
+            "x": 899,
+            "y": 2761,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_a03f7146f86b488fb85050650880499a~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_a03f7146f86b488fb85050650880499a~mv2.png",
+          "alt": "Understanding ISO Compliance and Cost Searches for Australian Businesses",
+          "box": {
+            "x": 899,
+            "y": 2761,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_27acb60c7b914faf8bfe001165b6e2cb~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_27acb60c7b914faf8bfe001165b6e2cb~mv2.png",
+          "alt": "How ISO 9001 Helps Medium Businesses Gain More Income in Sydney",
+          "box": {
+            "x": 251,
+            "y": 3307,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_27acb60c7b914faf8bfe001165b6e2cb~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_27acb60c7b914faf8bfe001165b6e2cb~mv2.png",
+          "alt": "How ISO 9001 Helps Medium Businesses Gain More Income in Sydney",
+          "box": {
+            "x": 251,
+            "y": 3307,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_95abf4bb2cd94a429fbfb1d4a5e4fe3d~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_95abf4bb2cd94a429fbfb1d4a5e4fe3d~mv2.png",
+          "alt": "Choosing the Right ISO Certification Body in Australia - Australian ISO Certifiers Guide",
+          "box": {
+            "x": 575,
+            "y": 3307,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_95abf4bb2cd94a429fbfb1d4a5e4fe3d~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_95abf4bb2cd94a429fbfb1d4a5e4fe3d~mv2.png",
+          "alt": "Choosing the Right ISO Certification Body in Australia - Australian ISO Certifiers Guide",
+          "box": {
+            "x": 575,
+            "y": 3307,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_611be6480dda40879e906d140c42ff49~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_611be6480dda40879e906d140c42ff49~mv2.png",
+          "alt": "Getting ISO Certified in Australia: A Step-by-Step Guide to the ISO Certification Process Australia",
+          "box": {
+            "x": 899,
+            "y": 3307,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_611be6480dda40879e906d140c42ff49~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_611be6480dda40879e906d140c42ff49~mv2.png",
+          "alt": "Getting ISO Certified in Australia: A Step-by-Step Guide to the ISO Certification Process Australia",
+          "box": {
+            "x": 899,
+            "y": 3307,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_63d124e28252462097c5f467da879e07~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_63d124e28252462097c5f467da879e07~mv2.png",
+          "alt": "integpro experts iso meeting",
+          "box": {
+            "x": 251,
+            "y": 3853,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_63d124e28252462097c5f467da879e07~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_63d124e28252462097c5f467da879e07~mv2.png",
+          "alt": "integpro experts iso meeting",
+          "box": {
+            "x": 251,
+            "y": 3853,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_ed5940e6fd1a4f8690b52b9f4053a490~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_ed5940e6fd1a4f8690b52b9f4053a490~mv2.png",
+          "alt": "Construction Company ISO Certifications",
+          "box": {
+            "x": 575,
+            "y": 3853,
+            "w": 292,
+            "h": 164
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_ed5940e6fd1a4f8690b52b9f4053a490~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_ed5940e6fd1a4f8690b52b9f4053a490~mv2.png",
+          "alt": "Construction Company ISO Certifications",
+          "box": {
+            "x": 575,
+            "y": 3853,
+            "w": 292,
+            "h": 164
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-mc473aea",
+      "box": {
+        "x": 0,
+        "y": 4403,
+        "w": 1440,
+        "h": 947
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H4",
+          "text": "From Our YouTube & Instagram",
+          "box": {
+            "x": 389,
+            "y": 4414,
+            "w": 661,
+            "h": 45
+          }
+        }
+      ],
+      "text": "From Our YouTube & Instagram\nMore Video",
+      "links": [
+        {
+          "text": "More Video",
+          "href": "https://www.youtube.com/@integPRO-ISO",
+          "box": {
+            "x": 641,
+            "y": 5235,
+            "w": 158,
+            "h": 34
+          }
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "comp-mc47pv06",
+      "box": {
+        "x": 0,
+        "y": 5350,
+        "w": 1440,
+        "h": 1124
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [],
+      "text": "",
+      "links": [],
+      "images": []
+    },
+    {
+      "id": "SITE_FOOTER",
+      "box": {
+        "x": 0,
+        "y": 6474,
+        "w": 1440,
+        "h": 409
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(25, 35, 51)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H6",
+          "text": "Services",
+          "box": {
+            "x": 663,
+            "y": 6504,
+            "w": 113,
+            "h": 25
+          }
+        },
+        {
+          "tag": "H6",
+          "text": "Resources",
+          "box": {
+            "x": 839,
+            "y": 6506,
+            "w": 113,
+            "h": 25
+          }
+        },
+        {
+          "tag": "H6",
+          "text": "Company",
+          "box": {
+            "x": 1041,
+            "y": 6505,
+            "w": 113,
+            "h": 25
+          }
+        }
+      ],
+      "text": "Since 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+      "links": [
+        {
+          "text": "",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 263,
+            "y": 6519,
+            "w": 123,
+            "h": 31
+          }
+        },
+        {
+          "text": "ISO",
+          "href": "https://www.integpro.com.au/iso-service-australia",
+          "box": {
+            "x": 663,
+            "y": 6570,
+            "w": 24,
+            "h": 16
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 663,
+            "y": 6599,
+            "w": 32,
+            "h": 16
+          }
+        },
+        {
+          "text": "Medical",
+          "href": "https://www.integpro.com.au/medical-iso",
+          "box": {
+            "x": 664,
+            "y": 6628,
+            "w": 49,
+            "h": 16
+          }
+        },
+        {
+          "text": "Academy",
+          "href": "https://www.integpro.com.au/blog/categories/iso-certification",
+          "box": {
+            "x": 839,
+            "y": 6544,
+            "w": 59,
+            "h": 16
+          }
+        },
+        {
+          "text": "Blog",
+          "href": "https://www.integpro.com.au/blog/categories/iso-certification",
+          "box": {
+            "x": 839,
+            "y": 6571,
+            "w": 28,
+            "h": 16
+          }
+        },
+        {
+          "text": "Industries",
+          "href": "https://www.integpro.com.au/industries",
+          "box": {
+            "x": 839,
+            "y": 6631,
+            "w": 62,
+            "h": 16
+          }
+        },
+        {
+          "text": "Services",
+          "href": "https://www.integpro.com.au/iso-disp-services",
+          "box": {
+            "x": 1041,
+            "y": 6543,
+            "w": 54,
+            "h": 16
+          }
+        },
+        {
+          "text": "About",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 1041,
+            "y": 6570,
+            "w": 37,
+            "h": 16
+          }
+        },
+        {
+          "text": "Contact",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 1041,
+            "y": 6599,
+            "w": 49,
+            "h": 16
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 1041,
+            "y": 6630,
+            "w": 32,
+            "h": 16
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.linkedin.com/company/integ-pro/posts/?feedView=all",
+          "box": {
+            "x": 253,
+            "y": 6734,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.instagram.com/integpro.iso/",
+          "box": {
+            "x": 296,
+            "y": 6734,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.facebook.com/profile.php?id=61574845131374",
+          "box": {
+            "x": 339,
+            "y": 6734,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.youtube.com/@integPRO-ISO/",
+          "box": {
+            "x": 382,
+            "y": 6734,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 1041,
+            "y": 6830,
+            "w": 86,
+            "h": 16
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/iso%20sign%20(1).png",
+          "alt": "integpro branding sign",
+          "box": {
+            "x": -140,
+            "y": 6496,
+            "w": 362,
+            "h": 364
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+          "alt": "integpro logo",
+          "box": {
+            "x": 263,
+            "y": 6519,
+            "w": 123,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+          "alt": "LinkedIn",
+          "box": {
+            "x": 253,
+            "y": 6734,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+          "alt": "Instagram",
+          "box": {
+            "x": 296,
+            "y": 6734,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+          "alt": "Facebook",
+          "box": {
+            "x": 339,
+            "y": 6734,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+          "alt": "Youtube",
+          "box": {
+            "x": 382,
+            "y": 6734,
+            "w": 31,
+            "h": 31
+          }
+        }
+      ]
+    }
+  ],
+  "text": "Home\nServices\nIndustries\nAbout Us\nBlog\nPrivacy Policy\nFree Meeting\nDiscover ISO Tips & DISP Updates\n\nAt integPRO, we’re not just about certification, we’re about clarity, confidence, and continuous learning. That’s why we’ve launched integPRO Insight, a dedicated space where we share academic insights, practical guidance, explainer videos, and real-world case examples on all things ISO, compliance, risk, and management systems.\n\n \n\nWhether you're a business leader, compliance officer, or simply curious about how international standards shape industries like construction, defence, or healthcare, this is for you.\n\nAll Posts\nISO Certification\nDISP Compliance\nISO & Construction industry\nISO & Medical Industry\nThe Standards\nWhy ISO Consultants in Sydney Matter for ISO Compliance Services\nAchieving ISO certification is a critical milestone for many businesses, especially those operating in sectors like construction, defence, manufacturing, government supply, and medical devices. These industries demand rigorous standards to ensure quality, safety, and regulatory compliance. However, navigating the complex landscape of ISO standards and DISP compliance can be daunting without expert guidance. This is where ISO consultants in Sydney play a vital role. They simpl\n4 min read\nUnderstanding ISO Compliance: A Guide to Key International Standards\nISO Certification: A Strategic Investment for Australian Businesses ISO certification is a critical strategic investment for Australian businesses seeking to improve operations, reduce risk, and win contracts. Whether you're pursuing ISO 9001 (Quality), ISO 14001 (Environment), ISO 45001 (Health & Safety), ISO 27001 (Information Security), or ISO 13485 (Medical Device), this guide explains what certification means and how integPRO can accelerate your compliance journey. What\n3 min read\nISO 9001 for Construction Companies: What It Takes to Get Certified in Australia\nMore construction tenders in Australia now list ISO 9001 as a prerequisite, not a nice-to-have. For firms bidding on government and infrastructure work, including roads, rail, metro, venues, and commercial builds, certification has quietly become a condition of entry rather than a competitive edge. If your business is turning down tenders because you can't tick that box, you're not alone, and you're not far from being able to. This guide walks through what ISO 9001 actually a\n3 min read\nUnderstanding ISO Certification and DISP Compliance\nWhat ISO Services Mean for Your Business ISO stands for the International Organization for Standardization. It develops global standards that help businesses ensure their products, services, and systems are safe, reliable, and of good quality. ISO certification is a formal recognition that a company meets these standards. Why ISO Certification Matters ISO certification is often a requirement for businesses wanting to compete in government tenders or supply chains, especially\n3 min read\nUnderstanding IntegPro Compliance Support Services Sydney\nNavigating the complex world of ISO certification and Defence Industry Security Program (DISP) compliance can be daunting for many businesses. As someone deeply involved in helping organisations achieve and maintain these standards, I understand the challenges faced by SMEs and mid-sized companies in sectors like construction, defence, manufacturing, government supply, and medical devices. IntegPro offers tailored compliance support services designed to simplify these complex\n4 min read\nWhy ISO Consultants in Sydney Are Essential for Your Business: Insights from ISO Compliance Experts\nIn today’s competitive business environment, achieving and maintaining ISO certification is more than just a badge of honour. It is a strategic asset that can open doors to new markets, improve operational efficiency, and ensure compliance with stringent regulatory requirements. As ISO compliance experts, we understand the complexities involved in navigating these standards, especially for SMEs and mid-sized businesses in sectors like construction, defence, manufacturing, gov\n4 min read\nFind ISO Consultants to Achieve Compliance with Sydney ISO Consultants\nAchieving ISO certification and DISP compliance is a critical step for businesses aiming to excel in competitive industries such as construction, defence, manufacturing, government supply, and medical devices. These certifications not only open doors to lucrative tenders but also ensure your operations meet stringent regulatory requirements and industry best practices. However, navigating the complex landscape of ISO standards and DISP compliance can be daunting without exper\n4 min read\nThe Complete ISO Certification Guide Australia: Your Path to Compliance and Excellence\nAchieving ISO certification is a significant milestone for any business aiming to enhance its operational standards, meet regulatory requirements, and gain a competitive edge in the market. For Australian SMEs and mid-sized businesses in sectors like construction, defence, manufacturing, government supply, and medical devices, understanding the certification process is crucial. This guide simplifies the complexities of ISO certification, providing you with clear, actionable i\n4 min read\nAchieving ISO Certification and DISP Compliance: A Comprehensive Guide\nUnderstanding ISO and Quality Services in Different Industries ISO standards provide a framework for managing quality, safety, and efficiency. They apply to many industries, including Defence, Construction, and Medical Devices. Each sector has unique challenges and regulations, so quality services must be tailored accordingly. In Defence, strict compliance with standards like ISO 9001 and DISP (Defence Industry Security Program) is critical. These standards ensure that suppli\n4 min read\nHow an ISO Compliance Review Can Help You Navigate New Tax Decisions in Australia’s Tough Financial Times\nIn recent years, Australian businesses have faced a series of financial challenges. New tax decisions have added complexity and pressure, especially for small and medium enterprises (SMEs) and mid-sized companies. These changes can affect cash flow, compliance costs, and overall business stability. In this environment, an ISO check-up can be a valuable tool to help your business stay resilient and compliant. An ISO check-up is a thorough review of your management systems agai\n4 min read\nWhat You Need to Know About ISO 45001 for Workplace Safety\nWorkplace safety is not just a legal requirement; it’s a commitment to your team’s wellbeing and your business’s success. ISO 45001 is the international standard that helps organisations build strong safety and health management systems. It guides businesses to protect workers, reduce risks, and meet compliance with confidence. Why Construction Businesses Should Prioritise ISO 45001 Construction sites are among the most hazardous workplaces. Managing safety risks effectivel\n3 min read\nHow Australian Businesses Can Achieve ISO Certification and Win More Contracts\nGetting ISO certified is a key step for many Australian businesses aiming to grow, improve their operations, and win more contracts. Over 500 companies across Australia have chosen integPRO to guide them through this process. With a 98% pass rate and a typical timeline of 3 to 6 months, integPRO offers expert support across the country. In this post, I’ll explain why ISO certification matters, how the process works, and how businesses in industries like construction, defence,\n4 min read\nWhy ISO Certification Is No Longer Optional in 2026\nIn 2026, ISO certification is no longer just a competitive advantage. It has become a baseline requirement for businesses aiming to win tenders and secure contracts. This shift is driven by the rise of AI-powered search engines, smarter procurement teams, and stricter compliance demands. If your business is not ISO certified, you risk being filtered out before a human even reviews your proposal. Eye-level view of a modern industrial facility with ISO certification banners I\n3 min read\nBuilding Trust Through ISO Certification in the Construction Industry\nWhy Reputation Matters in Construction In construction, your reputation affects every part of your business. It influences: The clients who choose to work with you The contracts you can bid for The partnerships you build with suppliers and subcontractors Your ability to attract skilled workers A strong reputation shows that you deliver projects on time, meet safety standards, and maintain high quality. Without it, even the best technical skills may not be enough to win co\n4 min read\nUnderstanding ISO Compliance and Cost Searches for Australian Businesses\nISO compliance is a critical factor for many Australian businesses, especially those in construction, defence, manufacturing, government supply, and medical devices. Achieving and maintaining ISO certification can open doors to new contracts, improve operational efficiency, and ensure regulatory obligations are met. However, one of the biggest concerns for businesses is understanding the costs involved in ISO compliance and how to manage them effectively. In this post, I will\n4 min read\nHow ISO 9001 Helps Medium Businesses Gain More Income in Sydney\nGrowing a medium-sized business in Sydney comes with many challenges. One of the biggest is standing out in a competitive market while managing costs and improving customer satisfaction. I’ve seen how adopting ISO 9001 can make a real difference for businesses aiming to increase their income and build stronger client relationships. ISO 9001 is a quality management system standard recognised worldwide. It helps businesses improve their processes, reduce errors, and deliver con\n4 min read\nChoosing the Right ISO Certification Body in Australia - Australian ISO Certifiers Guide\nChoosing the right ISO certification body is a critical step for any business aiming to achieve ISO certification and maintain compliance with industry standards. For Australian SMEs and mid-sized businesses in sectors like construction, defence, manufacturing, government supply, and medical devices, this decision can impact your ability to win tenders, meet regulatory requirements, and improve operational performance. With over 25 years of experience supporting businesses th\n4 min read\nGetting ISO Certified in Australia: A Step-by-Step Guide to the ISO Certification Process Australia\nAchieving ISO certification is a significant milestone for any business aiming to enhance its operational efficiency, meet regulatory requirements, and gain a competitive edge in tendering processes. For Australian SMEs and mid-sized businesses in sectors like construction, defence, manufacturing, government supply, and medical devices, understanding the ISO certification process Australia is crucial. This guide will walk you through the essential steps to get ISO certified,\n4 min read\nSteps to ISO Certification Process Australia\nAchieving ISO certification is a significant milestone for any business aiming to enhance its operational efficiency, meet regulatory requirements, and gain a competitive edge in the market. For Australian SMEs and mid-sized businesses, especially those in sectors like construction, defence, manufacturing, government supply, and medical devices, ISO certification is often a prerequisite to winning tenders and demonstrating compliance. At IntegPRO, we understand the complexiti\n5 min read\nEnsuring Excellence: Construction Company ISO Certifications for Australian Construction\nIn the competitive world of Australian construction, maintaining high standards is essential for success. One of the most effective ways to demonstrate quality, safety, and environmental responsibility is through obtaining recognized certifications. Among these, ISO certifications stand out as globally respected benchmarks that can elevate a construction company's reputation and operational efficiency. Achieving construction company certifications is not just about complianc\n4 min read\nFrom Our YouTube & Instagram\nMore Video\n\nSince 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+  "media": [
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135,h_34,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135",
+    "https://www.integpro.com.au/blog/categories/h_34",
+    "https://www.integpro.com.au/blog/categories/al_c",
+    "https://www.integpro.com.au/blog/categories/q_85",
+    "https://www.integpro.com.au/blog/categories/usm_0.66_1.00_0.01",
+    "https://www.integpro.com.au/blog/categories/enc_avif",
+    "https://www.integpro.com.au/blog/categories/quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_270",
+    "https://www.integpro.com.au/blog/categories/h_68",
+    "https://static.wixstatic.com/media/6d9105_db43cca6f20e4a39ad02d8b01a54da07~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_db43cca6f20e4a39ad02d8b01a54da07~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_db43cca6f20e4a39ad02d8b01a54da07~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_db43cca6f20e4a39ad02d8b01a54da07~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_db43cca6f20e4a39ad02d8b01a54da07~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_db43cca6f20e4a39ad02d8b01a54da07~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_db43cca6f20e4a39ad02d8b01a54da07~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_db43cca6f20e4a39ad02d8b01a54da07~mv2.webp",
+    "https://static.wixstatic.com/media/nsplsh_4ce9ba90b904431f84f9ee4e8eaf9fa1~mv2.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/nsplsh_4ce9ba90b904431f84f9ee4e8eaf9fa1~mv2.jpg",
+    "https://static.wixstatic.com/media/nsplsh_4ce9ba90b904431f84f9ee4e8eaf9fa1~mv2.jpg/v1/fill/w_442,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/nsplsh_4ce9ba90b904431f84f9ee4e8eaf9fa1~mv2.webp",
+    "https://static.wixstatic.com/media/nsplsh_4ce9ba90b904431f84f9ee4e8eaf9fa1~mv2.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/nsplsh_4ce9ba90b904431f84f9ee4e8eaf9fa1~mv2.jpg",
+    "https://static.wixstatic.com/media/nsplsh_4ce9ba90b904431f84f9ee4e8eaf9fa1~mv2.jpg/v1/fill/w_292,h_165,fp_0.50_0.50,q_90,enc_avif,quality_auto/nsplsh_4ce9ba90b904431f84f9ee4e8eaf9fa1~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_88bb689011dc44e49dcc6f42a2a0ba71~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_88bb689011dc44e49dcc6f42a2a0ba71~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_88bb689011dc44e49dcc6f42a2a0ba71~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_88bb689011dc44e49dcc6f42a2a0ba71~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_88bb689011dc44e49dcc6f42a2a0ba71~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_88bb689011dc44e49dcc6f42a2a0ba71~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_88bb689011dc44e49dcc6f42a2a0ba71~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_88bb689011dc44e49dcc6f42a2a0ba71~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_2846f755d28c4aba96e0b97d967ef6df~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_96d616e5f22f4c1eaee6f76687c3f479~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_55c8bd8065ad4dd1b7a03109a0a19f7c~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_55c8bd8065ad4dd1b7a03109a0a19f7c~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_55c8bd8065ad4dd1b7a03109a0a19f7c~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_55c8bd8065ad4dd1b7a03109a0a19f7c~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_55c8bd8065ad4dd1b7a03109a0a19f7c~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_55c8bd8065ad4dd1b7a03109a0a19f7c~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_55c8bd8065ad4dd1b7a03109a0a19f7c~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_55c8bd8065ad4dd1b7a03109a0a19f7c~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_489e2a4513654309866420c5ae6e45a5~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_489e2a4513654309866420c5ae6e45a5~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_489e2a4513654309866420c5ae6e45a5~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_489e2a4513654309866420c5ae6e45a5~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_489e2a4513654309866420c5ae6e45a5~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_489e2a4513654309866420c5ae6e45a5~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_489e2a4513654309866420c5ae6e45a5~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_489e2a4513654309866420c5ae6e45a5~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_fae7cf9b9c094554aa0449012bb0b1f4~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_c9ebe94050a14e18981caf71dac6ca14~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_1eb1f9e5918b407ebc921cd3079b24f6~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_1eb1f9e5918b407ebc921cd3079b24f6~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_1eb1f9e5918b407ebc921cd3079b24f6~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_1eb1f9e5918b407ebc921cd3079b24f6~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_1eb1f9e5918b407ebc921cd3079b24f6~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_1eb1f9e5918b407ebc921cd3079b24f6~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_1eb1f9e5918b407ebc921cd3079b24f6~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_1eb1f9e5918b407ebc921cd3079b24f6~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_f65d65578db74b4fb3df08fbf26e4c46~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_f65d65578db74b4fb3df08fbf26e4c46~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_f65d65578db74b4fb3df08fbf26e4c46~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_f65d65578db74b4fb3df08fbf26e4c46~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_f65d65578db74b4fb3df08fbf26e4c46~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_f65d65578db74b4fb3df08fbf26e4c46~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_f65d65578db74b4fb3df08fbf26e4c46~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_f65d65578db74b4fb3df08fbf26e4c46~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_9b6bd4f969e8404c90c11f7711d6fef7~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_9b6bd4f969e8404c90c11f7711d6fef7~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_9b6bd4f969e8404c90c11f7711d6fef7~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_9b6bd4f969e8404c90c11f7711d6fef7~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_9b6bd4f969e8404c90c11f7711d6fef7~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_9b6bd4f969e8404c90c11f7711d6fef7~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_9b6bd4f969e8404c90c11f7711d6fef7~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_9b6bd4f969e8404c90c11f7711d6fef7~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_5c32d6d312634f4fa260c21c76858992~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_5c32d6d312634f4fa260c21c76858992~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_5c32d6d312634f4fa260c21c76858992~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_5c32d6d312634f4fa260c21c76858992~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_5c32d6d312634f4fa260c21c76858992~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_5c32d6d312634f4fa260c21c76858992~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_5c32d6d312634f4fa260c21c76858992~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_5c32d6d312634f4fa260c21c76858992~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_e27b81da1413409cafdf057cbe865008~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_e27b81da1413409cafdf057cbe865008~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_e27b81da1413409cafdf057cbe865008~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_e27b81da1413409cafdf057cbe865008~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_e27b81da1413409cafdf057cbe865008~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_e27b81da1413409cafdf057cbe865008~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_e27b81da1413409cafdf057cbe865008~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_e27b81da1413409cafdf057cbe865008~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_a03f7146f86b488fb85050650880499a~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_a03f7146f86b488fb85050650880499a~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_a03f7146f86b488fb85050650880499a~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_a03f7146f86b488fb85050650880499a~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_a03f7146f86b488fb85050650880499a~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_a03f7146f86b488fb85050650880499a~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_a03f7146f86b488fb85050650880499a~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_a03f7146f86b488fb85050650880499a~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_27acb60c7b914faf8bfe001165b6e2cb~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_27acb60c7b914faf8bfe001165b6e2cb~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_27acb60c7b914faf8bfe001165b6e2cb~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_27acb60c7b914faf8bfe001165b6e2cb~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_27acb60c7b914faf8bfe001165b6e2cb~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_27acb60c7b914faf8bfe001165b6e2cb~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_27acb60c7b914faf8bfe001165b6e2cb~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_27acb60c7b914faf8bfe001165b6e2cb~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_95abf4bb2cd94a429fbfb1d4a5e4fe3d~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_95abf4bb2cd94a429fbfb1d4a5e4fe3d~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_95abf4bb2cd94a429fbfb1d4a5e4fe3d~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_95abf4bb2cd94a429fbfb1d4a5e4fe3d~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_95abf4bb2cd94a429fbfb1d4a5e4fe3d~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_95abf4bb2cd94a429fbfb1d4a5e4fe3d~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_95abf4bb2cd94a429fbfb1d4a5e4fe3d~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_95abf4bb2cd94a429fbfb1d4a5e4fe3d~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_611be6480dda40879e906d140c42ff49~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_611be6480dda40879e906d140c42ff49~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_611be6480dda40879e906d140c42ff49~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_611be6480dda40879e906d140c42ff49~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_611be6480dda40879e906d140c42ff49~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_611be6480dda40879e906d140c42ff49~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_611be6480dda40879e906d140c42ff49~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_611be6480dda40879e906d140c42ff49~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_63d124e28252462097c5f467da879e07~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_63d124e28252462097c5f467da879e07~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_63d124e28252462097c5f467da879e07~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_63d124e28252462097c5f467da879e07~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_63d124e28252462097c5f467da879e07~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_63d124e28252462097c5f467da879e07~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_63d124e28252462097c5f467da879e07~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_63d124e28252462097c5f467da879e07~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_ed5940e6fd1a4f8690b52b9f4053a490~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_ed5940e6fd1a4f8690b52b9f4053a490~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_ed5940e6fd1a4f8690b52b9f4053a490~mv2.png/v1/fill/w_442,h_250,fp_0.50_0.50,q_35,blur_30,enc_avif,quality_auto/6d9105_ed5940e6fd1a4f8690b52b9f4053a490~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_ed5940e6fd1a4f8690b52b9f4053a490~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_ed5940e6fd1a4f8690b52b9f4053a490~mv2.png",
+    "https://static.wixstatic.com/media/6d9105_ed5940e6fd1a4f8690b52b9f4053a490~mv2.png/v1/fill/w_292,h_165,fp_0.50_0.50,q_95,enc_avif,quality_auto/6d9105_ed5940e6fd1a4f8690b52b9f4053a490~mv2.webp",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/iso%20sign%20(1).png",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362",
+    "https://www.integpro.com.au/blog/categories/h_364",
+    "https://www.integpro.com.au/blog/categories/quality_auto/iso%20sign%20(1).png",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_724",
+    "https://www.integpro.com.au/blog/categories/h_728",
+    "https://www.integpro.com.au/blog/categories/q_90",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123",
+    "https://www.integpro.com.au/blog/categories/h_31",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_246",
+    "https://www.integpro.com.au/blog/categories/h_62",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31",
+    "https://www.integpro.com.au/blog/categories/quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31",
+    "https://www.integpro.com.au/blog/categories/quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31",
+    "https://www.integpro.com.au/blog/categories/quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31",
+    "https://www.integpro.com.au/blog/categories/quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_62"
+  ],
+  "videos": [],
+  "documents": [],
+  "styles": [
+    [
+      "h2 | open-sans-v2, sans-serif | 22px | 700 | 30.8px | normal | none | rgb(150, 130, 68)",
+      20
+    ],
+    [
+      "div | helvetica-w01-roman, sans-serif | 16px | 400 | 24px | normal | none | rgb(64, 64, 64)",
+      20
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 12px | 400 | normal | normal | none | rgb(64, 64, 64)",
+      20
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(255, 255, 255)",
+      12
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 14px | 400 | normal | 0.7px | none | rgb(64, 64, 64)",
+      6
+    ],
+    [
+      "a | helvetica-w01-roman, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(75, 83, 32)",
+      5
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(64, 64, 64)",
+      3
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 18px | 700 | 25.2px | normal | none | rgb(255, 255, 255)",
+      3
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | normal | 1.4px | none | rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 48px | 700 | 67.2px | normal | none | rgb(150, 130, 68)",
+      1
+    ],
+    [
+      "a | helvetica-w01-roman, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(150, 130, 68)",
+      1
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 32px | 700 | 44.8px | normal | none | rgb(150, 130, 68)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | normal | 1.4px | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 12px | 400 | 16.8px | normal | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 21px | normal | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "a | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(255, 255, 255)",
+      1
+    ]
+  ],
+  "colours": [
+    [
+      "text rgb(64, 64, 64)",
+      49
+    ],
+    [
+      "bg rgb(255, 255, 255)",
+      40
+    ],
+    [
+      "text rgb(150, 130, 68)",
+      23
+    ],
+    [
+      "text rgb(255, 255, 255)",
+      19
+    ],
+    [
+      "text rgb(75, 83, 32)",
+      5
+    ],
+    [
+      "bg rgba(255, 222, 95, 0)",
+      1
+    ],
+    [
+      "text rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "bg rgb(219, 206, 162)",
+      1
+    ],
+    [
+      "bg rgb(150, 130, 68)",
+      1
+    ],
+    [
+      "bg rgb(25, 35, 51)",
+      1
+    ]
+  ],
+  "cssVars": {},
+  "fontFaces": []
+}

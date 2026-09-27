@@ -1,0 +1,1138 @@
+{
+  "url": "https://www.integpro.com.au/disp",
+  "title": "DISP Certification for Australian Defence Contractors | integPRO",
+  "canonical": "https://www.integpro.com.au/disp",
+  "meta": {
+    "description": "DISP compliance for defence contractors. Expert guidance on Defence Industry Security Program. ISO 27001 + DISP integration. Win defence contracts confidently. Free consultation.",
+    "og:title": "DISP Certification for Australian Defence Contractors | integPRO",
+    "og:description": "DISP compliance for defence contractors. Expert guidance on Defence Industry Security Program. ISO 27001 + DISP integration. Win defence contracts confidently. Free consultation.",
+    "og:image": "https://static.wixstatic.com/media/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png/v1/fit/w_2500,h_1330,al_c/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png",
+    "og:image:width": "2500",
+    "og:image:height": "1330",
+    "og:url": "https://www.integpro.com.au/disp",
+    "og:site_name": "Integpro",
+    "og:type": "website",
+    "google-site-verification": "eoaN_za6CafCb65fEkFJEnHfpLGlKQSHJGThzZjyKYk",
+    "msvalidate.01": "D501A2F8421C443890A1B4745C901888",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "DISP Certification for Australian Defence Contractors | integPRO",
+    "twitter:description": "DISP compliance for defence contractors. Expert guidance on Defence Industry Security Program. ISO 27001 + DISP integration. Win defence contracts confidently. Free consultation.",
+    "twitter:image": "https://static.wixstatic.com/media/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png/v1/fit/w_2500,h_1330,al_c/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png",
+    "viewport": "width=device-width, initial-scale=1",
+    "generator": "Wix.com Website Builder",
+    "format-detection": "telephone=no",
+    "skype_toolbar": "skype_toolbar_parser_compatible"
+  },
+  "lang": "en",
+  "pageHeight": 4967,
+  "nav": [
+    {
+      "text": "",
+      "href": "https://www.integpro.com.au/"
+    },
+    {
+      "text": "Home",
+      "href": "https://www.integpro.com.au/"
+    },
+    {
+      "text": "Services",
+      "href": "https://www.integpro.com.au/iso-disp-services"
+    },
+    {
+      "text": "ISO",
+      "href": "https://www.integpro.com.au/iso-service-australia"
+    },
+    {
+      "text": "DISP",
+      "href": "https://www.integpro.com.au/disp"
+    },
+    {
+      "text": "Medical Device iso",
+      "href": "https://www.integpro.com.au/medical-iso"
+    },
+    {
+      "text": "Industries",
+      "href": "https://www.integpro.com.au/industries"
+    },
+    {
+      "text": "About Us",
+      "href": "https://www.integpro.com.au/about-us-iso-team"
+    },
+    {
+      "text": "Blog",
+      "href": "https://www.integpro.com.au/blog"
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "https://www.integpro.com.au/privacy-policy"
+    },
+    {
+      "text": "Free Meeting",
+      "href": "https://www.integpro.com.au/free-consultation"
+    }
+  ],
+  "footer": "Since 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+  "sections": [
+    {
+      "id": "SITE_HEADER",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 94
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [],
+      "text": "Home\nServices\nIndustries\nAbout Us\nBlog\nPrivacy Policy\nFree Meeting",
+      "links": [
+        {
+          "text": "",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 230,
+            "y": 28,
+            "w": 135,
+            "h": 34
+          }
+        },
+        {
+          "text": "Home",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 414,
+            "y": 22,
+            "w": 77,
+            "h": 41
+          }
+        },
+        {
+          "text": "Services",
+          "href": "https://www.integpro.com.au/iso-disp-services",
+          "box": {
+            "x": 499,
+            "y": 22,
+            "w": 93,
+            "h": 41
+          }
+        },
+        {
+          "text": "ISO",
+          "href": "https://www.integpro.com.au/iso-service-australia",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "Medical Device iso",
+          "href": "https://www.integpro.com.au/medical-iso",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "Industries",
+          "href": "https://www.integpro.com.au/industries",
+          "box": {
+            "x": 600,
+            "y": 22,
+            "w": 104,
+            "h": 41
+          }
+        },
+        {
+          "text": "About Us",
+          "href": "https://www.integpro.com.au/about-us-iso-team",
+          "box": {
+            "x": 712,
+            "y": 22,
+            "w": 100,
+            "h": 41
+          }
+        },
+        {
+          "text": "Blog",
+          "href": "https://www.integpro.com.au/blog",
+          "box": {
+            "x": 819,
+            "y": 22,
+            "w": 67,
+            "h": 41
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.integpro.com.au/privacy-policy",
+          "box": {
+            "x": 894,
+            "y": 22,
+            "w": 132,
+            "h": 41
+          }
+        },
+        {
+          "text": "Free Meeting",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 1063,
+            "y": 22,
+            "w": 142,
+            "h": 40
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135,h_34,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+          "alt": "integpro logo",
+          "box": {
+            "x": 230,
+            "y": 28,
+            "w": 135,
+            "h": 34
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-m9c9mm18",
+      "box": {
+        "x": 0,
+        "y": 94,
+        "w": 1440,
+        "h": 556
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgba(255, 255, 255, 0.54)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "DISP Compliance for Defence Contractors",
+          "box": {
+            "x": 233,
+            "y": 207,
+            "w": 974,
+            "h": 132
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "200+",
+          "box": {
+            "x": 418,
+            "y": 531,
+            "w": 65,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "5+",
+          "box": {
+            "x": 698,
+            "y": 531,
+            "w": 32,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "100%",
+          "box": {
+            "x": 971,
+            "y": 531,
+            "w": 65,
+            "h": 28
+          }
+        }
+      ],
+      "text": "DISP Compliance for Defence Contractors\n\nExpert guidance to achieve and maintain DISP compliance. Unlock defence contract opportunities across Australia.\n\nGet Started\n200+\n\nProjects\n\n5+\n\nYears\n\n100%\n\nSuccess",
+      "links": [
+        {
+          "text": "Get Started",
+          "href": "https://www.integpro.com.au/disp#formsubmission",
+          "box": {
+            "x": 643,
+            "y": 436,
+            "w": 153,
+            "h": 34
+          }
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "comp-mil7mot0",
+      "box": {
+        "x": 0,
+        "y": 650,
+        "w": 1440,
+        "h": 455
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(245, 245, 245)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H3",
+          "text": "What is DISP?",
+          "box": {
+            "x": 233,
+            "y": 711,
+            "w": 974,
+            "h": 56
+          }
+        }
+      ],
+      "text": "What is DISP?\n\nThe Defence Industry Security Program ensures contractors maintain appropriate security measures for classified information and defence contracts.\n\nInformation Security\n\nPhysical Security\n\nPersonnel Security\n\nDocumentation",
+      "links": [],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_878bb3a3a7e7451b8f7850b3cf43a03d~mv2.jpg/v1/fill/w_48,h_48,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(1)%205.jpg",
+          "alt": "Designer (1) 5.jpg",
+          "box": {
+            "x": 323,
+            "y": 885,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_24d773b7cca04dc68ee73c529e43bebd~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(5)%202.png",
+          "alt": "Designer (5) 2.png",
+          "box": {
+            "x": 571,
+            "y": 885,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_187f81ee89054807aa6245bcb9302e48~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(2)%202.png",
+          "alt": "Designer (2) 2.png",
+          "box": {
+            "x": 819,
+            "y": 885,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_c67d3c708eb44b0098c28396cb90bd65~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%202.png",
+          "alt": "Designer 2.png",
+          "box": {
+            "x": 1067,
+            "y": 885,
+            "w": 48,
+            "h": 48
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-mil8rfe9",
+      "box": {
+        "x": 0,
+        "y": 1105,
+        "w": 1440,
+        "h": 717
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgba(245, 245, 245, 0)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H3",
+          "text": "Select Desired DISP Level",
+          "box": {
+            "x": 234,
+            "y": 1157,
+            "w": 974,
+            "h": 56
+          }
+        }
+      ],
+      "text": "Select Desired DISP Level\nEntry Level\nLevel 1\nLevel 2\nLevel 3\n\nIt's Suited to most businesses; We have developed a fixed-price package designed to bring companies into compliance with Entry Level DISP in a short time-frame. \n\nCompliance with Entry Level will grant access to OFFICIAL: Sensitive information. \n\n​\n\nSO & CSO Selection & Training\n\nGap Analysis & Action Plan\n\nGovernance & Security Documentation\n\nPhysical & Cyber Security Support\n\nApplication & Interview Preparation\n\nDoD Response & Compliance\n\nOngoing Support: Meetings, Maintenance, 3-Month Assistance\n \n\nWhy Entry Level DISP?\nDISP’s Entry Level or Baseline tier has been designed by the department to bring organisations to modern information security standards. Upon approval of your entry level application, your organisation will be cleared for up to and including Official: Sensitive Information.\n \n\nIn our experience, Entry level DISP is sufficient for the majority of companies in the supply chain.",
+      "links": [],
+      "images": []
+    },
+    {
+      "id": "comp-mil9ir8f",
+      "box": {
+        "x": 0,
+        "y": 1822,
+        "w": 1440,
+        "h": 572
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H3",
+          "text": "DISP Eligibility",
+          "box": {
+            "x": 248,
+            "y": 1901,
+            "w": 318,
+            "h": 56
+          }
+        }
+      ],
+      "text": "DISP Eligibility\n\nWe guide you through every requirement to achieve full DISP compliance and maintain your certification.\n\nAustralian Presence: Your business must operate in Australia and have an ABN.\n \n\nSecurity Commitment: Be ready to implement security policies and nominate responsible personnel.\n \n\nTransparency: Disclose ownership structure and any foreign influence.",
+      "links": [],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_05e4f3647c004e5dbaf7c2d479fb5af0~mv2.jpg/v1/fill/w_588,h_472,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/6d9105_05e4f3647c004e5dbaf7c2d479fb5af0~mv2.jpg",
+          "alt": "5328046.jpg",
+          "box": {
+            "x": 622,
+            "y": 1850,
+            "w": 588,
+            "h": 472
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-milags24",
+      "box": {
+        "x": 0,
+        "y": 2394,
+        "w": 1440,
+        "h": 339
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(245, 245, 245)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H3",
+          "text": "Our Process",
+          "box": {
+            "x": 233,
+            "y": 2454,
+            "w": 974,
+            "h": 56
+          }
+        }
+      ],
+      "text": "Our Process\n\nA straightforward approach to DISP compliance. Typical timeline: 4–6 months.\n\nGap Analysis\n\nAction Plan\n\nImplementation\n\nGovernence\n\nSubmission\n\nOngoing Support",
+      "links": [],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Vector%2021.png",
+          "alt": "disp",
+          "box": {
+            "x": 241,
+            "y": 2579,
+            "w": 172,
+            "h": 60
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Vector%2021.png",
+          "alt": "disp",
+          "box": {
+            "x": 396,
+            "y": 2579,
+            "w": 172,
+            "h": 60
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Vector%2021.png",
+          "alt": "disp",
+          "box": {
+            "x": 551,
+            "y": 2579,
+            "w": 172,
+            "h": 60
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Vector%2021.png",
+          "alt": "disp",
+          "box": {
+            "x": 704,
+            "y": 2579,
+            "w": 172,
+            "h": 60
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Vector%2021.png",
+          "alt": "disp",
+          "box": {
+            "x": 858,
+            "y": 2579,
+            "w": 172,
+            "h": 60
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Vector%2021.png",
+          "alt": "disp",
+          "box": {
+            "x": 1011,
+            "y": 2579,
+            "w": 172,
+            "h": 60
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-milce410",
+      "box": {
+        "x": 0,
+        "y": 2733,
+        "w": 1440,
+        "h": 501
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H3",
+          "text": "Why DISP Compliance?",
+          "box": {
+            "x": 230,
+            "y": 2789,
+            "w": 974,
+            "h": 56
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Access Defence Contracts",
+          "box": {
+            "x": 259,
+            "y": 2997,
+            "w": 259,
+            "h": 54
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Competitive Advantage",
+          "box": {
+            "x": 591,
+            "y": 2997,
+            "w": 259,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Enhanced Security",
+          "box": {
+            "x": 922,
+            "y": 2997,
+            "w": 259,
+            "h": 28
+          }
+        }
+      ],
+      "text": "Why DISP Compliance?\n\nOpen doors to the Australian defence industry and gain significant business advantages.\n\nAccess Defence Contracts\n\nBid on classified defence contracts and expand your opportunities.\n\nCompetitive Advantage\n\nStand out as a trusted, security-cleared defence supplier.\n\nEnhanced Security\n\nStrengthen your security posture and protect business information.",
+      "links": [],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_153f8b643ce74f5089a8277b2918eadb~mv2.jpg/v1/fill/w_48,h_48,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(2)%203.jpg",
+          "alt": "Designer (2) 3.jpg",
+          "box": {
+            "x": 364,
+            "y": 2934,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_334a555192724b6e8b9d78e27e6e4a17~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(3)%202.png",
+          "alt": "Designer (3) 2.png",
+          "box": {
+            "x": 696,
+            "y": 2934,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_24d773b7cca04dc68ee73c529e43bebd~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(5)%202.png",
+          "alt": "Designer (5) 2.png",
+          "box": {
+            "x": 1027,
+            "y": 2934,
+            "w": 48,
+            "h": 48
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-mc49yg7u",
+      "box": {
+        "x": 0,
+        "y": 3234,
+        "w": 1440,
+        "h": 1324
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H3",
+          "text": "Get Started",
+          "box": {
+            "x": 233,
+            "y": 3301,
+            "w": 974,
+            "h": 56
+          }
+        }
+      ],
+      "text": "Get Started\n\n​Book your free assessment for process validation, risk management, and QMS optimisation to strengthen compliance and operational performance.",
+      "links": [],
+      "images": []
+    },
+    {
+      "id": "SITE_FOOTER",
+      "box": {
+        "x": 0,
+        "y": 4558,
+        "w": 1440,
+        "h": 409
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(25, 35, 51)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H6",
+          "text": "Services",
+          "box": {
+            "x": 663,
+            "y": 4588,
+            "w": 113,
+            "h": 25
+          }
+        },
+        {
+          "tag": "H6",
+          "text": "Resources",
+          "box": {
+            "x": 839,
+            "y": 4590,
+            "w": 113,
+            "h": 25
+          }
+        },
+        {
+          "tag": "H6",
+          "text": "Company",
+          "box": {
+            "x": 1041,
+            "y": 4589,
+            "w": 113,
+            "h": 25
+          }
+        }
+      ],
+      "text": "Since 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+      "links": [
+        {
+          "text": "",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 263,
+            "y": 4603,
+            "w": 123,
+            "h": 31
+          }
+        },
+        {
+          "text": "ISO",
+          "href": "https://www.integpro.com.au/iso-service-australia",
+          "box": {
+            "x": 663,
+            "y": 4654,
+            "w": 24,
+            "h": 16
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 663,
+            "y": 4682,
+            "w": 32,
+            "h": 16
+          }
+        },
+        {
+          "text": "Medical",
+          "href": "https://www.integpro.com.au/medical-iso",
+          "box": {
+            "x": 664,
+            "y": 4712,
+            "w": 49,
+            "h": 16
+          }
+        },
+        {
+          "text": "Academy",
+          "href": "https://www.integpro.com.au/blog/categories/iso-certification",
+          "box": {
+            "x": 839,
+            "y": 4627,
+            "w": 59,
+            "h": 16
+          }
+        },
+        {
+          "text": "Blog",
+          "href": "https://www.integpro.com.au/blog/categories/iso-certification",
+          "box": {
+            "x": 839,
+            "y": 4655,
+            "w": 28,
+            "h": 16
+          }
+        },
+        {
+          "text": "Industries",
+          "href": "https://www.integpro.com.au/industries",
+          "box": {
+            "x": 839,
+            "y": 4715,
+            "w": 62,
+            "h": 16
+          }
+        },
+        {
+          "text": "Services",
+          "href": "https://www.integpro.com.au/iso-disp-services",
+          "box": {
+            "x": 1041,
+            "y": 4626,
+            "w": 54,
+            "h": 16
+          }
+        },
+        {
+          "text": "About",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 1041,
+            "y": 4654,
+            "w": 37,
+            "h": 16
+          }
+        },
+        {
+          "text": "Contact",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 1041,
+            "y": 4682,
+            "w": 49,
+            "h": 16
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 1041,
+            "y": 4714,
+            "w": 32,
+            "h": 16
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.linkedin.com/company/integ-pro/posts/?feedView=all",
+          "box": {
+            "x": 253,
+            "y": 4817,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.instagram.com/integpro.iso/",
+          "box": {
+            "x": 296,
+            "y": 4817,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.facebook.com/profile.php?id=61574845131374",
+          "box": {
+            "x": 339,
+            "y": 4817,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.youtube.com/@integPRO-ISO/",
+          "box": {
+            "x": 382,
+            "y": 4817,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 1041,
+            "y": 4913,
+            "w": 86,
+            "h": 16
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/iso%20sign%20(1).png",
+          "alt": "integpro branding sign",
+          "box": {
+            "x": -140,
+            "y": 4580,
+            "w": 362,
+            "h": 364
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+          "alt": "integpro logo",
+          "box": {
+            "x": 263,
+            "y": 4603,
+            "w": 123,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+          "alt": "LinkedIn",
+          "box": {
+            "x": 253,
+            "y": 4817,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+          "alt": "Instagram",
+          "box": {
+            "x": 296,
+            "y": 4817,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+          "alt": "Facebook",
+          "box": {
+            "x": 339,
+            "y": 4817,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+          "alt": "Youtube",
+          "box": {
+            "x": 382,
+            "y": 4817,
+            "w": 31,
+            "h": 31
+          }
+        }
+      ]
+    }
+  ],
+  "text": "Home\nServices\nIndustries\nAbout Us\nBlog\nPrivacy Policy\nFree Meeting\nDISP Compliance for Defence Contractors\n\nExpert guidance to achieve and maintain DISP compliance. Unlock defence contract opportunities across Australia.\n\nGet Started\n200+\n\nProjects\n\n5+\n\nYears\n\n100%\n\nSuccess\n\nWhat is DISP?\n\nThe Defence Industry Security Program ensures contractors maintain appropriate security measures for classified information and defence contracts.\n\nInformation Security\n\nPhysical Security\n\nPersonnel Security\n\nDocumentation\n\nSelect Desired DISP Level\nEntry Level\nLevel 1\nLevel 2\nLevel 3\n\nIt's Suited to most businesses; We have developed a fixed-price package designed to bring companies into compliance with Entry Level DISP in a short time-frame. \n\nCompliance with Entry Level will grant access to OFFICIAL: Sensitive information. \n\n​\n\nSO & CSO Selection & Training\n\nGap Analysis & Action Plan\n\nGovernance & Security Documentation\n\nPhysical & Cyber Security Support\n\nApplication & Interview Preparation\n\nDoD Response & Compliance\n\nOngoing Support: Meetings, Maintenance, 3-Month Assistance\n \n\nWhy Entry Level DISP?\nDISP’s Entry Level or Baseline tier has been designed by the department to bring organisations to modern information security standards. Upon approval of your entry level application, your organisation will be cleared for up to and including Official: Sensitive Information.\n \n\nIn our experience, Entry level DISP is sufficient for the majority of companies in the supply chain.\n\nDISP Eligibility\n\nWe guide you through every requirement to achieve full DISP compliance and maintain your certification.\n\nAustralian Presence: Your business must operate in Australia and have an ABN.\n \n\nSecurity Commitment: Be ready to implement security policies and nominate responsible personnel.\n \n\nTransparency: Disclose ownership structure and any foreign influence.\n\nOur Process\n\nA straightforward approach to DISP compliance. Typical timeline: 4–6 months.\n\nGap Analysis\n\nAction Plan\n\nImplementation\n\nGovernence\n\nSubmission\n\nOngoing Support\n\nWhy DISP Compliance?\n\nOpen doors to the Australian defence industry and gain significant business advantages.\n\nAccess Defence Contracts\n\nBid on classified defence contracts and expand your opportunities.\n\nCompetitive Advantage\n\nStand out as a trusted, security-cleared defence supplier.\n\nEnhanced Security\n\nStrengthen your security posture and protect business information.\n\nGet Started\n\n​Book your free assessment for process validation, risk management, and QMS optimisation to strengthen compliance and operational performance.\n\nSince 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+  "media": [
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135,h_34,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135",
+    "https://www.integpro.com.au/h_34",
+    "https://www.integpro.com.au/al_c",
+    "https://www.integpro.com.au/q_85",
+    "https://www.integpro.com.au/usm_0.66_1.00_0.01",
+    "https://www.integpro.com.au/enc_avif",
+    "https://www.integpro.com.au/quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_270",
+    "https://www.integpro.com.au/h_68",
+    "https://static.wixstatic.com/media/6d9105_878bb3a3a7e7451b8f7850b3cf43a03d~mv2.jpg/v1/fill/w_48,h_48,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(1)%205.jpg",
+    "https://static.wixstatic.com/media/6d9105_878bb3a3a7e7451b8f7850b3cf43a03d~mv2.jpg/v1/fill/w_48",
+    "https://www.integpro.com.au/h_48",
+    "https://www.integpro.com.au/q_80",
+    "https://www.integpro.com.au/quality_auto/Designer%20(1)%205.jpg",
+    "https://static.wixstatic.com/media/6d9105_878bb3a3a7e7451b8f7850b3cf43a03d~mv2.jpg/v1/fill/w_96",
+    "https://www.integpro.com.au/h_96",
+    "https://static.wixstatic.com/media/6d9105_24d773b7cca04dc68ee73c529e43bebd~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(5)%202.png",
+    "https://static.wixstatic.com/media/6d9105_24d773b7cca04dc68ee73c529e43bebd~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Designer%20(5)%202.png",
+    "https://static.wixstatic.com/media/6d9105_24d773b7cca04dc68ee73c529e43bebd~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_187f81ee89054807aa6245bcb9302e48~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(2)%202.png",
+    "https://static.wixstatic.com/media/6d9105_187f81ee89054807aa6245bcb9302e48~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Designer%20(2)%202.png",
+    "https://static.wixstatic.com/media/6d9105_187f81ee89054807aa6245bcb9302e48~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_c67d3c708eb44b0098c28396cb90bd65~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%202.png",
+    "https://static.wixstatic.com/media/6d9105_c67d3c708eb44b0098c28396cb90bd65~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Designer%202.png",
+    "https://static.wixstatic.com/media/6d9105_c67d3c708eb44b0098c28396cb90bd65~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_05e4f3647c004e5dbaf7c2d479fb5af0~mv2.jpg/v1/fill/w_588,h_472,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/6d9105_05e4f3647c004e5dbaf7c2d479fb5af0~mv2.jpg",
+    "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Vector%2021.png",
+    "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172",
+    "https://www.integpro.com.au/h_60",
+    "https://www.integpro.com.au/quality_auto/Vector%2021.png",
+    "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_344",
+    "https://www.integpro.com.au/h_120",
+    "https://static.wixstatic.com/media/6d9105_153f8b643ce74f5089a8277b2918eadb~mv2.jpg/v1/fill/w_48,h_48,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(2)%203.jpg",
+    "https://static.wixstatic.com/media/6d9105_153f8b643ce74f5089a8277b2918eadb~mv2.jpg/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Designer%20(2)%203.jpg",
+    "https://static.wixstatic.com/media/6d9105_153f8b643ce74f5089a8277b2918eadb~mv2.jpg/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_334a555192724b6e8b9d78e27e6e4a17~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(3)%202.png",
+    "https://static.wixstatic.com/media/6d9105_334a555192724b6e8b9d78e27e6e4a17~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Designer%20(3)%202.png",
+    "https://static.wixstatic.com/media/6d9105_334a555192724b6e8b9d78e27e6e4a17~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/iso%20sign%20(1).png",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362",
+    "https://www.integpro.com.au/h_364",
+    "https://www.integpro.com.au/quality_auto/iso%20sign%20(1).png",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_724",
+    "https://www.integpro.com.au/h_728",
+    "https://www.integpro.com.au/q_90",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123",
+    "https://www.integpro.com.au/h_31",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_246",
+    "https://www.integpro.com.au/h_62",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/6d9105_05e4f3647c004e5dbaf7c2d479fb5af0~mv2.jpg"
+  ],
+  "videos": [],
+  "documents": [],
+  "styles": [
+    [
+      "span | helvetica-w01-roman, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(64, 64, 64)",
+      45
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(255, 255, 255)",
+      12
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(150, 130, 68)",
+      9
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 14px | 400 | normal | 0.7px | none | rgb(64, 64, 64)",
+      6
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(64, 64, 64)",
+      6
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 40px | 700 | 56px | normal | none | rgb(150, 130, 68)",
+      6
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 18px | 400 | normal | normal | none | rgb(0, 0, 0)",
+      4
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 20px | 700 | 28px | normal | none | rgb(64, 64, 64)",
+      3
+    ],
+    [
+      "h3 | open-sans-v2, sans-serif | 40px | 700 | 56px | normal | none | rgb(0, 0, 0)",
+      3
+    ],
+    [
+      "span | helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif | 15px | 400 | 21px | normal | none | rgb(0, 0, 0)",
+      3
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 18px | 700 | 25.2px | normal | none | rgb(255, 255, 255)",
+      3
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 40px | 700 | 56px | normal | none | rgb(0, 0, 0)",
+      2
+    ],
+    [
+      "h5 | open-sans-v2, sans-serif | 20px | 700 | 28px | normal | none | rgb(0, 0, 0)",
+      2
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | normal | 1.4px | none | rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "h1 | open-sans-v2, sans-serif | 55px | 700 | 66px | normal | none | rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 55px | 700 | 66px | normal | none | rgb(150, 130, 68)",
+      1
+    ],
+    [
+      "p | helvetica-w01-roman, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | normal | 1.4px | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "span | helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif | 15px | 400 | normal | normal | none | rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 16px | 400 | 24px | normal | none | rgb(64, 64, 64)",
+      1
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 20px | 700 | normal | normal | none | rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 12px | 400 | 16.8px | normal | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 21px | normal | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "a | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(255, 255, 255)",
+      1
+    ]
+  ],
+  "colours": [
+    [
+      "text rgb(64, 64, 64)",
+      61
+    ],
+    [
+      "bg rgb(255, 255, 255)",
+      26
+    ],
+    [
+      "text rgb(0, 0, 0)",
+      19
+    ],
+    [
+      "text rgb(255, 255, 255)",
+      19
+    ],
+    [
+      "text rgb(150, 130, 68)",
+      16
+    ],
+    [
+      "bg rgb(245, 245, 245)",
+      3
+    ],
+    [
+      "bg rgba(255, 222, 95, 0)",
+      1
+    ],
+    [
+      "bg rgba(255, 255, 255, 0.54)",
+      1
+    ],
+    [
+      "bg rgb(150, 130, 68)",
+      1
+    ],
+    [
+      "bg rgba(245, 245, 245, 0)",
+      1
+    ],
+    [
+      "bg rgb(25, 35, 51)",
+      1
+    ]
+  ],
+  "cssVars": {},
+  "fontFaces": []
+}

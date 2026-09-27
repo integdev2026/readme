@@ -1,0 +1,818 @@
+{
+  "url": "https://www.integpro.com.au/privacy-policy",
+  "title": "Privacy Policy | Integpro",
+  "canonical": "https://www.integpro.com.au/privacy-policy",
+  "meta": {
+    "description": "Explore IntegPRO's privacy policy outlining our commitment to data protection while offering expert ISO consulting and auditing services across Australia. Trust us for secure, compliant, and reliable management systems solutions.",
+    "og:title": "Privacy Policy | Integpro",
+    "og:description": "Explore IntegPRO's privacy policy outlining our commitment to data protection while offering expert ISO consulting and auditing services across Australia. Trust us for secure, compliant, and reliable management systems solutions.",
+    "og:image": "https://static.wixstatic.com/media/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png/v1/fit/w_2500,h_1330,al_c/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png",
+    "og:image:width": "2500",
+    "og:image:height": "1330",
+    "og:url": "https://www.integpro.com.au/privacy-policy",
+    "og:site_name": "Integpro",
+    "og:type": "website",
+    "google-site-verification": "eoaN_za6CafCb65fEkFJEnHfpLGlKQSHJGThzZjyKYk",
+    "msvalidate.01": "D501A2F8421C443890A1B4745C901888",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Privacy Policy | Integpro",
+    "twitter:description": "Explore IntegPRO's privacy policy outlining our commitment to data protection while offering expert ISO consulting and auditing services across Australia. Trust us for secure, compliant, and reliable management systems solutions.",
+    "twitter:image": "https://static.wixstatic.com/media/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png/v1/fit/w_2500,h_1330,al_c/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png",
+    "viewport": "width=device-width, initial-scale=1",
+    "generator": "Wix.com Website Builder",
+    "format-detection": "telephone=no",
+    "skype_toolbar": "skype_toolbar_parser_compatible"
+  },
+  "lang": "en",
+  "pageHeight": 4409,
+  "nav": [
+    {
+      "text": "",
+      "href": "https://www.integpro.com.au/"
+    },
+    {
+      "text": "Home",
+      "href": "https://www.integpro.com.au/"
+    },
+    {
+      "text": "Services",
+      "href": "https://www.integpro.com.au/iso-disp-services"
+    },
+    {
+      "text": "ISO",
+      "href": "https://www.integpro.com.au/iso-service-australia"
+    },
+    {
+      "text": "DISP",
+      "href": "https://www.integpro.com.au/disp"
+    },
+    {
+      "text": "Medical Device iso",
+      "href": "https://www.integpro.com.au/medical-iso"
+    },
+    {
+      "text": "Industries",
+      "href": "https://www.integpro.com.au/industries"
+    },
+    {
+      "text": "About Us",
+      "href": "https://www.integpro.com.au/about-us-iso-team"
+    },
+    {
+      "text": "Blog",
+      "href": "https://www.integpro.com.au/blog"
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "https://www.integpro.com.au/privacy-policy"
+    },
+    {
+      "text": "Free Meeting",
+      "href": "https://www.integpro.com.au/free-consultation"
+    }
+  ],
+  "footer": "Since 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+  "sections": [
+    {
+      "id": "SITE_HEADER",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 94
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [],
+      "text": "Home\nServices\nIndustries\nAbout Us\nBlog\nPrivacy Policy\nFree Meeting",
+      "links": [
+        {
+          "text": "",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 230,
+            "y": 28,
+            "w": 135,
+            "h": 34
+          }
+        },
+        {
+          "text": "Home",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 414,
+            "y": 22,
+            "w": 77,
+            "h": 41
+          }
+        },
+        {
+          "text": "Services",
+          "href": "https://www.integpro.com.au/iso-disp-services",
+          "box": {
+            "x": 499,
+            "y": 22,
+            "w": 93,
+            "h": 41
+          }
+        },
+        {
+          "text": "ISO",
+          "href": "https://www.integpro.com.au/iso-service-australia",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "Medical Device iso",
+          "href": "https://www.integpro.com.au/medical-iso",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "Industries",
+          "href": "https://www.integpro.com.au/industries",
+          "box": {
+            "x": 600,
+            "y": 22,
+            "w": 104,
+            "h": 41
+          }
+        },
+        {
+          "text": "About Us",
+          "href": "https://www.integpro.com.au/about-us-iso-team",
+          "box": {
+            "x": 712,
+            "y": 22,
+            "w": 100,
+            "h": 41
+          }
+        },
+        {
+          "text": "Blog",
+          "href": "https://www.integpro.com.au/blog",
+          "box": {
+            "x": 819,
+            "y": 22,
+            "w": 67,
+            "h": 41
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.integpro.com.au/privacy-policy",
+          "box": {
+            "x": 894,
+            "y": 22,
+            "w": 132,
+            "h": 41
+          }
+        },
+        {
+          "text": "Free Meeting",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 1063,
+            "y": 22,
+            "w": 142,
+            "h": 40
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135,h_34,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+          "alt": "integpro logo",
+          "box": {
+            "x": 230,
+            "y": 28,
+            "w": 135,
+            "h": 34
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-lwrmswpf",
+      "box": {
+        "x": 0,
+        "y": 94,
+        "w": 1440,
+        "h": 270
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Privacy Policy",
+          "box": {
+            "x": 384,
+            "y": 164,
+            "w": 672,
+            "h": 77
+          }
+        }
+      ],
+      "text": "Privacy Policy\n\nWelcome to integPRO’s Privacy Policy. Effective from 17 April 2025, this policy outlines how integPRO Pty Ltd (“integPRO”, “we”, “us”, or “our”) collects, uses, stores, and safeguards your personal information. In compliance with the requirements of the Privacy Act 1988 (Cth) and the Australian Privacy Principles (APPs), our aim is to provide transparency, ensure your privacy is respected, and clearly explain your rights and how your data is managed when you interact with us or use our services",
+      "links": [],
+      "images": []
+    },
+    {
+      "id": "comp-lwrmswpg5",
+      "box": {
+        "x": 0,
+        "y": 364,
+        "w": 1440,
+        "h": 3636
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "Effective Date: 17/04/2025",
+          "box": {
+            "x": 418,
+            "y": 414,
+            "w": 604,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "1. What Information We Collect",
+          "box": {
+            "x": 417,
+            "y": 692,
+            "w": 604,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "2. How We Collect Information",
+          "box": {
+            "x": 417,
+            "y": 1329,
+            "w": 604,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "3. Why We Collect Your Information",
+          "box": {
+            "x": 418,
+            "y": 1573,
+            "w": 604,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "4. Disclosure of Personal Information",
+          "box": {
+            "x": 418,
+            "y": 1856,
+            "w": 604,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "5. Data Security",
+          "box": {
+            "x": 418,
+            "y": 2172,
+            "w": 604,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "6. Access to and Correction of Your Information",
+          "box": {
+            "x": 418,
+            "y": 2514,
+            "w": 604,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "7. Cookies and Tracking Technologies",
+          "box": {
+            "x": 418,
+            "y": 2760,
+            "w": 604,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "8. Third-Party Links",
+          "box": {
+            "x": 418,
+            "y": 3044,
+            "w": 604,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "9. Marketing Communications",
+          "box": {
+            "x": 418,
+            "y": 3222,
+            "w": 604,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "10. International Data Transfers",
+          "box": {
+            "x": 418,
+            "y": 3394,
+            "w": 604,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "11. Changes to This Policy",
+          "box": {
+            "x": 418,
+            "y": 3574,
+            "w": 604,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H2",
+          "text": "12. Contact Us",
+          "box": {
+            "x": 417,
+            "y": 3751,
+            "w": 604,
+            "h": 27
+          }
+        }
+      ],
+      "text": "Effective Date: 17/04/2025\n\nAt integPRO Pty Ltd (\"integPRO\", \"we\", \"us\", or \"our\"), we are committed to protecting the privacy of individuals and managing personal information in an open and transparent way. This Privacy Policy explains how we collect, use, disclose, store, and protect your personal information in accordance with the Privacy Act 1988 (Cth) and the Australian Privacy Principles (APPs).\n \n\nBy using our website (www.integpro.com.au), engaging with us via email, phone, or other communication channels, or using our services, you consent to the practices described in this policy.\n\n1. What Information We Collect\n\nWe may collect the following types of personal information:\n\na. Contact Information\n\nName\n\nCompany name\n\nEmail address\n\nPhone number\n\nPostal and/or business address\n \n\nb. Business-Related Information\n\nBusiness structure and processes\n\nManagement system details\n\nRegulatory compliance information\n\nProject-related communications\n \n\nc. Website Usage Data\n\nIP address\n\nBrowser type and version\n\nPages visited and time spent\n\nReferring website\n\nCookies and other tracking technologies\n \n\nd. Sensitive Information We generally do not collect sensitive information unless it is necessary for our services and you have given consent. Sensitive information may include details related to racial or ethnic origin, membership of professional associations, or criminal records.\n\n2. How We Collect Information\n\nWe may collect your information through:\n \n\nDirect contact (e.g., phone calls, online forms, emails, meetings)\n\nWebsite submissions (e.g., contact forms or subscription sign-ups)\n\nNetworking events, conferences, or sponsorship interactions\n\nThird-party service providers or partners (with your consent)\n\nPublic sources or directories (e.g., business websites or LinkedIn)\n\n3. Why We Collect Your Information\n\nWe collect and use personal information for the following purposes:\n \n\nTo provide and manage our services\n\nTo communicate with you about projects, updates, or inquiries\n\nTo deliver proposals, quotes, or reports\n\nTo meet legal, regulatory, or contractual obligations\n\nFor marketing, promotion, and event-related communication (only with your consent)\n\nTo improve our website, services, and client experience\n\n4. Disclosure of Personal Information\n\nWe may disclose your personal information to:\n \n\nOur employees, contractors, and consultants (on a need-to-know basis)\n\nProfessional advisers (e.g., legal, accounting, or IT support)\n\nThird-party service providers (e.g., website hosting, analytics, cloud storage)\n\nRegulatory bodies, government agencies, or legal entities (where required by law)\n\nPartners or affiliates involved in joint projects (with your consent)\n \n\nWe will not sell, rent, or trade your personal information to third parties.\n\n5. Data Security\n\nWe take reasonable steps to protect your personal information from misuse, interference, loss, unauthorized access, modification, or disclosure. Measures include:\n \n\nSecure storage systems and access controls\n\nEncryption for data transmission where appropriate\n\nRegular system updates and data backups\n\nStaff training and confidentiality agreements\n \n\nWhile we strive to protect your data, no system is 100% secure. Please contact us immediately if you suspect a breach.\n\n6. Access to and Correction of Your Information\n\nYou have the right to:\n \n\nAccess your personal information held by us\n\nRequest correction of inaccurate, out-of-date, or incomplete information\n \n\nTo make a request, please contact us using the details below. We may require proof of identity. In most cases, we will respond within 30 days.\n\n7. Cookies and Tracking Technologies\n\nOur website uses cookies and similar technologies to:\n \n\nImprove user experience and site performance\n\nAnalyze traffic and trends\n\nRemember user preferences\n \n\nYou can manage cookie settings through your browser preferences. Some features of our site may not work properly if cookies are disabled.\n\n8. Third-Party Links\n\nOur website may contain links to third-party websites. We are not responsible for the privacy practices or content of these external sites. We encourage you to read their privacy policies before providing any personal information.\n\n9. Marketing Communications\n\nWith your consent, we may send you emails or newsletters about our services, updates, or events. You can unsubscribe at any time using the link in the email or by contacting us.\n\n10. International Data Transfers\n\nWe do not generally transfer personal information overseas. If we do, we will take reasonable steps to ensure the recipient complies with privacy laws or has equivalent safeguards in place.\n\n11. Changes to This Policy\n\nWe may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal requirements. The latest version will always be available on our website, and we encourage you to review it periodically.\n\n12. Contact Us\n\nIf you have any questions, concerns, or complaints about this Privacy Policy or our handling of your personal information, please contact:\n\nintegPRO Pty Ltd\nEmail: info@integpro.com.au\nPhone: 1300 60 50 22",
+      "links": [
+        {
+          "text": "www.integpro.com.au",
+          "href": "http://www.integpro.com.au/",
+          "box": {
+            "x": 575,
+            "y": 576,
+            "w": 152,
+            "h": 19
+          }
+        },
+        {
+          "text": "info@integpro.com.au",
+          "href": "mailto:info@integpro.com.au",
+          "box": {
+            "x": 465,
+            "y": 3849,
+            "w": 155,
+            "h": 19
+          }
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "SITE_FOOTER",
+      "box": {
+        "x": 0,
+        "y": 4000,
+        "w": 1440,
+        "h": 409
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(25, 35, 51)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H6",
+          "text": "Services",
+          "box": {
+            "x": 663,
+            "y": 4030,
+            "w": 113,
+            "h": 25
+          }
+        },
+        {
+          "tag": "H6",
+          "text": "Resources",
+          "box": {
+            "x": 839,
+            "y": 4032,
+            "w": 113,
+            "h": 25
+          }
+        },
+        {
+          "tag": "H6",
+          "text": "Company",
+          "box": {
+            "x": 1041,
+            "y": 4031,
+            "w": 113,
+            "h": 25
+          }
+        }
+      ],
+      "text": "Since 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+      "links": [
+        {
+          "text": "",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 263,
+            "y": 4045,
+            "w": 123,
+            "h": 31
+          }
+        },
+        {
+          "text": "ISO",
+          "href": "https://www.integpro.com.au/iso-service-australia",
+          "box": {
+            "x": 663,
+            "y": 4095,
+            "w": 24,
+            "h": 16
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 663,
+            "y": 4124,
+            "w": 32,
+            "h": 16
+          }
+        },
+        {
+          "text": "Medical",
+          "href": "https://www.integpro.com.au/medical-iso",
+          "box": {
+            "x": 664,
+            "y": 4154,
+            "w": 49,
+            "h": 16
+          }
+        },
+        {
+          "text": "Academy",
+          "href": "https://www.integpro.com.au/blog/categories/iso-certification",
+          "box": {
+            "x": 839,
+            "y": 4069,
+            "w": 59,
+            "h": 16
+          }
+        },
+        {
+          "text": "Blog",
+          "href": "https://www.integpro.com.au/blog/categories/iso-certification",
+          "box": {
+            "x": 839,
+            "y": 4096,
+            "w": 28,
+            "h": 16
+          }
+        },
+        {
+          "text": "Industries",
+          "href": "https://www.integpro.com.au/industries",
+          "box": {
+            "x": 839,
+            "y": 4157,
+            "w": 62,
+            "h": 16
+          }
+        },
+        {
+          "text": "Services",
+          "href": "https://www.integpro.com.au/iso-disp-services",
+          "box": {
+            "x": 1041,
+            "y": 4068,
+            "w": 54,
+            "h": 16
+          }
+        },
+        {
+          "text": "About",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 1041,
+            "y": 4095,
+            "w": 37,
+            "h": 16
+          }
+        },
+        {
+          "text": "Contact",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 1041,
+            "y": 4124,
+            "w": 49,
+            "h": 16
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 1041,
+            "y": 4156,
+            "w": 32,
+            "h": 16
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.linkedin.com/company/integ-pro/posts/?feedView=all",
+          "box": {
+            "x": 253,
+            "y": 4259,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.instagram.com/integpro.iso/",
+          "box": {
+            "x": 296,
+            "y": 4259,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.facebook.com/profile.php?id=61574845131374",
+          "box": {
+            "x": 339,
+            "y": 4259,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.youtube.com/@integPRO-ISO/",
+          "box": {
+            "x": 382,
+            "y": 4259,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 1041,
+            "y": 4355,
+            "w": 86,
+            "h": 16
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/iso%20sign%20(1).png",
+          "alt": "integpro branding sign",
+          "box": {
+            "x": -140,
+            "y": 4022,
+            "w": 362,
+            "h": 364
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+          "alt": "integpro logo",
+          "box": {
+            "x": 263,
+            "y": 4045,
+            "w": 123,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+          "alt": "LinkedIn",
+          "box": {
+            "x": 253,
+            "y": 4259,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+          "alt": "Instagram",
+          "box": {
+            "x": 296,
+            "y": 4259,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+          "alt": "Facebook",
+          "box": {
+            "x": 339,
+            "y": 4259,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+          "alt": "Youtube",
+          "box": {
+            "x": 382,
+            "y": 4259,
+            "w": 31,
+            "h": 31
+          }
+        }
+      ]
+    }
+  ],
+  "text": "Home\nServices\nIndustries\nAbout Us\nBlog\nPrivacy Policy\nFree Meeting\nPrivacy Policy\n\nWelcome to integPRO’s Privacy Policy. Effective from 17 April 2025, this policy outlines how integPRO Pty Ltd (“integPRO”, “we”, “us”, or “our”) collects, uses, stores, and safeguards your personal information. In compliance with the requirements of the Privacy Act 1988 (Cth) and the Australian Privacy Principles (APPs), our aim is to provide transparency, ensure your privacy is respected, and clearly explain your rights and how your data is managed when you interact with us or use our services\n\nEffective Date: 17/04/2025\n\nAt integPRO Pty Ltd (\"integPRO\", \"we\", \"us\", or \"our\"), we are committed to protecting the privacy of individuals and managing personal information in an open and transparent way. This Privacy Policy explains how we collect, use, disclose, store, and protect your personal information in accordance with the Privacy Act 1988 (Cth) and the Australian Privacy Principles (APPs).\n \n\nBy using our website (www.integpro.com.au), engaging with us via email, phone, or other communication channels, or using our services, you consent to the practices described in this policy.\n\n1. What Information We Collect\n\nWe may collect the following types of personal information:\n\na. Contact Information\n\nName\n\nCompany name\n\nEmail address\n\nPhone number\n\nPostal and/or business address\n \n\nb. Business-Related Information\n\nBusiness structure and processes\n\nManagement system details\n\nRegulatory compliance information\n\nProject-related communications\n \n\nc. Website Usage Data\n\nIP address\n\nBrowser type and version\n\nPages visited and time spent\n\nReferring website\n\nCookies and other tracking technologies\n \n\nd. Sensitive Information We generally do not collect sensitive information unless it is necessary for our services and you have given consent. Sensitive information may include details related to racial or ethnic origin, membership of professional associations, or criminal records.\n\n2. How We Collect Information\n\nWe may collect your information through:\n \n\nDirect contact (e.g., phone calls, online forms, emails, meetings)\n\nWebsite submissions (e.g., contact forms or subscription sign-ups)\n\nNetworking events, conferences, or sponsorship interactions\n\nThird-party service providers or partners (with your consent)\n\nPublic sources or directories (e.g., business websites or LinkedIn)\n\n3. Why We Collect Your Information\n\nWe collect and use personal information for the following purposes:\n \n\nTo provide and manage our services\n\nTo communicate with you about projects, updates, or inquiries\n\nTo deliver proposals, quotes, or reports\n\nTo meet legal, regulatory, or contractual obligations\n\nFor marketing, promotion, and event-related communication (only with your consent)\n\nTo improve our website, services, and client experience\n\n4. Disclosure of Personal Information\n\nWe may disclose your personal information to:\n \n\nOur employees, contractors, and consultants (on a need-to-know basis)\n\nProfessional advisers (e.g., legal, accounting, or IT support)\n\nThird-party service providers (e.g., website hosting, analytics, cloud storage)\n\nRegulatory bodies, government agencies, or legal entities (where required by law)\n\nPartners or affiliates involved in joint projects (with your consent)\n \n\nWe will not sell, rent, or trade your personal information to third parties.\n\n5. Data Security\n\nWe take reasonable steps to protect your personal information from misuse, interference, loss, unauthorized access, modification, or disclosure. Measures include:\n \n\nSecure storage systems and access controls\n\nEncryption for data transmission where appropriate\n\nRegular system updates and data backups\n\nStaff training and confidentiality agreements\n \n\nWhile we strive to protect your data, no system is 100% secure. Please contact us immediately if you suspect a breach.\n\n6. Access to and Correction of Your Information\n\nYou have the right to:\n \n\nAccess your personal information held by us\n\nRequest correction of inaccurate, out-of-date, or incomplete information\n \n\nTo make a request, please contact us using the details below. We may require proof of identity. In most cases, we will respond within 30 days.\n\n7. Cookies and Tracking Technologies\n\nOur website uses cookies and similar technologies to:\n \n\nImprove user experience and site performance\n\nAnalyze traffic and trends\n\nRemember user preferences\n \n\nYou can manage cookie settings through your browser preferences. Some features of our site may not work properly if cookies are disabled.\n\n8. Third-Party Links\n\nOur website may contain links to third-party websites. We are not responsible for the privacy practices or content of these external sites. We encourage you to read their privacy policies before providing any personal information.\n\n9. Marketing Communications\n\nWith your consent, we may send you emails or newsletters about our services, updates, or events. You can unsubscribe at any time using the link in the email or by contacting us.\n\n10. International Data Transfers\n\nWe do not generally transfer personal information overseas. If we do, we will take reasonable steps to ensure the recipient complies with privacy laws or has equivalent safeguards in place.\n\n11. Changes to This Policy\n\nWe may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal requirements. The latest version will always be available on our website, and we encourage you to review it periodically.\n\n12. Contact Us\n\nIf you have any questions, concerns, or complaints about this Privacy Policy or our handling of your personal information, please contact:\n\nintegPRO Pty Ltd\nEmail: info@integpro.com.au\nPhone: 1300 60 50 22 \n\nSince 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+  "media": [
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135,h_34,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135",
+    "https://www.integpro.com.au/h_34",
+    "https://www.integpro.com.au/al_c",
+    "https://www.integpro.com.au/q_85",
+    "https://www.integpro.com.au/usm_0.66_1.00_0.01",
+    "https://www.integpro.com.au/enc_avif",
+    "https://www.integpro.com.au/quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_270",
+    "https://www.integpro.com.au/h_68",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/iso%20sign%20(1).png",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362",
+    "https://www.integpro.com.au/h_364",
+    "https://www.integpro.com.au/quality_auto/iso%20sign%20(1).png",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_724",
+    "https://www.integpro.com.au/h_728",
+    "https://www.integpro.com.au/q_90",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123",
+    "https://www.integpro.com.au/h_31",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_246",
+    "https://www.integpro.com.au/h_62",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_62"
+  ],
+  "videos": [],
+  "documents": [],
+  "styles": [
+    [
+      "span | helvetica-w01-roman, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(64, 64, 64)",
+      64
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 19px | 700 | 26.6px | normal | none | rgb(150, 130, 68)",
+      13
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(255, 255, 255)",
+      12
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 14px | 400 | normal | 0.7px | none | rgb(64, 64, 64)",
+      5
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 18px | 700 | 25.2px | normal | none | rgb(255, 255, 255)",
+      3
+    ],
+    [
+      "a | helvetica-w01-roman, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(64, 64, 64)",
+      2
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 14px | 400 | normal | 0.7px | none | rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | normal | 1.4px | none | rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 55px | 700 | 77px | normal | none | rgb(150, 130, 68)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 12px | 400 | 16.8px | normal | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 21px | normal | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "a | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(255, 255, 255)",
+      1
+    ]
+  ],
+  "colours": [
+    [
+      "text rgb(64, 64, 64)",
+      71
+    ],
+    [
+      "text rgb(255, 255, 255)",
+      18
+    ],
+    [
+      "text rgb(150, 130, 68)",
+      14
+    ],
+    [
+      "bg rgb(255, 255, 255)",
+      13
+    ],
+    [
+      "text rgb(0, 0, 0)",
+      2
+    ],
+    [
+      "bg rgba(255, 222, 95, 0)",
+      1
+    ],
+    [
+      "bg rgb(219, 206, 162)",
+      1
+    ],
+    [
+      "bg rgb(25, 35, 51)",
+      1
+    ]
+  ],
+  "cssVars": {},
+  "fontFaces": []
+}

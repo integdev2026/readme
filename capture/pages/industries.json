@@ -1,0 +1,1351 @@
+{
+  "url": "https://www.integpro.com.au/industries",
+  "title": "Industries | Integpro",
+  "canonical": "https://www.integpro.com.au/industries",
+  "meta": {
+    "description": "Discover IntegPRO's compliance solutions for renewable energy standards, ensuring efficiency and standards adherence.",
+    "og:title": "Industries | Integpro",
+    "og:description": "Discover IntegPRO's compliance solutions for renewable energy standards, ensuring efficiency and standards adherence.",
+    "og:image": "https://static.wixstatic.com/media/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png/v1/fit/w_2500,h_1330,al_c/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png",
+    "og:image:width": "2500",
+    "og:image:height": "1330",
+    "og:url": "https://www.integpro.com.au/industries",
+    "og:site_name": "Integpro",
+    "og:type": "website",
+    "google-site-verification": "eoaN_za6CafCb65fEkFJEnHfpLGlKQSHJGThzZjyKYk",
+    "msvalidate.01": "D501A2F8421C443890A1B4745C901888",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Industries | Integpro",
+    "twitter:description": "Discover IntegPRO's compliance solutions for renewable energy standards, ensuring efficiency and standards adherence.",
+    "twitter:image": "https://static.wixstatic.com/media/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png/v1/fit/w_2500,h_1330,al_c/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png",
+    "viewport": "width=device-width, initial-scale=1",
+    "generator": "Wix.com Website Builder",
+    "format-detection": "telephone=no",
+    "skype_toolbar": "skype_toolbar_parser_compatible"
+  },
+  "lang": "en",
+  "pageHeight": 4535,
+  "nav": [
+    {
+      "text": "",
+      "href": "https://www.integpro.com.au/"
+    },
+    {
+      "text": "Home",
+      "href": "https://www.integpro.com.au/"
+    },
+    {
+      "text": "Services",
+      "href": "https://www.integpro.com.au/iso-disp-services"
+    },
+    {
+      "text": "ISO",
+      "href": "https://www.integpro.com.au/iso-service-australia"
+    },
+    {
+      "text": "DISP",
+      "href": "https://www.integpro.com.au/disp"
+    },
+    {
+      "text": "Medical Device iso",
+      "href": "https://www.integpro.com.au/medical-iso"
+    },
+    {
+      "text": "Industries",
+      "href": "https://www.integpro.com.au/industries"
+    },
+    {
+      "text": "About Us",
+      "href": "https://www.integpro.com.au/about-us-iso-team"
+    },
+    {
+      "text": "Blog",
+      "href": "https://www.integpro.com.au/blog"
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "https://www.integpro.com.au/privacy-policy"
+    },
+    {
+      "text": "Free Meeting",
+      "href": "https://www.integpro.com.au/free-consultation"
+    }
+  ],
+  "footer": "Since 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+  "sections": [
+    {
+      "id": "SITE_HEADER",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 94
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [],
+      "text": "Home\nServices\nIndustries\nAbout Us\nBlog\nPrivacy Policy\nFree Meeting",
+      "links": [
+        {
+          "text": "",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 230,
+            "y": 28,
+            "w": 135,
+            "h": 34
+          }
+        },
+        {
+          "text": "Home",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 414,
+            "y": 22,
+            "w": 77,
+            "h": 41
+          }
+        },
+        {
+          "text": "Services",
+          "href": "https://www.integpro.com.au/iso-disp-services",
+          "box": {
+            "x": 499,
+            "y": 22,
+            "w": 93,
+            "h": 41
+          }
+        },
+        {
+          "text": "ISO",
+          "href": "https://www.integpro.com.au/iso-service-australia",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "Medical Device iso",
+          "href": "https://www.integpro.com.au/medical-iso",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "Industries",
+          "href": "https://www.integpro.com.au/industries",
+          "box": {
+            "x": 600,
+            "y": 22,
+            "w": 104,
+            "h": 41
+          }
+        },
+        {
+          "text": "About Us",
+          "href": "https://www.integpro.com.au/about-us-iso-team",
+          "box": {
+            "x": 712,
+            "y": 22,
+            "w": 100,
+            "h": 41
+          }
+        },
+        {
+          "text": "Blog",
+          "href": "https://www.integpro.com.au/blog",
+          "box": {
+            "x": 819,
+            "y": 22,
+            "w": 67,
+            "h": 41
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.integpro.com.au/privacy-policy",
+          "box": {
+            "x": 894,
+            "y": 22,
+            "w": 132,
+            "h": 41
+          }
+        },
+        {
+          "text": "Free Meeting",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 1063,
+            "y": 22,
+            "w": 142,
+            "h": 40
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135,h_34,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+          "alt": "integpro logo",
+          "box": {
+            "x": 230,
+            "y": 28,
+            "w": 135,
+            "h": 34
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-m96j8k72",
+      "box": {
+        "x": 0,
+        "y": 94,
+        "w": 1440,
+        "h": 426
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(150, 130, 68)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Industries We Serve",
+          "box": {
+            "x": 233,
+            "y": 160,
+            "w": 974,
+            "h": 66
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "1,000+",
+          "box": {
+            "x": 418,
+            "y": 418,
+            "w": 65,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "7+",
+          "box": {
+            "x": 698,
+            "y": 418,
+            "w": 32,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "100%",
+          "box": {
+            "x": 971,
+            "y": 418,
+            "w": 65,
+            "h": 28
+          }
+        }
+      ],
+      "text": "Industries We Serve\n\nTailored ISO & DISP solutions for Defence, Construction, Medical Devices, Government, and Manufacturing.\n\nFree Gap Assessment\nView Services\n1,000+\n\nProjects\n\n7+\n\nYears\n\n100%\n\nSuccess",
+      "links": [
+        {
+          "text": "Free Gap Assessment",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 503,
+            "y": 311,
+            "w": 234,
+            "h": 34
+          }
+        },
+        {
+          "text": "View Services",
+          "href": "https://www.integpro.com.au/iso-disp-services",
+          "box": {
+            "x": 752,
+            "y": 311,
+            "w": 184,
+            "h": 34
+          }
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "comp-m9kw3uz6",
+      "box": {
+        "x": 0,
+        "y": 520,
+        "w": 1440,
+        "h": 777
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H3",
+          "text": "Specialised Industry Solutions",
+          "box": {
+            "x": 332,
+            "y": 551,
+            "w": 774,
+            "h": 48
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Defence & DISP",
+          "box": {
+            "x": 272,
+            "y": 757,
+            "w": 264,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Government & Public",
+          "box": {
+            "x": 272,
+            "y": 1047,
+            "w": 264,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Construction",
+          "box": {
+            "x": 604,
+            "y": 757,
+            "w": 264,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Manufacturing",
+          "box": {
+            "x": 604,
+            "y": 1048,
+            "w": 264,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Medical Devices",
+          "box": {
+            "x": 935,
+            "y": 757,
+            "w": 264,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Information & ICT",
+          "box": {
+            "x": 935,
+            "y": 1048,
+            "w": 264,
+            "h": 28
+          }
+        }
+      ],
+      "text": "Specialised Industry Solutions\n\nClick any industry to see tailored compliance solutions, deliverables, and timelines\n\nDefence & DISP\n\nDISP compliance for defense contractors\n\nLearn More\nGovernment & Public\n\nCompliance audits & governance frameworks\n\nLearn More\nConstruction\n\nQuality, safety & environmental compliance\n\nLearn More\nManufacturing\n\nQuality, safety & environmental compliance\n\nLearn More\nMedical Devices\n\nTGA compliance & ISO 13485 certification\n\nLearn More\nInformation & ICT\n\nCyber security & ISO 27001 compliance\n\nLearn More",
+      "links": [
+        {
+          "text": "Learn More",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 306,
+            "y": 858,
+            "w": 163,
+            "h": 34
+          }
+        },
+        {
+          "text": "Learn More",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 306,
+            "y": 1149,
+            "w": 163,
+            "h": 34
+          }
+        },
+        {
+          "text": "Learn More",
+          "href": "https://www.integpro.com.au/iso-service-australia",
+          "box": {
+            "x": 638,
+            "y": 859,
+            "w": 163,
+            "h": 34
+          }
+        },
+        {
+          "text": "Learn More",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 638,
+            "y": 1150,
+            "w": 163,
+            "h": 34
+          }
+        },
+        {
+          "text": "Learn More",
+          "href": "https://www.integpro.com.au/medical-iso",
+          "box": {
+            "x": 969,
+            "y": 859,
+            "w": 163,
+            "h": 34
+          }
+        },
+        {
+          "text": "Learn More",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 969,
+            "y": 1150,
+            "w": 163,
+            "h": 34
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_62a1895101e440a491827fe5d5e0fc75~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(14).png",
+          "alt": "Mask group (14).png",
+          "box": {
+            "x": 272,
+            "y": 698,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_14b95a8e6ec94bfbbd04ade74ba6f32d~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(16).png",
+          "alt": "Mask group (16).png",
+          "box": {
+            "x": 272,
+            "y": 988,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_9b91693af91b40ee9763b0da3ffa35ee~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(15).png",
+          "alt": "Mask group (15).png",
+          "box": {
+            "x": 604,
+            "y": 698,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_0f67ec827fe641a7ad00a8ba4008a5f7~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(19).png",
+          "alt": "Mask group (19).png",
+          "box": {
+            "x": 604,
+            "y": 989,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_41e2bce6b6b243258253955130cc867c~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(17).png",
+          "alt": "Mask group (17).png",
+          "box": {
+            "x": 935,
+            "y": 698,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_f7591bdff30b4bec8122d6a75b3affec~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(18).png",
+          "alt": "Mask group (18).png",
+          "box": {
+            "x": 935,
+            "y": 989,
+            "w": 48,
+            "h": 48
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-mkjbqdv9",
+      "box": {
+        "x": 0,
+        "y": 1297,
+        "w": 1440,
+        "h": 660
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(252, 252, 252)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H3",
+          "text": "Proven Result Across Industries",
+          "box": {
+            "x": 239,
+            "y": 1320,
+            "w": 962,
+            "h": 56
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Actis Medical",
+          "box": {
+            "x": 266,
+            "y": 1489,
+            "w": 209,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H6",
+          "text": "100%",
+          "box": {
+            "x": 293,
+            "y": 1631,
+            "w": 209,
+            "h": 25
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Bishop Building",
+          "box": {
+            "x": 598,
+            "y": 1489,
+            "w": 209,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H6",
+          "text": "Fully Implemented",
+          "box": {
+            "x": 625,
+            "y": 1632,
+            "w": 209,
+            "h": 25
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "WA GOVERNMENT",
+          "box": {
+            "x": 929,
+            "y": 1489,
+            "w": 209,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H6",
+          "text": "Quality Audit",
+          "box": {
+            "x": 956,
+            "y": 1632,
+            "w": 209,
+            "h": 25
+          }
+        }
+      ],
+      "text": "Proven Result Across Industries\n\nThe story of the organisations achieving certification with our expert guidance & support \n\nActis Medical\n\nMedical Devices\n\nAchievement\n\n100%\n\nExpert EQMS implementation \n\nEnsuring full compliance with ISO 13485, ISO 9001, and medical-device regulatory requirements. Streamlined processes, risk management integration, and end-to-end quality system deployment.\n\nBishop Building\n\nConstruction\n\nAchievement\n\nFully Implemented\n\n100% achieved\n\nProfessional ISO consultation for Bshop, covering ISO 9001, ISO 14001, ISO 45001 and other relevant standards for the building sector. Full implementation, documentation, and compliance support.\n\nWA GOVERNMENT\n\nCommunity\n\nAchievement\n\nQuality Audit\n\nComprehensive audit delivered\n\n​Comprehensive quality audit delivered for the WA Government, ensuring compliance with sector requirements, evaluating system performance, and providing clear recommendations.",
+      "links": [],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_334a555192724b6e8b9d78e27e6e4a17~mv2.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(3)%202.png",
+          "alt": "Designer (3) 2.png",
+          "box": {
+            "x": 477,
+            "y": 1491,
+            "w": 44,
+            "h": 44
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_334a555192724b6e8b9d78e27e6e4a17~mv2.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(3)%202.png",
+          "alt": "Designer (3) 2.png",
+          "box": {
+            "x": 809,
+            "y": 1491,
+            "w": 44,
+            "h": 44
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_334a555192724b6e8b9d78e27e6e4a17~mv2.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(3)%202.png",
+          "alt": "Designer (3) 2.png",
+          "box": {
+            "x": 1140,
+            "y": 1491,
+            "w": 44,
+            "h": 44
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-mkjbsx19",
+      "box": {
+        "x": 0,
+        "y": 1957,
+        "w": 1440,
+        "h": 364
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(245, 245, 245)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H3",
+          "text": "Our Process",
+          "box": {
+            "x": 233,
+            "y": 1992,
+            "w": 974,
+            "h": 56
+          }
+        }
+      ],
+      "text": "Our Process\n\nA proven approach to ISO certification. Typical timeline: 4–6 months.\n\nGap Analysis\n\nAction Plan\n\nImplementation\n\nGovernence\n\nSubmission\n\nOngoing Support",
+      "links": [],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Vector%2021.png",
+          "alt": "ISO for medical devices",
+          "box": {
+            "x": 241,
+            "y": 2141,
+            "w": 172,
+            "h": 60
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Vector%2021.png",
+          "alt": "ISO for medical devices",
+          "box": {
+            "x": 396,
+            "y": 2141,
+            "w": 172,
+            "h": 60
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Vector%2021.png",
+          "alt": "ISO for medical devices",
+          "box": {
+            "x": 551,
+            "y": 2141,
+            "w": 172,
+            "h": 60
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Vector%2021.png",
+          "alt": "Medical iso",
+          "box": {
+            "x": 704,
+            "y": 2141,
+            "w": 172,
+            "h": 60
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Vector%2021.png",
+          "alt": "Medical iso",
+          "box": {
+            "x": 858,
+            "y": 2141,
+            "w": 172,
+            "h": 60
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Vector%2021.png",
+          "alt": "Medical iso",
+          "box": {
+            "x": 1011,
+            "y": 2141,
+            "w": 172,
+            "h": 60
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-mkjbw4ml",
+      "box": {
+        "x": 0,
+        "y": 2321,
+        "w": 1440,
+        "h": 593
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(245, 245, 245)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "FAQ",
+          "box": {
+            "x": 671,
+            "y": 2361,
+            "w": 97,
+            "h": 58
+          }
+        },
+        {
+          "tag": "H3",
+          "text": "What steps are involved in achieving ISO certification?",
+          "box": {
+            "x": 286,
+            "y": 2469,
+            "w": 386,
+            "h": 22
+          }
+        },
+        {
+          "tag": "H3",
+          "text": "What is ISO consulting?",
+          "box": {
+            "x": 286,
+            "y": 2544,
+            "w": 170,
+            "h": 22
+          }
+        },
+        {
+          "tag": "H3",
+          "text": "Why is ISO certification important?",
+          "box": {
+            "x": 286,
+            "y": 2619,
+            "w": 245,
+            "h": 22
+          }
+        },
+        {
+          "tag": "H3",
+          "text": "How long does ISO certification take?",
+          "box": {
+            "x": 286,
+            "y": 2694,
+            "w": 267,
+            "h": 22
+          }
+        },
+        {
+          "tag": "H3",
+          "text": "What factors influence the cost of ISO consulting services?",
+          "box": {
+            "x": 286,
+            "y": 2769,
+            "w": 413,
+            "h": 22
+          }
+        }
+      ],
+      "text": "FAQ\nWhat steps are involved in achieving ISO certification?\nWhat is ISO consulting?\nWhy is ISO certification important?\nHow long does ISO certification take?\nWhat factors influence the cost of ISO consulting services?",
+      "links": [],
+      "images": []
+    },
+    {
+      "id": "comp-mkjbzfnd",
+      "box": {
+        "x": 0,
+        "y": 2914,
+        "w": 1440,
+        "h": 1212
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H3",
+          "text": "Start Your Certification Journey Today",
+          "box": {
+            "x": 333,
+            "y": 2940,
+            "w": 774,
+            "h": 48
+          }
+        }
+      ],
+      "text": "Start Your Certification Journey Today\n\nMultiple ways to connect with our expert team. Choose what works best for you.",
+      "links": [],
+      "images": []
+    },
+    {
+      "id": "SITE_FOOTER",
+      "box": {
+        "x": 0,
+        "y": 4126,
+        "w": 1440,
+        "h": 409
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(25, 35, 51)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H6",
+          "text": "Services",
+          "box": {
+            "x": 663,
+            "y": 4156,
+            "w": 113,
+            "h": 25
+          }
+        },
+        {
+          "tag": "H6",
+          "text": "Resources",
+          "box": {
+            "x": 839,
+            "y": 4158,
+            "w": 113,
+            "h": 25
+          }
+        },
+        {
+          "tag": "H6",
+          "text": "Company",
+          "box": {
+            "x": 1041,
+            "y": 4157,
+            "w": 113,
+            "h": 25
+          }
+        }
+      ],
+      "text": "Since 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+      "links": [
+        {
+          "text": "",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 263,
+            "y": 4171,
+            "w": 123,
+            "h": 31
+          }
+        },
+        {
+          "text": "ISO",
+          "href": "https://www.integpro.com.au/iso-service-australia",
+          "box": {
+            "x": 663,
+            "y": 4222,
+            "w": 24,
+            "h": 16
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 663,
+            "y": 4251,
+            "w": 32,
+            "h": 16
+          }
+        },
+        {
+          "text": "Medical",
+          "href": "https://www.integpro.com.au/medical-iso",
+          "box": {
+            "x": 664,
+            "y": 4280,
+            "w": 49,
+            "h": 16
+          }
+        },
+        {
+          "text": "Academy",
+          "href": "https://www.integpro.com.au/blog/categories/iso-certification",
+          "box": {
+            "x": 839,
+            "y": 4196,
+            "w": 59,
+            "h": 16
+          }
+        },
+        {
+          "text": "Blog",
+          "href": "https://www.integpro.com.au/blog/categories/iso-certification",
+          "box": {
+            "x": 839,
+            "y": 4223,
+            "w": 28,
+            "h": 16
+          }
+        },
+        {
+          "text": "Industries",
+          "href": "https://www.integpro.com.au/industries",
+          "box": {
+            "x": 839,
+            "y": 4283,
+            "w": 62,
+            "h": 16
+          }
+        },
+        {
+          "text": "Services",
+          "href": "https://www.integpro.com.au/iso-disp-services",
+          "box": {
+            "x": 1041,
+            "y": 4195,
+            "w": 54,
+            "h": 16
+          }
+        },
+        {
+          "text": "About",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 1041,
+            "y": 4222,
+            "w": 37,
+            "h": 16
+          }
+        },
+        {
+          "text": "Contact",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 1041,
+            "y": 4251,
+            "w": 49,
+            "h": 16
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 1041,
+            "y": 4282,
+            "w": 32,
+            "h": 16
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.linkedin.com/company/integ-pro/posts/?feedView=all",
+          "box": {
+            "x": 253,
+            "y": 4386,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.instagram.com/integpro.iso/",
+          "box": {
+            "x": 296,
+            "y": 4386,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.facebook.com/profile.php?id=61574845131374",
+          "box": {
+            "x": 339,
+            "y": 4386,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.youtube.com/@integPRO-ISO/",
+          "box": {
+            "x": 382,
+            "y": 4386,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 1041,
+            "y": 4482,
+            "w": 86,
+            "h": 16
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/iso%20sign%20(1).png",
+          "alt": "integpro branding sign",
+          "box": {
+            "x": -140,
+            "y": 4148,
+            "w": 362,
+            "h": 364
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+          "alt": "integpro logo",
+          "box": {
+            "x": 263,
+            "y": 4171,
+            "w": 123,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+          "alt": "LinkedIn",
+          "box": {
+            "x": 253,
+            "y": 4386,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+          "alt": "Instagram",
+          "box": {
+            "x": 296,
+            "y": 4386,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+          "alt": "Facebook",
+          "box": {
+            "x": 339,
+            "y": 4386,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+          "alt": "Youtube",
+          "box": {
+            "x": 382,
+            "y": 4386,
+            "w": 31,
+            "h": 31
+          }
+        }
+      ]
+    }
+  ],
+  "text": "Home\nServices\nIndustries\nAbout Us\nBlog\nPrivacy Policy\nFree Meeting\nIndustries We Serve\n\nTailored ISO & DISP solutions for Defence, Construction, Medical Devices, Government, and Manufacturing.\n\nFree Gap Assessment\nView Services\n1,000+\n\nProjects\n\n7+\n\nYears\n\n100%\n\nSuccess\n\nSpecialised Industry Solutions\n\nClick any industry to see tailored compliance solutions, deliverables, and timelines\n\nDefence & DISP\n\nDISP compliance for defense contractors\n\nLearn More\nGovernment & Public\n\nCompliance audits & governance frameworks\n\nLearn More\nConstruction\n\nQuality, safety & environmental compliance\n\nLearn More\nManufacturing\n\nQuality, safety & environmental compliance\n\nLearn More\nMedical Devices\n\nTGA compliance & ISO 13485 certification\n\nLearn More\nInformation & ICT\n\nCyber security & ISO 27001 compliance\n\nLearn More\nProven Result Across Industries\n\nThe story of the organisations achieving certification with our expert guidance & support \n\nActis Medical\n\nMedical Devices\n\nAchievement\n\n100%\n\nExpert EQMS implementation \n\nEnsuring full compliance with ISO 13485, ISO 9001, and medical-device regulatory requirements. Streamlined processes, risk management integration, and end-to-end quality system deployment.\n\nBishop Building\n\nConstruction\n\nAchievement\n\nFully Implemented\n\n100% achieved\n\nProfessional ISO consultation for Bshop, covering ISO 9001, ISO 14001, ISO 45001 and other relevant standards for the building sector. Full implementation, documentation, and compliance support.\n\nWA GOVERNMENT\n\nCommunity\n\nAchievement\n\nQuality Audit\n\nComprehensive audit delivered\n\n​Comprehensive quality audit delivered for the WA Government, ensuring compliance with sector requirements, evaluating system performance, and providing clear recommendations.\n\nOur Process\n\nA proven approach to ISO certification. Typical timeline: 4–6 months.\n\nGap Analysis\n\nAction Plan\n\nImplementation\n\nGovernence\n\nSubmission\n\nOngoing Support\n\nFAQ\nWhat steps are involved in achieving ISO certification?\nWhat is ISO consulting?\nWhy is ISO certification important?\nHow long does ISO certification take?\nWhat factors influence the cost of ISO consulting services?\nStart Your Certification Journey Today\n\nMultiple ways to connect with our expert team. Choose what works best for you.\n\nSince 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+  "media": [
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135,h_34,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135",
+    "https://www.integpro.com.au/h_34",
+    "https://www.integpro.com.au/al_c",
+    "https://www.integpro.com.au/q_85",
+    "https://www.integpro.com.au/usm_0.66_1.00_0.01",
+    "https://www.integpro.com.au/enc_avif",
+    "https://www.integpro.com.au/quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_270",
+    "https://www.integpro.com.au/h_68",
+    "https://static.wixstatic.com/media/6d9105_62a1895101e440a491827fe5d5e0fc75~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(14).png",
+    "https://static.wixstatic.com/media/6d9105_62a1895101e440a491827fe5d5e0fc75~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/h_48",
+    "https://www.integpro.com.au/quality_auto/Mask%20group%20(14).png",
+    "https://static.wixstatic.com/media/6d9105_62a1895101e440a491827fe5d5e0fc75~mv2.png/v1/fill/w_96",
+    "https://www.integpro.com.au/h_96",
+    "https://static.wixstatic.com/media/6d9105_14b95a8e6ec94bfbbd04ade74ba6f32d~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(16).png",
+    "https://static.wixstatic.com/media/6d9105_14b95a8e6ec94bfbbd04ade74ba6f32d~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Mask%20group%20(16).png",
+    "https://static.wixstatic.com/media/6d9105_14b95a8e6ec94bfbbd04ade74ba6f32d~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_9b91693af91b40ee9763b0da3ffa35ee~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(15).png",
+    "https://static.wixstatic.com/media/6d9105_9b91693af91b40ee9763b0da3ffa35ee~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Mask%20group%20(15).png",
+    "https://static.wixstatic.com/media/6d9105_9b91693af91b40ee9763b0da3ffa35ee~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_0f67ec827fe641a7ad00a8ba4008a5f7~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(19).png",
+    "https://static.wixstatic.com/media/6d9105_0f67ec827fe641a7ad00a8ba4008a5f7~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Mask%20group%20(19).png",
+    "https://static.wixstatic.com/media/6d9105_0f67ec827fe641a7ad00a8ba4008a5f7~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_41e2bce6b6b243258253955130cc867c~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(17).png",
+    "https://static.wixstatic.com/media/6d9105_41e2bce6b6b243258253955130cc867c~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Mask%20group%20(17).png",
+    "https://static.wixstatic.com/media/6d9105_41e2bce6b6b243258253955130cc867c~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_f7591bdff30b4bec8122d6a75b3affec~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(18).png",
+    "https://static.wixstatic.com/media/6d9105_f7591bdff30b4bec8122d6a75b3affec~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Mask%20group%20(18).png",
+    "https://static.wixstatic.com/media/6d9105_f7591bdff30b4bec8122d6a75b3affec~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_334a555192724b6e8b9d78e27e6e4a17~mv2.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(3)%202.png",
+    "https://static.wixstatic.com/media/6d9105_334a555192724b6e8b9d78e27e6e4a17~mv2.png/v1/fill/w_44",
+    "https://www.integpro.com.au/h_44",
+    "https://www.integpro.com.au/quality_auto/Designer%20(3)%202.png",
+    "https://static.wixstatic.com/media/6d9105_334a555192724b6e8b9d78e27e6e4a17~mv2.png/v1/fill/w_88",
+    "https://www.integpro.com.au/h_88",
+    "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Vector%2021.png",
+    "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_172",
+    "https://www.integpro.com.au/h_60",
+    "https://www.integpro.com.au/quality_auto/Vector%2021.png",
+    "https://static.wixstatic.com/media/6d9105_eb11cb29e4b0492f89e36794510b4567~mv2.png/v1/fill/w_344",
+    "https://www.integpro.com.au/h_120",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/iso%20sign%20(1).png",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362",
+    "https://www.integpro.com.au/h_364",
+    "https://www.integpro.com.au/quality_auto/iso%20sign%20(1).png",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_724",
+    "https://www.integpro.com.au/h_728",
+    "https://www.integpro.com.au/q_90",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123",
+    "https://www.integpro.com.au/h_31",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_246",
+    "https://www.integpro.com.au/h_62",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_62"
+  ],
+  "videos": [],
+  "documents": [],
+  "styles": [
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(64, 64, 64)",
+      15
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(255, 255, 255)",
+      12
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(64, 64, 64)",
+      10
+    ],
+    [
+      "h5 | open-sans-v2, sans-serif | 20px | 700 | 28px | normal | none | rgb(0, 0, 0)",
+      7
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | normal | 1.4px | none | rgb(150, 130, 68)",
+      6
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 14px | 400 | normal | 0.7px | none | rgb(64, 64, 64)",
+      5
+    ],
+    [
+      "h3 | helvetica-w01-roman | 16px | 400 | 22.4px | normal | none | rgb(0, 0, 0)",
+      5
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 21px | normal | none | rgb(64, 64, 64)",
+      4
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 20px | 700 | 28px | normal | none | rgb(64, 64, 64)",
+      3
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(128, 128, 128)",
+      3
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 18px | 400 | 25.2px | normal | none | rgb(108, 81, 36)",
+      3
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 18px | 700 | 25.2px | normal | none | rgb(255, 255, 255)",
+      3
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | normal | 1.4px | none | rgb(0, 0, 0)",
+      2
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 40px | 400 | 48px | normal | none | rgb(0, 0, 0)",
+      2
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 40px | 400 | 48px | normal | none | rgb(150, 130, 68)",
+      2
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 20px | 700 | normal | normal | none | rgb(0, 0, 0)",
+      2
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 40px | 700 | 56px | normal | none | rgb(150, 130, 68)",
+      2
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 14px | 400 | normal | 0.7px | none | rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "h1 | open-sans-v2, sans-serif | 55px | 700 | 66px | normal | none | rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 55px | 700 | 66px | normal | none | rgb(150, 130, 68)",
+      1
+    ],
+    [
+      "p | helvetica-w01-roman, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | normal | 1.4px | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "h3 | open-sans-v2, sans-serif | 40px | 700 | 56px | normal | none | rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "h1 | open-sans-v2 | 48px | 700 | 57.6px | normal | none | rgb(150, 130, 68)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 12px | 400 | 16.8px | normal | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 21px | normal | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "a | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(255, 255, 255)",
+      1
+    ]
+  ],
+  "colours": [
+    [
+      "text rgb(64, 64, 64)",
+      37
+    ],
+    [
+      "bg rgb(255, 255, 255)",
+      32
+    ],
+    [
+      "text rgb(0, 0, 0)",
+      22
+    ],
+    [
+      "text rgb(255, 255, 255)",
+      19
+    ],
+    [
+      "text rgb(150, 130, 68)",
+      12
+    ],
+    [
+      "bg rgb(219, 206, 162)",
+      4
+    ],
+    [
+      "bg rgb(150, 130, 68)",
+      4
+    ],
+    [
+      "text rgb(128, 128, 128)",
+      3
+    ],
+    [
+      "text rgb(108, 81, 36)",
+      3
+    ],
+    [
+      "bg rgb(245, 245, 245)",
+      2
+    ],
+    [
+      "bg rgba(255, 222, 95, 0)",
+      1
+    ],
+    [
+      "bg rgb(252, 252, 252)",
+      1
+    ],
+    [
+      "bg rgb(25, 35, 51)",
+      1
+    ]
+  ],
+  "cssVars": {},
+  "fontFaces": []
+}

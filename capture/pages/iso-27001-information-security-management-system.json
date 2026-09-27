@@ -1,0 +1,1409 @@
+{
+  "url": "https://www.integpro.com.au/iso-27001-information-security-management-system",
+  "title": "ISO 27001 Compliance & Information | Integpro",
+  "canonical": "https://www.integpro.com.au/iso-27001-information-security-management-system",
+  "meta": {
+    "description": "ISO 27001 certification services in Australia. Implement an Information Security Management System (ISMS), improve cybersecurity, and protect business information.",
+    "og:title": "ISO 27001 Compliance & Information  | Integpro",
+    "og:description": "ISO 27001 certification services in Australia. Implement an Information Security Management System (ISMS), improve cybersecurity, and protect business information.",
+    "og:image": "https://static.wixstatic.com/media/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png/v1/fit/w_2500,h_1330,al_c/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png",
+    "og:image:width": "2500",
+    "og:image:height": "1330",
+    "og:url": "https://www.integpro.com.au/iso-27001-information-security-management-system",
+    "og:site_name": "Integpro",
+    "og:type": "website",
+    "google-site-verification": "eoaN_za6CafCb65fEkFJEnHfpLGlKQSHJGThzZjyKYk",
+    "msvalidate.01": "D501A2F8421C443890A1B4745C901888",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "ISO 27001 Compliance & Information  | Integpro",
+    "twitter:description": "ISO 27001 certification services in Australia. Implement an Information Security Management System (ISMS), improve cybersecurity, and protect business information.",
+    "twitter:image": "https://static.wixstatic.com/media/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png/v1/fit/w_2500,h_1330,al_c/6d9105_53ec404e39b446fe944d27225dedce76%7Emv2.png",
+    "viewport": "width=device-width, initial-scale=1",
+    "generator": "Wix.com Website Builder",
+    "format-detection": "telephone=no",
+    "skype_toolbar": "skype_toolbar_parser_compatible"
+  },
+  "lang": "en",
+  "pageHeight": 4737,
+  "nav": [
+    {
+      "text": "",
+      "href": "https://www.integpro.com.au/"
+    },
+    {
+      "text": "Home",
+      "href": "https://www.integpro.com.au/"
+    },
+    {
+      "text": "Services",
+      "href": "https://www.integpro.com.au/iso-disp-services"
+    },
+    {
+      "text": "ISO",
+      "href": "https://www.integpro.com.au/iso-service-australia"
+    },
+    {
+      "text": "DISP",
+      "href": "https://www.integpro.com.au/disp"
+    },
+    {
+      "text": "Medical Device iso",
+      "href": "https://www.integpro.com.au/medical-iso"
+    },
+    {
+      "text": "Industries",
+      "href": "https://www.integpro.com.au/industries"
+    },
+    {
+      "text": "About Us",
+      "href": "https://www.integpro.com.au/about-us-iso-team"
+    },
+    {
+      "text": "Blog",
+      "href": "https://www.integpro.com.au/blog"
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "https://www.integpro.com.au/privacy-policy"
+    },
+    {
+      "text": "Free Meeting",
+      "href": "https://www.integpro.com.au/free-consultation"
+    }
+  ],
+  "footer": "Since 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+  "sections": [
+    {
+      "id": "SITE_HEADER",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 94
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [],
+      "text": "Home\nServices\nIndustries\nAbout Us\nBlog\nPrivacy Policy\nFree Meeting",
+      "links": [
+        {
+          "text": "",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 230,
+            "y": 28,
+            "w": 135,
+            "h": 34
+          }
+        },
+        {
+          "text": "Home",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 414,
+            "y": 22,
+            "w": 77,
+            "h": 41
+          }
+        },
+        {
+          "text": "Services",
+          "href": "https://www.integpro.com.au/iso-disp-services",
+          "box": {
+            "x": 499,
+            "y": 22,
+            "w": 93,
+            "h": 41
+          }
+        },
+        {
+          "text": "ISO",
+          "href": "https://www.integpro.com.au/iso-service-australia",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "Medical Device iso",
+          "href": "https://www.integpro.com.au/medical-iso",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "text": "Industries",
+          "href": "https://www.integpro.com.au/industries",
+          "box": {
+            "x": 600,
+            "y": 22,
+            "w": 104,
+            "h": 41
+          }
+        },
+        {
+          "text": "About Us",
+          "href": "https://www.integpro.com.au/about-us-iso-team",
+          "box": {
+            "x": 712,
+            "y": 22,
+            "w": 100,
+            "h": 41
+          }
+        },
+        {
+          "text": "Blog",
+          "href": "https://www.integpro.com.au/blog",
+          "box": {
+            "x": 819,
+            "y": 22,
+            "w": 67,
+            "h": 41
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.integpro.com.au/privacy-policy",
+          "box": {
+            "x": 894,
+            "y": 22,
+            "w": 132,
+            "h": 41
+          }
+        },
+        {
+          "text": "Free Meeting",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 1063,
+            "y": 22,
+            "w": 142,
+            "h": 40
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135,h_34,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+          "alt": "integpro logo",
+          "box": {
+            "x": 230,
+            "y": 28,
+            "w": 135,
+            "h": 34
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-mr7c2lya",
+      "box": {
+        "x": 0,
+        "y": 94,
+        "w": 1440,
+        "h": 556
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Achieve ISO 27001 Certification",
+          "box": {
+            "x": 233,
+            "y": 206,
+            "w": 411,
+            "h": 112
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "120+",
+          "box": {
+            "x": 802,
+            "y": 458,
+            "w": 91,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "20+",
+          "box": {
+            "x": 949,
+            "y": 458,
+            "w": 63,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "100%",
+          "box": {
+            "x": 1058,
+            "y": 458,
+            "w": 72,
+            "h": 28
+          }
+        }
+      ],
+      "text": "Achieve ISO 27001 Certification\n\nBuild a robust Information Security Management System (ISMS) that protects sensitive information, reduces security risks, and strengthens stakeholder confidence.\n\nEnd-to-End ISO 27001 Implementation Support\nInternal Audit & Certification Readiness Success Rate\nInternal Audit & Certification Readiness\n\nStart Your Journey\nLearn More\n120+\n\nProjects Completed\n\n20+\n\nYears\n\n100%\n\nSuccess",
+      "links": [
+        {
+          "text": "Start Your Journey",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 233,
+            "y": 505,
+            "w": 184,
+            "h": 34
+          }
+        },
+        {
+          "text": "Learn More",
+          "href": "https://www.integpro.com.au/iso-27001-information-security-management-system#learnmore",
+          "box": {
+            "x": 427,
+            "y": 505,
+            "w": 184,
+            "h": 34
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_849b4dfa4f874b659279f8744501799b~mv2.jpg/v1/fill/w_13,h_13,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20(3).jpg",
+          "alt": "iso certified",
+          "box": {
+            "x": 235,
+            "y": 414,
+            "w": 13,
+            "h": 13
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_849b4dfa4f874b659279f8744501799b~mv2.jpg/v1/fill/w_13,h_13,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20(3).jpg",
+          "alt": "iso certified",
+          "box": {
+            "x": 235,
+            "y": 436,
+            "w": 13,
+            "h": 13
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_849b4dfa4f874b659279f8744501799b~mv2.jpg/v1/fill/w_13,h_13,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20(3).jpg",
+          "alt": "iso certified",
+          "box": {
+            "x": 235,
+            "y": 460,
+            "w": 13,
+            "h": 13
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_e29c6be6163644daaf414742efd072a2~mv2.png/v1/fill/w_466,h_377,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/-post-ai-image-39617_9yhzyavcaomwekfqiiptniaxmpxc3ndjq5zlnxldnae.png",
+          "alt": "-post-ai-image-39617.9yhzyavcaomwekfqiiptniaxmpxc3ndjq5zlnxldnae.png",
+          "box": {
+            "x": 734,
+            "y": 159,
+            "w": 466,
+            "h": 377
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-mr7c2m0u",
+      "box": {
+        "x": 0,
+        "y": 650,
+        "w": 1440,
+        "h": 627
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H5",
+          "text": "THE GLOBAL STANDARD",
+          "box": {
+            "x": 252,
+            "y": 711,
+            "w": 234,
+            "h": 22
+          }
+        },
+        {
+          "tag": "H3",
+          "text": "What is ISO 27001?",
+          "box": {
+            "x": 242,
+            "y": 740,
+            "w": 367,
+            "h": 48
+          }
+        }
+      ],
+      "text": "THE GLOBAL STANDARD\nWhat is ISO 27001?\n\nISO 27001:2022 is the internationally recognized standard for Information Security Management Systems (ISMS). It provides a structured framework for identifying, managing, and reducing information security risks while protecting the confidentiality, integrity, and availability of business information.\n \n\nThe standard helps organizations establish effective security controls, manage cyber threats, and demonstrate compliance with customer, regulatory, and contractual requirements. ISO 27001 can be applied to organizations of all sizes and industries.\n \n\nBy adopting a risk-based approach, ISO 27001 enables businesses to protect sensitive data, strengthen resilience against security incidents, and build trust with customers, partners, and stakeholders.\n\nGlobally Recognised\n\nAccepted worldwide as the leading standard for information security management.\n\nRisk-Based Approach\n\nIdentify, assess, and treat information security risks through structured controls and governance.\n\nContinuous Improvement\n\nMonitor, review, and enhance your ISMS to address evolving threats and business needs.\n\nCustomer-Focused\n\nProtect sensitive information and demonstrate security assurance to customers and stakeholders.",
+      "links": [],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_405fa1a94dc340979d4177f045e37ce5~mv2.png/v1/fill/w_39,h_42,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(8)%202.png",
+          "alt": "Designer (8) 2.png",
+          "box": {
+            "x": 640,
+            "y": 778,
+            "w": 39,
+            "h": 42
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_153f8b643ce74f5089a8277b2918eadb~mv2.jpg/v1/fill/w_39,h_42,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(2)%203.jpg",
+          "alt": "Designer (2) 3.jpg",
+          "box": {
+            "x": 942,
+            "y": 778,
+            "w": 39,
+            "h": 42
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_4e657205403a45ddb1df518006ba7173~mv2.png/v1/fill/w_39,h_42,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(11)%201.png",
+          "alt": "Designer (11) 1.png",
+          "box": {
+            "x": 640,
+            "y": 1021,
+            "w": 39,
+            "h": 42
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_187f81ee89054807aa6245bcb9302e48~mv2.png/v1/fill/w_39,h_42,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(2)%202.png",
+          "alt": "Designer (2) 2.png",
+          "box": {
+            "x": 942,
+            "y": 1021,
+            "w": 39,
+            "h": 42
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-mr7c2m255",
+      "box": {
+        "x": 0,
+        "y": 1277,
+        "w": 1440,
+        "h": 1047
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H3",
+          "text": "What You Get?",
+          "box": {
+            "x": 411,
+            "y": 1307,
+            "w": 617,
+            "h": 56
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Gap Analysis Report",
+          "box": {
+            "x": 259,
+            "y": 1528,
+            "w": 259,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Internal Audit",
+          "box": {
+            "x": 259,
+            "y": 1927,
+            "w": 259,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "ISO 27001 Documentation",
+          "box": {
+            "x": 591,
+            "y": 1528,
+            "w": 259,
+            "h": 56
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Staff Awareness",
+          "box": {
+            "x": 591,
+            "y": 1956,
+            "w": 259,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Risk Management",
+          "box": {
+            "x": 922,
+            "y": 1528,
+            "w": 259,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "ALL DOCUMENTATION CUSTOMIZED TO YOUR INDUSTRY AND BUSINESS NEEDS",
+          "box": {
+            "x": 367,
+            "y": 2264,
+            "w": 684,
+            "h": 22
+          }
+        }
+      ],
+      "text": "What You Get?\n\nEverything you need to achieve and maintain ISO 27001 certification, tailored to your organization's information security requirements.\n\nGap Analysis Report\n\nA comprehensive assessment of your current information security practices against ISO 27001 requirements.\n \n\nCurrent security controls review\n\nCompliance gap identification\n\nRisk prioritization roadmap\n\nISMS implementation plan\n\nInternal Audit\n\nEnsure your ISMS is effective and ready for certification.\n \n\nInternal audit program\n\nAudit reports and findings\n\nCorrective action management\n\nManagement review support\n \n\nISO 27001 Documentation\n\nComplete Information Security Management System (ISMS) documentation tailored to your business.\n\nInformation Security Policy\n\nISMS scope and context\n\nRisk Assessment & Risk Treatment Methodology\n\nRequired procedures\n\nStaff Awareness \n\nBuild a security-conscious culture across your organization.\n \n\nSecurity awareness training\n\nRoles and responsibilities guidance\n\nIncident reporting procedures\n\nBest-practice security education\n\nRisk Management\n\nA structured framework to identify, assess, and manage information security risks.\n \n\nRisk assessment register\n\nRisk treatment plan\n\nStatement of Applicability (SoA)\n\nAnnex A security controls implementation\n\nALL DOCUMENTATION CUSTOMIZED TO YOUR INDUSTRY AND BUSINESS NEEDS",
+      "links": [],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_153f8b643ce74f5089a8277b2918eadb~mv2.jpg/v1/fill/w_48,h_48,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(2)%203.jpg",
+          "alt": "Designer (2) 3.jpg",
+          "box": {
+            "x": 364,
+            "y": 1465,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_30076efee5f7468f872b300a7c6d0cf6~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(4)%202.png",
+          "alt": "Designer (4) 2.png",
+          "box": {
+            "x": 364,
+            "y": 1864,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_187f81ee89054807aa6245bcb9302e48~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(2)%202.png",
+          "alt": "Designer (2) 2.png",
+          "box": {
+            "x": 696,
+            "y": 1465,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_ce6b54b57f87467aa7a2f1cab7aa9af5~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(7)%202.png",
+          "alt": "Designer (7) 2.png",
+          "box": {
+            "x": 696,
+            "y": 1893,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_334a555192724b6e8b9d78e27e6e4a17~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(3)%202.png",
+          "alt": "Designer (3) 2.png",
+          "box": {
+            "x": 1027,
+            "y": 1465,
+            "w": 48,
+            "h": 48
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-mr7c2m31",
+      "box": {
+        "x": 0,
+        "y": 2324,
+        "w": 1440,
+        "h": 791
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(240, 235, 217)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H3",
+          "text": "Why Your Business Needs ISO 27001?",
+          "box": {
+            "x": 308,
+            "y": 2348,
+            "w": 803,
+            "h": 56
+          }
+        }
+      ],
+      "text": "Why Your Business Needs ISO 27001?\n\nProtect your organization from evolving cyber threats, meet customer expectations, and demonstrate a proactive commitment to information security with ISO 27001 certification.\n\nWin More Tenders\n\nMany government agencies and large organizations require ISO 27001 certification as part of supplier qualification and procurement processes.\n\nBuild Customer Trust\n\nDemonstrate that your organization protects sensitive information using internationally recognized security best practices.\n \n\nStrengthen Cybersecurity\n\nIdentify, manage, and reduce information security risks through a structured and risk-based approach.\n \n\nRegulatory Requirements\n\nSupport compliance with privacy, contractual, and industry-specific information security obligations.\n \n\nImprove Risk Management\n\nEstablish processes to assess, monitor, and treat information security risks before they impact your business.\n\nProtect Business Data\n\n​Safeguard confidential data, intellectual property, customer information, and critical business systems from threats and breaches.",
+      "links": [],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_405fa1a94dc340979d4177f045e37ce5~mv2.png/v1/fill/w_39,h_42,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(8)%202.png",
+          "alt": "Designer (8) 2.png",
+          "box": {
+            "x": 253,
+            "y": 2522,
+            "w": 39,
+            "h": 42
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_878bb3a3a7e7451b8f7850b3cf43a03d~mv2.jpg/v1/fill/w_39,h_42,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(1)%205.jpg",
+          "alt": "Designer (1) 5.jpg",
+          "box": {
+            "x": 590,
+            "y": 2522,
+            "w": 39,
+            "h": 42
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_153f8b643ce74f5089a8277b2918eadb~mv2.jpg/v1/fill/w_39,h_42,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(2)%203.jpg",
+          "alt": "Designer (2) 3.jpg",
+          "box": {
+            "x": 927,
+            "y": 2522,
+            "w": 39,
+            "h": 42
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_3144ee0355b547cdb4fc103cb2c52729~mv2.png/v1/fill/w_39,h_42,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(20).png",
+          "alt": "Mask group (20).png",
+          "box": {
+            "x": 256,
+            "y": 2823,
+            "w": 39,
+            "h": 42
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_187f81ee89054807aa6245bcb9302e48~mv2.png/v1/fill/w_39,h_42,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(2)%202.png",
+          "alt": "Designer (2) 2.png",
+          "box": {
+            "x": 591,
+            "y": 2823,
+            "w": 39,
+            "h": 42
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_61a07d66915b466cabf17c7f6fdc1dcd~mv2.png/v1/fill/w_39,h_42,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(13).png",
+          "alt": "Mask group (13).png",
+          "box": {
+            "x": 925,
+            "y": 2823,
+            "w": 39,
+            "h": 42
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-mr7c2m3w4",
+      "box": {
+        "x": 0,
+        "y": 3115,
+        "w": 1440,
+        "h": 844
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(255, 255, 255)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H3",
+          "text": "ISO 27001 Across Industries",
+          "box": {
+            "x": 409,
+            "y": 3159,
+            "w": 617,
+            "h": 56
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Defence",
+          "box": {
+            "x": 258,
+            "y": 3380,
+            "w": 259,
+            "h": 27
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Healthcare",
+          "box": {
+            "x": 258,
+            "y": 3706,
+            "w": 259,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Manufacturing",
+          "box": {
+            "x": 590,
+            "y": 3380,
+            "w": 259,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Professional Services",
+          "box": {
+            "x": 590,
+            "y": 3707,
+            "w": 259,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Construction",
+          "box": {
+            "x": 921,
+            "y": 3380,
+            "w": 259,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "Technology & SaaS",
+          "box": {
+            "x": 921,
+            "y": 3707,
+            "w": 259,
+            "h": 28
+          }
+        }
+      ],
+      "text": "ISO 27001 Across Industries\n\n​Our consultants have extensive experience implementing ISO 27001 Information Security Management Systems (ISMS) across a wide range of industries, ensuring sector-specific security, compliance, and risk management requirements are met.\n\nDefence\n\nSupport information security requirements for defence contractors and supply chains.\n \n\nSupport DISP and related compliance frameworks\n\nHealthcare\n\nProtect sensitive patient information and support compliance with healthcare privacy and security requirements.\n \n\nSecure medical records and patient data\n\nManufacturing\n\nProtect intellectual property, operational technology, and supply chain information from cyber threats.\n \n\nSecure production systems and processes\n\nProfessional Services\n\nSafeguard confidential client information and strengthen business credibility.\n \n\nProtect sensitive business data\n \n\nConstruction\n\nProtect project data, contracts, and stakeholder information throughout the project lifecycle.\n \n\nMeet government and client requirements\n\nTechnology & SaaS\n\nDemonstrate robust security controls to customers, investors, and partners.\n \n\nAccelerate sales and procurement approvals",
+      "links": [],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_62a1895101e440a491827fe5d5e0fc75~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(14).png",
+          "alt": "Mask group (14).png",
+          "box": {
+            "x": 363,
+            "y": 3317,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_41e2bce6b6b243258253955130cc867c~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(17).png",
+          "alt": "Mask group (17).png",
+          "box": {
+            "x": 363,
+            "y": 3643,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_0f67ec827fe641a7ad00a8ba4008a5f7~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(19).png",
+          "alt": "Mask group (19).png",
+          "box": {
+            "x": 695,
+            "y": 3317,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_14b95a8e6ec94bfbbd04ade74ba6f32d~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(16).png",
+          "alt": "Mask group (16).png",
+          "box": {
+            "x": 695,
+            "y": 3644,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_9b91693af91b40ee9763b0da3ffa35ee~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(15).png",
+          "alt": "Mask group (15).png",
+          "box": {
+            "x": 1026,
+            "y": 3317,
+            "w": 48,
+            "h": 48
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_cbc8ecd7e74d435a96c6dc33f01480dc~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(24).png",
+          "alt": "Mask group (24).png",
+          "box": {
+            "x": 1026,
+            "y": 3644,
+            "w": 48,
+            "h": 48
+          }
+        }
+      ]
+    },
+    {
+      "id": "comp-mr7c2m4b",
+      "box": {
+        "x": 0,
+        "y": 3959,
+        "w": 1440,
+        "h": 369
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(250, 250, 250)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H5",
+          "text": "120+",
+          "box": {
+            "x": 768,
+            "y": 4101,
+            "w": 91,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "20+",
+          "box": {
+            "x": 915,
+            "y": 4101,
+            "w": 63,
+            "h": 28
+          }
+        },
+        {
+          "tag": "H5",
+          "text": "100%",
+          "box": {
+            "x": 1024,
+            "y": 4101,
+            "w": 72,
+            "h": 28
+          }
+        }
+      ],
+      "text": "Not sure if ISO 27001 applies to your industry?\n\nISO 9001 is universally applicable across all sectors and organization sizes. Our experts will help you understand the specific benefits and requirements for your business.\n\nSpeak with an expert\n120+\n\nProjects Completed\n\n20+\n\nYears\n\n100%\n\nSuccess",
+      "links": [
+        {
+          "text": "Speak with an expert",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 271,
+            "y": 4176,
+            "w": 242,
+            "h": 34
+          }
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "SITE_FOOTER",
+      "box": {
+        "x": 0,
+        "y": 4328,
+        "w": 1440,
+        "h": 409
+      },
+      "background": {
+        "color": "rgba(0, 0, 0, 0)",
+        "image": [],
+        "innerColor": "rgb(25, 35, 51)",
+        "innerImage": []
+      },
+      "headings": [
+        {
+          "tag": "H6",
+          "text": "Services",
+          "box": {
+            "x": 663,
+            "y": 4358,
+            "w": 113,
+            "h": 25
+          }
+        },
+        {
+          "tag": "H6",
+          "text": "Resources",
+          "box": {
+            "x": 839,
+            "y": 4360,
+            "w": 113,
+            "h": 25
+          }
+        },
+        {
+          "tag": "H6",
+          "text": "Company",
+          "box": {
+            "x": 1041,
+            "y": 4359,
+            "w": 113,
+            "h": 25
+          }
+        }
+      ],
+      "text": "Since 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+      "links": [
+        {
+          "text": "",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 263,
+            "y": 4373,
+            "w": 123,
+            "h": 31
+          }
+        },
+        {
+          "text": "ISO",
+          "href": "https://www.integpro.com.au/iso-service-australia",
+          "box": {
+            "x": 663,
+            "y": 4424,
+            "w": 24,
+            "h": 16
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 663,
+            "y": 4453,
+            "w": 32,
+            "h": 16
+          }
+        },
+        {
+          "text": "Medical",
+          "href": "https://www.integpro.com.au/medical-iso",
+          "box": {
+            "x": 664,
+            "y": 4482,
+            "w": 49,
+            "h": 16
+          }
+        },
+        {
+          "text": "Academy",
+          "href": "https://www.integpro.com.au/blog/categories/iso-certification",
+          "box": {
+            "x": 839,
+            "y": 4397,
+            "w": 59,
+            "h": 16
+          }
+        },
+        {
+          "text": "Blog",
+          "href": "https://www.integpro.com.au/blog/categories/iso-certification",
+          "box": {
+            "x": 839,
+            "y": 4425,
+            "w": 28,
+            "h": 16
+          }
+        },
+        {
+          "text": "Industries",
+          "href": "https://www.integpro.com.au/industries",
+          "box": {
+            "x": 839,
+            "y": 4485,
+            "w": 62,
+            "h": 16
+          }
+        },
+        {
+          "text": "Services",
+          "href": "https://www.integpro.com.au/iso-disp-services",
+          "box": {
+            "x": 1041,
+            "y": 4396,
+            "w": 54,
+            "h": 16
+          }
+        },
+        {
+          "text": "About",
+          "href": "https://www.integpro.com.au/",
+          "box": {
+            "x": 1041,
+            "y": 4424,
+            "w": 37,
+            "h": 16
+          }
+        },
+        {
+          "text": "Contact",
+          "href": "https://www.integpro.com.au/free-consultation",
+          "box": {
+            "x": 1041,
+            "y": 4453,
+            "w": 49,
+            "h": 16
+          }
+        },
+        {
+          "text": "DISP",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 1041,
+            "y": 4484,
+            "w": 32,
+            "h": 16
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.linkedin.com/company/integ-pro/posts/?feedView=all",
+          "box": {
+            "x": 253,
+            "y": 4588,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.instagram.com/integpro.iso/",
+          "box": {
+            "x": 296,
+            "y": 4588,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.facebook.com/profile.php?id=61574845131374",
+          "box": {
+            "x": 339,
+            "y": 4588,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "",
+          "href": "https://www.youtube.com/@integPRO-ISO/",
+          "box": {
+            "x": 382,
+            "y": 4588,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "https://www.integpro.com.au/disp",
+          "box": {
+            "x": 1041,
+            "y": 4684,
+            "w": 86,
+            "h": 16
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/iso%20sign%20(1).png",
+          "alt": "integpro branding sign",
+          "box": {
+            "x": -140,
+            "y": 4350,
+            "w": 362,
+            "h": 364
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+          "alt": "integpro logo",
+          "box": {
+            "x": 263,
+            "y": 4373,
+            "w": 123,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+          "alt": "LinkedIn",
+          "box": {
+            "x": 253,
+            "y": 4588,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+          "alt": "Instagram",
+          "box": {
+            "x": 296,
+            "y": 4588,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+          "alt": "Facebook",
+          "box": {
+            "x": 339,
+            "y": 4588,
+            "w": 31,
+            "h": 31
+          }
+        },
+        {
+          "src": "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+          "alt": "Youtube",
+          "box": {
+            "x": 382,
+            "y": 4588,
+            "w": 31,
+            "h": 31
+          }
+        }
+      ]
+    }
+  ],
+  "text": "Home\nServices\nIndustries\nAbout Us\nBlog\nPrivacy Policy\nFree Meeting\nAchieve ISO 27001 Certification\n\nBuild a robust Information Security Management System (ISMS) that protects sensitive information, reduces security risks, and strengthens stakeholder confidence.\n\nEnd-to-End ISO 27001 Implementation Support\nInternal Audit & Certification Readiness Success Rate\nInternal Audit & Certification Readiness\n\nStart Your Journey\nLearn More\n120+\n\nProjects Completed\n\n20+\n\nYears\n\n100%\n\nSuccess\n\nTHE GLOBAL STANDARD\nWhat is ISO 27001?\n\nISO 27001:2022 is the internationally recognized standard for Information Security Management Systems (ISMS). It provides a structured framework for identifying, managing, and reducing information security risks while protecting the confidentiality, integrity, and availability of business information.\n \n\nThe standard helps organizations establish effective security controls, manage cyber threats, and demonstrate compliance with customer, regulatory, and contractual requirements. ISO 27001 can be applied to organizations of all sizes and industries.\n \n\nBy adopting a risk-based approach, ISO 27001 enables businesses to protect sensitive data, strengthen resilience against security incidents, and build trust with customers, partners, and stakeholders.\n\nGlobally Recognised\n\nAccepted worldwide as the leading standard for information security management.\n\nRisk-Based Approach\n\nIdentify, assess, and treat information security risks through structured controls and governance.\n\nContinuous Improvement\n\nMonitor, review, and enhance your ISMS to address evolving threats and business needs.\n\nCustomer-Focused\n\nProtect sensitive information and demonstrate security assurance to customers and stakeholders.\n\nWhat You Get?\n\nEverything you need to achieve and maintain ISO 27001 certification, tailored to your organization's information security requirements.\n\nGap Analysis Report\n\nA comprehensive assessment of your current information security practices against ISO 27001 requirements.\n \n\nCurrent security controls review\n\nCompliance gap identification\n\nRisk prioritization roadmap\n\nISMS implementation plan\n\nInternal Audit\n\nEnsure your ISMS is effective and ready for certification.\n \n\nInternal audit program\n\nAudit reports and findings\n\nCorrective action management\n\nManagement review support\n \n\nISO 27001 Documentation\n\nComplete Information Security Management System (ISMS) documentation tailored to your business.\n\nInformation Security Policy\n\nISMS scope and context\n\nRisk Assessment & Risk Treatment Methodology\n\nRequired procedures\n\nStaff Awareness \n\nBuild a security-conscious culture across your organization.\n \n\nSecurity awareness training\n\nRoles and responsibilities guidance\n\nIncident reporting procedures\n\nBest-practice security education\n\nRisk Management\n\nA structured framework to identify, assess, and manage information security risks.\n \n\nRisk assessment register\n\nRisk treatment plan\n\nStatement of Applicability (SoA)\n\nAnnex A security controls implementation\n\nALL DOCUMENTATION CUSTOMIZED TO YOUR INDUSTRY AND BUSINESS NEEDS\nWhy Your Business Needs ISO 27001?\n\nProtect your organization from evolving cyber threats, meet customer expectations, and demonstrate a proactive commitment to information security with ISO 27001 certification.\n\nWin More Tenders\n\nMany government agencies and large organizations require ISO 27001 certification as part of supplier qualification and procurement processes.\n\nBuild Customer Trust\n\nDemonstrate that your organization protects sensitive information using internationally recognized security best practices.\n \n\nStrengthen Cybersecurity\n\nIdentify, manage, and reduce information security risks through a structured and risk-based approach.\n \n\nRegulatory Requirements\n\nSupport compliance with privacy, contractual, and industry-specific information security obligations.\n \n\nImprove Risk Management\n\nEstablish processes to assess, monitor, and treat information security risks before they impact your business.\n\nProtect Business Data\n\n​Safeguard confidential data, intellectual property, customer information, and critical business systems from threats and breaches.\n\nISO 27001 Across Industries\n\n​Our consultants have extensive experience implementing ISO 27001 Information Security Management Systems (ISMS) across a wide range of industries, ensuring sector-specific security, compliance, and risk management requirements are met.\n\nDefence\n\nSupport information security requirements for defence contractors and supply chains.\n \n\nSupport DISP and related compliance frameworks\n\nHealthcare\n\nProtect sensitive patient information and support compliance with healthcare privacy and security requirements.\n \n\nSecure medical records and patient data\n\nManufacturing\n\nProtect intellectual property, operational technology, and supply chain information from cyber threats.\n \n\nSecure production systems and processes\n\nProfessional Services\n\nSafeguard confidential client information and strengthen business credibility.\n \n\nProtect sensitive business data\n \n\nConstruction\n\nProtect project data, contracts, and stakeholder information throughout the project lifecycle.\n \n\nMeet government and client requirements\n\nTechnology & SaaS\n\nDemonstrate robust security controls to customers, investors, and partners.\n \n\nAccelerate sales and procurement approvals\n\nNot sure if ISO 27001 applies to your industry?\n\nISO 9001 is universally applicable across all sectors and organization sizes. Our experts will help you understand the specific benefits and requirements for your business.\n\nSpeak with an expert\n120+\n\nProjects Completed\n\n20+\n\nYears\n\n100%\n\nSuccess\n\nSince 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.\n\nServices\n\nWhat we do\n\nISO\n\nDISP\n\nMedical\n\nResources\n\nAcademy\n\nBlog\n\nCase Studies\n\nIndustries\n\nCompany\n\nServices\n\nAbout\n\nContact\n\nDISP\n\n© 2025 by integPRO. All Rights Reserved. ABN 23 633 745 516\n\nPrivacy Policy",
+  "media": [
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135,h_34,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_135",
+    "https://www.integpro.com.au/h_34",
+    "https://www.integpro.com.au/al_c",
+    "https://www.integpro.com.au/q_85",
+    "https://www.integpro.com.au/usm_0.66_1.00_0.01",
+    "https://www.integpro.com.au/enc_avif",
+    "https://www.integpro.com.au/quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_270",
+    "https://www.integpro.com.au/h_68",
+    "https://static.wixstatic.com/media/6d9105_849b4dfa4f874b659279f8744501799b~mv2.jpg/v1/fill/w_13,h_13,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20(3).jpg",
+    "https://static.wixstatic.com/media/6d9105_849b4dfa4f874b659279f8744501799b~mv2.jpg/v1/fill/w_13",
+    "https://www.integpro.com.au/h_13",
+    "https://www.integpro.com.au/q_80",
+    "https://www.integpro.com.au/quality_auto/Group%20(3).jpg",
+    "https://static.wixstatic.com/media/6d9105_849b4dfa4f874b659279f8744501799b~mv2.jpg/v1/fill/w_26",
+    "https://www.integpro.com.au/h_26",
+    "https://static.wixstatic.com/media/6d9105_e29c6be6163644daaf414742efd072a2~mv2.png/v1/fill/w_466,h_377,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/-post-ai-image-39617_9yhzyavcaomwekfqiiptniaxmpxc3ndjq5zlnxldnae.png",
+    "https://static.wixstatic.com/media/6d9105_e29c6be6163644daaf414742efd072a2~mv2.png/v1/fill/w_466",
+    "https://www.integpro.com.au/h_377",
+    "https://www.integpro.com.au/quality_auto/-post-ai-image-39617_9yhzyavcaomwekfqiiptniaxmpxc3ndjq5zlnxldnae.png",
+    "https://static.wixstatic.com/media/6d9105_e29c6be6163644daaf414742efd072a2~mv2.png/v1/fill/w_932",
+    "https://www.integpro.com.au/h_754",
+    "https://www.integpro.com.au/q_90",
+    "https://static.wixstatic.com/media/6d9105_405fa1a94dc340979d4177f045e37ce5~mv2.png/v1/fill/w_39,h_42,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(8)%202.png",
+    "https://static.wixstatic.com/media/6d9105_405fa1a94dc340979d4177f045e37ce5~mv2.png/v1/fill/w_39",
+    "https://www.integpro.com.au/h_42",
+    "https://www.integpro.com.au/quality_auto/Designer%20(8)%202.png",
+    "https://static.wixstatic.com/media/6d9105_405fa1a94dc340979d4177f045e37ce5~mv2.png/v1/fill/w_78",
+    "https://www.integpro.com.au/h_84",
+    "https://static.wixstatic.com/media/6d9105_153f8b643ce74f5089a8277b2918eadb~mv2.jpg/v1/fill/w_39,h_42,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(2)%203.jpg",
+    "https://static.wixstatic.com/media/6d9105_153f8b643ce74f5089a8277b2918eadb~mv2.jpg/v1/fill/w_39",
+    "https://www.integpro.com.au/quality_auto/Designer%20(2)%203.jpg",
+    "https://static.wixstatic.com/media/6d9105_153f8b643ce74f5089a8277b2918eadb~mv2.jpg/v1/fill/w_78",
+    "https://static.wixstatic.com/media/6d9105_4e657205403a45ddb1df518006ba7173~mv2.png/v1/fill/w_39,h_42,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(11)%201.png",
+    "https://static.wixstatic.com/media/6d9105_4e657205403a45ddb1df518006ba7173~mv2.png/v1/fill/w_39",
+    "https://www.integpro.com.au/quality_auto/Designer%20(11)%201.png",
+    "https://static.wixstatic.com/media/6d9105_4e657205403a45ddb1df518006ba7173~mv2.png/v1/fill/w_78",
+    "https://static.wixstatic.com/media/6d9105_187f81ee89054807aa6245bcb9302e48~mv2.png/v1/fill/w_39,h_42,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(2)%202.png",
+    "https://static.wixstatic.com/media/6d9105_187f81ee89054807aa6245bcb9302e48~mv2.png/v1/fill/w_39",
+    "https://www.integpro.com.au/quality_auto/Designer%20(2)%202.png",
+    "https://static.wixstatic.com/media/6d9105_187f81ee89054807aa6245bcb9302e48~mv2.png/v1/fill/w_78",
+    "https://static.wixstatic.com/media/6d9105_153f8b643ce74f5089a8277b2918eadb~mv2.jpg/v1/fill/w_48,h_48,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(2)%203.jpg",
+    "https://static.wixstatic.com/media/6d9105_153f8b643ce74f5089a8277b2918eadb~mv2.jpg/v1/fill/w_48",
+    "https://www.integpro.com.au/h_48",
+    "https://static.wixstatic.com/media/6d9105_153f8b643ce74f5089a8277b2918eadb~mv2.jpg/v1/fill/w_96",
+    "https://www.integpro.com.au/h_96",
+    "https://static.wixstatic.com/media/6d9105_30076efee5f7468f872b300a7c6d0cf6~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(4)%202.png",
+    "https://static.wixstatic.com/media/6d9105_30076efee5f7468f872b300a7c6d0cf6~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Designer%20(4)%202.png",
+    "https://static.wixstatic.com/media/6d9105_30076efee5f7468f872b300a7c6d0cf6~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_187f81ee89054807aa6245bcb9302e48~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(2)%202.png",
+    "https://static.wixstatic.com/media/6d9105_187f81ee89054807aa6245bcb9302e48~mv2.png/v1/fill/w_48",
+    "https://static.wixstatic.com/media/6d9105_187f81ee89054807aa6245bcb9302e48~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_ce6b54b57f87467aa7a2f1cab7aa9af5~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(7)%202.png",
+    "https://static.wixstatic.com/media/6d9105_ce6b54b57f87467aa7a2f1cab7aa9af5~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Designer%20(7)%202.png",
+    "https://static.wixstatic.com/media/6d9105_ce6b54b57f87467aa7a2f1cab7aa9af5~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_334a555192724b6e8b9d78e27e6e4a17~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(3)%202.png",
+    "https://static.wixstatic.com/media/6d9105_334a555192724b6e8b9d78e27e6e4a17~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Designer%20(3)%202.png",
+    "https://static.wixstatic.com/media/6d9105_334a555192724b6e8b9d78e27e6e4a17~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_878bb3a3a7e7451b8f7850b3cf43a03d~mv2.jpg/v1/fill/w_39,h_42,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Designer%20(1)%205.jpg",
+    "https://static.wixstatic.com/media/6d9105_878bb3a3a7e7451b8f7850b3cf43a03d~mv2.jpg/v1/fill/w_39",
+    "https://www.integpro.com.au/quality_auto/Designer%20(1)%205.jpg",
+    "https://static.wixstatic.com/media/6d9105_878bb3a3a7e7451b8f7850b3cf43a03d~mv2.jpg/v1/fill/w_78",
+    "https://static.wixstatic.com/media/6d9105_3144ee0355b547cdb4fc103cb2c52729~mv2.png/v1/fill/w_39,h_42,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(20).png",
+    "https://static.wixstatic.com/media/6d9105_3144ee0355b547cdb4fc103cb2c52729~mv2.png/v1/fill/w_39",
+    "https://www.integpro.com.au/quality_auto/Mask%20group%20(20).png",
+    "https://static.wixstatic.com/media/6d9105_3144ee0355b547cdb4fc103cb2c52729~mv2.png/v1/fill/w_78",
+    "https://static.wixstatic.com/media/6d9105_61a07d66915b466cabf17c7f6fdc1dcd~mv2.png/v1/fill/w_39,h_42,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(13).png",
+    "https://static.wixstatic.com/media/6d9105_61a07d66915b466cabf17c7f6fdc1dcd~mv2.png/v1/fill/w_39",
+    "https://www.integpro.com.au/quality_auto/Mask%20group%20(13).png",
+    "https://static.wixstatic.com/media/6d9105_61a07d66915b466cabf17c7f6fdc1dcd~mv2.png/v1/fill/w_78",
+    "https://static.wixstatic.com/media/6d9105_62a1895101e440a491827fe5d5e0fc75~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(14).png",
+    "https://static.wixstatic.com/media/6d9105_62a1895101e440a491827fe5d5e0fc75~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Mask%20group%20(14).png",
+    "https://static.wixstatic.com/media/6d9105_62a1895101e440a491827fe5d5e0fc75~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_41e2bce6b6b243258253955130cc867c~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(17).png",
+    "https://static.wixstatic.com/media/6d9105_41e2bce6b6b243258253955130cc867c~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Mask%20group%20(17).png",
+    "https://static.wixstatic.com/media/6d9105_41e2bce6b6b243258253955130cc867c~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_0f67ec827fe641a7ad00a8ba4008a5f7~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(19).png",
+    "https://static.wixstatic.com/media/6d9105_0f67ec827fe641a7ad00a8ba4008a5f7~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Mask%20group%20(19).png",
+    "https://static.wixstatic.com/media/6d9105_0f67ec827fe641a7ad00a8ba4008a5f7~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_14b95a8e6ec94bfbbd04ade74ba6f32d~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(16).png",
+    "https://static.wixstatic.com/media/6d9105_14b95a8e6ec94bfbbd04ade74ba6f32d~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Mask%20group%20(16).png",
+    "https://static.wixstatic.com/media/6d9105_14b95a8e6ec94bfbbd04ade74ba6f32d~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_9b91693af91b40ee9763b0da3ffa35ee~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(15).png",
+    "https://static.wixstatic.com/media/6d9105_9b91693af91b40ee9763b0da3ffa35ee~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Mask%20group%20(15).png",
+    "https://static.wixstatic.com/media/6d9105_9b91693af91b40ee9763b0da3ffa35ee~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_cbc8ecd7e74d435a96c6dc33f01480dc~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mask%20group%20(24).png",
+    "https://static.wixstatic.com/media/6d9105_cbc8ecd7e74d435a96c6dc33f01480dc~mv2.png/v1/fill/w_48",
+    "https://www.integpro.com.au/quality_auto/Mask%20group%20(24).png",
+    "https://static.wixstatic.com/media/6d9105_cbc8ecd7e74d435a96c6dc33f01480dc~mv2.png/v1/fill/w_96",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362,h_364,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/iso%20sign%20(1).png",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_362",
+    "https://www.integpro.com.au/h_364",
+    "https://www.integpro.com.au/quality_auto/iso%20sign%20(1).png",
+    "https://static.wixstatic.com/media/6d9105_7def8acaf81143f9b93fb67c896e9978~mv2.png/v1/fill/w_724",
+    "https://www.integpro.com.au/h_728",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20442.png",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_123",
+    "https://www.integpro.com.au/h_31",
+    "https://static.wixstatic.com/media/6d9105_8f488e1cdaca4561a7b2c7a83199b11f~mv2.png/v1/fill/w_246",
+    "https://www.integpro.com.au/h_62",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/7528824071724d12a3e6c31eee0b40d4.png",
+    "https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+    "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+    "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_62",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_31",
+    "https://www.integpro.com.au/quality_auto/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png",
+    "https://static.wixstatic.com/media/11062b_fe985b889c144b348eefc7bbc67018b4~mv2.png/v1/fill/w_62"
+  ],
+  "videos": [],
+  "documents": [],
+  "styles": [
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(64, 64, 64)",
+      58
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(255, 255, 255)",
+      12
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 18px | 400 | 25.2px | normal | none | rgb(150, 130, 68)",
+      10
+    ],
+    [
+      "h5 | open-sans-v2, sans-serif | 20px | 700 | 28px | normal | none | rgb(0, 0, 0)",
+      9
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 14px | 400 | normal | 0.7px | none | rgb(64, 64, 64)",
+      6
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 20px | 700 | 28px | normal | none | rgb(150, 130, 68)",
+      6
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 40px | 400 | 56px | normal | none | rgb(64, 64, 64)",
+      5
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(0, 0, 0)",
+      4
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 40px | 400 | 56px | normal | none | rgb(150, 130, 68)",
+      3
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 18px | 700 | 25.2px | normal | none | rgb(255, 255, 255)",
+      3
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | normal | 1.4px | none | rgb(0, 0, 0)",
+      2
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(64, 64, 64)",
+      2
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | normal | 1.4px | none | rgb(255, 255, 255)",
+      2
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 16px | 400 | 22.4px | normal | none | rgb(75, 83, 32)",
+      2
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 20px | 700 | normal | normal | none | rgb(0, 0, 0)",
+      2
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 40px | 700 | 56px | normal | none | rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 40px | 700 | 56px | normal | none | rgb(150, 130, 68)",
+      1
+    ],
+    [
+      "span | open-sans-v2, sans-serif | 40px | 400 | 48px | normal | none | rgb(0, 0, 0)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 18px | 700 | 25.2px | normal | none | rgb(150, 130, 68)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 12px | 400 | 16.8px | normal | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "span | helvetica-w01-roman, sans-serif | 14px | 400 | 21px | normal | none | rgb(255, 255, 255)",
+      1
+    ],
+    [
+      "a | helvetica-w01-roman, sans-serif | 14px | 400 | 19.6px | normal | none | rgb(255, 255, 255)",
+      1
+    ]
+  ],
+  "colours": [
+    [
+      "text rgb(64, 64, 64)",
+      71
+    ],
+    [
+      "bg rgb(255, 255, 255)",
+      33
+    ],
+    [
+      "text rgb(150, 130, 68)",
+      21
+    ],
+    [
+      "text rgb(255, 255, 255)",
+      20
+    ],
+    [
+      "text rgb(0, 0, 0)",
+      19
+    ],
+    [
+      "bg rgb(250, 250, 250)",
+      11
+    ],
+    [
+      "bg rgb(150, 130, 68)",
+      2
+    ],
+    [
+      "bg rgb(219, 206, 162)",
+      2
+    ],
+    [
+      "text rgb(75, 83, 32)",
+      2
+    ],
+    [
+      "bg rgba(255, 222, 95, 0)",
+      1
+    ],
+    [
+      "bg rgb(240, 235, 217)",
+      1
+    ],
+    [
+      "bg rgb(25, 35, 51)",
+      1
+    ]
+  ],
+  "cssVars": {},
+  "fontFaces": []
+}
