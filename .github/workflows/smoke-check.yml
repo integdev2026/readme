@@ -1,0 +1,25 @@
+name: Smoke check preview
+
+# Requests key pages on the Wix preview and prints status codes.
+on:
+  push:
+    branches: ['claude/**']
+    paths:
+      - '.github/workflows/smoke-check.yml'
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['Deploy to Wix Headless']
+    types: [completed]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request pages
+        run: |
+          BASE=https://headless-kyphopvoogn-mehrdadpermeh-140d.wix-site-host.com
+          for p in / /disp /disp/ /disp/index.html /about-us-iso-team /blog /blog/ /post/what-is-iso /privacy-policy /iso-disp-services /sitemap-index.xml; do
+            code=$(curl -s -o /tmp/body -w '%{http_code}' -L "$BASE$p")
+            title=$(grep -o '<title>[^<]*' /tmp/body | head -1 | sed 's/<title>//')
+            echo "$code $p :: $title"
+          done
