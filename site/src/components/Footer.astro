@@ -1,0 +1,59 @@
+---
+import { footerColumns, social, company } from '../data/site';
+---
+<footer class="site-footer">
+  <img class="mark" src="/images/brand-mark.webp" alt="" width="362" height="364" loading="lazy" />
+  <div class="container">
+    <div class="top">
+      <div class="about">
+        <a href="/" class="logo-box" aria-label="integPRO home">
+          <img src="/images/logo.png" alt="integPRO ISO Consultant" width="123" height="31" loading="lazy" />
+        </a>
+        <p>
+          Since 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and
+          certification services. Our mission is to help organizations achieve and maintain excellence through
+          internationally recognized standards.
+        </p>
+        <ul class="social">
+          {social.map((s) => (
+            <li><a href={s.href} target="_blank" rel="noopener" aria-label={s.label}><img src={s.icon} alt="" width="31" height="31" loading="lazy" /></a></li>
+          ))}
+        </ul>
+      </div>
+      {footerColumns.map((col) => (
+        <div class="col">
+          <h4>{col.title}</h4>
+          <ul>{col.links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+        </div>
+      ))}
+    </div>
+    <div class="bottom">
+      <p>© {new Date().getFullYear()} by {company.name}. All Rights Reserved. ABN {company.abn}</p>
+      <a href="/privacy-policy">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer { position: relative; overflow: hidden; background: var(--navy); color: #fff; padding: 30px 0 40px; }
+  .mark { position: absolute; left: -140px; top: 22px; width: 362px; opacity: 0.25; pointer-events: none; }
+  .top { position: relative; display: grid; grid-template-columns: 1.9fr 0.8fr 0.9fr 0.8fr; gap: 32px; padding: 0 22px 60px; }
+  .logo-box { display: inline-block; background: #fff; border-radius: 6px; padding: 12px 10px; }
+  .about p { margin: 24px 0 36px; max-width: 220px; font-size: 12px; line-height: 1.4; }
+  .social { display: flex; gap: 12px; list-style: none; margin: 0; padding: 0; }
+  .social img { width: 31px; height: 31px; }
+  h4 { color: #fff; font-size: 18px; margin: 0 0 12px; }
+  .col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .col a { font-size: 14px; }
+  .col a:hover, .bottom a:hover { color: var(--gold-light); }
+  .bottom { display: flex; justify-content: space-between; align-items: center; gap: 16px; border-top: 1px solid rgba(255, 255, 255, 0.25); padding: 28px 22px 0; font-size: 14px; }
+  .bottom p { margin: 0; }
+  .bottom a { margin-right: 60px; }
+
+  @media (max-width: 760px) {
+    .top { grid-template-columns: 1fr 1fr; padding: 0 0 40px; }
+    .about { grid-column: 1 / -1; }
+    .bottom { flex-direction: column; align-items: flex-start; padding: 24px 0 0; }
+    .bottom a { margin: 0; }
+  }
+</style>

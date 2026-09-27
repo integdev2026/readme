@@ -1,25 +1,384 @@
 ---
-// Temporary holding page used to verify the Wix publish pipeline.
-// Replaced by the rebuilt home page once the live-site capture is in.
+import Base from '../layouts/Base.astro';
+import Chevron from '../components/Chevron.astro';
+import { company } from '../data/site';
+
+const stats = [
+  { value: '1000 +', label: 'Project Completed' },
+  { value: '50 +', label: 'Years Experience' },
+  { value: '72', label: 'Unique Customers' },
+];
+
+// Client names and logos are kept out of the repository (company policy);
+// real logos are to be served from Wix Media once approved.
+const clientLogos = Array.from({ length: 8 }, (_, i) => `Client ${i + 1}`);
+
+const services = [
+  { icon: 'icon-award', title: 'ISO Certification', text: 'Expert guidance for ISO 9001, 14001, 45001, 27001 & other international standards. Full implementation support.' },
+  { icon: 'icon-shield', title: 'DISP Compliance', text: 'Defense Industry Security Program consulting and compliance services for defense contractors and suppliers.' },
+  { icon: 'icon-book', title: 'Training Academy', text: 'Comprehensive training programs, workshops, and courses for internal auditors, lead auditors, and management representatives.' },
+  { icon: 'icon-check', title: 'Gap Analysis & Auditing', text: 'Thorough assessments to identify compliance gaps and prepare your organization for successful certification.' },
+  { icon: 'icon-doc', title: 'Documentation Services', text: 'Professional development of manuals, procedures, work instructions, and forms aligned with standard requirements.' },
+  { icon: 'icon-team', title: 'Management Systems Integration', text: 'Integrate multiple management systems (QMS, EMS, OHSMS) for streamlined operations and reduced duplication.' },
+];
+
+const tabs = [
+  { id: 'iso', label: 'ISO', title: 'ISO Services', image: 'tab-iso', alt: 'ISO certified badge', text: 'We guide organisations through every stage of their compliance journey. From understanding the benefits of ISO certification to identifying system gaps, conducting internal audits, and ensuring ongoing compliance through monitoring and maintenance, we provide practical and strategic support to help businesses grow with confidence and integrity.' },
+  { id: 'disp', label: 'DISP', title: 'DISP', image: 'tab-disp', alt: 'Secure your business', text: 'IntegPro provides tailored DISP consultancy to help businesses meet Defence security requirements from Entry Level to Level 3. Services include gap analysis, application support, governance and cyber security guidance, and ongoing compliance training ensuring readiness for Defence contracts and secure information handling.' },
+  { id: 'audit', label: 'Audit', title: 'Audit', image: 'tab-audit', alt: 'Management system', text: 'Our audit services provide independent reviews of your management systems to ensure compliance with ISO, DISP, and regulatory standards. We identify gaps, assess risks, and deliver practical recommendations to strengthen processes and maintain certification.' },
+];
+
+// Client names replaced with sector descriptions (company policy: no client names in repositories).
+const results = [
+  { name: 'Medical device client', sector: 'Medical Devices', value: '100%', sub: 'Expert EQMS implementation', text: 'Ensuring full compliance with ISO 13485, ISO 9001, and medical-device regulatory requirements. Streamlined processes, risk management integration, and end-to-end quality system deployment.' },
+  { name: 'Construction client', sector: 'Construction', value: 'Fully Implemented', sub: '100% achieved', text: 'Professional ISO consultation covering ISO 9001, ISO 14001, ISO 45001 and other relevant standards for the building sector. Full implementation, documentation, and compliance support.' },
+  { name: 'Government client', sector: 'Community', value: 'Quality Audit', sub: 'Comprehensive audit delivered', text: 'Comprehensive quality audit delivered for a state government agency, ensuring compliance with sector requirements, evaluating system performance, and providing clear recommendations.' },
+];
+
+// Reviewer names withheld until approved for publication from Wix CMS.
+const testimonials = [
+  { quote: 'The team at IntegPro have been incredibly helpful in managing our DISP requirements. As a small business, it can be challenging to stay on top of every obligation while juggling multiple roles, and their support has made a huge difference.', name: 'Client', role: 'OS of DISP' },
+  { quote: 'From our first call to the Stage 2 audit, Maria and Mehrdad at IntegPro were outstanding. They combined deep expertise with practical guidance, were responsive and calm, and worked alongside our team to embed an Integrated Management System', name: 'Client', role: 'Security Director' },
+  { quote: 'We engaged IntegPRO to help us achieve ISO certification for Safety (ISO 45001), Environment (ISO 14001), and Quality (ISO 9001) management systems. Right from the start, their team showed a practical understanding of our specialised.', name: 'Client', role: 'Operations Director' },
+];
+
+const faqs = [
+  { q: 'What steps are involved in achieving ISO certification?', a: `Achieving ISO certification means your systems, processes, or products meet international standards for quality, safety, and efficiency. At IntegPRO, we guide you through every step, from preparation to certification. Contact us at ${company.email} to get started.` },
+  { q: 'What is ISO consulting?', a: 'ISO consulting involves providing expert guidance and support to businesses seeking ISO certification. Consultants help organizations understand the requirements of ISO standards, identify gaps in their current systems, develop and implement necessary processes, and prepare for certification audits.' },
+  { q: 'Why is ISO certification important?', a: 'ISO certification is important because it helps businesses improve their processes, increase efficiency, and enhance customer satisfaction. It also provides a competitive advantage by demonstrating compliance with internationally recognized standards, which can open up new market opportunities and build trust with stakeholders.' },
+  { q: 'How long does ISO certification take?', a: 'The duration of the ISO certification process can vary depending on the size and complexity of the organization, as well as the specific ISO standard being implemented. Generally, it can take several months to over a year to achieve certification, including the time needed for preparation, implementation, and auditing.' },
+  { q: 'What factors influence the cost of ISO consulting services?', a: `The cost of ISO consulting services depends on factors like your organization's size, the complexity of your systems, and the specific ISO standard. For a customized quote, contact IntegPRO at our Castle Hill, NSW, or St Peters, SA offices, or email ${company.email}.` },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
 ---
-<!doctype html>
-<html lang="en-AU">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex" />
-    <title>integPRO | Site preview</title>
-    <style>
-      body { margin: 0; min-height: 100vh; display: grid; place-items: center; font-family: system-ui, sans-serif; background: #f5f7fa; color: #1b2a3a; }
-      main { text-align: center; padding: 16px; }
-      h1 { margin: 0 0 8px; font-size: 2rem; }
-      p { margin: 0; color: #4a5a6a; }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>integPRO</h1>
-      <p>New website preview — rebuild in progress.</p>
-    </main>
-  </body>
-</html>
+<Base
+  title="integPRO | Cost Effective ISO & DISP Certification"
+  description="integPRO simplifies management systems: ISO 9001, 14001, 45001, 27001, 13485 and DISP consulting, auditing, documentation and training across Australia."
+  noindex
+>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1><span class="line">Achieve Excellence in</span> <span class="gold">Management System</span></h1>
+        <p>At integPRO, our mission is to simplify management systems and ensure they work for the people who use them. We focus on reducing risks, improving efficiency, and supporting businesses in achieving compliance.</p>
+        <div class="hero-actions">
+          <a href="/free-consultation" class="btn btn-primary">Start Your Journey<Chevron /></a>
+          <a href="/iso-disp-services" class="btn btn-outline">Explore Services</a>
+        </div>
+        <dl class="stats">
+          {stats.map((s) => <div><dt>{s.value}</dt><dd>{s.label}</dd></div>)}
+        </dl>
+      </div>
+      <img class="hero-ring" src="/images/hero-ring.webp" alt="integPRO branding" width="419" height="419" fetchpriority="high" />
+    </div>
+
+    <div class="container clients">
+      <h2>Our Clients</h2>
+      <div class="marquee" aria-label="Client logos">
+        <div class="track">
+          {[...clientLogos, ...clientLogos].map((c) => <span class="logo-tile">{c}</span>)}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Comprehensive Management System <span class="gold">Solutions</span></h2>
+        <p>From initial gap analysis to certification and beyond, we provide end-to-end support for your management system journey.</p>
+      </div>
+      <div class="card-grid">
+        {services.map((s) => (
+          <article class="card service">
+            <img src={`/images/${s.icon}.webp`} alt="" width="48" height="48" loading="lazy" />
+            <h3>{s.title}</h3>
+            <p>{s.text}</p>
+          </article>
+        ))}
+      </div>
+      <p class="center more"><a href="/iso-disp-services" class="btn btn-primary">Learn More<Chevron /></a></p>
+    </div>
+  </section>
+
+  <!-- Tailored solutions + team -->
+  <section class="section soft">
+    <div class="container">
+      <div class="section-head">
+        <h2>Tailored Management System <span class="gold">Solutions</span></h2>
+        <p>Choose from our specialised solutions designed to meet your specific industry and compliance requirements.</p>
+      </div>
+
+      <div class="tabs">
+        {tabs.map((t, i) => <input type="radio" name="solution" id={`tab-${t.id}`} checked={i === 0} />)}
+        <div class="tab-bar" role="tablist">
+          {tabs.map((t) => <label for={`tab-${t.id}`} role="tab">{t.label}</label>)}
+        </div>
+        {tabs.map((t) => (
+          <div class={`tab-panel panel-${t.id}`} role="tabpanel">
+            <div>
+              <h3>{t.title}</h3>
+              <p>{t.text}</p>
+            </div>
+            <img src={`/images/${t.image}.webp`} alt={t.alt} width="323" height="323" loading="lazy" />
+          </div>
+        ))}
+      </div>
+
+      <div class="team">
+        <img src="/images/team.webp" alt="The integPRO team" width="588" height="460" loading="lazy" />
+        <div>
+          <h2>Meet The <span class="gold">Team</span></h2>
+          <p>At integPRO, our strength lies in our people. We're a diverse team of passionate consultants, auditors, and specialists who bring deep industry knowledge and a shared commitment to helping businesses thrive.</p>
+          <p>With a collaborative spirit and a focus on real results, we’re here to guide you every step of the way.</p>
+          <a href="/about-us-iso-team" class="btn btn-primary">About Us<Chevron /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section class="section results">
+    <div class="container">
+      <div class="section-head">
+        <h2>Proven Result Across <span class="gold">Industries</span></h2>
+        <p class="wide">The story of the organisations achieving certification with our expert guidance &amp; support</p>
+      </div>
+      <div class="card-grid">
+        {results.map((r) => (
+          <article class="card result">
+            <header>
+              <div><h3>{r.name}</h3><p class="sector">{r.sector}</p></div>
+              <span class="badge"><img src="/images/icon-award.webp" alt="" width="44" height="44" loading="lazy" /></span>
+            </header>
+            <div class="achievement">
+              <span>Achievement</span>
+              <strong>{r.value}</strong>
+              <small>{r.sub}</small>
+            </div>
+            <p>{r.text}</p>
+          </article>
+        ))}
+      </div>
+      <p class="center more"><a href="/industries" class="btn btn-primary">Learn More<Chevron /></a></p>
+    </div>
+  </section>
+
+  <!-- Partner -->
+  <section class="section partner">
+    <img class="partner-mark" src="/images/brand-mark.webp" alt="" width="455" height="457" loading="lazy" />
+    <div class="container partner-grid">
+      <div>
+        <h2>Your <span class="gold">Trusted Partner</span> in ISO &amp; DISP</h2>
+        <p>Since 1998, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.</p>
+        <p>With a team of highly qualified consultants, lead auditors, and trainers, we’ve successfully guided over 1,000 organizations through ISO certification, DISP compliance, and integrated management system implementation.</p>
+        <a href="/about-us-iso-team" class="btn btn-primary">Learn More</a>
+      </div>
+      <img class="collage" src="/images/partner-collage.webp" alt="integPRO consultants at work and at Sydney Build Expo" width="573" height="542" loading="lazy" />
+      <div class="partner-stats">
+        <div><strong>50 +</strong><span>Combined Years of Experience</span></div>
+        <div><strong>122 +</strong><span>Successful Clients</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>What <span class="gold">Our Client</span> Say</h2>
+        <p class="wide">Trusted by organisations across Australia for management system excellence.</p>
+      </div>
+      <div class="card-grid">
+        {testimonials.map((t) => (
+          <figure class="card quote">
+            <img class="stars" src="/images/stars.webp" alt="5 out of 5 stars" width="89" height="19" loading="lazy" />
+            <img src="/images/icon-quote.webp" alt="" width="48" height="48" loading="lazy" />
+            <blockquote>"{t.quote}"</blockquote>
+            <figcaption><strong>{t.name}</strong><span>{t.role}</span></figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <h2>Start <span class="gold">Your Certification</span> Journey</h2>
+        <p class="wide">Contact us today for a free consultation and gap analysis. Let’s discuss how we can help you achieve certification excellence.</p>
+      </div>
+      <!-- Interim: opens the visitor's email app. To be switched to Wix Forms. -->
+      <form class="contact-form" action={`mailto:${company.email}`} method="post" enctype="text/plain">
+        <label>First name<input name="first_name" autocomplete="given-name" required /></label>
+        <label>Last name<input name="last_name" autocomplete="family-name" required /></label>
+        <label>Email<input type="email" name="email" autocomplete="email" required /></label>
+        <label>Phone<input type="tel" name="phone" autocomplete="tel" /></label>
+        <label class="full">Company<input name="company" autocomplete="organization" /></label>
+        <label class="full">How can we help?<textarea name="message" rows="5" required></textarea></label>
+        <button type="submit" class="btn btn-primary">Submit<Chevron /></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-wrap">
+    <div class="container faq">
+      <h2 class="gold">FAQ</h2>
+      {faqs.map((f) => (
+        <details>
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  /* Hero */
+  .hero { padding: 100px 0 40px; }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 419px; gap: 32px; align-items: start; }
+  .hero h1 { font-size: 55px; line-height: 66px; padding-left: 10px; }
+  .hero h1 .gold { display: block; }
+  .hero h1 .line { white-space: nowrap; }
+  .hero-copy > p { max-width: 495px; margin: 16px 0 30px 10px; font-size: 16px; line-height: 22.4px; }
+  .hero-actions { display: flex; gap: 18px; flex-wrap: wrap; margin-left: 10px; }
+  .stats { display: flex; gap: 64px; margin: 30px 0 0 14px; padding-top: 24px; border-top: 1px solid var(--line); max-width: 492px; }
+  .stats dt { font-family: var(--font-heading); font-weight: 700; font-size: 20px; color: var(--text); }
+  .stats dd { margin: 2px 0 0; font-size: 14px; }
+  .hero-ring { width: 419px; margin-top: 6px; }
+
+  .clients { margin-top: 70px; }
+  .clients h2 { font-size: 20px; margin-bottom: 20px; }
+  .marquee { overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
+  .track { display: flex; gap: 32px; width: max-content; animation: scroll 40s linear infinite; }
+  .logo-tile {
+    display: grid; place-items: center; width: 160px; height: 50px; border-radius: 8px;
+    background: var(--bg-faq); color: var(--muted); font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
+  }
+  @keyframes scroll { to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) { .track { animation: none; } }
+
+  /* Cards */
+  .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .card { background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card); padding: 30px 36px 44px; }
+  .service img { width: 48px; margin-bottom: 26px; }
+  .service h3 { font-size: 20px; line-height: 27px; margin-bottom: 8px; }
+  .service p { margin: 0; font-size: 14px; line-height: 19.6px; }
+  .more { margin-top: 50px; }
+
+  /* Tabs */
+  .soft { background: var(--bg-soft); }
+  .tabs input { position: absolute; opacity: 0; pointer-events: none; }
+  .tab-bar { display: grid; grid-template-columns: repeat(3, 1fr); background: #fff; border-radius: 999px; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); }
+  .tab-bar label { height: 34px; display: grid; place-items: center; border-radius: 999px; cursor: pointer; font-family: var(--font-heading); font-size: 18px; color: var(--ink); }
+  .tab-panel { display: none; grid-template-columns: 1fr 323px; gap: 60px; align-items: center; margin-top: 32px; padding: 40px 42px; background: #fff; border-radius: var(--radius-card); }
+  .tab-panel h3 { font-size: 28px; margin-bottom: 20px; }
+  .tab-panel p { margin: 0; font-size: 16px; line-height: 28.8px; }
+  #tab-iso:checked ~ .tab-bar label[for='tab-iso'],
+  #tab-disp:checked ~ .tab-bar label[for='tab-disp'],
+  #tab-audit:checked ~ .tab-bar label[for='tab-audit'] { background: var(--gold-gradient); }
+  #tab-iso:checked ~ .panel-iso,
+  #tab-disp:checked ~ .panel-disp,
+  #tab-audit:checked ~ .panel-audit { display: grid; }
+  .tabs input:focus-visible ~ .tab-bar { outline: 2px solid var(--gold); outline-offset: 4px; }
+
+  .team { display: grid; grid-template-columns: 588px 1fr; gap: 30px; align-items: end; margin-top: 110px; }
+  .team h2 { font-size: 40px; line-height: 48px; }
+  .team p { margin: 16px 0 0; font-size: 16px; line-height: 24px; }
+  .team .btn { margin-top: 32px; margin-bottom: 40px; }
+  .soft { padding-bottom: 0; }
+
+  /* Results */
+  .results { position: relative; background: url('/images/industries-bg.webp') center / cover no-repeat; }
+  .results::before { content: ''; position: absolute; inset: 0; background: rgba(255, 255, 255, 0.82); }
+  .results .container { position: relative; }
+  .section-head .wide { max-width: 680px; }
+  .result { padding: 32px 24px 48px 36px; }
+  .result header { display: flex; justify-content: space-between; gap: 12px; }
+  .result h3 { font-size: 20px; }
+  .sector { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
+  .badge { flex: none; width: 48px; height: 48px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); overflow: hidden; }
+  .badge img { width: 48px; height: 48px; }
+  .achievement { display: grid; gap: 4px; margin: 44px 0 30px; padding: 16px 20px 20px 26px; background: var(--gold-light); border-left: 9px solid var(--gold); border-radius: 8px; font-size: 14px; }
+  .achievement strong { margin-top: 14px; font-family: var(--font-heading); font-weight: 400; font-size: 18px; color: var(--gold-dark); }
+  .achievement small { font-size: 14px; }
+  .result > p { margin: 0; font-size: 14px; line-height: 21px; }
+
+  /* Partner */
+  .partner { position: relative; overflow: hidden; }
+  .partner-mark { position: absolute; right: -340px; top: 20px; width: 455px; opacity: 0.6; pointer-events: none; }
+  .partner-grid { display: grid; grid-template-columns: 1fr 573px; gap: 50px; align-items: center; }
+  .partner h2 { font-size: 40px; line-height: 48px; }
+  .partner-grid p { margin: 24px 0 0; font-size: 16px; line-height: 22.4px; }
+  .partner-grid .btn { margin-top: 32px; }
+  .collage { border-radius: 24px; }
+  .partner-stats { grid-column: 1 / -1; display: flex; gap: 28px; }
+  .partner-stats div { width: 225px; padding: 18px; background: var(--gold-light); border-radius: 12px; }
+  .partner-stats strong { display: block; font-family: var(--font-heading); font-size: 20px; color: var(--gold); }
+  .partner-stats span { font-size: 14px; }
+
+  /* Testimonials */
+  .quote { margin: 0; padding: 30px 22px 50px; display: flex; flex-direction: column; gap: 14px; }
+  .quote img { width: 48px; }
+  .quote .stars { width: 89px; }
+  .quote blockquote { margin: 16px 0 0; font-style: italic; font-size: 14px; line-height: 19.6px; flex: 1; }
+  .quote figcaption { display: grid; margin-top: 30px; font-size: 14px; }
+  .quote figcaption strong { font-weight: 400; color: var(--ink); }
+
+  /* Contact */
+  .contact { background: var(--bg-grey); }
+  .contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; max-width: 760px; margin: 0 auto; padding: 40px; background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
+  .contact-form label { display: grid; gap: 8px; font-size: 14px; color: var(--ink); }
+  .contact-form .full { grid-column: 1 / -1; }
+  .contact-form input, .contact-form textarea { font: inherit; font-size: 16px; padding: 10px 14px; border: 1px solid #cfcfcf; border-radius: 8px; background: #fff; color: var(--ink); }
+  .contact-form input:focus, .contact-form textarea:focus { outline: 2px solid var(--gold); border-color: transparent; }
+  .contact-form button { justify-self: start; height: 40px; }
+
+  /* FAQ */
+  .faq { background: var(--bg-faq); padding: 20px 56px 16px; }
+  .faq h2 { text-align: center; font-size: 48px; line-height: 57.6px; margin-bottom: 30px; }
+  .faq details { border-bottom: 1px solid var(--line); }
+  .faq summary { list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 26px 0; cursor: pointer; font-size: 16px; color: var(--ink); }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: '+'; font-size: 22px; color: var(--gold); transition: transform 0.2s; }
+  .faq details[open] summary::after { transform: rotate(45deg); }
+  .faq details p { margin: 0 0 24px; font-size: 14px; line-height: 21px; }
+
+  @media (max-width: 1000px) {
+    .hero-grid, .partner-grid, .team { grid-template-columns: 1fr; }
+    .hero-ring { width: min(320px, 80%); margin: 0 auto; }
+    .team img { width: 100%; max-width: 588px; }
+    .hero-grid > *, .partner-grid > *, .team > * { min-width: 0; }
+    .partner-mark { display: none; }
+  }
+  @media (max-width: 760px) {
+    .hero { padding-top: 40px; }
+    .hero h1 { font-size: 36px; line-height: 44px; padding: 0; }
+    .hero h1 .line { white-space: normal; }
+    .hero-copy > p, .hero-actions { margin-left: 0; }
+    .stats { gap: 24px; margin-left: 0; justify-content: space-between; }
+    .card-grid { grid-template-columns: 1fr; }
+    .tab-panel { grid-template-columns: 1fr; gap: 24px; padding: 28px 24px; }
+    .tab-panel img { max-width: 240px; margin: 0 auto; }
+    .tab-bar label { font-size: 16px; }
+    .team { margin-top: 60px; }
+    .team h2, .partner h2 { font-size: 30px; line-height: 38px; }
+    .partner-stats { flex-direction: column; }
+    .partner-stats div { width: auto; }
+    .contact-form { grid-template-columns: 1fr; padding: 24px; }
+    .faq { padding: 16px 20px; }
+    .faq h2 { font-size: 36px; }
+  }
+</style>
