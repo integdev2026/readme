@@ -20,8 +20,9 @@ jobs:
         run: |
           sleep 180 # give the deploy workflow time to release
           BASE=https://headless-kyphopvoogn-mehrdadpermeh-140d.wix-site-host.com
-          for p in / /disp /about-us-iso-team /iso-disp-services /iso-9001-compliance-certification-sydney /medical-iso /free-consultation /privacy-policy /blog /blog/page/2 /blog/categories/disp-compliance /post/what-is-iso /disp.html /images/logo.png /robots.txt; do
+          for p in / /disp /about-us-iso-team /iso-disp-services /iso-9001-compliance-certification-sydney /medical-iso /free-consultation /privacy-policy /blog /blog/page/2 /blog/categories/disp-compliance /post/what-is-iso /post/test-post-new-website-blog /images/logo.png /robots.txt; do
             code=$(curl -s -o /tmp/body -w '%{http_code}' -L "$BASE$p")
             title=$(grep -o '<title>[^<]*' /tmp/body | head -1 | sed 's/<title>//')
             echo "$code $p :: $title"
+            if [ "$p" = "/blog" ]; then grep -o 'test-post-new-website-blog' /tmp/body | head -1 | sed 's/^/   listed on \/blog: /'; fi
           done
