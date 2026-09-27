@@ -1,7 +1,7 @@
 ---
 // "Our Process" band: six gold chevron steps (the live site uses a chevron PNG; recreated with clip-path).
 interface Props { sub: string; steps?: string[]; bandOnly?: boolean }
-const { sub, steps = ['Gap Analysis', 'Action Plan', 'Implementation', 'Governence', 'Submission', 'Ongoing Support'], bandOnly = false } = Astro.props;
+const { sub, steps = ['Gap Analysis', 'Action Plan', 'Implementation', 'Governance', 'Submission', 'Ongoing Support'], bandOnly = false } = Astro.props;
 ---
 <section class:list={['process', { 'band-only': bandOnly }]}>
   <div class="head container">

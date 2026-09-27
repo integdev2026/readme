@@ -13,8 +13,8 @@ const features = [
   { icon: icon('icon-trend'), title: 'Proven Results', text: 'Track record of first-time certification success and sustained compliance.', wide: true },
 ];
 
-// Step labels verbatim from the live page (including "Governence").
-const steps = ['Gap Analysis', 'Action Plan', 'Implementation', 'Governence', 'Submission', 'Ongoing Support'];
+// Step labels verbatim from the live page (including "Governance").
+const steps = ['Gap Analysis', 'Action Plan', 'Implementation', 'Governance', 'Submission', 'Ongoing Support'];
 
 // FAQ answers come from the live page's FAQPage structured data. Line 1 is the lead; further lines are list items.
 const faqs = [
@@ -74,7 +74,7 @@ const faqSchema = {
   <section class="process">
     <div class="container">
       <h2 class="gold">Our Process</h2>
-      <p class="sub">A structured approach to medical device quality management certification.. Typical timeline: 4–6 months.</p>
+      <p class="sub">A structured approach to medical device quality management certification. Typical timeline: 4–6 months.</p>
       <ol class="steps">
         {steps.map((s) => <li>{s}</li>)}
       </ol>
