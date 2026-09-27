@@ -18,7 +18,7 @@ jobs:
       - name: Request pages
         run: |
           BASE=https://headless-kyphopvoogn-mehrdadpermeh-140d.wix-site-host.com
-          for p in / /disp /disp/ /disp/index.html /about-us-iso-team /blog /blog/ /post/what-is-iso /privacy-policy /iso-disp-services /sitemap-index.xml; do
+          for p in / /disp /disp.html /disp/ /disp/index.html /blog.html /post/what-is-iso.html /about-us-iso-team /blog /blog/ /post/what-is-iso /privacy-policy /iso-disp-services /sitemap-index.xml; do
             code=$(curl -s -o /tmp/body -w '%{http_code}' -L "$BASE$p")
             title=$(grep -o '<title>[^<]*' /tmp/body | head -1 | sed 's/<title>//')
             echo "$code $p :: $title"
