@@ -6,6 +6,7 @@ on:
     branches: ['claude/**']
     paths:
       - '.github/workflows/smoke-check.yml'
+      - 'site/**'
   workflow_dispatch:
   workflow_run:
     workflows: ['Deploy to Wix Headless']
@@ -17,7 +18,7 @@ jobs:
     steps:
       - name: Request pages
         run: |
-          sleep 20
+          sleep 180 # give the deploy workflow time to release
           BASE=https://headless-kyphopvoogn-mehrdadpermeh-140d.wix-site-host.com
           for p in / /disp /about-us-iso-team /iso-disp-services /iso-9001-compliance-certification-sydney /medical-iso /free-consultation /privacy-policy /blog /blog/page/2 /blog/categories/disp-compliance /post/what-is-iso /disp.html /images/logo.png /robots.txt; do
             code=$(curl -s -o /tmp/body -w '%{http_code}' -L "$BASE$p")

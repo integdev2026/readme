@@ -41,39 +41,50 @@ async function call<T>(path: string, init: RequestInit = {}): Promise<T> {
   return res.json() as Promise<T>;
 }
 
-// In CI a failed fetch must fail the build so an empty blog is never published.
-// Locally (no network to Wix) the blog renders empty with a warning.
-function soft<T>(what: string, fallback: T) {
-  return (err: unknown): T => {
-    if (process.env.CI) throw err;
-    console.warn(`[wix] ${what} unavailable, using empty data: ${(err as Error).message}`);
-    return fallback;
-  };
+// Pages render on request in Wix's hosting worker; keep Wix data briefly in memory per worker.
+const TTL_MS = 5 * 60 * 1000;
+const cache = new Map<string, { at: number; value: Promise<unknown> }>();
+function cached<T>(key: string, load: () => Promise<T>): Promise<T> {
+  const hit = cache.get(key);
+  if (hit && Date.now() - hit.at < TTL_MS) return hit.value as Promise<T>;
+  const value = load().catch((err) => { cache.delete(key); throw err; });
+  cache.set(key, { at: Date.now(), value });
+  return value;
 }
 
-let postsPromise: Promise<Post[]> | undefined;
+/** All published posts, newest first, without rich content (for listings). */
 export function getPosts(): Promise<Post[]> {
-  postsPromise ??= (async () => {
+  return cached('posts', async () => {
     const all: Post[] = [];
     for (let offset = 0; ; offset += 100) {
       const page = await call<{ posts: Post[] }>('/blog/v3/posts/query', {
         method: 'POST',
-        body: JSON.stringify({ fieldsets: ['RICH_CONTENT', 'SEO'], query: { paging: { limit: 100, offset } } }),
+        body: JSON.stringify({ query: { paging: { limit: 100, offset } } }),
       });
       all.push(...(page.posts ?? []));
       if ((page.posts ?? []).length < 100) break;
     }
     return all.sort((a, b) => b.firstPublishedDate.localeCompare(a.firstPublishedDate));
-  })().catch(soft('blog posts', [] as Post[]));
-  return postsPromise;
+  });
 }
 
-let catsPromise: Promise<Category[]> | undefined;
+/** One post with rich content and SEO data, or undefined if the slug doesn't exist. */
+export function getPost(slug: string): Promise<Post | undefined> {
+  return cached(`post:${slug}`, async () => {
+    const res = await call<{ posts: Post[] }>('/blog/v3/posts/query', {
+      method: 'POST',
+      body: JSON.stringify({ fieldsets: ['RICH_CONTENT', 'SEO'], query: { filter: { slug }, paging: { limit: 1 } } }),
+    });
+    return res.posts?.[0];
+  });
+}
+
 export function getCategories(): Promise<Category[]> {
-  catsPromise ??= call<{ categories: Category[] }>('/blog/v3/categories?paging.limit=100')
-    .then((r) => (r.categories ?? []).sort((a, b) => (b.displayPosition ?? 0) - (a.displayPosition ?? 0)))
-    .catch(soft('blog categories', [] as Category[]));
-  return catsPromise;
+  return cached('categories', () =>
+    call<{ categories: Category[] }>('/blog/v3/categories?paging.limit=100').then((r) =>
+      (r.categories ?? []).sort((a, b) => (b.displayPosition ?? 0) - (a.displayPosition ?? 0)),
+    ),
+  );
 }
 
 export function mediaUrl(id: string, width?: number) {

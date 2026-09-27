@@ -1,15 +1,10 @@
 ---
-export const prerender = true;
 import BlogListing from '../../../components/blog/BlogListing.astro';
 import { getCategories, getPosts } from '../../../lib/wix';
 
-export async function getStaticPaths() {
-  const categories = await getCategories();
-  return categories.map((c) => ({ params: { slug: c.slug } }));
-}
-
 const [posts, categories] = await Promise.all([getPosts(), getCategories()]);
-const category = categories.find((c) => c.slug === Astro.params.slug)!;
+const category = categories.find((c) => c.slug === Astro.params.slug);
+if (!category) return new Response('Not found', { status: 404 });
 const inCategory = posts.filter((p) => p.categoryIds?.includes(category.id));
 ---
 <BlogListing
