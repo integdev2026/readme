@@ -1,0 +1,24 @@
+---
+import BlogListing from '../../../components/blog/BlogListing.astro';
+import { getCategories, getPosts } from '../../../lib/wix';
+
+export async function getStaticPaths() {
+  const categories = await getCategories();
+  return categories.map((c) => ({ params: { slug: c.slug } }));
+}
+
+const [posts, categories] = await Promise.all([getPosts(), getCategories()]);
+const category = categories.find((c) => c.slug === Astro.params.slug)!;
+const inCategory = posts.filter((p) => p.categoryIds?.includes(category.id));
+---
+<BlogListing
+  title={`${category.label} | integPRO`}
+  description={category.description || `${category.label} articles from integPRO.`}
+  heading={category.label}
+  posts={inCategory}
+  categories={categories}
+  activeCategory={category.slug}
+  page={1}
+  pages={1}
+  baseHref={`/blog/categories/${category.slug}`}
+/>

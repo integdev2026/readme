@@ -1,0 +1,22 @@
+---
+import BlogListing from '../../../components/blog/BlogListing.astro';
+import { getCategories, getPosts, POSTS_PER_PAGE } from '../../../lib/wix';
+
+export async function getStaticPaths() {
+  const pages = Math.ceil((await getPosts()).length / POSTS_PER_PAGE);
+  return Array.from({ length: Math.max(0, pages - 1) }, (_, i) => ({ params: { page: String(i + 2) } }));
+}
+
+const page = Number(Astro.params.page);
+const [posts, categories] = await Promise.all([getPosts(), getCategories()]);
+---
+<BlogListing
+  title={`Blog – Page ${page} | integPRO`}
+  description="ISO and DISP insights, guides and updates from integPRO."
+  heading="Discover ISO Tips & DISP Updates"
+  posts={posts.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE)}
+  categories={categories}
+  page={page}
+  pages={Math.ceil(posts.length / POSTS_PER_PAGE)}
+  baseHref="/blog"
+/>

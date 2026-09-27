@@ -1,0 +1,16 @@
+---
+import BlogListing from '../../components/blog/BlogListing.astro';
+import { getCategories, getPosts, POSTS_PER_PAGE } from '../../lib/wix';
+
+const [posts, categories] = await Promise.all([getPosts(), getCategories()]);
+---
+<BlogListing
+  title="Explore What is ISO with IntegPRO | Academic Insights and Strategies"
+  description="Discover what is iso and how it enhances compliance and performance with IntegPRO. Explore insights and tips on ISO standards."
+  heading="Discover ISO Tips & DISP Updates"
+  posts={posts.slice(0, POSTS_PER_PAGE)}
+  categories={categories}
+  page={1}
+  pages={Math.max(1, Math.ceil(posts.length / POSTS_PER_PAGE))}
+  baseHref="/blog"
+/>
