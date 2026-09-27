@@ -11,5 +11,8 @@
     "astro": "^5.18.2"
   },
   "private": true,
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@wix/cli": "^1.1.251"
+  }
 }

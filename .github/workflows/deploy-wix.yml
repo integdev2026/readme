@@ -1,0 +1,59 @@
+name: Deploy to Wix Headless
+
+# Builds the Astro site and releases it to the Wix-managed headless site
+# configured in site/wix.config.json. Needs the WIX_API_KEY repository secret.
+on:
+  push:
+    branches: ['main', 'claude/**']
+    paths:
+      - 'site/**'
+      - '.github/workflows/deploy-wix.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-wix
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: site
+    env:
+      CI: 'true'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install
+        run: npm ci --no-audit --no-fund
+
+      - name: Build
+        run: npm run build
+
+      - name: Check Wix API key
+        env:
+          WIX_API_KEY: ${{ secrets.WIX_API_KEY }}
+        run: |
+          if [ -z "$WIX_API_KEY" ]; then
+            echo "::error::WIX_API_KEY repository secret is missing (Settings > Secrets and variables > Actions)."
+            exit 1
+          fi
+
+      - name: Log in to Wix
+        env:
+          WIX_API_KEY: ${{ secrets.WIX_API_KEY }}
+        run: npx wix login --api-key "$WIX_API_KEY"
+
+      - name: Release
+        run: npx wix release
