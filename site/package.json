@@ -2,18 +2,27 @@
   "name": "integpro-site",
   "version": "1.0.0",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build && node scripts/flat-html.mjs",
-    "preview": "astro preview"
+    "dev": "wix dev",
+    "build": "wix build",
+    "preview": "wix preview",
+    "release": "wix release",
+    "build:astro": "astro build"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
     "@fontsource/open-sans": "^5.3.0",
-    "astro": "^5.18.2"
+    "@wix/astro": "^2.74.0",
+    "astro": "^5.18.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "private": true,
   "type": "module",
   "devDependencies": {
+    "@astrojs/react": "^4.4.2",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@wix/astro-wix-hosting-adapter": "^2.0.1",
     "@wix/cli": "^1.1.251"
   }
 }

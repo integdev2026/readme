@@ -38,9 +38,6 @@ jobs:
       - name: Install
         run: npm ci --no-audit --no-fund
 
-      - name: Build
-        run: npm run build
-
       - name: Check Wix API key
         env:
           WIX_API_KEY: ${{ secrets.WIX_API_KEY }}
@@ -54,6 +51,12 @@ jobs:
         env:
           WIX_API_KEY: ${{ secrets.WIX_API_KEY }}
         run: npx wix login --api-key "$WIX_API_KEY"
+
+      - name: Pull Wix environment
+        run: npx wix env pull
+
+      - name: Build
+        run: npx wix build
 
       - name: Release
         run: npx wix release
