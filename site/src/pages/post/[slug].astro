@@ -2,7 +2,9 @@
 import Base from '../../layouts/Base.astro';
 import CategoryNav from '../../components/blog/CategoryNav.astro';
 import PostCard from '../../components/blog/PostCard.astro';
-import { coverUrl, formatDate, getCategories, getPost, getPosts, metaDescription } from '../../lib/wix';
+import { coverUrl, formatDate, getCategories, getPost, getPosts, metaDescription, BLOG_CACHE_CONTROL } from '../../lib/wix';
+
+Astro.response.headers.set('Cache-Control', BLOG_CACHE_CONTROL);
 import { ricosToHtml } from '../../lib/ricos';
 
 const [post, posts, categories] = await Promise.all([getPost(Astro.params.slug!), getPosts(), getCategories()]);

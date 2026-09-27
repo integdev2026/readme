@@ -42,7 +42,10 @@ async function call<T>(path: string, init: RequestInit = {}): Promise<T> {
 }
 
 // Pages render on request in Wix's hosting worker; keep Wix data briefly in memory per worker.
-const TTL_MS = 5 * 60 * 1000;
+const TTL_MS = 60 * 1000;
+
+/** Blog pages must reflect Wix changes quickly, so they are not cached by the hosting CDN. */
+export const BLOG_CACHE_CONTROL = 'no-store';
 const cache = new Map<string, { at: number; value: Promise<unknown> }>();
 function cached<T>(key: string, load: () => Promise<T>): Promise<T> {
   const hit = cache.get(key);

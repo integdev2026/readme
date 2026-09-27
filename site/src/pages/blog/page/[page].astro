@@ -1,6 +1,8 @@
 ---
 import BlogListing from '../../../components/blog/BlogListing.astro';
-import { getCategories, getPosts, POSTS_PER_PAGE } from '../../../lib/wix';
+import { getCategories, getPosts, POSTS_PER_PAGE, BLOG_CACHE_CONTROL } from '../../../lib/wix';
+
+Astro.response.headers.set('Cache-Control', BLOG_CACHE_CONTROL);
 
 const page = Number(Astro.params.page);
 const [posts, categories] = await Promise.all([getPosts(), getCategories()]);
