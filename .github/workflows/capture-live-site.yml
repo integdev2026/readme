@@ -1,0 +1,55 @@
+name: Capture live site
+
+# Runs on GitHub's runners (open internet) and commits the capture back to the branch.
+# Re-run by editing tools/capture/** or via "Run workflow".
+on:
+  push:
+    branches: ['claude/**']
+    paths:
+      - 'tools/capture/**'
+      - '.github/workflows/capture-live-site.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: capture-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Playwright
+        working-directory: tools/capture
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+
+      - name: Capture
+        working-directory: tools/capture
+        env:
+          CAPTURE_ORIGIN: https://www.integpro.com.au
+          CAPTURE_OUT: ${{ github.workspace }}/capture
+        run: node capture.mjs
+
+      - name: Commit capture
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add capture
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Capture live site snapshot"
+          for i in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
