@@ -17,6 +17,7 @@ jobs:
     steps:
       - name: Request pages
         run: |
+          sleep 20
           BASE=https://headless-kyphopvoogn-mehrdadpermeh-140d.wix-site-host.com
           for p in / /disp /about-us-iso-team /iso-disp-services /iso-9001-compliance-certification-sydney /medical-iso /free-consultation /privacy-policy /blog /blog/page/2 /blog/categories/disp-compliance /post/what-is-iso /disp.html /images/logo.png /robots.txt; do
             code=$(curl -s -o /tmp/body -w '%{http_code}' -L "$BASE$p")
