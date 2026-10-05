@@ -19,6 +19,6 @@ Decisions parked for later. Ask the owner before go-live.
 
 ## Other
 - Google Maps embed on /free-consultation: keep or remove (third-party cookies).
-- Contact forms use mailto; switch to Wix Forms.
+- Contact forms replaced by the LeadConnector booking widget (iframe + form_embed.js): check privacy policy covers this third party and its cookies.
 - Blog post "What is ISO?" on the headless site: set category "ISO Certification" and first published date 2025-05-09.
 - Remove `noindex` and switch the integpro.com.au domain at go-live.
