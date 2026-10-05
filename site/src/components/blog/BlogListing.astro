@@ -19,7 +19,7 @@ interface Props {
 const { title, description, heading, posts, categories, activeCategory, page, pages, baseHref } = Astro.props;
 const href = (n: number) => (n === 1 ? baseHref : `${baseHref.replace(/\/$/, '')}/page/${n}`);
 ---
-<Base title={title} description={description} noindex>
+<Base title={title} description={description}>
   <section class="blog">
     <div class="container">
       <h1>{heading}</h1>
