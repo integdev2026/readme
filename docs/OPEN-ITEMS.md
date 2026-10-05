@@ -23,3 +23,11 @@ Decisions parked for later. Ask the owner before go-live.
 - Contact forms replaced by the LeadConnector booking widget (iframe + form_embed.js): check privacy policy covers this third party and its cookies.
 - Blog post "What is ISO?" on the headless site: set category "ISO Certification" and first published date 2025-05-09.
 - Go-live: `noindex` removed (2026-10-05). Switch the integpro.com.au domain to the headless site in Wix.
+
+## Google Ads review (after launch)
+- Owner chose to review ads after the new site launches.
+- Before the domain switch: the new site has no Google tag. The old site loads GTM-W52J525F (with Google Ads AW-10996724305); add it to every page or ads/GA4 tracking stops at launch.
+- Conversion action "Submit lead form (1)" counts ~63% of clicks (1,139 conversions / 1,817 clicks, 90 days to 2026-10-05): fix its trigger. Plan: booking widget redirects to a /thank-you page; count that URL only.
+- GA4 connected in Windsor is dispco.com.au (295741463); connect integpro.com.au's GA4 property and link it to Google Ads.
+- Done 2026-10-05: negatives added to DISP Landing Page (incl. ppwr, food-safety, course) and ISO Performance Max (jobs, free, template, pdf, training, course, ...); Dynamic Search ad group paused; broad keywords cybersecurity / defence industry / defence security paused. Re-check search terms ~2 weeks after launch.
+
