@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import Chevron from '../components/Chevron.astro';
 import ContactBand from '../components/ContactBand.astro';
 import { company } from '../data/site';
-import { getClientLogos } from '../lib/wix';
+import { getClientLogos, getTestimonials, type Testimonial } from '../lib/wix';
 
 const stats = [
   { value: '1000 +', label: 'Project Completed' },
@@ -38,12 +38,15 @@ const results = [
   { name: 'Government client', sector: 'Community', value: 'Quality Audit', sub: 'Comprehensive audit delivered', text: 'Comprehensive quality audit delivered for a state government agency, ensuring compliance with sector requirements, evaluating system performance, and providing clear recommendations.' },
 ];
 
-// Reviewer names withheld until approved for publication from Wix CMS.
-const testimonials = [
+// Testimonials (with reviewer names and client logos) come from the Wix CMS; these anonymous
+// versions show only if the collection is empty or unavailable.
+const fallbackTestimonials: Testimonial[] = [
   { quote: 'The team at IntegPro have been incredibly helpful in managing our DISP requirements. As a small business, it can be challenging to stay on top of every obligation while juggling multiple roles, and their support has made a huge difference.', name: 'Client', role: 'OS of DISP' },
   { quote: 'From our first call to the Stage 2 audit, Maria and Mehrdad at IntegPro were outstanding. They combined deep expertise with practical guidance, were responsive and calm, and worked alongside our team to embed an Integrated Management System', name: 'Client', role: 'Security Director' },
   { quote: 'We engaged IntegPRO to help us achieve ISO certification for Safety (ISO 45001), Environment (ISO 14001), and Quality (ISO 9001) management systems. Right from the start, their team showed a practical understanding of our specialised.', name: 'Client', role: 'Operations Director' },
 ];
+const cmsTestimonials = await getTestimonials();
+const testimonials = cmsTestimonials.length ? cmsTestimonials : fallbackTestimonials;
 
 const faqs = [
   { q: 'What steps are involved in achieving ISO certification?', a: `Achieving ISO certification means your systems, processes, or products meet international standards for quality, safety, and efficiency. At IntegPRO, we guide you through every step, from preparation to certification. Contact us at ${company.email} to get started.` },
@@ -213,7 +216,10 @@ const faqSchema = {
             <img class="stars" src="/images/stars.webp" alt="5 out of 5 stars" width="89" height="19" loading="lazy" />
             <img src="/images/icon-quote.webp" alt="" width="48" height="48" loading="lazy" />
             <blockquote>"{t.quote}"</blockquote>
-            <figcaption><strong>{t.name}</strong><span>{t.role}</span></figcaption>
+            <figcaption>
+              {t.logo && <img class="client-logo" src={t.logo} alt={t.client ?? ''} height="40" loading="lazy" decoding="async" />}
+              <strong>{t.name}</strong><span>{t.role}</span>
+            </figcaption>
           </figure>
         ))}
       </div>
@@ -335,6 +341,7 @@ const faqSchema = {
   .quote blockquote { margin: 16px 0 0; font-style: italic; font-size: 14px; line-height: 19.6px; flex: 1; }
   .quote figcaption { display: grid; margin-top: 30px; font-size: 14px; }
   .quote figcaption strong { font-weight: 400; color: var(--ink); }
+  .quote .client-logo { width: auto; height: 40px; max-width: 180px; object-fit: contain; margin-bottom: 14px; }
 
   /* FAQ */
   .faq { background: var(--bg-faq); padding: 20px 56px 16px; }
