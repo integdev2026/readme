@@ -16,6 +16,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Request pages
         run: |
           sleep 180 # give the deploy workflow time to release
@@ -25,3 +26,18 @@ jobs:
             title=$(grep -o '<title>[^<]*' /tmp/body | head -1 | sed 's/<title>//')
             echo "$code $p :: $title"
           done
+      - name: CMS content (client logos, testimonials)
+        run: |
+          BASE=https://headless-kyphopvoogn-mehrdadpermeh-140d.wix-site-host.com
+          CLIENT_ID=$(jq -r .appId site/wix.config.json 2>/dev/null || echo 0b2200a7-9fbd-4d36-b02e-81210a7564d6)
+          # Same anonymous visitor query the site makes at request time.
+          TOKEN=$(curl -s -X POST https://www.wixapis.com/oauth2/token -H 'Content-Type: application/json' \
+            -d "{\"clientId\":\"$CLIENT_ID\",\"grantType\":\"anonymous\"}" | jq -r .access_token)
+          for c in ClientLogos Testimonials; do
+            code=$(curl -s -o /tmp/cms -w '%{http_code}' -X POST https://www.wixapis.com/wix-data/v2/items/query \
+              -H 'Content-Type: application/json' -H "Authorization: $TOKEN" \
+              -d "{\"dataCollectionId\":\"$c\",\"query\":{\"paging\":{\"limit\":50}}}")
+            echo "$c: HTTP $code, items: $(jq '.dataItems | length' /tmp/cms 2>/dev/null) $(jq -c '.message // empty' /tmp/cms 2>/dev/null | cut -c1-200)"
+          done
+          curl -s -L "$BASE/" -o /tmp/home
+          echo "Home page: $(grep -o 'logo-tile logo-img' /tmp/home | wc -l) CMS logo tiles (0 = placeholders), $(grep -o 'Client [0-9]' /tmp/home | wc -l) placeholder tiles"
