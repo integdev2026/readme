@@ -5,6 +5,7 @@ Decisions parked for later. Ask the owner before go-live.
 ## Client names, logos and testimonials (deferred)
 - Home "Our Clients" strip, "Proven Result Across Industries" cards (home and /industries), and testimonial attributions use placeholders.
 - If approved: confirm client consent, store names/logos/quotes in a Wix CMS collection and load them at request time. Keep them out of this repository (company policy).
+- Home logo strip is wired: it reads CMS collection `ClientLogos` (fields `title` text, `logo` image, `order` number; read permission "Anyone") and shows placeholders until it has items. Add logos only once consent is confirmed.
 
 ## Facts to confirm
 - Founding year: "Since 1998" vs "Since 2019" vs "25+ years".

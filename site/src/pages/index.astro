@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import Chevron from '../components/Chevron.astro';
 import ContactBand from '../components/ContactBand.astro';
 import { company } from '../data/site';
+import { getClientLogos } from '../lib/wix';
 
 const stats = [
   { value: '1000 +', label: 'Project Completed' },
@@ -10,9 +11,10 @@ const stats = [
   { value: '72', label: 'Unique Customers' },
 ];
 
-// Client names and logos are kept out of the repository (company policy);
-// real logos are to be served from Wix Media once approved.
-const clientLogos = Array.from({ length: 8 }, (_, i) => `Client ${i + 1}`);
+// Client names and logos are kept out of the repository (company policy): they are read from
+// the Wix CMS at request time, with placeholders if the collection is empty or unavailable.
+const clientLogos = await getClientLogos();
+const placeholders = Array.from({ length: 8 }, (_, i) => `Client ${i + 1}`);
 
 const services = [
   { icon: 'icon-award', title: 'ISO Certification', text: 'Expert guidance for ISO 9001, 14001, 45001, 27001 & other international standards. Full implementation support.' },
@@ -85,7 +87,13 @@ const faqSchema = {
       <h2>Our Clients</h2>
       <div class="marquee" aria-label="Client logos">
         <div class="track">
-          {[...clientLogos, ...clientLogos].map((c) => <span class="logo-tile">{c}</span>)}
+          {clientLogos.length
+            ? [...clientLogos, ...clientLogos].map((c, i) => (
+                <span class="logo-tile logo-img" aria-hidden={i >= clientLogos.length ? 'true' : undefined}>
+                  <img src={c.src} alt={i >= clientLogos.length ? '' : c.name} height="50" loading="lazy" decoding="async" />
+                </span>
+              ))
+            : [...placeholders, ...placeholders].map((c) => <span class="logo-tile">{c}</span>)}
         </div>
       </div>
     </div>
@@ -256,6 +264,8 @@ const faqSchema = {
     display: grid; place-items: center; width: 160px; height: 50px; border-radius: 8px;
     background: var(--bg-faq); color: var(--muted); font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
   }
+  .logo-img { background: none; }
+  .logo-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
   @keyframes scroll { to { transform: translateX(-50%); } }
   @media (prefers-reduced-motion: reduce) { .track { animation: none; } }
 
