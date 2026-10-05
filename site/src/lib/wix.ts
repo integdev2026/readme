@@ -90,6 +90,70 @@ export function getCategories(): Promise<Category[]> {
   );
 }
 
+/** CMS collection holding the home page client logos (names and logos live in Wix, not this repository). */
+export const CLIENT_LOGOS_COLLECTION = 'ClientLogos';
+
+export interface ClientLogo { name: string; src: string }
+
+// CMS image fields come back as `wix:image://v1/<mediaId>/<file>#...` or as a plain URL.
+function imageSrc(value: unknown): string | undefined {
+  if (typeof value !== 'string' || !value) return undefined;
+  const m = value.match(/^wix:image:\/\/v1\/([^/#]+)/);
+  if (m) return `https://static.wixstatic.com/media/${m[1]}`;
+  return /^https:\/\//.test(value) ? value : undefined;
+}
+
+// Reads up to 50 items of a CMS collection in `order` order; [] if missing, empty or unreadable,
+// so pages fall back to their placeholders.
+function getCollection(collection: string): Promise<Record<string, unknown>[]> {
+  return cached(`cms:${collection}`, async () => {
+    try {
+      const res = await call<{ dataItems?: { data?: Record<string, unknown> }[] }>('/wix-data/v2/items/query', {
+        method: 'POST',
+        body: JSON.stringify({
+          dataCollectionId: collection,
+          query: { sort: [{ fieldName: 'order', order: 'ASC' }], paging: { limit: 50 } },
+        }),
+      });
+      return (res.dataItems ?? []).map(({ data = {} }) => data);
+    } catch (err) {
+      console.error(`CMS collection ${collection} unavailable:`, err);
+      return [];
+    }
+  });
+}
+
+/** Client logos for the home page strip. Fields: `title` (client name, alt text), `logo` (image), `order`. */
+export async function getClientLogos(): Promise<ClientLogo[]> {
+  return (await getCollection(CLIENT_LOGOS_COLLECTION)).flatMap((data) => {
+    const src = imageSrc(data.logo);
+    return src ? [{ name: String(data.title ?? ''), src }] : [];
+  });
+}
+
+/** CMS collection holding home page testimonials (reviewer names and client logos live in Wix). */
+export const TESTIMONIALS_COLLECTION = 'Testimonials';
+
+export interface Testimonial { quote: string; name: string; role: string; client?: string; logo?: string }
+
+/**
+ * Home page testimonials. Fields: `quote`, `title` (reviewer name), `role`, `client` (company name,
+ * logo alt text), `logo` (image, optional), `order`.
+ */
+export async function getTestimonials(): Promise<Testimonial[]> {
+  return (await getCollection(TESTIMONIALS_COLLECTION)).flatMap((data) =>
+    typeof data.quote === 'string' && data.quote
+      ? [{
+          quote: data.quote,
+          name: String(data.title ?? ''),
+          role: String(data.role ?? ''),
+          client: typeof data.client === 'string' ? data.client : undefined,
+          logo: imageSrc(data.logo),
+        }]
+      : [],
+  );
+}
+
 export function mediaUrl(id: string, width?: number) {
   const base = `https://static.wixstatic.com/media/${id}`;
   if (!width) return base;

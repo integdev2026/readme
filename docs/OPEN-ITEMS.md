@@ -5,6 +5,8 @@ Decisions parked for later. Ask the owner before go-live.
 ## Client names, logos and testimonials (deferred)
 - Home "Our Clients" strip, "Proven Result Across Industries" cards (home and /industries), and testimonial attributions use placeholders.
 - If approved: confirm client consent, store names/logos/quotes in a Wix CMS collection and load them at request time. Keep them out of this repository (company policy).
+- Home logo strip: done. Owner confirmed client consent (2026-10-05); the logos live in CMS collection `ClientLogos` (fields `title`, `logo`, `order`; read "Anyone") and the page shows placeholders only if it can't read them. Manage logos in the Wix CMS, not here.
+- Home testimonials: in CMS collection `Testimonials` (fields `title` reviewer, `role`, `quote`, `client`, `logo`, `order`). Reviewer names approved by owner (2026-10-05). Still needed: which client each testimonial belongs to, to fill `client` and `logo`.
 
 ## Facts to confirm
 - Founding year: "Since 1998" vs "Since 2019" vs "25+ years".
@@ -18,6 +20,6 @@ Decisions parked for later. Ask the owner before go-live.
 
 ## Other
 - Google Maps embed on /free-consultation: keep or remove (third-party cookies).
-- Contact forms use mailto; switch to Wix Forms.
+- Contact forms replaced by the LeadConnector booking widget (iframe + form_embed.js): check privacy policy covers this third party and its cookies.
 - Blog post "What is ISO?" on the headless site: set category "ISO Certification" and first published date 2025-05-09.
-- Remove `noindex` and switch the integpro.com.au domain at go-live.
+- Go-live: `noindex` removed (2026-10-05). Switch the integpro.com.au domain to the headless site in Wix.

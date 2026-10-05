@@ -29,7 +29,7 @@ const share = [
   { label: 'Share on LinkedIn', href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`, icon: 'in' },
 ];
 ---
-<Base title={post.title} description={metaDescription(post)} noindex>
+<Base title={post.title} description={metaDescription(post)}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(schema)} />
   <div class="container">
     <CategoryNav categories={categories} variant="plain" />
