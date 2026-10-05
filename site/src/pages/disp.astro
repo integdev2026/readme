@@ -191,9 +191,11 @@ const reasons = [
   .reasons { padding-top: 64px; }
   .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: start; }
   .card { background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
-  .reason { display: grid; justify-items: center; padding: 28px 30px 70px; text-align: center; }
+  /* Equal-height cards; icon, title and text rows line up across the three cards. */
+  .reasons .card-grid { align-items: stretch; }
+  .reason { display: grid; grid-row: span 3; grid-template-rows: subgrid; row-gap: 0; justify-items: center; align-content: start; padding: 28px 30px 70px; text-align: center; }
   .reason img { width: 48px; height: 48px; border-radius: 6px; }
-  .reason h3 { margin-top: 18px; font-size: 20px; letter-spacing: 0.8px; }
+  .reason h3 { align-self: center; margin-top: 18px; font-size: 20px; letter-spacing: 0.8px; }
   .reason p { margin: 18px 0 0; font-size: 14px; line-height: 1.45; }
 
   @media (max-width: 860px) {
