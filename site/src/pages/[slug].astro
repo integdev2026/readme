@@ -1,0 +1,89 @@
+---
+// Landing pages published from the admin console: content lives in the Wix CMS collection
+// `LandingPages` and renders here with the same components as the ISO standard pages.
+// Static pages (e.g. /disp) always take precedence over this route.
+import Base from '../layouts/Base.astro';
+import StandardHero from '../components/iso-standard/StandardHero.astro';
+import StandardIntro from '../components/iso-standard/StandardIntro.astro';
+import DeliverableGrid from '../components/iso-standard/DeliverableGrid.astro';
+import FeatureGrid from '../components/iso-standard/FeatureGrid.astro';
+import StandardCta from '../components/iso-standard/StandardCta.astro';
+import { icons } from '../components/iso-standard/shared';
+import { getLandingPage, BLOG_CACHE_CONTROL, type LandingCard } from '../lib/wix';
+
+Astro.response.headers.set('Cache-Control', BLOG_CACHE_CONTROL);
+
+const slug = Astro.params.slug ?? '';
+const page = /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) ? await getLandingPage(slug) : undefined;
+if (!page) return new Response('Not found', { status: 404 });
+const c = page.content;
+
+// CMS text is plain text; headings may highlight words with <span class="gold">…</span> only.
+const esc = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const heading = (t: string) => esc(t).replace(/&lt;span class=&quot;gold&quot;&gt;(.*?)&lt;\/span&gt;/g, '<span class="gold">$1</span>');
+const iconList = Object.values(icons);
+const icon = (key: string | undefined, i: number) => (icons as Record<string, string>)[key ?? ''] ?? iconList[i % iconList.length];
+const cards = (list: LandingCard[] = []) =>
+  list.map((card, i) => ({ icon: icon(card.icon, i), title: card.title, text: card.text, bullets: card.bullets }));
+const heroImage = c.hero.image && /^\/images\/[\w./-]+\.webp$/.test(c.hero.image)
+  ? c.hero.image
+  : '/images/iso-service-australia/hero-bg.webp';
+
+const faqSchema = c.faq?.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: c.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+    }
+  : undefined;
+---
+<Base title={page.title} description={page.metaDescription}>
+  <StandardHero
+    title={heading(c.hero.title)}
+    text={c.hero.text}
+    ticks={c.hero.ticks ?? []}
+    image={heroImage}
+    imageAlt={c.hero.imageAlt ?? ''}
+  />
+
+  {c.intro && (
+    <StandardIntro
+      eyebrow={c.intro.eyebrow ?? ''}
+      title={c.intro.title.replace(/<\/?span[^>]*>/g, '')}
+      paragraphs={c.intro.paragraphs ?? []}
+      features={cards(c.intro.features)}
+    />
+  )}
+
+  {c.deliverables && (
+    <DeliverableGrid title={heading(c.deliverables.title)} sub={c.deliverables.sub} note={c.deliverables.note} cards={cards(c.deliverables.cards)} />
+  )}
+
+  {c.benefits && <FeatureGrid title={heading(c.benefits.title)} sub={c.benefits.sub} cards={cards(c.benefits.cards)} />}
+
+  {c.faq?.length ? (
+    <section class="faq">
+      <div class="container">
+        <h2>Frequently asked questions</h2>
+        {c.faq.map((f) => (
+          <details>
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    </section>
+  ) : null}
+
+  <StandardCta title={c.cta.title} text={c.cta.text} />
+</Base>
+
+<style>
+  .faq { padding: 40px 0 10px; }
+  .faq h2 { text-align: center; font-size: 32px; font-weight: 400; margin-bottom: 20px; color: var(--text); }
+  .faq details { max-width: 860px; margin: 0 auto 10px; border: 1px solid #e5e5e5; border-radius: 10px; padding: 14px 18px; background: #fff; }
+  .faq summary { cursor: pointer; font-weight: 700; color: var(--text); }
+  .faq p { margin: 10px 0 0; line-height: 1.5; color: var(--ink); }
+  @media (max-width: 760px) { .faq h2 { font-size: 24px; } }
+</style>

@@ -154,6 +154,47 @@ export async function getTestimonials(): Promise<Testimonial[]> {
   );
 }
 
+/** CMS collection holding landing pages published from the admin console; rendered at /<slug>. */
+export const LANDING_PAGES_COLLECTION = 'LandingPages';
+
+export interface LandingCard { icon?: string; title: string; text: string; bullets?: string[] }
+export interface LandingContent {
+  hero: { title: string; text: string; ticks?: string[]; image?: string; imageAlt?: string };
+  intro?: { eyebrow?: string; title: string; paragraphs: string[]; features?: LandingCard[] };
+  deliverables?: { title: string; sub?: string; note?: string; cards: LandingCard[] };
+  benefits?: { title: string; sub?: string; cards: LandingCard[] };
+  faq?: { q: string; a: string }[];
+  cta: { title: string; text: string };
+}
+export interface LandingPage { title: string; slug: string; metaDescription?: string; content: LandingContent }
+
+/** A published landing page by slug, or undefined if there is none (or the CMS is unreachable). */
+export function getLandingPage(slug: string): Promise<LandingPage | undefined> {
+  return cached(`landing:${slug}`, async () => {
+    try {
+      const res = await call<{ dataItems?: { data?: Record<string, unknown> }[] }>('/wix-data/v2/items/query', {
+        method: 'POST',
+        body: JSON.stringify({
+          dataCollectionId: LANDING_PAGES_COLLECTION,
+          query: { filter: { slug: { $eq: slug }, published: { $eq: true } }, paging: { limit: 1 } },
+        }),
+      });
+      const data = res.dataItems?.[0]?.data;
+      const content = data?.content as LandingContent | undefined;
+      if (!data || !content?.hero?.title || !content?.cta?.title) return undefined;
+      return {
+        title: String(data.title ?? content.hero.title),
+        slug,
+        metaDescription: typeof data.metaDescription === 'string' ? data.metaDescription : undefined,
+        content,
+      };
+    } catch (err) {
+      console.error(`Landing page ${slug} unavailable:`, err);
+      return undefined;
+    }
+  });
+}
+
 export function mediaUrl(id: string, width?: number) {
   const base = `https://static.wixstatic.com/media/${id}`;
   if (!width) return base;
