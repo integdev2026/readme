@@ -23,3 +23,16 @@ Decisions parked for later. Ask the owner before go-live.
 - Contact forms replaced by the LeadConnector booking widget (iframe + form_embed.js): check privacy policy covers this third party and its cookies.
 - Blog post "What is ISO?" on the headless site: set category "ISO Certification" and first published date 2025-05-09.
 - Go-live: `noindex` removed (2026-10-05). Switch the integpro.com.au domain to the headless site in Wix.
+
+## Domain transition (SEO)
+Do before switching integpro.com.au to the headless site:
+- URL parity: every live Wix URL (see `capture/pages`) resolves on the new site or 301-redirects to its replacement, including blog posts and category pages.
+- Add `site/public/robots.txt` pointing to the sitemap (`https://www.integpro.com.au/sitemap-index.xml`).
+- Confirm no live page sets `noindex`; canonicals resolve to `https://www.integpro.com.au`.
+- Optional: Organization structured data on the home page (currently blog posts only).
+
+Do after go-live:
+- Submit the sitemap in Google Search Console; monitor crawl errors and 404s for 2–4 weeks.
+- Compare rankings against the Wix baseline and fix pages that drop.
+- Then content/SEO work: page copy, keywords, internal links, using Search Console data.
+- Content is in Australian English and the brand is written "integPRO"; keep both in new copy.
