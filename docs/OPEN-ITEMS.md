@@ -29,7 +29,7 @@ Do before switching integpro.com.au to the headless site:
 - Premium plan active on the headless project (needed to connect integpro.com.au).
 - URL parity: every live Wix URL (see `capture/pages`) resolves on the new site or 301-redirects to its replacement, including blog posts and category pages. Set redirects in Dashboard > SEO > URL Redirect Manager (SEO Redirects API); verify they fire on the headless site after the switch.
 - robots.txt and sitemap.xml: the `wix()` Astro integration serves both from the dashboard (Robots.txt editor; `/sitemap.xml` index). Do not add `public/robots.txt`. `@astrojs/sitemap` also emits `/sitemap-index.xml`: pick one and submit only that to Search Console.
-- Duplicate head tags: Wix injects title, meta description, canonical and OG tags for main pages; `Base.astro` sets them too. Choose one owner (Wix docs recommend the dashboard) and remove the other, then confirm only one of each tag renders.
+- Duplicate head tags: follow `docs/SEO-TRANSITION.md` (dashboard entries, then code clean-up, then verify).
 - Confirm site indexability is on in the dashboard and no page sets `noindex`; canonicals resolve to `https://www.integpro.com.au`.
 - Structured data: Wix auto-generates `LocalBusiness`/`WebSite` on the home page when business name and address are set in the dashboard.
 
