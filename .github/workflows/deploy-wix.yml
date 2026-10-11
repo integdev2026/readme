@@ -2,9 +2,11 @@ name: Deploy to Wix Headless
 
 # Builds the Astro site and releases it to the Wix-managed headless site
 # configured in site/wix.config.json. Needs the WIX_API_KEY repository secret.
+# Only the site's main branch deploys: feature branches (including claude/*) go live only once
+# merged, so nothing unreviewed is released.
 on:
   push:
-    branches: ['main', 'claude/**']
+    branches: ['claude/wix-headless-integpro-clone-uan6wi']
     paths:
       - 'site/**'
       - '.github/workflows/deploy-wix.yml'
