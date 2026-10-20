@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getCategories, getPosts } from '../lib/wix';
 
-// The sitemap robots.txt points to: every page route plus live blog posts and categories,
+// The sitemap robots.txt points to (Wix reserves /sitemap.xml on headless sites, so it lives here): every page route plus live blog posts and categories,
 // at the same slash-less URLs the pages declare as canonical.
 const pages = import.meta.glob('./**/*.astro');
 const staticPaths = Object.keys(pages)

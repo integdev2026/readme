@@ -21,5 +21,5 @@ Decisions parked for later. Ask the owner before changing these on the live site
 
 ## Google Ads readiness (2026-10-20)
 - Duplicate head tags: Wix's STATIC_PAGE SEO pattern now has its title, canonical, og:* and twitter title/description tags disabled (code renders them). Undo: Wix SEO API "Reset SEO Pattern To Default" for STATIC_PAGE.
-- Sitemap: `/sitemap.xml` is served by `site/src/pages/sitemap.xml.ts` (pages, blog categories, posts; slash-less canonical URLs). `@astrojs/sitemap` removed. Submit `/sitemap.xml` in Search Console.
+- Sitemap: Wix reserves `/sitemap.xml` (404 on this headless site), so `/sitemap-integpro.xml` is served by `site/src/pages/sitemap-integpro.xml.ts`; robots.txt points to it (pages, blog categories, posts; slash-less canonical URLs). `@astrojs/sitemap` removed. Submit `/sitemap-integpro.xml` in Search Console.
 - Tracking: set `gtmId` in `site/src/data/site.ts`; configure GA4 and the Google Ads conversion in GTM. Set the LeadConnector booking widget to redirect to `/thank-you` and use that page view as the conversion. Booking widget messages are also pushed to the dataLayer as `booking_widget`.
