@@ -1,0 +1,48 @@
+---
+// Centred inner-page hero used by the ISO, DISP and Industries pages: heading, lead, buttons and a 3-stat row.
+import Chevron from '../Chevron.astro';
+
+interface Stat { value: string; label: string }
+interface Action { label: string; href: string; primary?: boolean }
+interface Props { title: string; text: string; actions?: Action[]; stats?: Stat[]; bg?: string }
+const { title, text, actions = [], stats = [], bg } = Astro.props;
+---
+<section class:list={['center-hero', { 'has-bg': bg }]} style={bg ? `--hero-bg: url('${bg}')` : undefined}>
+  <div class="container inner">
+    <h1 set:html={title} />
+    <p class="lead">{text}</p>
+    {actions.length > 0 && (
+      <div class="actions">
+        {actions.map((a) => (
+          <a href={a.href} class:list={['btn', a.primary === false ? 'btn-outline' : 'btn-primary']}>
+            {a.label}{a.primary !== false && <Chevron />}
+          </a>
+        ))}
+      </div>
+    )}
+    {stats.length > 0 && (
+      <dl class="stats">{stats.map((s) => <div><dt>{s.value}</dt><dd>{s.label}</dd></div>)}</dl>
+    )}
+  </div>
+</section>
+
+<style>
+  .center-hero { position: relative; padding: 96px 0 70px; text-align: center; }
+  .has-bg { background: var(--hero-bg) center / cover no-repeat; padding: 90px 0 46px; }
+  .has-bg::before { content: ''; position: absolute; inset: 0; background: rgba(255, 255, 255, 0.9); }
+  .inner { position: relative; }
+  h1 { font-size: 56px; line-height: 1.18; max-width: 860px; margin: 0 auto; }
+  .lead { max-width: 620px; margin: 4px auto 0; font-size: 16px; line-height: 1.4; color: var(--ink); }
+  .actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; margin-top: 50px; }
+  .actions .btn { padding: 0 24px; min-width: 153px; justify-content: center; }
+  .stats { display: flex; justify-content: space-between; max-width: 606px; margin: 38px auto 0; padding-top: 22px; border-top: 1px solid var(--line); text-align: left; }
+  .stats dt { font-family: var(--font-heading); font-weight: 700; font-size: 20px; color: var(--text); }
+  .stats dd { margin: 2px 0 0; font-size: 14px; }
+  .has-bg .actions { margin-top: 26px; }
+  .has-bg .stats { margin-top: 20px; padding-top: 18px; }
+  @media (max-width: 760px) {
+    .center-hero { padding: 56px 0 48px; }
+    h1 { font-size: 34px; }
+    .stats { gap: 16px; }
+  }
+</style>

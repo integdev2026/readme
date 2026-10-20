@@ -1,0 +1,26 @@
+---
+import { coverUrl, type Post } from '../../lib/wix';
+interface Props { post: Post }
+const { post } = Astro.props;
+const cover = coverUrl(post, 640);
+---
+<article class="post-card">
+  <a href={`/post/${post.slug}`} class="cover" tabindex="-1" aria-hidden="true">
+    {cover ? <img src={cover} alt="" width="320" height="211" loading="lazy" /> : <span class="ph"></span>}
+  </a>
+  <div class="body">
+    <span class="meta">{post.minutesToRead} min read</span>
+    <h3><a href={`/post/${post.slug}`}>{post.title}</a></h3>
+    <p>{post.excerpt}</p>
+  </div>
+</article>
+
+<style>
+  .post-card { background: #fff; display: flex; flex-direction: column; }
+  .cover img, .ph { display: block; width: 100%; aspect-ratio: 320 / 180; object-fit: cover; background: var(--bg-faq); }
+  .body { padding: 16px 12px 24px; }
+  .meta { font-size: 11px; color: var(--text); }
+  h3 { margin: 12px 0 10px; font-size: 18px; line-height: 1.3; color: var(--gold); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  h3 a:hover { text-decoration: underline; }
+  p { margin: 0; font-size: 14px; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+</style>

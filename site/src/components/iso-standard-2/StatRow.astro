@@ -1,0 +1,16 @@
+---
+// Row of gold headline figures (120+ / 20+ / 100%).
+import { headlineStats } from './data';
+interface Props { stats?: { value: string; label: string }[] }
+const { stats = headlineStats } = Astro.props;
+---
+<dl class="stat-row">
+  {stats.map((s) => <div><dt>{s.value}</dt><dd>{s.label}</dd></div>)}
+</dl>
+
+<style>
+  .stat-row { display: flex; gap: 56px; margin: 0; }
+  dt { font-family: var(--font-heading); font-weight: 700; font-size: 20px; line-height: 28px; color: var(--gold); }
+  dd { margin: 0; max-width: 90px; font-size: 14px; line-height: 19.6px; color: var(--text); }
+  @media (max-width: 760px) { .stat-row { gap: 28px; } }
+</style>

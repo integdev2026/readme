@@ -1,0 +1,66 @@
+---
+// Inner-page intro: heading (HTML allowed for gold words), text, optional ticks, buttons, image and stat card.
+import Chevron from './Chevron.astro';
+
+interface Stat { value: string; label: string }
+interface Action { label: string; href: string; primary?: boolean }
+interface Props {
+  title: string;
+  text?: string;
+  ticks?: string[];
+  actions?: Action[];
+  image?: string;
+  imageAlt?: string;
+  stats?: Stat[];
+}
+const { title, text, ticks = [], actions = [], image, imageAlt = '', stats = [] } = Astro.props;
+---
+<section class="page-hero">
+  <div class="container grid">
+    <div class="copy">
+      <h1 set:html={title} />
+      {text && <p class="lead">{text}</p>}
+      {ticks.length > 0 && (
+        <ul class="ticks">{ticks.map((t) => <li>{t}</li>)}</ul>
+      )}
+      {actions.length > 0 && (
+        <div class="actions">
+          {actions.map((a) => (
+            <a href={a.href} class:list={['btn', a.primary === false ? 'btn-outline' : 'btn-primary']}>
+              {a.label}{a.primary !== false && <Chevron />}
+            </a>
+          ))}
+        </div>
+      )}
+      <slot name="copy" />
+    </div>
+    <div class="media">
+      {image && <img src={image} alt={imageAlt} width="480" height="360" fetchpriority="high" />}
+      {stats.length > 0 && (
+        <dl class="stat-card">{stats.map((s) => <div><dt>{s.value}</dt><dd>{s.label}</dd></div>)}</dl>
+      )}
+      <slot name="media" />
+    </div>
+  </div>
+</section>
+
+<style>
+  .page-hero { padding: 60px 0 70px; }
+  .grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: center; }
+  h1 { font-size: 44px; line-height: 1.2; }
+  .lead { margin: 16px 0 0; max-width: 460px; font-size: 16px; line-height: 1.45; }
+  .ticks { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 8px; font-size: 14px; }
+  .ticks li { display: flex; gap: 8px; align-items: flex-start; }
+  .ticks li::before { content: ''; flex: none; width: 16px; height: 16px; margin-top: 1px; border-radius: 50%; background: #3fa34d url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 100% no-repeat; }
+  .actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 26px; }
+  .media { position: relative; }
+  .media img { width: 100%; border-radius: 16px; object-fit: cover; }
+  .stat-card { display: flex; justify-content: space-around; gap: 16px; margin: -48px 20px 0; position: relative; padding: 18px 20px; background: #fff; border-radius: 12px; box-shadow: var(--shadow-card); }
+  .media:not(:has(img)) .stat-card { margin: 0; }
+  .stat-card dt { font-family: var(--font-heading); font-weight: 700; font-size: 20px; color: var(--gold); }
+  .stat-card dd { margin: 2px 0 0; font-size: 13px; }
+  @media (max-width: 860px) {
+    .grid { grid-template-columns: 1fr; }
+    h1 { font-size: 32px; }
+  }
+</style>

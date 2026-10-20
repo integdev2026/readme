@@ -1,0 +1,21 @@
+---
+import type { Category } from '../../lib/wix';
+interface Props { categories: Category[]; active?: string; variant?: 'bar' | 'plain' }
+const { categories, active, variant = 'bar' } = Astro.props;
+---
+<nav class:list={['cat-nav', variant]} aria-label="Blog categories">
+  <a href="/blog" class:list={{ active: !active }}>All Posts</a>
+  {categories.map((c) => (
+    <a href={`/blog/categories/${c.slug}`} class:list={{ active: active === c.slug }}>{c.label}</a>
+  ))}
+</nav>
+
+<style>
+  .cat-nav { display: flex; flex-wrap: wrap; gap: 4px 32px; }
+  .bar { padding: 26px 20px; background: var(--gold-light); }
+  .cat-nav a { font-size: 14px; color: var(--ink); }
+  .bar a { color: var(--gold-dark); }
+  .cat-nav a.active, .cat-nav a:hover { color: var(--gold); }
+  .plain { gap: 4px 28px; padding: 16px 0; }
+  .plain a { font-size: 12px; }
+</style>

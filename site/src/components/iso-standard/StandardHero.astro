@@ -1,0 +1,54 @@
+---
+// Hero for the ISO standard pages: reuses the shared PageHero, tuned to the live layout
+// (framed photo with the stat card sitting on its lower edge).
+import PageHero from '../PageHero.astro';
+import { standardStats } from './shared';
+
+interface Props { title: string; text: string; ticks: string[]; image: string; imageAlt: string }
+const { title, text, ticks, image, imageAlt } = Astro.props;
+---
+<div class="iso-hero">
+  <PageHero
+    title={title}
+    text={text}
+    ticks={ticks}
+    image={image}
+    imageAlt={imageAlt}
+    stats={standardStats}
+    actions={[
+      { label: 'Start Your Journey', href: '/free-consultation' },
+      { label: 'Learn More', href: '#learnmore', primary: false },
+    ]}
+  />
+</div>
+
+<style>
+  .iso-hero :global(.page-hero) { padding: 64px 0 90px; }
+  .iso-hero :global(h1) { font-size: 40px; line-height: 1.4; }
+  .iso-hero :global(.lead) { margin-top: 6px; line-height: 1.45; color: var(--text); }
+  .iso-hero :global(.ticks) { gap: 4px; color: var(--text); font-size: 15px; }
+  .iso-hero :global(.ticks li::before) { background-color: #1e8a2e; }
+  .iso-hero :global(.actions) { gap: 10px; margin-top: 16px; }
+  .iso-hero :global(.actions .btn) { min-width: 184px; justify-content: center; }
+  .iso-hero :global(.media) { border: 2px solid #e2e2e2; border-radius: 6px; overflow: hidden; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12); }
+  .iso-hero :global(.media img) { aspect-ratio: 466 / 377; border-radius: 0; }
+  .iso-hero :global(.stat-card) {
+    position: absolute; left: 14px; right: 14px; bottom: 0; margin: 0;
+    justify-content: flex-start; gap: 0; padding: 18px 20px 14px 54px;
+    border-radius: 12px 12px 0 0; box-shadow: none;
+  }
+  .iso-hero :global(.stat-card > div) { flex: 0 0 auto; width: 30%; }
+  .iso-hero :global(.stat-card dt) { font-family: var(--font-body); font-size: 20px; }
+  .iso-hero :global(.stat-card dd) { font-size: 14px; color: var(--text); max-width: 80px; }
+  @media (max-width: 860px) {
+    .iso-hero :global(.page-hero) { padding: 40px 0 56px; }
+    .iso-hero :global(h1) { font-size: 30px; line-height: 1.3; }
+  }
+  @media (max-width: 480px) {
+    .iso-hero :global(.actions .btn) { min-width: 0; flex: 1 1 100%; white-space: nowrap; }
+    .iso-hero :global(.stat-card) { left: 8px; right: 8px; padding: 12px 12px 10px; justify-content: space-around; }
+    .iso-hero :global(.stat-card > div) { width: auto; }
+    .iso-hero :global(.stat-card dt) { font-size: 17px; }
+    .iso-hero :global(.stat-card dd) { font-size: 12px; }
+  }
+</style>

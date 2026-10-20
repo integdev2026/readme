@@ -1,0 +1,50 @@
+---
+// Vertical centre-line timeline with cards alternating left and right.
+interface Item { label?: string; title: string; text?: string; meta?: string; icon?: string; outcome?: string }
+interface Props { items: Item[] }
+const { items } = Astro.props;
+---
+<ol class="timeline">
+  {items.map((it, i) => (
+    <li class:list={[i % 2 === 0 ? 'l' : 'r']}>
+      <div class="card tl-card">
+        <div class="top">
+          {it.label && <span class="label">{it.label}</span>}
+          {it.meta && <span class="meta">{it.meta}</span>}
+        </div>
+        <div class="title">
+          {it.icon && <img src={it.icon} alt="" width="28" height="28" loading="lazy" />}
+          <h3>{it.title}</h3>
+        </div>
+        {it.text && <p>{it.text}</p>}
+        {it.outcome && <p class="outcome">{it.outcome}</p>}
+      </div>
+    </li>
+  ))}
+</ol>
+
+<style>
+  .timeline { position: relative; list-style: none; margin: 0 auto; padding: 0; max-width: 620px; }
+  .timeline::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; transform: translateX(-50%); background: var(--gold); }
+  li { position: relative; width: 50%; padding: 0 28px 28px; }
+  li::after { content: ''; position: absolute; top: 8px; width: 12px; height: 12px; border-radius: 50%; background: #fff; border: 3px solid var(--gold); }
+  .l { margin-right: auto; }
+  .l::after { right: -8px; }
+  .r { margin-left: auto; }
+  .r::after { left: -8px; }
+  .tl-card { padding: 18px 20px; border-radius: 10px; }
+  .top { display: flex; justify-content: space-between; gap: 8px; }
+  .label { font-family: var(--font-heading); font-weight: 700; color: var(--gold); font-size: 16px; }
+  .meta { font-size: 11px; color: var(--muted); }
+  .title { display: flex; align-items: center; gap: 10px; margin: 8px 0; }
+  .title img { width: 28px; height: 28px; border-radius: 6px; }
+  h3 { font-size: 14px; font-weight: 400; color: var(--gold); }
+  p { margin: 0; font-size: 13px; line-height: 1.45; }
+  .outcome { margin-top: 10px; padding-left: 20px; position: relative; }
+  .outcome::before { content: '✓'; position: absolute; left: 0; color: #3fa34d; font-weight: 700; }
+  @media (max-width: 640px) {
+    .timeline::before { left: 8px; }
+    li, .l, .r { width: 100%; padding: 0 0 20px 32px; }
+    .l::after, .r::after { left: 2px; right: auto; }
+  }
+</style>

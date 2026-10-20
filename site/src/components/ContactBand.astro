@@ -1,0 +1,46 @@
+---
+// Closing "Start Your Certification Journey" block with booking widget and contact details.
+import { company } from '../data/site';
+
+interface Props { title?: string; sub?: string; showDetails?: boolean }
+const {
+  title = 'Start <span class="gold">Your Certification</span> Journey Today',
+  sub = 'Multiple ways to connect with our expert team. Choose what works best for you.',
+  showDetails = true,
+} = Astro.props;
+---
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <h2 set:html={title} />
+      <p class="wide">{sub}</p>
+    </div>
+    <!-- Booking widget (LeadConnector). form_embed.js resizes the iframe to its content. -->
+    <div class="booking">
+      <iframe src="https://api.leadconnectorhq.com/widget/booking/PtfPVxonsWeiroiaMa1y" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="PtfPVxonsWeiroiaMa1y_1761187771648" title="Book a consultation with integPRO"></iframe>
+    </div>
+    <script is:inline src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+    {showDetails && (
+      <div class="details">
+        <h3>Get in touch</h3>
+        <dl>
+          <div><dt>Phone</dt><dd><a href={`tel:${company.phone.replace(/\s/g, '')}`}>{company.phone}</a></dd></div>
+          <div><dt>Email</dt><dd><a href={`mailto:${company.email}`}>{company.email}</a></dd></div>
+          <div><dt>Location</dt><dd>{company.location}</dd></div>
+        </dl>
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .contact { background: var(--bg-grey); }
+  .section-head .wide { max-width: 680px; }
+  .booking { max-width: 760px; margin: 0 auto; }
+  .booking iframe { display: block; min-height: 600px; }
+  .details { max-width: 760px; margin: 32px auto 0; padding: 20px 28px; background: #f3f3f3; border-radius: 12px; }
+  .details h3 { font-family: var(--font-body); font-weight: 400; font-size: 14px; color: var(--gold); margin-bottom: 12px; }
+  .details dl { display: grid; gap: 12px; margin: 0; }
+  .details dt { font-size: 12px; color: var(--ink); }
+  .details dd { margin: 2px 0 0; font-size: 13px; }
+</style>

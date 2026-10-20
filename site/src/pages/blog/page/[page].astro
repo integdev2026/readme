@@ -1,0 +1,21 @@
+---
+import BlogListing from '../../../components/blog/BlogListing.astro';
+import { getCategories, getPosts, POSTS_PER_PAGE, BLOG_CACHE_CONTROL } from '../../../lib/wix';
+
+Astro.response.headers.set('Cache-Control', BLOG_CACHE_CONTROL);
+
+const page = Number(Astro.params.page);
+const [posts, categories] = await Promise.all([getPosts(), getCategories()]);
+const total = Math.ceil(posts.length / POSTS_PER_PAGE);
+if (!Number.isInteger(page) || page < 2 || page > total) return new Response('Not found', { status: 404 });
+---
+<BlogListing
+  title={`Blog – Page ${page} | integPRO`}
+  description="ISO and DISP insights, guides and updates from integPRO."
+  heading="Discover ISO Tips & DISP Updates"
+  posts={posts.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE)}
+  categories={categories}
+  page={page}
+  pages={Math.ceil(posts.length / POSTS_PER_PAGE)}
+  baseHref="/blog"
+/>

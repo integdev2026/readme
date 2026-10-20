@@ -1,7 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
 import Chevron from '../components/Chevron.astro';
+import ContactBand from '../components/ContactBand.astro';
 import { company } from '../data/site';
+import { getClientLogos, getTestimonials, type Testimonial } from '../lib/wix';
 
 const stats = [
   { value: '1000 +', label: 'Project Completed' },
@@ -9,9 +11,10 @@ const stats = [
   { value: '72', label: 'Unique Customers' },
 ];
 
-// Client names and logos are kept out of the repository (company policy);
-// real logos are to be served from Wix Media once approved.
-const clientLogos = Array.from({ length: 8 }, (_, i) => `Client ${i + 1}`);
+// Client names and logos are kept out of the repository (company policy): they are read from
+// the Wix CMS at request time, with placeholders if the collection is empty or unavailable.
+const clientLogos = await getClientLogos();
+const placeholders = Array.from({ length: 8 }, (_, i) => `Client ${i + 1}`);
 
 const services = [
   { icon: 'icon-award', title: 'ISO Certification', text: 'Expert guidance for ISO 9001, 14001, 45001, 27001 & other international standards. Full implementation support.' },
@@ -35,12 +38,15 @@ const results = [
   { name: 'Government client', sector: 'Community', value: 'Quality Audit', sub: 'Comprehensive audit delivered', text: 'Comprehensive quality audit delivered for a state government agency, ensuring compliance with sector requirements, evaluating system performance, and providing clear recommendations.' },
 ];
 
-// Reviewer names withheld until approved for publication from Wix CMS.
-const testimonials = [
+// Testimonials (with reviewer names and client logos) come from the Wix CMS; these anonymous
+// versions show only if the collection is empty or unavailable.
+const fallbackTestimonials: Testimonial[] = [
   { quote: 'The team at IntegPro have been incredibly helpful in managing our DISP requirements. As a small business, it can be challenging to stay on top of every obligation while juggling multiple roles, and their support has made a huge difference.', name: 'Client', role: 'OS of DISP' },
   { quote: 'From our first call to the Stage 2 audit, Maria and Mehrdad at IntegPro were outstanding. They combined deep expertise with practical guidance, were responsive and calm, and worked alongside our team to embed an Integrated Management System', name: 'Client', role: 'Security Director' },
   { quote: 'We engaged IntegPRO to help us achieve ISO certification for Safety (ISO 45001), Environment (ISO 14001), and Quality (ISO 9001) management systems. Right from the start, their team showed a practical understanding of our specialised.', name: 'Client', role: 'Operations Director' },
 ];
+const cmsTestimonials = await getTestimonials();
+const testimonials = cmsTestimonials.length ? cmsTestimonials : fallbackTestimonials;
 
 const faqs = [
   { q: 'What steps are involved in achieving ISO certification?', a: `Achieving ISO certification means your systems, processes, or products meet international standards for quality, safety, and efficiency. At IntegPRO, we guide you through every step, from preparation to certification. Contact us at ${company.email} to get started.` },
@@ -59,7 +65,6 @@ const faqSchema = {
 <Base
   title="integPRO | Cost Effective ISO & DISP Certification"
   description="integPRO simplifies management systems: ISO 9001, 14001, 45001, 27001, 13485 and DISP consulting, auditing, documentation and training across Australia."
-  noindex
 >
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqSchema)} />
 
@@ -84,7 +89,13 @@ const faqSchema = {
       <h2>Our Clients</h2>
       <div class="marquee" aria-label="Client logos">
         <div class="track">
-          {[...clientLogos, ...clientLogos].map((c) => <span class="logo-tile">{c}</span>)}
+          {clientLogos.length
+            ? [...clientLogos, ...clientLogos].map((c, i) => (
+                <span class="logo-tile logo-img" aria-hidden={i >= clientLogos.length ? 'true' : undefined}>
+                  <img src={c.src} alt={i >= clientLogos.length ? '' : c.name} height="50" loading="lazy" decoding="async" />
+                </span>
+              ))
+            : [...placeholders, ...placeholders].map((c) => <span class="logo-tile">{c}</span>)}
         </div>
       </div>
     </div>
@@ -204,32 +215,21 @@ const faqSchema = {
             <img class="stars" src="/images/stars.webp" alt="5 out of 5 stars" width="89" height="19" loading="lazy" />
             <img src="/images/icon-quote.webp" alt="" width="48" height="48" loading="lazy" />
             <blockquote>"{t.quote}"</blockquote>
-            <figcaption><strong>{t.name}</strong><span>{t.role}</span></figcaption>
+            <figcaption>
+              {t.logo && <img class="client-logo" src={t.logo} alt={t.client ?? ''} height="40" loading="lazy" decoding="async" />}
+              <strong>{t.name}</strong><span>{t.role}</span>
+            </figcaption>
           </figure>
         ))}
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-head">
-        <h2>Start <span class="gold">Your Certification</span> Journey</h2>
-        <p class="wide">Contact us today for a free consultation and gap analysis. Let’s discuss how we can help you achieve certification excellence.</p>
-      </div>
-      <!-- Interim: opens the visitor's email app. To be switched to Wix Forms. -->
-      <form class="contact-form" action={`mailto:${company.email}`} method="post" enctype="text/plain">
-        <label>First name<input name="first_name" autocomplete="given-name" required /></label>
-        <label>Last name<input name="last_name" autocomplete="family-name" required /></label>
-        <label>Email<input type="email" name="email" autocomplete="email" required /></label>
-        <label>Phone<input type="tel" name="phone" autocomplete="tel" /></label>
-        <label class="full">Company<input name="company" autocomplete="organization" /></label>
-        <label class="full">How can we help?<textarea name="message" rows="5" required></textarea></label>
-        <button type="submit" class="btn btn-primary">Submit<Chevron /></button>
-      </form>
-    </div>
-  </section>
+  <ContactBand
+    title='Start <span class="gold">Your Certification</span> Journey'
+    sub="Contact us today for a free consultation and gap analysis. Let’s discuss how we can help you achieve certification excellence."
+    showDetails={false}
+  />
 
   <!-- FAQ -->
   <section class="section faq-wrap">
@@ -257,7 +257,9 @@ const faqSchema = {
   .stats { display: flex; gap: 64px; margin: 30px 0 0 14px; padding-top: 24px; border-top: 1px solid var(--line); max-width: 492px; }
   .stats dt { font-family: var(--font-heading); font-weight: 700; font-size: 20px; color: var(--text); }
   .stats dd { margin: 2px 0 0; font-size: 14px; }
-  .hero-ring { width: 419px; margin-top: 6px; }
+  .hero-ring { width: 419px; margin-top: 6px; animation: spin 24s linear infinite; will-change: transform; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .hero-ring { animation: none; } }
 
   .clients { margin-top: 70px; }
   .clients h2 { font-size: 20px; margin-bottom: 20px; }
@@ -267,6 +269,8 @@ const faqSchema = {
     display: grid; place-items: center; width: 160px; height: 50px; border-radius: 8px;
     background: var(--bg-faq); color: var(--muted); font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
   }
+  .logo-img { width: auto; background: none; }
+  .logo-img img { height: 50px; width: auto; max-width: 360px; object-fit: contain; }
   @keyframes scroll { to { transform: translateX(-50%); } }
   @media (prefers-reduced-motion: reduce) { .track { animation: none; } }
 
@@ -336,15 +340,7 @@ const faqSchema = {
   .quote blockquote { margin: 16px 0 0; font-style: italic; font-size: 14px; line-height: 19.6px; flex: 1; }
   .quote figcaption { display: grid; margin-top: 30px; font-size: 14px; }
   .quote figcaption strong { font-weight: 400; color: var(--ink); }
-
-  /* Contact */
-  .contact { background: var(--bg-grey); }
-  .contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; max-width: 760px; margin: 0 auto; padding: 40px; background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
-  .contact-form label { display: grid; gap: 8px; font-size: 14px; color: var(--ink); }
-  .contact-form .full { grid-column: 1 / -1; }
-  .contact-form input, .contact-form textarea { font: inherit; font-size: 16px; padding: 10px 14px; border: 1px solid #cfcfcf; border-radius: 8px; background: #fff; color: var(--ink); }
-  .contact-form input:focus, .contact-form textarea:focus { outline: 2px solid var(--gold); border-color: transparent; }
-  .contact-form button { justify-self: start; height: 40px; }
+  .quote .client-logo { width: auto; height: 40px; max-width: 180px; object-fit: contain; margin-bottom: 14px; }
 
   /* FAQ */
   .faq { background: var(--bg-faq); padding: 20px 56px 16px; }
@@ -377,7 +373,6 @@ const faqSchema = {
     .team h2, .partner h2 { font-size: 30px; line-height: 38px; }
     .partner-stats { flex-direction: column; }
     .partner-stats div { width: auto; }
-    .contact-form { grid-template-columns: 1fr; padding: 24px; }
     .faq { padding: 16px 20px; }
     .faq h2 { font-size: 36px; }
   }

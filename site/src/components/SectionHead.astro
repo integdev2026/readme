@@ -1,0 +1,16 @@
+---
+// Centred section heading. Wrap the highlighted words in <span class="gold"> via the title slot or `title` HTML.
+interface Props { title?: string; sub?: string; eyebrow?: string; align?: 'center' | 'left' }
+const { title, sub, eyebrow, align = 'center' } = Astro.props;
+---
+<div class:list={['section-head', { left: align === 'left' }]}>
+  {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+  {title ? <h2 set:html={title} /> : <h2><slot /></h2>}
+  {sub && <p>{sub}</p>}
+</div>
+
+<style>
+  .left { text-align: left; margin-left: 0; }
+  .left p { margin-left: 0; }
+  .eyebrow { display: inline-block; margin-bottom: 12px; padding: 4px 16px; border-radius: 999px; background: var(--gold-light); color: var(--gold-dark); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+</style>
