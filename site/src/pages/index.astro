@@ -18,24 +18,24 @@ const placeholders = Array.from({ length: 8 }, (_, i) => `Client ${i + 1}`);
 
 const services = [
   { icon: 'icon-award', title: 'ISO Certification', text: 'Expert guidance for ISO 9001, 14001, 45001, 27001 & other international standards. Full implementation support.' },
-  { icon: 'icon-shield', title: 'DISP Compliance', text: 'Defense Industry Security Program consulting and compliance services for defense contractors and suppliers.' },
-  { icon: 'icon-book', title: 'Training Academy', text: 'Comprehensive training programs, workshops, and courses for internal auditors, lead auditors, and management representatives.' },
-  { icon: 'icon-check', title: 'Gap Analysis & Auditing', text: 'Thorough assessments to identify compliance gaps and prepare your organization for successful certification.' },
+  { icon: 'icon-shield', title: 'DISP Compliance', text: 'Defence Industry Security Program (DISP) consulting and compliance support for Defence contractors and suppliers.' },
+  { icon: 'icon-book', title: 'Training Academy', text: 'Training programs, workshops and courses for internal auditors, lead auditors, and management representatives.' },
+  { icon: 'icon-check', title: 'Gap Analysis & Auditing', text: 'Assessments that identify compliance gaps and prepare your organisation for the certification audit.' },
   { icon: 'icon-doc', title: 'Documentation Services', text: 'Professional development of manuals, procedures, work instructions, and forms aligned with standard requirements.' },
-  { icon: 'icon-team', title: 'Management Systems Integration', text: 'Integrate multiple management systems (QMS, EMS, OHSMS) for streamlined operations and reduced duplication.' },
+  { icon: 'icon-team', title: 'Management Systems Integration', text: 'Integrate multiple management systems (QMS, EMS, OHSMS) so you run one system with less duplication.' },
 ];
 
 const tabs = [
-  { id: 'iso', label: 'ISO', title: 'ISO Services', image: 'tab-iso', alt: 'ISO certified badge', text: 'We guide organisations through every stage of their compliance journey. From understanding the benefits of ISO certification to identifying system gaps, conducting internal audits, and ensuring ongoing compliance through monitoring and maintenance, we provide practical and strategic support to help businesses grow with confidence and integrity.' },
-  { id: 'disp', label: 'DISP', title: 'DISP', image: 'tab-disp', alt: 'Secure your business', text: 'IntegPro provides tailored DISP consultancy to help businesses meet Defence security requirements from Entry Level to Level 3. Services include gap analysis, application support, governance and cyber security guidance, and ongoing compliance training ensuring readiness for Defence contracts and secure information handling.' },
+  { id: 'iso', label: 'ISO', title: 'ISO Services', image: 'tab-iso', alt: 'ISO certified badge', text: 'We support organisations at every stage of ISO compliance, from understanding the benefits of ISO certification to identifying system gaps and conducting internal audits to monitoring and maintaining compliance over time. Our advice is practical and focused on what your business needs.' },
+  { id: 'disp', label: 'DISP', title: 'DISP', image: 'tab-disp', alt: 'Secure your business', text: 'IntegPro provides DISP consultancy to help businesses meet Defence security requirements from Entry Level to Level 3. Services include gap analysis, application support, governance and cyber security guidance, and ongoing compliance training, so you are ready for Defence contracts and secure information handling.' },
   { id: 'audit', label: 'Audit', title: 'Audit', image: 'tab-audit', alt: 'Management system', text: 'Our audit services provide independent reviews of your management systems to ensure compliance with ISO, DISP, and regulatory standards. We identify gaps, assess risks, and deliver practical recommendations to strengthen processes and maintain certification.' },
 ];
 
 // Client names replaced with sector descriptions (company policy: no client names in repositories).
 const results = [
-  { name: 'Medical device client', sector: 'Medical Devices', value: '100%', sub: 'Expert EQMS implementation', text: 'Ensuring full compliance with ISO 13485, ISO 9001, and medical-device regulatory requirements. Streamlined processes, risk management integration, and end-to-end quality system deployment.' },
+  { name: 'Medical device client', sector: 'Medical Devices', value: '100%', sub: 'Expert EQMS implementation', text: 'Implementation against ISO 13485, ISO 9001 and medical device regulatory requirements, covering process design, risk management integration and end-to-end quality system deployment.' },
   { name: 'Construction client', sector: 'Construction', value: 'Fully Implemented', sub: '100% achieved', text: 'Professional ISO consultation covering ISO 9001, ISO 14001, ISO 45001 and other relevant standards for the building sector. Full implementation, documentation, and compliance support.' },
-  { name: 'Government client', sector: 'Community', value: 'Quality Audit', sub: 'Comprehensive audit delivered', text: 'Comprehensive quality audit delivered for a state government agency, ensuring compliance with sector requirements, evaluating system performance, and providing clear recommendations.' },
+  { name: 'Government client', sector: 'Community', value: 'Quality Audit', sub: 'Full audit delivered', text: 'Quality audit delivered for a state government agency, checking compliance with sector requirements, evaluating system performance, and providing clear recommendations.' },
 ];
 
 // Testimonials (with reviewer names and client logos) come from the Wix CMS; these anonymous
@@ -49,11 +49,11 @@ const cmsTestimonials = await getTestimonials();
 const testimonials = cmsTestimonials.length ? cmsTestimonials : fallbackTestimonials;
 
 const faqs = [
-  { q: 'What steps are involved in achieving ISO certification?', a: `Achieving ISO certification means your systems, processes, or products meet international standards for quality, safety, and efficiency. At IntegPRO, we guide you through every step, from preparation to certification. Contact us at ${company.email} to get started.` },
-  { q: 'What is ISO consulting?', a: 'ISO consulting involves providing expert guidance and support to businesses seeking ISO certification. Consultants help organizations understand the requirements of ISO standards, identify gaps in their current systems, develop and implement necessary processes, and prepare for certification audits.' },
-  { q: 'Why is ISO certification important?', a: 'ISO certification is important because it helps businesses improve their processes, increase efficiency, and enhance customer satisfaction. It also provides a competitive advantage by demonstrating compliance with internationally recognized standards, which can open up new market opportunities and build trust with stakeholders.' },
-  { q: 'How long does ISO certification take?', a: 'The duration of the ISO certification process can vary depending on the size and complexity of the organization, as well as the specific ISO standard being implemented. Generally, it can take several months to over a year to achieve certification, including the time needed for preparation, implementation, and auditing.' },
-  { q: 'What factors influence the cost of ISO consulting services?', a: `The cost of ISO consulting services depends on factors like your organization's size, the complexity of your systems, and the specific ISO standard. For a customized quote, contact IntegPRO at our Castle Hill, NSW, or St Peters, SA offices, or email ${company.email}.` },
+  { q: 'What steps are involved in achieving ISO certification?', a: `The main steps are a gap analysis, developing and implementing your management system, internal audits and a management review, then the certification body's Stage 1 and Stage 2 audits. We work with you from preparation through to the certification audit. Contact us at ${company.email} to get started.` },
+  { q: 'What is ISO consulting?', a: 'ISO consulting is practical guidance for businesses working towards ISO certification. Consultants help organisations understand the requirements of ISO standards, identify gaps in their current systems, develop and implement the processes they need, and prepare for certification audits.' },
+  { q: 'Why is ISO certification important?', a: 'ISO certification helps you improve your processes, work more efficiently and meet customer requirements more consistently. It shows independently assessed conformity with an international standard, which many customers and tenders ask for and which builds trust with stakeholders.' },
+  { q: 'How long does ISO certification take?', a: 'It depends on the size and complexity of your organisation and the standard you are implementing. Generally it takes several months to over a year to achieve certification, including the time needed for preparation, implementation, and auditing.' },
+  { q: 'What factors influence the cost of ISO consulting services?', a: `The cost of ISO consulting services depends on your organisation's size, the complexity of your systems and the ISO standard involved. For a quote, contact IntegPRO at our Castle Hill, NSW, or St Peters, SA offices, or email ${company.email}.` },
 ];
 
 const faqSchema = {
@@ -105,8 +105,8 @@ const faqSchema = {
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <h2>Comprehensive Management System <span class="gold">Solutions</span></h2>
-        <p>From initial gap analysis to certification and beyond, we provide end-to-end support for your management system journey.</p>
+        <h2>Management System <span class="gold">Solutions</span></h2>
+        <p>From initial gap analysis to certification and beyond, we support your management system at every stage.</p>
       </div>
       <div class="card-grid">
         {services.map((s) => (
@@ -126,7 +126,7 @@ const faqSchema = {
     <div class="container">
       <div class="section-head">
         <h2>Tailored Management System <span class="gold">Solutions</span></h2>
-        <p>Choose from our specialised solutions designed to meet your specific industry and compliance requirements.</p>
+        <p>Choose the service that fits your industry and compliance requirements.</p>
       </div>
 
       <div class="tabs">
@@ -149,8 +149,8 @@ const faqSchema = {
         <img src="/images/team.webp" alt="The integPRO team" width="588" height="460" loading="lazy" />
         <div>
           <h2>Meet The <span class="gold">Team</span></h2>
-          <p>At integPRO, our strength lies in our people. We're a diverse team of passionate consultants, auditors, and specialists who bring deep industry knowledge and a shared commitment to helping businesses thrive.</p>
-          <p>With a collaborative spirit and a focus on real results, we’re here to guide you every step of the way.</p>
+          <p>At integPRO, our strength lies in our people. We're a team of consultants, auditors and specialists with hands-on industry experience, and our job is to help your business run better.</p>
+          <p>We work alongside your team and focus on results you can use.</p>
           <a href="/about-us-iso-team" class="btn btn-primary">About Us<Chevron /></a>
         </div>
       </div>
@@ -161,8 +161,8 @@ const faqSchema = {
   <section class="section results">
     <div class="container">
       <div class="section-head">
-        <h2>Proven Result Across <span class="gold">Industries</span></h2>
-        <p class="wide">The story of the organisations achieving certification with our expert guidance &amp; support</p>
+        <h2>Proven Results Across <span class="gold">Industries</span></h2>
+        <p class="wide">How organisations have worked with us to implement and maintain their management systems</p>
       </div>
       <div class="card-grid">
         {results.map((r) => (
@@ -190,8 +190,8 @@ const faqSchema = {
     <div class="container partner-grid">
       <div>
         <h2>Your <span class="gold">Trusted Partner</span> in ISO &amp; DISP</h2>
-        <p>Since 1998, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.</p>
-        <p>With a team of highly qualified consultants, lead auditors, and trainers, we’ve successfully guided over 1,000 organizations through ISO certification, DISP compliance, and integrated management system implementation.</p>
+        <p>Since 1998, IntegPro has provided management system consulting, training and certification support to Australian organisations. We help organisations build and maintain management systems that meet internationally recognised standards.</p>
+        <p>With a team of highly qualified consultants, lead auditors, and trainers, we’ve guided over 1,000 organisations through ISO certification, DISP compliance, and integrated management system implementation.</p>
         <a href="/about-us-iso-team" class="btn btn-primary">Learn More</a>
       </div>
       <img class="collage" src="/images/partner-collage.webp" alt="integPRO consultants at work and at Sydney Build Expo" width="573" height="542" loading="lazy" />
@@ -207,7 +207,7 @@ const faqSchema = {
     <div class="container">
       <div class="section-head">
         <h2>What <span class="gold">Our Client</span> Say</h2>
-        <p class="wide">Trusted by organisations across Australia for management system excellence.</p>
+        <p class="wide">Organisations across Australia rely on us for their management systems.</p>
       </div>
       <div class="card-grid">
         {testimonials.map((t) => (
