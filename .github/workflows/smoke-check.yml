@@ -1,6 +1,6 @@
-name: Smoke check preview
+name: Smoke check live site
 
-# Requests key pages on the Wix preview and prints status codes.
+# Requests key pages on the live site (www.integpro.com.au) and prints status codes.
 on:
   push:
     branches: ['claude/**']
@@ -19,7 +19,7 @@ jobs:
       - name: Request pages
         run: |
           sleep 180 # give the deploy workflow time to release
-          BASE=https://headless-kyphopvoogn-mehrdadpermeh-140d.wix-site-host.com
+          BASE=https://www.integpro.com.au
           for p in / /disp /about-us-iso-team /iso-disp-services /iso-9001-compliance-certification-sydney /medical-iso /free-consultation /privacy-policy /blog /blog/page/2 /blog/categories/disp-compliance /post/what-is-iso /images/logo.png /robots.txt; do
             code=$(curl -s -o /tmp/body -w '%{http_code}' -L "$BASE$p")
             title=$(grep -o '<title>[^<]*' /tmp/body | head -1 | sed 's/<title>//')

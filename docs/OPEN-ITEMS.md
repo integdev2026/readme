@@ -1,6 +1,6 @@
 # Open items
 
-Decisions parked for later. Ask the owner before go-live.
+Decisions parked for later. Ask the owner before changing these on the live site.
 
 ## Client names, logos and testimonials (deferred)
 - Home "Our Clients" strip, "Proven Result Across Industries" cards (home and /industries), and testimonial attributions use placeholders.
@@ -22,4 +22,5 @@ Decisions parked for later. Ask the owner before go-live.
 - Google Maps embed on /free-consultation: keep or remove (third-party cookies).
 - Contact forms replaced by the LeadConnector booking widget (iframe + form_embed.js): check privacy policy covers this third party and its cookies.
 - Blog post "What is ISO?" on the headless site: set category "ISO Certification" and first published date 2025-05-09.
-- Go-live: `noindex` removed (2026-10-05). Switch the integpro.com.au domain to the headless site in Wix.
+- Go-live: done. `noindex` removed (2026-10-05); the headless site is live at https://www.integpro.com.au/ (2026-10-20).
+- After go-live: submit the sitemap in Google Search Console and check that old Wix URLs redirect or resolve.
