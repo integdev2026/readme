@@ -7,6 +7,10 @@ import { coverUrl, formatDate, getCategories, getPost, getPosts, metaDescription
 Astro.response.headers.set('Cache-Control', BLOG_CACHE_CONTROL);
 import { ricosToHtml } from '../../lib/ricos';
 
+// Removed post that ranked for the ".iso" disk-image file format, which integPRO has nothing to do with.
+const GONE = ['understanding-iso-file-in-iso-compliance'];
+if (GONE.includes(Astro.params.slug!)) return new Response('Gone', { status: 410 });
+
 const [post, posts, categories] = await Promise.all([getPost(Astro.params.slug!), getPosts(), getCategories()]);
 if (!post) return new Response('Not found', { status: 404 });
 const recent = posts.filter((p) => p.id !== post.id).slice(0, 3);
