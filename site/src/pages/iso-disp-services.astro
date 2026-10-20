@@ -10,7 +10,7 @@ const isoPackages = [
   {
     icon: 'icon-award', timeline: '3-6 months', title: 'ISO 9001 Quality Management',
     items: ['Gap analysis report', 'Quality manual and procedures', 'Process documentation', 'Internal audit program', 'Management review framework'],
-    outcome: ['ISO 9001 Certificate', 'Customer Satisfaction and Business Growth', 'Continuous Improvement and Enhance Efficiency', 'Standardisation of Business Process'],
+    outcome: ['ISO 9001 Certificate', 'Customer Satisfaction and Business Growth', 'Continuous Improvement and Better Efficiency', 'Standardisation of Business Process'],
     href: '/iso-9001-compliance-certification-sydney',
   },
   {
@@ -34,7 +34,7 @@ const isoPackages = [
   {
     icon: 'icon-growth', timeline: '3-6 months', title: 'ISO 13485 Medical Devices Quality Management System', wide: true,
     items: ['Regulatory & compliance gap analysis (TGA / FDA / EU MDR aligned)', 'Quality policy & quality objectives', 'Risk management framework (ISO 14971 aligned)', 'Design & development controls documentation', 'QMS procedures & records for medical devices'],
-    outcome: ['ISO 13485 Certificate', 'Compliance with regulatory requirements', 'Robust Design Control and Risk Management', 'Customer Satisfaction and Business Growth', 'Continuous Improvement and Enhance Efficiency', 'Full control and minimise Adverse Events'],
+    outcome: ['ISO 13485 Certificate', 'Compliance with regulatory requirements', 'Effective Design Control and Risk Management', 'Customer Satisfaction and Business Growth', 'Continuous Improvement and Better Efficiency', 'Full control and minimise Adverse Events'],
     href: '/iso-13485-medical-devices-quality-management-system',
   },
 ];
@@ -74,7 +74,7 @@ const ecosystem = [
 const addOns = ['Extra Consulting Hours', 'Extra Consulting Hours', 'Annual surveillance support', 'No Fee', 'Maintenance', 'Learning Management System'];
 
 const journey = [
-  { n: 1, time: '1-2 weeks', icon: 'icon-search', kicker: 'Comprehensive assessment', title: 'Gap Analysis & Scoping', outcome: 'A clear, strategic roadmap for the certification journey.' },
+  { n: 1, time: '1-2 weeks', icon: 'icon-search', kicker: 'Full assessment', title: 'Gap Analysis & Scoping', outcome: 'A clear, strategic roadmap to certification.' },
   { n: 2, time: '4-8 weeks', icon: 'icon-document', kicker: 'Creating the foundational paperwork', title: 'Documentation Development', outcome: 'A complete, standard-compliant documentation suite.' },
   { n: 3, time: '6-12 weeks', icon: 'icon-checkbox', kicker: 'The team is trained on the updated processes', title: 'Implementation & Training', outcome: 'An operational management system integrated into daily workflows.' },
   { n: 4, time: '2-4 weeks', icon: 'icon-shield', kicker: 'verification step', title: 'Internal Audits & Management Review', outcome: 'Validated system performance ready for external review.' },
@@ -83,8 +83,9 @@ const journey = [
 ];
 ---
 <Base
-  title="ISO Certification and Integrated Management Systems | integPRO Services"
-  description="Discover expert support for ISO certifications and integrated management systems. Explore how integPRO can help your business succeed."
+  service={{ name: 'ISO and DISP consulting', serviceType: 'Integrated management system and DISP consulting' }}
+  title="ISO & DISP Services: Integrated Management Systems | integPRO"
+  description="Support for ISO certification, integrated management systems and DISP from integPRO's consultants."
 >
   <div class="svc">
   <!-- Hero -->
@@ -112,7 +113,7 @@ const journey = [
           <div>
             <small>DISP Compliance</small>
             <strong>Levels EL-3</strong>
-            <span class="tick">Defense Contractor Ready</span>
+            <span class="tick">Defence Contractor Ready</span>
           </div>
         </div>
       </div>
@@ -150,7 +151,7 @@ const journey = [
   <!-- DISP -->
   <section class="section disp">
     <div class="container">
-      <SectionHead title="Defense Industry Security Program" sub="Comprehensive DISP consulting for all security levels—from entry-level to Top Secret" />
+      <SectionHead title="Defence Industry Security Program" sub="DISP consulting for all security levels—from entry-level to Top Secret" />
       <div class="disp-grid">
         {dispLevels.map((d) => (
           <article class="disp-card">
@@ -174,7 +175,7 @@ const journey = [
   <!-- Ecosystem, add-ons, journey -->
   <section class="section eco">
     <div class="container">
-      <SectionHead title="Complete Service Ecosystem" sub="Additional services to support your management system journey" />
+      <SectionHead title="Complete Service Ecosystem" sub="Additional services to support your management system" />
       <div class="eco-grid">
         {ecosystem.map((e) => (
           <article class:list={['eco-card', { wide: e.wide }]}>
@@ -190,7 +191,7 @@ const journey = [
       <ul class="addons">{addOns.map((a) => <li>{a}</li>)}</ul>
 
       <div id="gapassessment" class="journey-head">
-        <SectionHead title="Six-Step Certification Journey" sub="A proven, structured approach with clear milestones, deliverables, and outcomes at every stage" />
+        <SectionHead title="Six-Step Certification Process" sub="A proven, structured approach with clear milestones, deliverables, and outcomes at every stage" />
       </div>
       <ol class="journey">
         {journey.map((j) => (

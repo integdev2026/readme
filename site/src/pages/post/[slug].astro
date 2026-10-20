@@ -2,10 +2,14 @@
 import Base from '../../layouts/Base.astro';
 import CategoryNav from '../../components/blog/CategoryNav.astro';
 import PostCard from '../../components/blog/PostCard.astro';
-import { coverUrl, formatDate, getCategories, getPost, getPosts, metaDescription, BLOG_CACHE_CONTROL } from '../../lib/wix';
+import { coverUrl, formatDate, getCategories, getPost, getPosts, metaDescription, seoTitle, BLOG_CACHE_CONTROL } from '../../lib/wix';
 
 Astro.response.headers.set('Cache-Control', BLOG_CACHE_CONTROL);
 import { ricosToHtml } from '../../lib/ricos';
+
+// Removed post that ranked for the ".iso" disk-image file format, which integPRO has nothing to do with.
+const GONE = ['understanding-iso-file-in-iso-compliance'];
+if (GONE.includes(Astro.params.slug!)) return new Response('Gone', { status: 410 });
 
 const [post, posts, categories] = await Promise.all([getPost(Astro.params.slug!), getPosts(), getCategories()]);
 if (!post) return new Response('Not found', { status: 404 });
@@ -29,7 +33,7 @@ const share = [
   { label: 'Share on LinkedIn', href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`, icon: 'in' },
 ];
 ---
-<Base title={post.title} description={metaDescription(post)}>
+<Base title={seoTitle(post)} description={metaDescription(post)}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(schema)} />
   <div class="container">
     <CategoryNav categories={categories} variant="plain" />

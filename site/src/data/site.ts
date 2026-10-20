@@ -6,7 +6,7 @@ export const nav = [
     children: [
       { label: 'ISO', href: '/iso-service-australia' },
       { label: 'DISP', href: '/disp' },
-      { label: 'Medical Device iso', href: '/medical-iso' },
+      { label: 'Medical Device ISO', href: '/medical-iso' },
     ],
   },
   { label: 'Industries', href: '/industries' },

@@ -25,3 +25,23 @@ jobs:
             title=$(grep -o '<title>[^<]*' /tmp/body | head -1 | sed 's/<title>//')
             echo "$code $p :: $title"
           done
+
+      - name: Check live SEO (titles, JSON-LD, redirects, 410s)
+        run: |
+          BASE=https://www.integpro.com.au
+          for p in / /disp /iso-9001-compliance-certification-sydney /iso-14001-compliance-certification /iso-45001-occupational-health-safety /iso-27001-information-security-management-system /iso-13485-medical-devices-quality-management-system /medical-iso /iso-service-australia /iso-disp-services /industries /about-us-iso-team /free-consultation /post/get-disp-accreditation-win-defence-contracts-a-guide-for-australian-businesses /post/iso-27001-cost-australia-understanding-certification-expenses; do
+            code=$(curl -s -o /tmp/body -w '%{http_code}' "$BASE$p")
+            title=$(grep -o '<title>[^<]*' /tmp/body | head -1 | sed 's/<title>//')
+            types=$(python3 -c "
+          import re,json,sys
+          h=open('/tmp/body').read();out=[]
+          for b in re.findall(r'<script type=\"application/ld\+json\"[^>]*>(.*?)</script>',h,re.S):
+              try:
+                  d=json.loads(b);g=d.get('@graph',[d]);out+=[x.get('@type','?') for x in g]
+              except Exception as e: out.append('INVALID')
+          print(','.join(out) or 'NONE')")
+            echo "$code $p :: $title :: schema=$types"
+          done
+          for p in /so-27001-information-security-management-system /post/understanding-iso-file-in-iso-compliance /wp-content/uploads/x.jpg; do
+            echo "$(curl -s -o /dev/null -w '%{http_code} -> %{redirect_url}' "$BASE$p") $p"
+          done

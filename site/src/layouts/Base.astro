@@ -4,15 +4,63 @@ import '@fontsource/open-sans/700.css';
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { company, social } from '../data/site';
 
 interface Props {
   title: string;
   description?: string;
   noindex?: boolean;
+  /** Describes the page as a service offering (service pages only). */
+  service?: { name: string; serviceType: string };
 }
 
-const { title, description, noindex = false } = Astro.props;
+const { title, description, noindex = false, service } = Astro.props;
 const canonical = new URL(Astro.url.pathname.replace(/(.)\/$/, '$1'), Astro.site);
+
+// Structured data on every page: who integPRO is, the site, this page and its place in the site.
+const home = new URL('/', Astro.site).href;
+const orgId = `${home}#organization`;
+const crumbs = Astro.url.pathname.split('/').filter(Boolean);
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ProfessionalService',
+      '@id': orgId,
+      name: company.name,
+      url: home,
+      logo: 'https://static.wixstatic.com/media/6d9105_404148c071ca4a80ba6d6fbe08832d27~mv2.png',
+      email: company.email,
+      telephone: company.phone,
+      address: { '@type': 'PostalAddress', addressLocality: 'Sydney', addressRegion: 'NSW', addressCountry: 'AU' },
+      areaServed: { '@type': 'Country', name: 'Australia' },
+      sameAs: social.map((s) => s.href),
+    },
+    { '@type': 'WebSite', '@id': `${home}#website`, url: home, name: company.name, publisher: { '@id': orgId }, inLanguage: 'en-AU' },
+    {
+      '@type': 'WebPage',
+      '@id': `${canonical.href}#webpage`,
+      url: canonical.href,
+      name: title,
+      ...(description && { description }),
+      isPartOf: { '@id': `${home}#website` },
+      about: { '@id': orgId },
+      inLanguage: 'en-AU',
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [{ name: 'Home', path: '' }, ...crumbs.map((c, i) => ({ name: i === crumbs.length - 1 ? title.split(' | ')[0] : c, path: crumbs.slice(0, i + 1).join('/') }))].map((c, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: c.name,
+          item: new URL(`/${c.path}`, Astro.site).href,
+        })),
+      },
+    },
+    ...(service
+      ? [{ '@type': 'Service', name: service.name, serviceType: service.serviceType, provider: { '@id': orgId }, areaServed: { '@type': 'Country', name: 'Australia' }, url: canonical.href, ...(description && { description }) }]
+      : []),
+  ],
+};
 ---
 <!doctype html>
 <html lang="en-AU">
@@ -31,6 +79,7 @@ const canonical = new URL(Astro.url.pathname.replace(/(.)\/$/, '$1'), Astro.site
     <link rel="icon" sizes="192x192" type="image/png" href="https://static.wixstatic.com/media/6d9105_404148c071ca4a80ba6d6fbe08832d27~mv2.png/v1/fill/w_192,h_192,lg_1,usm_0.66_1.00_0.01/favicon.png" />
     <link rel="icon" sizes="32x32" type="image/png" href="https://static.wixstatic.com/media/6d9105_404148c071ca4a80ba6d6fbe08832d27~mv2.png/v1/fill/w_32,h_32,lg_1,usm_0.66_1.00_0.01/favicon.png" />
     <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/6d9105_404148c071ca4a80ba6d6fbe08832d27~mv2.png/v1/fill/w_180,h_180,lg_1,usm_0.66_1.00_0.01/apple-touch-icon.png" />
+    {!noindex && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
     <slot name="head" />
   </head>
   <body>

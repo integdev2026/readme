@@ -64,18 +64,19 @@ const faqs = [
   { q: 'Who needs ISO 13485 certification?', a: 'Manufacturers, suppliers, and service providers in the medical device supply chain including design, production, installation, and servicing should implement ISO 13485.' },
   { q: 'What are the key requirements of ISO 13485?', a: 'The standard focuses on:\nRisk management throughout the product lifecycle.\nRegulatory compliance.\nDocumented processes for design, production, and post-market activities.\nContinual improvement of the QMS.' },
   { q: 'What does ISO 13485 certification involve?', a: 'The process includes:\nGap analysis and planning.\nImplementing QMS aligned with ISO 13485.\nInternal audits and management reviews.\nCertification audit by an accredited body.' },
-  { q: 'What is the typical timeline for ISO 13485 certification?', a: 'The timeline for ISO 13485 certification usually ranges from 4 to 8 months, depending on your organization’s size, complexity, and readiness. We help streamline the process to meet your goals efficiently.' },
+  { q: 'What is the typical timeline for ISO 13485 certification?', a: 'The timeline for ISO 13485 certification usually ranges from 4 to 8 months, depending on your organisation’s size, complexity, and readiness. We plan the work around your target dates so nothing is done twice.' },
   { q: 'Which regulators recognize ISO 13485?', a: 'ISO 13485 is widely accepted by major regulators, including:\nFDA (Food and Drug Administration) – U.S.\nTGA (Therapeutic Goods Administration) – Australia\nHealth Canada – Canada\nEuropean Commission (CE Marking) – EU\nMHRA (Medicines and Healthcare products Regulatory Agency) – UK\nPMDA (Pharmaceuticals and Medical Devices Agency) – Japan' },
-  { q: 'How much does ISO 13485 certification cost?', a: 'The cost of ISO 13485 certification varies based on your organization\'s size, complexity, certification scope, and associated consulting and certification body fees. At IntegPro, we provide transparent pricing and customized solutions to meet your needs.' },
+  { q: 'How much does ISO 13485 certification cost?', a: 'The cost of ISO 13485 certification varies based on your organisation\'s size, complexity, certification scope, and associated consulting and certification body fees. At IntegPro, we provide transparent pricing and customized solutions to meet your needs.' },
   { q: 'Do we need a consultant for ISO 13485?', a: 'While you can implement ISO 13485 internally, working with IntegPro ensures:\nFaster implementation.\nExpert guidance on regulatory compliance.\nReduced risk of non-conformities.' },
   { q: 'What should you do after getting certified?', a: 'After achieving ISO 13485 certification, you need to maintain compliance through regular internal audits, continuous improvement initiatives, and periodic surveillance audits conducted by the certification body.' },
-  { q: 'How does ISO 13485 integrate with other standards?', a: 'ISO 13485 can be integrated with:\nISO 9001 (Quality Management)\nISO 14971 (Risk Management for Medical Devices)\nISO 27001 (Information Security) This creates a comprehensive compliance framework.' },
-  { q: 'What kind of support does IntegPro offer?', a: 'IntegPro provides comprehensive support, including end-to-end ISO 13485 implementation, guidance on regulatory compliance, staff training and awareness programs, and ongoing assistance for audits and system maintenance.' },
+  { q: 'How does ISO 13485 integrate with other standards?', a: 'ISO 13485 can be integrated with:\nISO 9001 (Quality Management)\nISO 14971 (Risk Management for Medical Devices)\nISO 27001 (Information Security) Together they form a single integrated management system.' },
+  { q: 'What kind of support does IntegPro offer?', a: 'IntegPro supports you through end-to-end ISO 13485 implementation, guidance on regulatory compliance, staff training and awareness programs, and ongoing assistance for audits and system maintenance.' },
 ];
 ---
 <Base
-  title="ISO | Integpro"
-  description="Streamline compliance with expert ISO auditing, gap analysis, and integrated management systems support. Boost efficiency, reduce risk, Partner with integPRO."
+  service={{ name: 'ISO certification consulting', serviceType: 'ISO management system consulting' }}
+  title="ISO Certification Services Australia | integPRO"
+  description="ISO auditing, gap analysis and integrated management system support from integPRO. Improve efficiency, reduce risk and prepare for certification."
 >
   <CenterHero
     title='Achieve <span class="gold">ISO Certification</span> with <span class="gold">Confidence</span>'
@@ -106,7 +107,7 @@ const faqs = [
     <div class="container">
       <div class="section-head light">
         <h2>Our ISO <span class="gold">Services</span></h2>
-        <p>Comprehensive consulting and training for all major ISO standards.</p>
+        <p>Consulting and training for all major ISO standards.</p>
       </div>
       <div class="tabs">
         {standards.map((s, i) => <input type="radio" name="iso-std" id={`std-${s.id}`} checked={i === 0} />)}
