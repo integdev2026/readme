@@ -67,3 +67,6 @@ export const company = {
  * Set it here once the container exists; GA4 and the Google Ads conversion tag are configured inside GTM.
  */
 export const gtmId = '';
+
+/** Google Analytics 4 measurement ID, loaded on every page with gtag.js. Empty means no tag is loaded. */
+export const gaId = 'G-8HG19XQE77';

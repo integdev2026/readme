@@ -11,4 +11,8 @@ import Base from '../layouts/Base.astro';
       <p><a class="btn btn-primary" href="/">Back to home</a></p>
     </div>
   </section>
+  <!-- GA4 key event for a completed booking; mark "booking_complete" as a key event in GA4 and import it into Google Ads. -->
+  <script is:inline>
+    window.gtag && gtag('event', 'booking_complete');
+  </script>
 </Base>
