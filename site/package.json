@@ -9,7 +9,6 @@
     "build:astro": "astro build"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.7.4",
     "@fontsource/open-sans": "^5.3.0",
     "@wix/astro": "^2.74.0",
     "astro": "^5.18.2",

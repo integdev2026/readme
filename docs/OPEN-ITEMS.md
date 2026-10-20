@@ -18,3 +18,8 @@ Decisions parked for later. Ask the owner before changing these on the live site
 - Blog post "What is ISO?" on the headless site: set category "ISO Certification" and first published date 2025-05-09.
 - Go-live: done. `noindex` removed (2026-10-05); the headless site is live at https://www.integpro.com.au/ (2026-10-20).
 - After go-live: submit the sitemap in Google Search Console and check that old Wix URLs redirect or resolve.
+
+## Google Ads readiness (2026-10-20)
+- Duplicate head tags: Wix's STATIC_PAGE SEO pattern now has its title, canonical, og:* and twitter title/description tags disabled (code renders them). Undo: Wix SEO API "Reset SEO Pattern To Default" for STATIC_PAGE.
+- Sitemap: `/sitemap.xml` is served by `site/src/pages/sitemap.xml.ts` (pages, blog categories, posts; slash-less canonical URLs). `@astrojs/sitemap` removed. Submit `/sitemap.xml` in Search Console.
+- Tracking: set `gtmId` in `site/src/data/site.ts`; configure GA4 and the Google Ads conversion in GTM. Set the LeadConnector booking widget to redirect to `/thank-you` and use that page view as the conversion. Booking widget messages are also pushed to the dataLayer as `booking_widget`.

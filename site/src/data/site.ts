@@ -61,3 +61,9 @@ export const company = {
   location: 'Sydney, Australia',
   abn: '23 633 745 516',
 };
+
+/**
+ * Google Tag Manager container ID (GTM-XXXXXXX). Empty means no tag is loaded.
+ * Set it here once the container exists; GA4 and the Google Ads conversion tag are configured inside GTM.
+ */
+export const gtmId = '';
