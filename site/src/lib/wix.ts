@@ -166,6 +166,11 @@ export function coverUrl(post: Post, width = 640) {
   return img?.id ? mediaUrl(img.id, width) : undefined;
 }
 
+/** SEO title set in the Wix blog editor, falling back to the post title. */
+export function seoTitle(post: Post) {
+  return post.seoData?.tags?.find((t) => t.type === 'title')?.children?.trim() || post.title;
+}
+
 export function metaDescription(post: Post) {
   return post.seoData?.tags?.find((t) => t.type === 'meta' && t.props?.name === 'description')?.props?.content ?? post.excerpt;
 }

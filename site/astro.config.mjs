@@ -13,6 +13,10 @@ export default defineConfig({
   output: 'server',
   adapter: wixHostingAdapter(),
   integrations: [wix(), react(), sitemap()],
+  // Old Wix URL with a typo in the slug (missing "i"); keep its search equity.
+  redirects: {
+    '/so-27001-information-security-management-system': '/iso-27001-information-security-management-system',
+  },
   image: { domains: ['static.wixstatic.com'] },
   security: { checkOrigin: false },
   devToolbar: { enabled: false },
