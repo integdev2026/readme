@@ -7,7 +7,7 @@ import ContactBand from '../components/ContactBand.astro';
 const img = (id: string) => `/images/about-us-iso-team/icon-${id}.webp`;
 
 const timeline = [
-  { label: '2019', icon: img('3144ee'), title: 'Foundation', text: 'IntegPro established in Sydney to help Australian businesses navigate ISO certification.' },
+  { label: '2019', icon: img('3144ee'), title: 'Foundation', text: 'IntegPro established in Sydney to help Australian businesses achieve ISO certification.' },
   { label: '2020', icon: img('334a55'), title: 'Auditing', text: 'Expanded into Defence Industry Security Program consulting, becoming a trusted DISP advisor.' },
   { label: '2021', icon: img('153f8b'), title: 'National Expansion', text: 'Grew to service clients nationwide across all major industries and sectors.' },
   { label: '2022', icon: img('c67d3c'), title: '1000th Certification', text: 'Celebrated milestone achievement of delivering 1000+ successful certifications (ISDM /DISP/Maintenance)' },
@@ -16,12 +16,12 @@ const timeline = [
 
 // Grid order matches the live page (row by row).
 const values = [
-  { icon: '62a189', title: 'Integrity First', text: 'We provide honest, transparent advice without overselling. Your compliance journey is built on trust and ethical consulting practices.' },
+  { icon: '62a189', title: 'Integrity First', text: 'We provide honest, transparent advice without overselling. We work on trust and ethical consulting practice.' },
   { icon: '5f2954', title: 'Results-Driven', text: '100% first-audit success rate speaks for itself. We focus on practical outcomes, not just paperwork, delivering certifications that stick.' },
   { icon: '092af2', title: 'Partnership Approach', text: 'We work alongside your team, building internal capability while delivering compliance. Your success is our success.' },
-  { icon: 'cbc8ec', title: 'Practical Expertise', text: 'No cookie-cutter solutions. We tailor every system to your industry, size, and operational reality, compliance that works for you.' },
-  { icon: '659b89', title: 'Continuous Improvement', text: 'Certification is the start, not the end. We help you leverage ISO and DISP for genuine business improvement and competitive advantage.' },
-  { icon: '41e2bc', title: 'Client-Centric', text: 'Your challenges, timelines, and budget matter. We adapt our service delivery to minimize disruption and maximize value.' },
+  { icon: 'cbc8ec', title: 'Practical Expertise', text: 'No cookie-cutter solutions. We tailor every system to your industry, size, and operational reality, so compliance works for you.' },
+  { icon: '659b89', title: 'Continuous Improvement', text: 'Certification is the start, not the end. We help you use ISO and DISP for genuine business improvement and competitive advantage.' },
+  { icon: '41e2bc', title: 'Client-Centric', text: 'Your challenges, timelines, and budget matter. We adapt our service delivery to minimise disruption and maximise value.' },
 ];
 
 const team = [
@@ -35,9 +35,9 @@ const reasons = [
   { icon: '334a55', value: '1,000+', unit: 'Certifications', title: 'Certifications', text: '100% First-Audit Success Rate Every client we prepare achieves certification on their first audit attempt, no exceptions.' },
   { icon: 'ce6b54', value: '6', unit: 'Industries', title: 'Industry Expertise', text: 'Deep experience across Defence, Construction, Medical Devices, Government, Manufacturing, and ICT.' },
   { icon: '187f81', value: '100+', unit: 'Years Combined', title: 'Certified Expert Team', text: 'We work alongside your team, building internal capability while delivering compliance. Your success is our success.' },
-  { icon: '153f8b', value: '25+', unit: 'Years', title: 'Proven Track Record', text: 'No cookie-cutter solutions. We tailor every system to your industry, size, and operational reality, compliance that works for you.' },
+  { icon: '153f8b', value: '25+', unit: 'Years', title: 'Proven Track Record', text: 'No cookie-cutter solutions. We tailor every system to your industry, size, and operational reality, so compliance works for you.' },
   { icon: 'c67d3c', value: '100%', unit: 'Transparent', title: 'Fixed-Price Transparency', text: 'Clear packages with defined deliverables, timelines, and costs, no hidden fees or surprises.' },
-  { icon: '30076e', value: '100%', unit: 'Time Saved', title: 'Efficiency-Focused', text: 'Minimize disruption to your operations while maximizing compliance value and business improvement.' },
+  { icon: '30076e', value: '100%', unit: 'Time Saved', title: 'Efficiency-Focused', text: 'Minimise disruption to your operations while maximising compliance value and business improvement.' },
 ];
 
 // Lines kept exactly as they appear on the live page; the first part of each line is highlighted in gold there.
@@ -55,7 +55,7 @@ const certs = [
     <div class="container hero-grid">
       <div>
         <h1>Building <span class="gold">Compliant Futures</span> Since 2019</h1>
-        <p>IntegPro is Australia’s leading ISO certification and DISP compliance consulting firm. For over 25 years, we’ve helped businesses across Defence, Construction, Medical Devices, Government, and Manufacturing achieve and maintain world-class management systems.</p>
+        <p>IntegPro is Australia’s leading ISO certification and DISP compliance consulting firm. For over 25 years, we’ve helped businesses across Defence, Construction, Medical Devices, Government, and Manufacturing achieve and maintain effective management systems.</p>
         <div class="actions">
           <a href="#team" class="btn btn-primary">Meet Our Team<Chevron /></a>
           <a href="#values" class="btn btn-outline">Our Values</a>
@@ -83,7 +83,7 @@ const certs = [
     <div class="container">
       <div class="section-head light">
         <h2>Our Core <span class="gold">Values</span></h2>
-        <p class="wide">The principles that guide every client engagement and certification journey</p>
+        <p class="wide">The principles that guide every client engagement and certification project</p>
       </div>
       <div class="card-grid">
         {values.map((v) => (
@@ -96,8 +96,8 @@ const certs = [
       </div>
       <div class="mission">
         <h2>Our Mission</h2>
-        <p>To empower Australian businesses with world-class management systems that deliver genuine competitive advantage, operational excellence, and sustainable compliance.</p>
-        <blockquote>“We don’t just deliver certifications, we build compliant, high-performing organizations.”</blockquote>
+        <p>To give Australian businesses practical management systems that deliver genuine competitive advantage, operational excellence, and sustainable compliance.</p>
+        <blockquote>“We don’t just deliver certifications, we build compliant, high-performing organisations.”</blockquote>
       </div>
     </div>
   </section>
@@ -126,7 +126,7 @@ const certs = [
   <section class="section">
     <div class="container">
       <div class="section-head light">
-        <h2>Why Choose <span class="gold">IntegPro</span>?</h2>
+        <h2>Why Choose <span class="gold">IntegPro</span></h2>
         <p class="wide">The IntegPro difference: expertise, transparency, and results</p>
       </div>
       <div class="card-grid">
