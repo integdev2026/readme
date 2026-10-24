@@ -5,7 +5,6 @@ export const nav = [
     href: '/iso-disp-services',
     children: [
       { label: 'ISO', href: '/iso-service-australia' },
-      { label: 'Medical Device iso', href: '/medical-iso' },
     ],
   },
   {
@@ -33,7 +32,6 @@ export const footerColumns = [
     links: [
       { label: 'What we do', href: '/iso-disp-services' },
       { label: 'ISO', href: '/iso-service-australia' },
-      { label: 'Medical', href: '/medical-iso' },
     ],
   },
   {

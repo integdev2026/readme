@@ -19,6 +19,10 @@ export default defineConfig({
     sitemap({ customPages: dispPaths.map((p) => `https://www.integpro.com.au${p}`) }),
   ],
   image: { domains: ['static.wixstatic.com'] },
+  // Retired pages: keep old URLs working for visitors and search engines.
+  redirects: {
+    '/medical-iso': { status: 301, destination: '/iso-13485-medical-devices-quality-management-system' },
+  },
   security: { checkOrigin: false },
   devToolbar: { enabled: false },
 });
