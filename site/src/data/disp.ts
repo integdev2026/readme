@@ -214,6 +214,7 @@ export const industries: Topic[] = [
 export const roles: Topic[] = [
   {
     slug: 'security-officer',
+    image: { src: wixImage('6d9105_cf1086a2f7434459ac568d3b002dc89d~mv2.png'), alt: 'Security officer reviewing security policies at a desk' },
     icon: 'user',
     label: 'Security Officers',
     title: 'DISP Security Officer & CSO Support | integPRO',
@@ -229,6 +230,7 @@ export const roles: Topic[] = [
   },
   {
     slug: 'directors',
+    image: { src: wixImage('6d9105_2ec20a59be3845ecbf2fd28e84585285~mv2.png'), alt: 'Director leading a boardroom meeting with the leadership team' },
     icon: 'briefcase',
     label: 'Directors & Owners',
     title: 'DISP for Directors & Business Owners | integPRO',
@@ -244,6 +246,7 @@ export const roles: Topic[] = [
   },
   {
     slug: 'it-managers',
+    image: { src: wixImage('6d9105_3fb62e9d995d4c09bf0736e99e327d35~mv2.png'), alt: 'IT manager with a laptop in a server room' },
     icon: 'laptop',
     label: 'IT Managers',
     title: 'DISP for IT Managers | integPRO',
