@@ -1,0 +1,44 @@
+---
+// Section bar under the header: breadcrumbs (with BreadcrumbList data) and the section's own menu.
+// Used by the DISP and ISO sections.
+interface Link { label: string; href: string }
+interface Props { crumbs: Link[]; nav: Link[]; label: string }
+const { crumbs, nav, label } = Astro.props;
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: new URL(c.href, Astro.site).href })),
+};
+// The first menu item is the section overview: active only on its own page.
+const isActive = (href: string, i: number) => (i === 0 ? path === href : path.startsWith(href));
+---
+<div class="section-bar">
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <div class="container bar">
+    <nav aria-label="Breadcrumb">
+      <ol class="crumbs">
+        {crumbs.map((c, i) => (
+          <li>{i === crumbs.length - 1 ? <span aria-current="page">{c.label}</span> : <a href={c.href}>{c.label}</a>}</li>
+        ))}
+      </ol>
+    </nav>
+    <nav aria-label={label}>
+      <ul class="subnav">
+        {nav.map((n, i) => <li><a href={n.href} class:list={{ active: isActive(n.href, i) }}>{n.label}</a></li>)}
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<style>
+  .section-bar { border-bottom: 1px solid var(--line); background: var(--bg-soft); }
+  .bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; padding: 10px 0; }
+  .crumbs, .subnav { display: flex; flex-wrap: wrap; list-style: none; margin: 0; padding: 0; font-size: 13px; }
+  .crumbs li + li::before { content: '›'; margin: 0 8px; color: var(--muted); }
+  .crumbs span { color: var(--muted); }
+  .crumbs a:hover { color: var(--gold); }
+  .subnav { gap: 4px; }
+  .subnav a { display: inline-block; padding: 4px 12px; border-radius: 999px; font-family: var(--font-heading); }
+  .subnav a:hover, .subnav a.active { background: var(--gold-light); color: var(--ink); }
+</style>

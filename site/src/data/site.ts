@@ -1,3 +1,13 @@
+// ISO section menu (section bar on ISO pages and the ISO dropdown).
+export const isoNav = [
+  { label: 'Overview', href: '/iso-service-australia' },
+  { label: 'ISO 9001', href: '/iso-9001-compliance-certification-sydney' },
+  { label: 'ISO 14001', href: '/iso-14001-compliance-certification' },
+  { label: 'ISO 45001', href: '/iso-45001-occupational-health-safety' },
+  { label: 'ISO 27001', href: '/iso-27001-information-security-management-system' },
+  { label: 'ISO 13485', href: '/iso-13485-medical-devices-quality-management-system' },
+];
+
 export const nav = [
   { label: 'Home', href: '/' },
   {
