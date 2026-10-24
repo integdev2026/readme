@@ -34,9 +34,15 @@ export const nav = [
     ],
   },
   { label: 'Industries', href: '/industries' },
-  { label: 'About Us', href: '/about-us-iso-team' },
+  {
+    label: 'About Us',
+    href: '/about-us-iso-team',
+    children: [
+      { label: 'About integPRO', href: '/about-us-iso-team' },
+      { label: 'Privacy Policy', href: '/privacy-policy' },
+    ],
+  },
   { label: 'Blog', href: '/blog' },
-  { label: 'Privacy Policy', href: '/privacy-policy' },
 ];
 
 export const cta = { label: 'Free Meeting', href: '/free-consultation' };
