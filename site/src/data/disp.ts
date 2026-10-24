@@ -5,6 +5,9 @@
 
 export interface Crumb { label: string; href: string }
 
+// Icon names from src/components/Icon.astro.
+export type IconName = 'shield' | 'shieldCheck' | 'lock' | 'factory' | 'gear' | 'helmet' | 'server' | 'user' | 'briefcase' | 'laptop' | 'search' | 'list' | 'wrench' | 'users' | 'send' | 'refresh' | 'check';
+
 // In-section menu shown on every DISP page.
 export const dispNav = [
   { label: 'Overview', href: '/disp' },
@@ -39,6 +42,9 @@ export interface Level {
   scope: string[];
   notes: string[];
 }
+
+// Card icon for each level page, in the same order as `levels`.
+export const levelIcons: IconName[] = ['shield', 'shieldCheck', 'lock'];
 
 export const levels: Level[] = [
   {
@@ -132,11 +138,13 @@ export interface Topic {
   heroText: string;
   points: { title: string; text: string }[];
   level: string;
+  icon: IconName;
 }
 
 export const industries: Topic[] = [
   {
     slug: 'manufacturing',
+    icon: 'factory',
     label: 'Manufacturing',
     title: 'DISP for Manufacturers | integPRO',
     description: 'DISP membership for Australian manufacturers supplying Defence primes: protecting drawings and specifications, securing the shop floor and meeting prime requirements.',
@@ -151,6 +159,7 @@ export const industries: Topic[] = [
   },
   {
     slug: 'engineering',
+    icon: 'gear',
     label: 'Engineering',
     title: 'DISP for Engineering Firms | integPRO',
     description: 'DISP membership for engineering and design consultancies working on Defence projects: securing design data, project teams and collaboration tools.',
@@ -165,6 +174,7 @@ export const industries: Topic[] = [
   },
   {
     slug: 'construction',
+    icon: 'helmet',
     label: 'Construction',
     title: 'DISP for Construction & Facilities | integPRO',
     description: 'DISP membership for builders and facilities contractors on Defence estate projects: site security, document control and workforce screening.',
@@ -179,6 +189,7 @@ export const industries: Topic[] = [
   },
   {
     slug: 'it-managed-services',
+    icon: 'server',
     label: 'IT & Managed Services',
     title: 'DISP for IT & Managed Service Providers | integPRO',
     description: 'DISP membership for IT providers and MSPs supporting Defence suppliers: securing client environments, privileged access and service delivery.',
@@ -196,6 +207,7 @@ export const industries: Topic[] = [
 export const roles: Topic[] = [
   {
     slug: 'security-officer',
+    icon: 'user',
     label: 'Security Officers',
     title: 'DISP Security Officer & CSO Support | integPRO',
     description: 'Support for DISP Security Officers and Chief Security Officers: understanding the role, setting up the security program and meeting ongoing reporting obligations.',
@@ -210,6 +222,7 @@ export const roles: Topic[] = [
   },
   {
     slug: 'directors',
+    icon: 'briefcase',
     label: 'Directors & Owners',
     title: 'DISP for Directors & Business Owners | integPRO',
     description: 'What DISP means for directors and owners: why primes ask for it, the commitment involved and how to plan time, people and budget.',
@@ -224,6 +237,7 @@ export const roles: Topic[] = [
   },
   {
     slug: 'it-managers',
+    icon: 'laptop',
     label: 'IT Managers',
     title: 'DISP for IT Managers | integPRO',
     description: 'DISP cyber security requirements for IT managers: Essential Eight controls, system documentation and evidence for the Defence assessment.',
@@ -238,13 +252,13 @@ export const roles: Topic[] = [
   },
 ];
 
-export const processSteps = [
-  { title: 'Gap Analysis', text: 'We assess where you stand against the requirements of your target level.' },
-  { title: 'Action Plan', text: 'A prioritised list of the work, owners and timing.' },
-  { title: 'Implementation', text: 'Policies, physical controls, personnel processes and cyber uplift.' },
-  { title: 'Governance', text: 'Your CSO and SO are briefed and the security program is in place.' },
-  { title: 'Submission', text: 'We prepare your application and support you through Defence’s assessment.' },
-  { title: 'Ongoing Support', text: 'Annual reporting, changes and maintaining your membership.' },
+export const processSteps: { title: string; icon: IconName; text: string }[] = [
+  { title: 'Gap Analysis', icon: 'search', text: 'We assess where you stand against the requirements of your target level.' },
+  { title: 'Action Plan', icon: 'list', text: 'A prioritised list of the work, owners and timing.' },
+  { title: 'Implementation', icon: 'wrench', text: 'Policies, physical controls, personnel processes and cyber uplift.' },
+  { title: 'Governance', icon: 'users', text: 'Your CSO and SO are briefed and the security program is in place.' },
+  { title: 'Submission', icon: 'send', text: 'We prepare your application and support you through Defence’s assessment.' },
+  { title: 'Ongoing Support', icon: 'refresh', text: 'Annual reporting, changes and maintaining your membership.' },
 ];
 
 export const eligibility = [
@@ -271,3 +285,26 @@ export const crumbs = (...trail: Crumb[]): Crumb[] => [{ label: 'Home', href: '/
 // Level, industry and role pages come from one dynamic route, which the sitemap integration can't
 // list on its own; the fixed DISP pages are picked up automatically.
 export const dispPaths = [...levels, ...industries, ...roles].map((p) => `/disp/${p.slug}`);
+
+// Level staircase (Levels 2 and 3 share one page).
+export const ladder = [
+  { label: 'Entry Level', classification: 'OFFICIAL: Sensitive', timeline: '3–6 months', href: '/disp/entry-level' },
+  { label: 'Level 1', classification: 'PROTECTED', timeline: '6–8 months', href: '/disp/level-1' },
+  { label: 'Level 2', classification: 'SECRET', timeline: '12 months +', href: '/disp/level-2-3' },
+  { label: 'Level 3', classification: 'TOP SECRET', timeline: '12 months +', href: '/disp/level-2-3' },
+];
+
+// What each level adds, as shown on the levels comparison table (Entry, Level 1, Level 2, Level 3).
+export const comparison: { row: string; levels: [boolean, boolean, boolean, boolean] }[] = [
+  { row: 'CSO and SO nominated and briefed', levels: [true, true, true, true] },
+  { row: 'Gap analysis and action plan', levels: [true, true, true, true] },
+  { row: 'Security policies and governance documents', levels: [true, true, true, true] },
+  { row: 'Physical security review', levels: [true, true, true, true] },
+  { row: 'Essential Eight cyber controls', levels: [true, true, true, true] },
+  { row: 'Annual security report to Defence', levels: [true, true, true, true] },
+  { row: 'Higher Essential Eight maturity targets', levels: [false, true, true, true] },
+  { row: 'Floor plan, access control and CCTV review', levels: [false, true, true, true] },
+  { row: 'Personnel security clearance sponsorship', levels: [false, true, true, true] },
+  { row: 'Defence site inspection', levels: [false, false, true, true] },
+  { row: 'Custom package scoped to your sites and systems', levels: [false, false, true, true] },
+];

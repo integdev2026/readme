@@ -3,9 +3,9 @@
 import DispShell from './DispShell.astro';
 import LinkCards from './LinkCards.astro';
 import CenterHero from '../iso-service-australia/CenterHero.astro';
-import { dispCta, crumbs } from '../../data/disp';
+import { dispCta, crumbs, type IconName } from '../../data/disp';
 
-interface Card { href: string; title: string; text: string; tag?: string }
+interface Card { href: string; title: string; text: string; tag?: string; icon?: IconName }
 interface Props { title: string; description: string; label: string; heroTitle: string; heroText: string; cards: Card[]; cols?: number }
 const { title, description, label, heroTitle, heroText, cards, cols } = Astro.props;
 ---
@@ -13,6 +13,7 @@ const { title, description, label, heroTitle, heroText, cards, cols } = Astro.pr
   <CenterHero title={heroTitle} text={heroText} actions={[dispCta]} />
   <section class="section hub">
     <div class="container">
+      <slot name="top" />
       <LinkCards cards={cards} cols={cols} />
       <slot />
     </div>

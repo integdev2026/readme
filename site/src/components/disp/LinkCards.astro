@@ -1,12 +1,16 @@
 ---
-// Grid of cards that link to DISP child pages.
-interface Card { href: string; title: string; text: string; tag?: string }
+// Grid of cards that link to DISP child pages, with an optional brand icon.
+import Icon from '../Icon.astro';
+import type { IconName } from '../../data/disp';
+
+interface Card { href: string; title: string; text: string; tag?: string; icon?: IconName }
 interface Props { cards: Card[]; cols?: number }
 const { cards, cols = 3 } = Astro.props;
 ---
 <div class="link-cards" style={`--cols: ${cols}`}>
   {cards.map((c) => (
     <a class="link-card" href={c.href}>
+      {c.icon && <span class="icon"><Icon name={c.icon} size={26} /></span>}
       {c.tag && <span class="tag">{c.tag}</span>}
       <h3>{c.title}</h3>
       <p>{c.text}</p>
@@ -17,8 +21,9 @@ const { cards, cols = 3 } = Astro.props;
 
 <style>
   .link-cards { display: grid; grid-template-columns: repeat(var(--cols), minmax(0, 1fr)); gap: 16px; }
-  .link-card { display: flex; flex-direction: column; gap: 12px; padding: 28px; background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card); transition: transform 0.2s; }
-  .link-card:hover { transform: translateY(-2px); }
+  .link-card { display: flex; flex-direction: column; gap: 12px; padding: 28px; background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card); border-top: 4px solid var(--gold-light); transition: transform 0.2s, border-color 0.2s; }
+  .link-card:hover { transform: translateY(-2px); border-top-color: var(--gold); }
+  .icon { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 14px; background: var(--gold-gradient); color: #fff; }
   .tag { align-self: flex-start; padding: 2px 12px; border-radius: 999px; background: var(--gold-light); color: var(--gold-dark); font-size: 12px; }
   h3 { font-size: 20px; }
   p { margin: 0; font-size: 14px; line-height: 1.5; flex: 1; }

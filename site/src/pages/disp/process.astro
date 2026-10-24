@@ -1,6 +1,7 @@
 ---
 import DispShell from '../../components/disp/DispShell.astro';
 import CenterHero from '../../components/iso-service-australia/CenterHero.astro';
+import Icon from '../../components/Icon.astro';
 import { processSteps, dispCta, crumbs } from '../../data/disp';
 ---
 <DispShell
@@ -14,11 +15,15 @@ import { processSteps, dispCta, crumbs } from '../../data/disp';
     actions={[dispCta]}
   />
   <section class="section steps-wrap">
-    <ol class="container steps">
+    <ol class="container timeline">
       {processSteps.map((s, i) => (
         <li>
-          <span class="num">{i + 1}</span>
-          <div><h2>{s.title}</h2><p>{s.text}</p></div>
+          <span class="dot"><Icon name={s.icon} size={26} /></span>
+          <div class="card">
+            <span class="num">Step {i + 1}</span>
+            <h2>{s.title}</h2>
+            <p>{s.text}</p>
+          </div>
         </li>
       ))}
     </ol>
@@ -27,9 +32,19 @@ import { processSteps, dispCta, crumbs } from '../../data/disp';
 
 <style>
   .steps-wrap { background: var(--bg-faq); }
-  .steps { list-style: none; margin: 0 auto; padding: 0; display: grid; gap: 14px; max-width: 760px; }
-  .steps li { display: flex; gap: 20px; align-items: flex-start; padding: 24px 28px; background: #fff; border-radius: 16px; }
-  .num { flex: none; width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; background: var(--gold-gradient); font-family: var(--font-heading); font-weight: 700; color: var(--ink); }
-  .steps h2 { font-size: 20px; }
-  .steps p { margin: 6px 0 0; font-size: 15px; line-height: 1.5; }
+  /* Six steps in a row on wide screens, joined by a gold line; a vertical line on mobile. */
+  .timeline { list-style: none; margin: 0 auto; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
+  .timeline li { position: relative; display: flex; flex-direction: column; align-items: center; gap: 18px; }
+  .timeline li:not(:last-child)::after { content: ''; position: absolute; top: 31px; left: calc(50% + 34px); width: calc(100% - 54px); height: 3px; background: var(--gold-light); }
+  .dot { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--gold-gradient); color: #fff; box-shadow: 0 6px 16px rgba(150, 130, 68, 0.35); }
+  .card { flex: 1; width: 100%; padding: 18px 16px 22px; background: #fff; border-radius: 16px; border-top: 4px solid var(--gold); text-align: center; }
+  .num { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold-dark); }
+  .card h2 { margin-top: 6px; font-size: 17px; }
+  .card p { margin: 8px 0 0; font-size: 13px; line-height: 1.5; }
+  @media (max-width: 1000px) {
+    .timeline { grid-template-columns: 1fr; max-width: 560px; gap: 18px; }
+    .timeline li { flex-direction: row; align-items: flex-start; }
+    .timeline li:not(:last-child)::after { top: 64px; left: 30px; width: 3px; height: calc(100% - 46px); }
+    .card { text-align: left; }
+  }
 </style>

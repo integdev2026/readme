@@ -8,5 +8,5 @@ import { roles } from '../../data/disp';
   label="Roles"
   heroTitle='DISP by <span class="gold">Role</span>'
   heroText="DISP involves people across your business. Find out what it means for your role."
-  cards={roles.map((t) => ({ href: `/disp/${t.slug}`, title: t.label, text: t.heroText }))}
+  cards={roles.map((t) => ({ href: `/disp/${t.slug}`, title: t.label, text: t.heroText, icon: t.icon }))}
 />

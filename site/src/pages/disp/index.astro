@@ -5,7 +5,8 @@ import LinkCards from '../../components/disp/LinkCards.astro';
 import CenterHero from '../../components/iso-service-australia/CenterHero.astro';
 import ProcessSteps from '../../components/iso-service-australia/ProcessSteps.astro';
 import Faq from '../../components/iso-service-australia/Faq.astro';
-import { categories, levels, industries, roles, eligibility, processSteps, faq, dispCta, crumbs } from '../../data/disp';
+import LevelLadder from '../../components/disp/LevelLadder.astro';
+import { categories, industries, roles, eligibility, processSteps, faq, dispCta, crumbs } from '../../data/disp';
 
 
 const img = (id: string) => `/images/disp/icon-${id}.webp`;
@@ -50,7 +51,7 @@ const reasons = [
         <h2>Choose Your <span class="gold">DISP Level</span></h2>
         <p class="wide">The level you need depends on the classification of the information you handle.</p>
       </div>
-      <LinkCards cards={levels.map((l) => ({ href: `/disp/${l.slug}`, title: l.label, text: l.short, tag: l.classification }))} />
+      <LevelLadder />
     </div>
   </section>
 
@@ -72,11 +73,11 @@ const reasons = [
       <div class="section-head">
         <h2>DISP by <span class="gold">Industry</span></h2>
       </div>
-      <LinkCards cols={4} cards={industries.map((t) => ({ href: `/disp/${t.slug}`, title: t.label, text: t.heroText }))} />
+      <LinkCards cols={4} cards={industries.map((t) => ({ href: `/disp/${t.slug}`, title: t.label, text: t.heroText, icon: t.icon }))} />
       <div class="section-head role-head">
         <h2>DISP by <span class="gold">Role</span></h2>
       </div>
-      <LinkCards cards={roles.map((t) => ({ href: `/disp/${t.slug}`, title: t.label, text: t.heroText }))} />
+      <LinkCards cards={roles.map((t) => ({ href: `/disp/${t.slug}`, title: t.label, text: t.heroText, icon: t.icon }))} />
     </div>
   </section>
 
