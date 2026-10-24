@@ -39,6 +39,7 @@ export const nav = [
     href: '/about-us-iso-team',
     children: [
       { label: 'About integPRO', href: '/about-us-iso-team' },
+      { label: 'Our Services', href: '/services' },
       { label: 'Privacy Policy', href: '/privacy-policy' },
     ],
   },
