@@ -1,10 +1,15 @@
 export const nav = [
   { label: 'Home', href: '/' },
   {
-    label: 'Services',
-    href: '/iso-disp-services',
+    label: 'ISO',
+    href: '/iso-service-australia',
     children: [
-      { label: 'ISO', href: '/iso-service-australia' },
+      { label: 'ISO Services', href: '/iso-service-australia' },
+      { label: 'ISO 9001 Quality', href: '/iso-9001-compliance-certification-sydney' },
+      { label: 'ISO 14001 Environmental', href: '/iso-14001-compliance-certification' },
+      { label: 'ISO 45001 Health & Safety', href: '/iso-45001-occupational-health-safety' },
+      { label: 'ISO 27001 Information Security', href: '/iso-27001-information-security-management-system' },
+      { label: 'ISO 13485 Medical Devices', href: '/iso-13485-medical-devices-quality-management-system' },
     ],
   },
   {

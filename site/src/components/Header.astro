@@ -52,7 +52,7 @@ const isActive = (href: string, children?: { href: string }[]) =>
     opacity: 0; visibility: hidden; transform: translateY(6px); transition: all 0.2s;
   }
   .has-children:hover .submenu, .has-children:focus-within .submenu { opacity: 1; visibility: visible; transform: none; }
-  .submenu a { display: block; padding: 8px 12px; border-radius: 8px; font-family: var(--font-heading); font-size: 14px; }
+  .submenu a { display: block; white-space: nowrap; padding: 8px 12px; border-radius: 8px; font-family: var(--font-heading); font-size: 14px; }
   .submenu a:hover { background: var(--gold-light); }
   .cta { height: 40px; font-size: 14px; letter-spacing: 1px; }
   .nav-toggle, .burger { display: none; }
