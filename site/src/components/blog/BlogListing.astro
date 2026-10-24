@@ -3,6 +3,7 @@
 import Base from '../../layouts/Base.astro';
 import PostCard from './PostCard.astro';
 import CategoryNav from './CategoryNav.astro';
+import YouTubeChannel from './YouTubeChannel.astro';
 import type { Category, Post } from '../../lib/wix';
 
 interface Props {
@@ -44,6 +45,7 @@ const href = (n: number) => (n === 1 ? baseHref : `${baseHref.replace(/\/$/, '')
           {page < pages && <a href={href(page + 1)} aria-label="Next page">›</a>}
         </nav>
       )}
+      {!activeCategory && page === 1 && <YouTubeChannel />}
     </div>
   </section>
 </Base>
