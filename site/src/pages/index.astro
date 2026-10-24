@@ -354,12 +354,15 @@ const faqSchema = {
 
   @media (max-width: 1000px) {
     .hero-grid, .partner-grid, .team { grid-template-columns: 1fr; }
-    .hero-ring { width: min(320px, 80%); margin: 0 auto; }
+    /* Tablets: smaller and still (the spin is distracting on touch screens). */
+    .hero-ring { width: min(240px, 60%); margin: 0 auto; animation: none; }
     .team img { width: 100%; max-width: 588px; }
     .hero-grid > *, .partner-grid > *, .team > * { min-width: 0; }
     .partner-mark { display: none; }
   }
   @media (max-width: 760px) {
+    /* Phones: the decorative ring is hidden so the message and buttons come first. */
+    .hero-ring { display: none; }
     .hero { padding-top: 40px; }
     .hero h1 { font-size: 30px; line-height: 38px; padding: 0; }
     .hero h1 .line { white-space: normal; }
