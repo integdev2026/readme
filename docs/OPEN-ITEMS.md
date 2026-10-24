@@ -33,3 +33,8 @@ Decisions parked for later. Ask the owner before go-live.
 - Not built yet: /disp/case-studies (needs client-approved cases) and /disp/guides (DISP blog category and articles).
 - Sitemap: the plugin lists fixed pages with a trailing slash, but canonicals have none (site-wide). Align one way.
 - Footer "Since 2019" is site-wide and still unconfirmed.
+
+## Google Search Console (connected 2026-10-24)
+- Connected via Wix with the integpro.com.au Google account; ownership verified (META).
+- Sitemaps: `sitemap-index.xml` (pages) and `sitemap-posts.xml` (blog posts, built from Wix at request time). Old Wix editor sitemaps (`sitemap-integpro.xml`, `pages-sitemap.xml`) 301 to `sitemap-index.xml`.
+- `site/public/robots.txt` replaces the Wix-generated one. Check after deploy that the live /robots.txt is ours.

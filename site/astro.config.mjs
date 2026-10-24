@@ -16,12 +16,19 @@ export default defineConfig({
   integrations: [
     wix(),
     react(),
-    sitemap({ customPages: dispPaths.map((p) => `https://www.integpro.com.au${p}`) }),
+    sitemap({
+      customPages: dispPaths.map((p) => `https://www.integpro.com.au${p}`),
+      // Match the canonical URLs in Base.astro, which drop the trailing slash (except on the home page).
+      serialize: (item) => ({ ...item, url: item.url.replace(/([^/])\/$/, '$1') }),
+    }),
   ],
   image: { domains: ['static.wixstatic.com'] },
   // Retired pages: keep old URLs working for visitors and search engines.
   redirects: {
     '/medical-iso': { status: 301, destination: '/iso-13485-medical-devices-quality-management-system' },
+    // Sitemap addresses left over from the old Wix editor site.
+    '/sitemap-integpro.xml': { status: 301, destination: '/sitemap-index.xml' },
+    '/pages-sitemap.xml': { status: 301, destination: '/sitemap-index.xml' },
   },
   security: { checkOrigin: false },
   devToolbar: { enabled: false },
