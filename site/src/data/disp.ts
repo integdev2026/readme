@@ -5,6 +5,9 @@
 
 export interface Crumb { label: string; href: string }
 
+// Photos come from the site's Wix Media library, resized by Wix's image service.
+export const wixImage = (id: string, w = 960, h = 720) => `https://static.wixstatic.com/media/${id}/v1/fill/w_${w},h_${h},al_c,q_80/${id.replace(/~mv2.*/, '')}.webp`;
+
 // Icon names from src/components/Icon.astro.
 export type IconName = 'shield' | 'shieldCheck' | 'lock' | 'factory' | 'gear' | 'helmet' | 'server' | 'user' | 'briefcase' | 'laptop' | 'search' | 'list' | 'wrench' | 'users' | 'send' | 'refresh' | 'check';
 
@@ -139,11 +142,13 @@ export interface Topic {
   points: { title: string; text: string }[];
   level: string;
   icon: IconName;
+  image?: { src: string; alt: string };
 }
 
 export const industries: Topic[] = [
   {
     slug: 'manufacturing',
+    image: { src: wixImage('6d9105_8f8caa02509e4d91a5ff0f61f3b5d783~mv2.png'), alt: 'Modern factory floor with production lines and staff at work' },
     icon: 'factory',
     label: 'Manufacturing',
     title: 'DISP for Manufacturers | integPRO',
@@ -159,6 +164,7 @@ export const industries: Topic[] = [
   },
   {
     slug: 'engineering',
+    image: { src: wixImage('6d9105_c2b4253cf77346b7b0d8a5140d7ec8c3~mv2.png'), alt: 'Engineer marking up technical drawings' },
     icon: 'gear',
     label: 'Engineering',
     title: 'DISP for Engineering Firms | integPRO',
@@ -174,6 +180,7 @@ export const industries: Topic[] = [
   },
   {
     slug: 'construction',
+    image: { src: wixImage('6d9105_88bb689011dc44e49dcc6f42a2a0ba71~mv2.png'), alt: 'Site supervisor in high-visibility gear on a construction site with a crane' },
     icon: 'helmet',
     label: 'Construction',
     title: 'DISP for Construction & Facilities | integPRO',

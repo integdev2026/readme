@@ -23,7 +23,12 @@ const others = levels.filter((l) => l.slug !== page.slug);
 <DispShell title={page.title} description={page.description} crumbs={crumbs(parent, { label: page.label, href: `/disp/${page.slug}` })}>
   <PageHero title={page.heroTitle} text={page.heroText} actions={[dispCta]}>
     {topic && (
-      <div slot="media" class="topic-badge"><Icon name={topic.icon} size={72} /></div>
+      <div slot="media" class="topic-media">
+        {topic.image
+          ? <img src={topic.image.src} alt={topic.image.alt} width="960" height="720" fetchpriority="high" />
+          : <div class="topic-badge"><Icon name={topic.icon} size={72} /></div>}
+        {topic.image && <span class="badge"><Icon name={topic.icon} size={30} /></span>}
+      </div>
     )}
     {level && (
       <dl slot="media" class="class-card"><dt>Information access</dt><dd>{level.classification}</dd><dt>Typical timeline</dt><dd>{level.timeline}</dd></dl>
@@ -77,6 +82,9 @@ const others = levels.filter((l) => l.slug !== page.slug);
   .class-card dt + dd + dt { margin-top: 20px; }
   .class-card dd { margin: 8px 0 0; font-family: var(--font-heading); font-weight: 700; font-size: 26px; color: var(--gold); }
 
+  .topic-media { position: relative; }
+  .topic-media img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-card); }
+  .badge { position: absolute; left: -18px; bottom: -18px; display: grid; place-items: center; width: 68px; height: 68px; border-radius: 18px; background: var(--gold-gradient); color: #fff; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); }
   .topic-badge { display: grid; place-items: center; aspect-ratio: 4 / 3; border-radius: var(--radius-card); background: var(--gold-gradient); color: #fff; }
   .detail { background: var(--bg-faq); }
   .two-col { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; }
@@ -98,5 +106,6 @@ const others = levels.filter((l) => l.slug !== page.slug);
   .rel-title { text-align: center; font-size: 32px; margin-bottom: 32px; }
   @media (max-width: 860px) {
     .two-col, .point-grid { grid-template-columns: 1fr; }
+    .badge { left: 12px; bottom: -22px; width: 56px; height: 56px; }
   }
 </style>
