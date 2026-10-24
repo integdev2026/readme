@@ -42,7 +42,7 @@ const isoPackages = [
   <section class="section iso" id="servicepackages">
     <div class="container">
       <SectionHead title="Complete ISO Implementation" sub="Structured, transparent service delivery with clear deliverables, timelines, and outcomes." />
-      <div class="iso-grid">
+      <div class="iso-grid swipe">
         {isoPackages.map((p) => (
           <article class:list={['iso-card', { wide: p.wide }]}>
             <header>
@@ -102,5 +102,7 @@ const isoPackages = [
   }
   @media (max-width: 760px) {
     .iso-card, .iso-card.wide { padding: 24px 20px; }
+    .dots, .get { font-size: 15px; }
+    .outcome { font-size: 14px; line-height: 1.45; }
   }
 </style>

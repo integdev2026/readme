@@ -86,7 +86,7 @@ const reasons = [
       <div class="section-head">
         <h2>Why <span class="gold">DISP</span> Membership?</h2>
       </div>
-      <div class="card-grid">
+      <div class="card-grid swipe">
         {reasons.map((r) => (
           <article class="card reason">
             <img src={img(r.icon)} alt="" width="48" height="48" loading="lazy" />
@@ -137,5 +137,9 @@ const reasons = [
     .eligibility p { max-width: none; }
     .card-grid { grid-template-columns: 1fr; }
   }
-  @media (max-width: 760px) { .eligibility h2 { font-size: 30px; } }
+  @media (max-width: 760px) {
+    .eligibility h2 { font-size: 30px; }
+    .mini p { font-size: 14px; }
+    .reason p { font-size: 15px; }
+  }
 </style>

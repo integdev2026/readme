@@ -31,6 +31,14 @@ const isActive = (href: string, i: number) => (i === 0 ? path === href : path.st
   </div>
 </div>
 
+<script>
+  // Keep the current page's pill in view when the section menu scrolls sideways on phones.
+  for (const list of document.querySelectorAll<HTMLElement>('.subnav')) {
+    const active = list.querySelector<HTMLElement>('a.active');
+    if (active && list.scrollWidth > list.clientWidth) list.scrollLeft = active.offsetLeft - (list.clientWidth - active.offsetWidth) / 2;
+  }
+</script>
+
 <style>
   .section-bar { border-bottom: 1px solid var(--line); background: var(--bg-soft); }
   .bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; padding: 10px 0; }
@@ -41,4 +49,12 @@ const isActive = (href: string, i: number) => (i === 0 ? path === href : path.st
   .subnav { gap: 4px; }
   .subnav a { display: inline-block; padding: 4px 12px; border-radius: 999px; font-family: var(--font-heading); }
   .subnav a:hover, .subnav a.active { background: var(--gold-light); color: var(--ink); }
+  @media (max-width: 760px) {
+    .bar { flex-direction: column; flex-wrap: nowrap; align-items: stretch; gap: 6px; padding: 8px 0 0; }
+    nav { min-width: 0; }
+    nav:last-child { margin-inline: -16px; }
+    .subnav { flex-wrap: nowrap; overflow-x: auto; padding: 2px 16px 10px; scrollbar-width: none; }
+    .subnav::-webkit-scrollbar { display: none; }
+    .subnav a { white-space: nowrap; padding: 10px 14px; font-size: 14px; background: #fff; border: 1px solid var(--line); }
+  }
 </style>
