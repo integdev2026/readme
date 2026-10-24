@@ -6,6 +6,7 @@ export const isoNav = [
   { label: 'ISO 45001', href: '/iso-45001-occupational-health-safety' },
   { label: 'ISO 27001', href: '/iso-27001-information-security-management-system' },
   { label: 'ISO 13485', href: '/iso-13485-medical-devices-quality-management-system' },
+  { label: 'Industries', href: '/industries' },
 ];
 
 export const nav = [
@@ -20,6 +21,7 @@ export const nav = [
       { label: 'ISO 45001 Health & Safety', href: '/iso-45001-occupational-health-safety' },
       { label: 'ISO 27001 Information Security', href: '/iso-27001-information-security-management-system' },
       { label: 'ISO 13485 Medical Devices', href: '/iso-13485-medical-devices-quality-management-system' },
+      { label: 'ISO by Industry', href: '/industries' },
     ],
   },
   {
@@ -33,7 +35,6 @@ export const nav = [
       { label: 'DISP FAQ', href: '/disp/faq' },
     ],
   },
-  { label: 'Industries', href: '/industries' },
   {
     label: 'About Us',
     href: '/about-us-iso-team',
@@ -62,8 +63,7 @@ export const footerColumns = [
     links: [
       { label: 'Academy', href: '/blog/categories/iso-certification' },
       { label: 'Blog', href: '/blog' },
-      { label: 'Case Studies', href: '/industries' },
-      { label: 'Industries', href: '/industries' },
+      { label: 'ISO by Industry', href: '/industries' },
     ],
   },
   {

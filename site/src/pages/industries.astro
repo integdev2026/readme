@@ -4,24 +4,26 @@ import ContactBand from '../components/ContactBand.astro';
 import CenterHero from '../components/iso-service-australia/CenterHero.astro';
 import ProcessSteps from '../components/iso-service-australia/ProcessSteps.astro';
 import Faq from '../components/iso-service-australia/Faq.astro';
+import IsoBar from '../components/iso-service-australia/IsoBar.astro';
 import { company } from '../data/site';
 
 const img = (id: string) => `/images/industries/icon-${id}.webp`;
 
-// Grid order matches the live page (row by row).
+// ISO by industry. DISP has its own industry pages (/disp/industries); this page links there instead
+// of covering DISP, so the two don't compete. Each card goes to the most relevant ISO page.
 const industries = [
-  { icon: '62a189', title: 'Defence & DISP', text: 'DISP compliance for defense contractors', href: '/disp' },
-  { icon: '9b9169', title: 'Construction', text: 'Quality, safety & environmental compliance', href: '/iso-service-australia' },
-  { icon: '41e2bc', title: 'Medical Devices', text: 'TGA compliance & ISO 13485 certification', href: '/iso-13485-medical-devices-quality-management-system' },
-  { icon: '14b95a', title: 'Government & Public', text: 'Compliance audits & governance frameworks', href: '/free-consultation' },
-  { icon: '0f67ec', title: 'Manufacturing', text: 'Quality, safety & environmental compliance', href: '/free-consultation' },
-  { icon: 'f7591b', title: 'Information & ICT', text: 'Cyber security & ISO 27001 compliance', href: '/free-consultation' },
+  { icon: '9b9169', title: 'Construction', text: 'Safety, quality & environmental systems (ISO 45001, 9001, 14001)', href: '/iso-45001-occupational-health-safety', link: 'ISO 45001' },
+  { icon: '0f67ec', title: 'Manufacturing', text: 'Quality management and process control (ISO 9001)', href: '/iso-9001-compliance-certification-sydney', link: 'ISO 9001' },
+  { icon: '41e2bc', title: 'Medical Devices', text: 'TGA compliance & ISO 13485 certification', href: '/iso-13485-medical-devices-quality-management-system', link: 'ISO 13485' },
+  { icon: 'f7591b', title: 'Information & ICT', text: 'Information security management (ISO 27001)', href: '/iso-27001-information-security-management-system', link: 'ISO 27001' },
+  { icon: '334a55', title: 'Environment & Energy', text: 'Environmental management and compliance (ISO 14001)', href: '/iso-14001-compliance-certification', link: 'ISO 14001' },
+  { icon: '14b95a', title: 'Government & Public', text: 'Compliance audits & governance frameworks', href: '/iso-service-australia', link: 'ISO services' },
 ];
 
 // Case studies: client names are placeholders (company policy). Real names/logos will come from Wix CMS.
 const results = [
-  { name: 'Medical device client', sector: 'Medical Devices', value: '100%', sub: 'Expert EQMS implementation', text: 'Ensuring full compliance with ISO 13485, ISO 9001, and medical-device regulatory requirements. Streamlined processes, risk management integration, and end-to-end quality system deployment.' },
-  { name: 'Construction client', sector: 'Construction', value: 'Fully Implemented', sub: '100% achieved', text: 'Professional ISO consultation covering ISO 9001, ISO 14001, ISO 45001 and other relevant standards for the building sector. Full implementation, documentation, and compliance support.' },
+  { name: 'Medical device client', sector: 'Medical Devices', value: 'EQMS', sub: 'Electronic QMS implemented', text: 'Ensuring full compliance with ISO 13485, ISO 9001, and medical-device regulatory requirements. Streamlined processes, risk management integration, and end-to-end quality system deployment.' },
+  { name: 'Construction client', sector: 'Construction', value: 'IMS', sub: 'ISO 9001, 14001 & 45001 implemented', text: 'Professional ISO consultation covering ISO 9001, ISO 14001, ISO 45001 and other relevant standards for the building sector. Full implementation, documentation, and compliance support.' },
   { name: 'Government client', sector: 'Community', value: 'Quality Audit', sub: 'Comprehensive audit delivered', text: 'Comprehensive quality audit delivered for a state government agency, ensuring compliance with sector requirements, evaluating system performance, and providing clear recommendations.' },
 ];
 
@@ -34,21 +36,21 @@ const faqs = [
 ];
 ---
 <Base
-  title="Industries | Integpro"
-  description="Discover IntegPRO's compliance solutions for renewable energy standards, ensuring efficiency and standards adherence."
+  title="ISO Certification by Industry | Construction, Manufacturing, Medical, ICT | integPRO"
+  description="ISO certification for Australian construction, manufacturing, medical device, ICT, environmental and government organisations: ISO 9001, 14001, 45001, 27001 and 13485."
 >
+  <IsoBar />
   <CenterHero
-    title='<span class="gold">Industries</span> We Serve'
-    text="Tailored ISO & DISP solutions for Defence, Construction, Medical Devices, Government, and Manufacturing."
+    title='ISO Solutions by <span class="gold">Industry</span>'
+    text="ISO certification tailored to construction, manufacturing, medical devices, ICT, environment and government."
     actions={[{ label: 'Free Gap Assessment', href: '/free-consultation' }, { label: 'View Services', href: '/services', primary: false }]}
-    stats={[{ value: '1,000+', label: 'Projects' }, { value: '7+', label: 'Years' }, { value: '100%', label: 'Success' }]}
   />
 
   <section class="section solutions">
     <div class="container">
       <div class="section-head">
         <h2>Specialised <span class="gold">Industry Solutions</span></h2>
-        <p class="wide">Click any industry to see tailored compliance solutions, deliverables, and timelines</p>
+        <p class="wide">Choose your industry to see the ISO standard that fits it best.</p>
       </div>
       <div class="card-grid">
         {industries.map((it) => (
@@ -56,10 +58,11 @@ const faqs = [
             <img src={img(it.icon)} alt="" width="48" height="48" loading="lazy" />
             <h3>{it.title}</h3>
             <p>{it.text}</p>
-            <a href={it.href} class="btn btn-outline learn">Learn More</a>
+            <a href={it.href} class="btn btn-outline learn">{it.link} ›</a>
           </article>
         ))}
       </div>
+      <p class="disp-link">Working with Defence? <a href="/disp/industries">See DISP by industry ›</a></p>
     </div>
   </section>
 
@@ -97,6 +100,8 @@ const faqs = [
 
 <style>
   .section-head .wide { max-width: 680px; }
+  .disp-link { margin: 28px 0 0; text-align: center; font-size: 15px; }
+  .disp-link a { color: var(--gold); font-weight: 700; }
   .section-head h2 { font-weight: 400; }
   .results .section-head h2 { font-weight: 700; }
 
