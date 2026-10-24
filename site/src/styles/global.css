@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5 { font-family: var(--font-heading); font-weight: 700; color: 
   /* Comfortable tap targets. */
   .btn { min-height: 44px; font-size: 15px; letter-spacing: 1px; }
   /* Sideways-swipe card rows on phones (add .swipe to a grid). */
-  .swipe { display: flex !important; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px; margin-inline: -16px; padding-inline: 16px; scrollbar-width: none; }
+  .swipe { display: flex !important; align-items: flex-start; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px; margin-inline: -16px; padding-inline: 16px; scrollbar-width: none; }
   .swipe::-webkit-scrollbar { display: none; }
   .swipe > * { flex: 0 0 85%; scroll-snap-align: center; }
 }

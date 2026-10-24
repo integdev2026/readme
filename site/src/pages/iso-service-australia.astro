@@ -217,4 +217,8 @@ const faqs = [
     .card-grid { grid-template-columns: 1fr; }
     .benefits, .why { padding-top: 56px; }
   }
+  /* Phones: trim the empty space at the bottom of cards. */
+  @media (max-width: 760px) {
+    .benefit { padding: 24px 22px 26px; }
+  }
 </style>

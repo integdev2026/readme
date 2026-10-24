@@ -142,4 +142,9 @@ const reasons = [
     .mini p { font-size: 14px; }
     .reason p { font-size: 15px; }
   }
+  /* Phones: trim the empty space at the bottom of cards. */
+  @media (max-width: 760px) {
+    .reason { padding: 24px 22px 26px; }
+    .mini { padding: 24px 14px 22px; gap: 12px; }
+  }
 </style>

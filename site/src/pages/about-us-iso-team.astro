@@ -245,4 +245,10 @@ const certs = [
     .tl-wrap :global(.timeline::before) { left: 10px; }
     .tl-wrap :global(.timeline .l::after), .tl-wrap :global(.timeline .r::after) { left: 0; right: auto; }
   }
+  /* Phones: trim the empty space at the bottom of cards. */
+  @media (max-width: 760px) {
+    .feature { padding: 24px 22px 26px; }
+    .card-grid { align-items: start; }
+    .mission, .today { padding: 26px 22px; }
+  }
 </style>
