@@ -86,7 +86,7 @@ export const levels: Level[] = [
     classification: 'PROTECTED',
     timeline: '6–8 months',
     title: 'Level 1 DISP Membership Consultants | integPRO',
-    description: 'Level 1 DISP support for businesses handling PROTECTED information: expanded gap analysis, cyber controls, physical security and clearance sponsorship readiness.',
+    description: 'Level 1 DISP support for businesses handling PROTECTED information: expanded gap analysis, cyber controls, physical security and clearance sponsorship.',
     heroTitle: 'Level 1 <span class="gold">DISP Membership</span>',
     heroText: 'Level 1 builds on Entry Level with a larger scope across all four DISP categories. We assess your risk profile first, then scope the work.',
     fit: [
@@ -152,7 +152,7 @@ export const industries: Topic[] = [
     icon: 'factory',
     label: 'Manufacturing',
     title: 'DISP for Manufacturers | integPRO',
-    description: 'DISP membership for Australian manufacturers supplying Defence primes: protecting drawings and specifications, securing the shop floor and meeting prime requirements.',
+    description: 'DISP membership for Australian manufacturers supplying Defence primes: protecting drawings and specifications and securing the shop floor and systems.',
     heroTitle: 'DISP for <span class="gold">Manufacturers</span>',
     heroText: 'Manufacturers often hold Defence drawings, specifications and part data. DISP shows primes that this information is protected on the shop floor and in your systems.',
     points: [
@@ -217,7 +217,7 @@ export const roles: Topic[] = [
     icon: 'user',
     label: 'Security Officers',
     title: 'DISP Security Officer & CSO Support | integPRO',
-    description: 'Support for DISP Security Officers and Chief Security Officers: understanding the role, setting up the security program and meeting ongoing reporting obligations.',
+    description: 'Support for DISP Security Officers and Chief Security Officers: understanding the role, running the security program and meeting reporting obligations.',
     heroTitle: 'Support for <span class="gold">Security Officers & CSOs</span>',
     heroText: 'DISP membership needs a nominated Chief Security Officer (CSO) and Security Officer (SO). We help them understand the role and run the program.',
     points: [
