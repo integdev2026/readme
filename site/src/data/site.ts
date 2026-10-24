@@ -35,8 +35,8 @@ export const footerColumns = [
   {
     title: 'Services',
     links: [
-      { label: 'What we do', href: '/iso-disp-services' },
       { label: 'ISO', href: '/iso-service-australia' },
+      { label: 'DISP', href: '/disp' },
     ],
   },
   {
@@ -51,10 +51,8 @@ export const footerColumns = [
   {
     title: 'Company',
     links: [
-      { label: 'Services', href: '/iso-disp-services' },
       { label: 'About', href: '/about-us-iso-team' },
       { label: 'Contact', href: '/free-consultation' },
-      { label: 'DISP', href: '/disp' },
     ],
   },
 ];

@@ -9,7 +9,7 @@ Decisions parked for later. Ask the owner before go-live.
 - Home testimonials: in CMS collection `Testimonials` (fields `title` reviewer, `role`, `quote`, `client`, `logo`, `order`). Reviewer names approved by owner (2026-10-05). Still needed: which client each testimonial belongs to, to fill `client` and `logo`.
 
 ## Facts to confirm
-- Founding year: "Since 1998" vs "Since 2019" vs "25+ years".
+- Founding year: owner confirmed 2019 (2026-10-24); "Since 1998" removed from the home page.
 - Client count: "72 Unique Customers" vs "122+ Successful Clients".
 - Stats: "5+ Years / 200+ Projects" (ISO, DISP) vs "7+ Years / 1,000+ Projects" (Industries).
 - /iso-service-australia FAQ contains the ISO 13485 question set.
@@ -38,3 +38,8 @@ Decisions parked for later. Ask the owner before go-live.
 - Connected via Wix with the integpro.com.au Google account; ownership verified (META).
 - Sitemaps: `sitemap-index.xml` (pages) and `sitemap-posts.xml` (blog posts, built from Wix at request time). Old Wix editor sitemaps (`sitemap-integpro.xml`, `pages-sitemap.xml`) 301 to `sitemap-index.xml`.
 - `site/public/robots.txt` replaces the Wix-generated one. Check after deploy that the live /robots.txt is ours.
+
+## Blog clean-up (2026-10-24)
+- Duplicate posts redirected (see `site/src/data/retired-posts.ts`); they can also be deleted in the Wix blog dashboard.
+- Rename in Wix: "specialised-industry-solutions-for-iso-and-disp-compliance" shares its title with another post. Suggested: "Specialised Industry Solutions for ISO and DISP Compliance".
+- DISP posts now show a box linking to the /disp pages.

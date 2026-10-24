@@ -1,6 +1,7 @@
 // Build-time access to Wix Headless data (blog) using an anonymous visitor token.
 // Docs: https://dev.wix.com/docs/go-headless/authentication/visitors/authenticate-visitors-rest
 import config from '../../wix.config.json';
+import { retiredPosts } from '../data/retired-posts';
 
 const API = 'https://www.wixapis.com';
 
@@ -67,7 +68,9 @@ export function getPosts(): Promise<Post[]> {
       all.push(...(page.posts ?? []));
       if ((page.posts ?? []).length < 100) break;
     }
-    return all.sort((a, b) => b.firstPublishedDate.localeCompare(a.firstPublishedDate));
+    return all
+      .filter((p) => !(p.slug in retiredPosts))
+      .sort((a, b) => b.firstPublishedDate.localeCompare(a.firstPublishedDate));
   });
 }
 

@@ -30,6 +30,7 @@ export interface Level {
   label: string;
   short: string;
   classification: string;
+  timeline: string;
   title: string;
   description: string;
   heroTitle: string;
@@ -45,6 +46,7 @@ export const levels: Level[] = [
     label: 'Entry Level',
     short: 'The starting point for most businesses in the Defence supply chain.',
     classification: 'OFFICIAL: Sensitive',
+    timeline: '3–6 months',
     title: 'Entry Level DISP Membership Consultants | integPRO',
     description: 'Get ready for Entry Level DISP membership: Security Officer set-up, gap analysis, security policies, cyber controls and application support from integPRO.',
     heroTitle: 'Entry Level <span class="gold">DISP Membership</span>',
@@ -73,6 +75,7 @@ export const levels: Level[] = [
     label: 'Level 1',
     short: 'For businesses that handle PROTECTED information or sponsor clearances.',
     classification: 'PROTECTED',
+    timeline: '6–8 months',
     title: 'Level 1 DISP Membership Consultants | integPRO',
     description: 'Level 1 DISP support for businesses handling PROTECTED information: expanded gap analysis, cyber controls, physical security and clearance sponsorship readiness.',
     heroTitle: 'Level 1 <span class="gold">DISP Membership</span>',
@@ -99,6 +102,7 @@ export const levels: Level[] = [
     label: 'Levels 2 & 3',
     short: 'Custom programs for businesses handling SECRET or TOP SECRET information.',
     classification: 'SECRET / TOP SECRET',
+    timeline: '12 months +',
     title: 'Level 2 & Level 3 DISP Consultants | integPRO',
     description: 'Custom DISP programs for Level 2 (SECRET) and Level 3 (TOP SECRET) membership, including site inspection readiness and higher-assurance security controls.',
     heroTitle: 'Level 2 & 3 <span class="gold">DISP Membership</span>',
@@ -254,7 +258,7 @@ export const faq = [
   { q: 'Who needs DISP membership?', a: 'Businesses whose Defence contracts or prime contractors require it, businesses that handle classified Defence information, and businesses that need to store Defence weapons or explosive ordnance or sponsor security clearances.' },
   { q: 'Which DISP level do I need?', a: 'It depends on the information you handle. Entry Level covers up to OFFICIAL: Sensitive, Level 1 covers PROTECTED, Level 2 covers SECRET and Level 3 covers TOP SECRET. Most suppliers start with Entry Level.' },
   { q: 'Does DISP membership cost anything?', a: 'Defence does not charge a membership fee. The costs come from putting the required security measures in place and keeping them running.' },
-  { q: 'How long does it take?', a: 'It depends on your starting point and target level. Our typical timeline from gap analysis to submission is 4–6 months.\nDefence’s assessment time is set by Defence and is not part of that estimate.' },
+  { q: 'How long does it take?', a: 'It depends on your starting point and target level. Our typical timeline from gap analysis to submission is 3–6 months for Entry Level, 6–8 months for Level 1 and 12 months or more for Levels 2 and 3.\nDefence’s assessment time is set by Defence and is not part of that estimate.' },
   { q: 'What are the CSO and SO roles?', a: 'The Chief Security Officer (CSO) is a senior person accountable for security in your business. The Security Officer (SO) runs the security program day to day. Both are required for membership.' },
   { q: 'What is the Essential Eight and why does it matter for DISP?', a: 'The Essential Eight is a set of cyber security strategies published by the Australian Signals Directorate. DISP members must meet the Essential Eight requirements set for their membership level.' },
   { q: 'Does DISP membership guarantee Defence contracts?', a: 'No. Membership shows you meet Defence’s security requirements. It can be a condition of a contract or tender, but it does not guarantee one.' },

@@ -22,7 +22,7 @@ const others = levels.filter((l) => l.slug !== page.slug);
 <DispShell title={page.title} description={page.description} crumbs={crumbs(parent, { label: page.label, href: `/disp/${page.slug}` })}>
   <PageHero title={page.heroTitle} text={page.heroText} actions={[dispCta]}>
     {level && (
-      <dl slot="media" class="class-card"><dt>Information access</dt><dd>{level.classification}</dd></dl>
+      <dl slot="media" class="class-card"><dt>Information access</dt><dd>{level.classification}</dd><dt>Typical timeline</dt><dd>{level.timeline}</dd></dl>
     )}
   </PageHero>
 
@@ -69,6 +69,7 @@ const others = levels.filter((l) => l.slug !== page.slug);
 <style>
   .class-card { margin: 0; padding: 32px; background: var(--bg-faq); border-radius: var(--radius-card); text-align: center; }
   .class-card dt { font-size: 14px; color: var(--muted); }
+  .class-card dt + dd + dt { margin-top: 20px; }
   .class-card dd { margin: 8px 0 0; font-family: var(--font-heading); font-weight: 700; font-size: 26px; color: var(--gold); }
 
   .detail { background: var(--bg-faq); }

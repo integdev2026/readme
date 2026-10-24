@@ -1,0 +1,128 @@
+---
+// ISO service ecosystem, optional add-ons and the six-step certification journey (moved from the old /iso-disp-services page).
+import SectionHead from '../SectionHead.astro';
+
+const img = (n: string) => `/images/iso-disp-services/${n}.webp`;
+
+const ecosystem = [
+  { icon: 'icon-document', title: 'Gap Analysis & Auditing', text: 'Identify compliance gaps before certification', items: ['Current state assessment', 'Gap identification', 'Action plan development', 'Pre-audit simulation'] },
+  { icon: 'icon-checkbox', title: 'Documentation Services', text: 'Professional policy and procedure development', items: ['Manuals & policies', 'Work instructions', 'Forms & templates', 'Process maps'] },
+  { icon: 'icon-book', title: 'Training Academy', text: 'Build internal capability and expertise', items: ['Internal auditor courses', 'Lead auditor programs', 'Management training', 'Custom workshops'] },
+  { icon: 'icon-book', title: 'One System Management', text: 'Combine multiple standards efficiently', items: ['ISO Standards', 'Unified documentation', 'Reduced audit burden', 'Cost optimization'] },
+  { icon: 'icon-book', title: 'Enterprise Quality Management Software (EQMS)', text: 'Digitise and automate your management systems', items: ['Centralised Digital Hub', 'Automated Workflows & CAPA', 'Real-time Analytics & Dashboards', 'Continuous Audit Readiness'], wide: true },
+];
+
+const addOns = ['Extra Consulting Hours', 'Annual surveillance support', 'Maintenance', 'Learning Management System'];
+
+const journey = [
+  { n: 1, time: '1-2 weeks', icon: 'icon-search', kicker: 'Comprehensive assessment', title: 'Gap Analysis & Scoping', outcome: 'A clear, strategic roadmap for the certification journey.' },
+  { n: 2, time: '4-8 weeks', icon: 'icon-document', kicker: 'Creating the foundational paperwork', title: 'Documentation Development', outcome: 'A complete, standard-compliant documentation suite.' },
+  { n: 3, time: '6-12 weeks', icon: 'icon-checkbox', kicker: 'The team is trained on the updated processes', title: 'Implementation & Training', outcome: 'An operational management system integrated into daily workflows.' },
+  { n: 4, time: '2-4 weeks', icon: 'icon-shield', kicker: 'verification step', title: 'Internal Audits & Management Review', outcome: 'Validated system performance ready for external review.' },
+  { n: 5, time: '2-4 weeks', icon: 'icon-award', kicker: 'Stage 1 and Stage 2 verification audits', title: 'Certification Audit', outcome: 'Certification achieved.' },
+  { n: 6, time: 'Ongoing', icon: 'icon-team', kicker: 'An indefinite commitment to maintain compliance', title: 'Ongoing Support', outcome: 'Sustained certification and continuous process refinement.' },
+];
+---
+<div class="eco-wrap">
+  <section class="section eco">
+    <div class="container">
+      <SectionHead title="Complete Service Ecosystem" sub="Additional services to support your management system journey" />
+      <div class="eco-grid">
+        {ecosystem.map((e) => (
+          <article class:list={['eco-card', { wide: e.wide }]}>
+            <img src={img(e.icon)} alt="" width="42" height="42" loading="lazy" />
+            <h3>{e.title}</h3>
+            <p>{e.text}</p>
+            <ol>{e.items.map((i, n) => <li>{n + 1}.{i}</li>)}</ol>
+          </article>
+        ))}
+      </div>
+
+      <h2 class="sub-title">Optional Add-on</h2>
+      <ul class="addons">{addOns.map((a) => <li>{a}</li>)}</ul>
+
+      <div id="gapassessment" class="journey-head">
+        <SectionHead title="Six-Step Certification Journey" sub="A proven, structured approach with clear milestones, deliverables, and outcomes at every stage" />
+      </div>
+      <ol class="journey">
+        {journey.map((j) => (
+          <li style={`--row: ${j.n}`} class={j.n % 2 ? 'l' : 'r'}>
+            <div class="step">
+              <div class="step-top"><span class="num">{j.n}</span><span class="time">{j.time}</span></div>
+              <div class="step-title">
+                <img src={img(j.icon)} alt="" width="43" height="43" loading="lazy" />
+                <div><small>{j.kicker}</small><h3>{j.title}</h3></div>
+              </div>
+              <p class="tick">{j.outcome}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+</div>
+
+<style>
+  .eco-wrap :global(.section-head) { max-width: none; }
+  .eco-wrap :global(.section-head h2) { font-weight: 400; }
+  .tick { position: relative; padding-left: 20px; }
+  .tick::before { content: ''; position: absolute; left: 0; top: 0.2em; width: 13px; height: 13px; background: url('/images/iso-disp-services/tick.webp') center / contain no-repeat; }
+  /* Ecosystem */
+  .eco-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+  .eco-card { display: flex; flex-direction: column; align-items: center; padding: 30px 14px 32px; background: #fff; border-radius: 12px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07); text-align: center; }
+  .eco-card.wide { grid-column: 1 / -1; }
+  .eco-card img { width: 42px; height: 42px; border-radius: 6px; }
+  .eco-card h3 { margin-top: 18px; font-family: var(--font-body); font-size: 16px; line-height: 22.4px; color: var(--text); }
+  .eco-card p { margin: 12px 0 0; font-size: 16px; line-height: 22.4px; max-width: 200px; }
+  .eco-card.wide p { max-width: none; }
+  .eco-card ol { list-style: none; margin: 26px 0 0; padding: 0; text-align: left; font-size: 16px; line-height: 22.4px; }
+  .eco-card.wide ol { text-align: center; margin-top: 10px; }
+
+  .sub-title { margin: 90px 0 18px; text-align: center; font-weight: 400; font-size: 40px; line-height: 48px; }
+  .addons { list-style: none; margin: 0 auto; padding: 0; max-width: 894px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 30px; }
+  .addons li { display: grid; place-items: center; min-height: 80px; padding: 8px 16px; background: #dccea2; border-radius: 12px; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05); font-weight: 700; font-size: 16px; text-align: center; color: var(--text); }
+
+  /* Journey */
+  .journey-head { margin-top: 90px; scroll-margin-top: 20px; }
+  .journey-head :global(.section-head) { max-width: none; margin-bottom: 80px; }
+  .journey { position: relative; list-style: none; margin: 0 auto; padding: 0; max-width: 914px; display: grid; grid-template-columns: 1fr 1fr; column-gap: 54px; }
+  .journey li:not(:last-child)::before { content: ''; position: absolute; top: 12px; bottom: -12px; width: 4px; background: var(--gold); }
+  .journey li.l::before { right: -29px; }
+  .journey li.r::before { left: -29px; }
+  .journey li { position: relative; grid-row: var(--row); }
+  .journey li.l { grid-column: 1; }
+  .journey li.r { grid-column: 2; }
+  .journey li::after { z-index: 1; content: ''; position: absolute; top: 2px; width: 16px; height: 16px; border-radius: 50%; background: var(--gold-light); border: 3px solid var(--gold); }
+  .journey li.l::after { right: -35px; }
+  .journey li.r::after { left: -35px; }
+  .step { display: flex; flex-direction: column; height: calc(100% - 0px); min-height: 225px; padding: 24px 34px 32px 30px; background: #fafafa; border-radius: 12px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+  .step-top { display: flex; justify-content: space-between; align-items: baseline; }
+  .num { font-size: 24px; line-height: 1; color: var(--gold); }
+  .time { font-size: 14px; }
+  .step-title { display: flex; gap: 10px; align-items: flex-start; margin-top: 6px; padding-bottom: 24px; }
+  .step-title img { width: 43px; height: 43px; border-radius: 6px; flex: none; }
+  .step-title small { display: block; font-size: 12px; line-height: 16.8px; color: #000; margin-top: 2px; }
+  .step-title h3 { font-family: var(--font-body); font-weight: 400; font-size: 18px; line-height: 25.2px; color: var(--gold); }
+  .step .tick { display: flex; gap: 4px; align-items: flex-start; margin: 0 0 0 52px; padding-top: 22px; padding-left: 0; border-top: 1px solid #d9d9d9; font-size: 16px; line-height: 22.4px; color: #000; }
+  .step .tick::before { position: static; flex: none; margin-top: 4px; }
+
+  @media (max-width: 1000px) {
+    .eco-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 860px) {
+    .addons { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .journey { grid-template-columns: minmax(0, 1fr); padding-left: 32px; }
+    .journey li.l::before, .journey li.r::before { left: -26px; right: auto; bottom: -36px; }
+    .journey li, .journey li.l, .journey li.r { grid-column: 1; grid-row: auto; margin-bottom: 24px; }
+    .journey li.l::after, .journey li.r::after { left: -32px; right: auto; }
+    .step { min-height: 0; }
+  }
+  @media (max-width: 760px) {
+    .sub-title { font-size: 28px; line-height: 36px; margin-top: 64px; }
+    .journey-head { margin-top: 64px; }
+    .journey-head :global(.section-head) { margin-bottom: 40px; }
+    .eco-grid, .addons { grid-template-columns: minmax(0, 1fr); }
+    .step { padding: 20px; }
+    .step .tick { margin-left: 0; }
+  }
+</style>

@@ -12,6 +12,8 @@ if (!post) return new Response('Not found', { status: 404 });
 const recent = posts.filter((p) => p.id !== post.id).slice(0, 3);
 const postCats = categories.filter((c) => post.categoryIds?.includes(c.id));
 const html = ricosToHtml(post.richContent);
+// DISP posts point readers to the DISP service pages.
+const isDisp = postCats.some((c) => c.slug.includes('disp')) || /\bDISP\b/.test(post.title);
 const pageUrl = new URL(`/post/${post.slug}`, Astro.site).href;
 const schema = {
   '@context': 'https://schema.org',
@@ -38,6 +40,18 @@ const share = [
     <p class="meta">{formatDate(post.firstPublishedDate)} · {post.minutesToRead} min read</p>
     <h1>{post.title}</h1>
     <div class="content" set:html={html} />
+    {isDisp && (
+      <aside class="disp-links">
+        <h2>DISP membership with integPRO</h2>
+        <ul>
+          <li><a href="/disp/levels">Compare DISP levels</a></li>
+          <li><a href="/disp/entry-level">Entry Level DISP</a></li>
+          <li><a href="/disp/process">Our DISP process</a></li>
+          <li><a href="/disp/faq">DISP FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary" href="/disp">Explore DISP services</a>
+      </aside>
+    )}
     {postCats.length > 0 && (
       <p class="tags">{postCats.map((c) => <a href={`/blog/categories/${c.slug}`}>{c.label}</a>)}</p>
     )}
@@ -71,6 +85,10 @@ const share = [
   .content :global(.table-wrap) { overflow-x: auto; }
   .content :global(table) { border-collapse: collapse; width: 100%; font-size: 14px; }
   .content :global(td) { border: 1px solid var(--line); padding: 6px 10px; vertical-align: top; }
+  .disp-links { margin: 32px 0 0; padding: 24px 28px; background: var(--bg-faq); border-radius: 16px; }
+  .disp-links h2 { font-size: 20px; margin-bottom: 12px; }
+  .disp-links ul { margin: 0 0 18px; padding-left: 20px; display: grid; gap: 6px; }
+  .disp-links ul a { color: var(--gold); text-decoration: underline; }
   .tags { margin: 24px 0 0; display: flex; gap: 12px; font-size: 12px; }
   .tags a { text-decoration: underline; }
   .share { display: flex; gap: 16px; list-style: none; margin: 20px 0 0; padding: 16px 0 0; border-top: 1px solid var(--line); font-size: 13px; }
