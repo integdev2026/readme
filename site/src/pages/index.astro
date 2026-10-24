@@ -79,7 +79,7 @@ const faqSchema = {
             <a href="/free-consultation" class="btn btn-primary">Start Your Journey<Chevron /></a>
             <a href="/iso-service-australia" class="btn btn-outline">Explore Services</a>
           </div>
-          <img class="hero-ring-sm" src="/images/hero-ring.webp" alt="" width="104" height="104" aria-hidden="true" />
+          <img class="hero-ring-sm" src="/images/hero-ring.webp" alt="" width="132" height="132" aria-hidden="true" />
         </div>
         <dl class="stats">
           {stats.map((s) => <div><dt>{s.value}</dt><dd>{s.label}</dd></div>)}
@@ -264,7 +264,7 @@ const faqSchema = {
   .hero-ring-sm { display: none; }
   .hero-ring { width: 419px; margin-top: 6px; animation: spin 24s linear infinite; will-change: transform; }
   @keyframes spin { to { transform: rotate(360deg); } }
-  @media (prefers-reduced-motion: reduce) { .hero-ring { animation: none; } }
+  @media (prefers-reduced-motion: reduce) { .hero-ring, .hero-ring-sm { animation: none !important; } }
 
   .clients { margin-top: 70px; }
   .clients h2 { font-size: 20px; margin-bottom: 20px; }
@@ -366,15 +366,15 @@ const faqSchema = {
     .partner-mark { display: none; }
   }
   @media (max-width: 360px) {
-    .hero-ring-sm { width: 64px !important; height: 64px !important; }
+    .hero-ring-sm { width: 84px !important; height: 84px !important; }
     .hero-buttons .btn { padding: 0 18px; }
   }
   @media (max-width: 760px) {
-    /* Phones: the large ring is replaced by a small, still one beside the buttons. */
+    /* Phones: the large ring is replaced by a smaller one beside the buttons, spinning at the same speed. */
     .hero-ring { display: none; }
     .hero-actions { flex-wrap: nowrap; align-items: center; justify-content: space-between; gap: 12px; }
     .hero-buttons { flex-direction: column; align-items: flex-start; gap: 12px; }
-    .hero-ring-sm { display: block; flex: none; width: 104px; height: 104px; }
+    .hero-ring-sm { display: block; flex: none; width: 132px; height: 132px; animation: spin 24s linear infinite; will-change: transform; }
     .hero-buttons .btn { white-space: nowrap; }
     .hero { padding-top: 40px; }
     .hero h1 { font-size: 30px; line-height: 38px; padding: 0; }
