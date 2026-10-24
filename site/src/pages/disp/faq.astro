@@ -1,0 +1,22 @@
+---
+import DispShell from '../../components/disp/DispShell.astro';
+import Faq from '../../components/iso-service-australia/Faq.astro';
+import { faq, crumbs } from '../../data/disp';
+---
+<DispShell
+  title="DISP FAQ | Cost, Timeline, Levels and Roles | integPRO"
+  description="Answers to common DISP questions: who needs membership, which level, cost, timeline, CSO and SO roles, the Essential Eight and ongoing obligations."
+  crumbs={crumbs({ label: 'FAQ', href: '/disp/faq' })}
+>
+  <section class="intro container">
+    <h1>DISP <span class="gold">Questions</span></h1>
+    <p>Common questions about the Defence Industry Security Program and membership.</p>
+  </section>
+  <Faq items={faq} />
+</DispShell>
+
+<style>
+  .intro { padding: 64px 0 0; text-align: center; }
+  h1 { font-size: 44px; }
+  .intro p { margin: 10px 0 0; }
+</style>

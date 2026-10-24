@@ -1,0 +1,35 @@
+---
+import DispShell from '../../components/disp/DispShell.astro';
+import CenterHero from '../../components/iso-service-australia/CenterHero.astro';
+import { processSteps, dispCta, crumbs } from '../../data/disp';
+---
+<DispShell
+  title="Our DISP Process | Gap Analysis to Membership | integPRO"
+  description="How integPRO takes your business through DISP: gap analysis, action plan, implementation, governance, application and ongoing support. Typical timeline 4–6 months."
+  crumbs={crumbs({ label: 'Process', href: '/disp/process' })}
+>
+  <CenterHero
+    title='Our <span class="gold">DISP Process</span>'
+    text="Six steps from first assessment to ongoing membership. Typical timeline: 4–6 months, plus Defence’s assessment time."
+    actions={[dispCta]}
+  />
+  <section class="section steps-wrap">
+    <ol class="container steps">
+      {processSteps.map((s, i) => (
+        <li>
+          <span class="num">{i + 1}</span>
+          <div><h2>{s.title}</h2><p>{s.text}</p></div>
+        </li>
+      ))}
+    </ol>
+  </section>
+</DispShell>
+
+<style>
+  .steps-wrap { background: var(--bg-faq); }
+  .steps { list-style: none; margin: 0 auto; padding: 0; display: grid; gap: 14px; max-width: 760px; }
+  .steps li { display: flex; gap: 20px; align-items: flex-start; padding: 24px 28px; background: #fff; border-radius: 16px; }
+  .num { flex: none; width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; background: var(--gold-gradient); font-family: var(--font-heading); font-weight: 700; color: var(--ink); }
+  .steps h2 { font-size: 20px; }
+  .steps p { margin: 6px 0 0; font-size: 15px; line-height: 1.5; }
+</style>

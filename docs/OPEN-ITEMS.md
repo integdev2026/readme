@@ -23,3 +23,13 @@ Decisions parked for later. Ask the owner before go-live.
 - Contact forms replaced by the LeadConnector booking widget (iframe + form_embed.js): check privacy policy covers this third party and its cookies.
 - Blog post "What is ISO?" on the headless site: set category "ISO Certification" and first published date 2025-05-09.
 - Go-live: `noindex` removed (2026-10-05). Switch the integpro.com.au domain to the headless site in Wix.
+
+## DISP section (/disp and child pages)
+- Wording is integPRO's own and no longer shares copy with the DISP Co site (owner confirmed same ownership, 2026-10-24). Keep it unique; don't paste DISP Co text.
+- DISP pages carry no company stats (years, projects, success rate) and no prices, by owner decision. Add stats only once the "Facts to confirm" above are settled.
+- DISP and ISO are separate services: keep ISO standards off DISP pages and DISP terms off ISO pages.
+- Before go-live, check against the current Defence DISP pages: level-to-classification mapping (Entry = OFFICIAL: Sensitive, L1 = PROTECTED, L2 = SECRET, L3 = TOP SECRET), eligibility, CSO/SO roles, Essential Eight requirements by level, annual security report, "no membership fee", and who needs membership (FAQ).
+- "Typical timeline 4–6 months" is carried over from the old /disp page: confirm it still holds.
+- Not built yet: /disp/case-studies (needs client-approved cases) and /disp/guides (DISP blog category and articles).
+- Sitemap: the plugin lists fixed pages with a trailing slash, but canonicals have none (site-wide). Align one way.
+- Footer "Since 2019" is site-wide and still unconfirmed.

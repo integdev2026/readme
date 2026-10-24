@@ -1,0 +1,93 @@
+---
+// DISP detail pages: one per level, industry and role, generated from src/data/disp.ts.
+import DispShell from '../../components/disp/DispShell.astro';
+import LinkCards from '../../components/disp/LinkCards.astro';
+import PageHero from '../../components/PageHero.astro';
+import { levels, industries, roles, dispCta, crumbs, type Level, type Topic } from '../../data/disp';
+
+const { slug } = Astro.params;
+const level: Level | undefined = levels.find((p) => p.slug === slug);
+const industry = industries.find((p) => p.slug === slug);
+const role = roles.find((p) => p.slug === slug);
+const topic: Topic | undefined = industry ?? role;
+const page = level ?? topic;
+if (!page) return new Response(null, { status: 404 });
+const parent = level
+  ? { label: 'Levels', href: '/disp/levels' }
+  : industry
+    ? { label: 'Industries', href: '/disp/industries' }
+    : { label: 'Roles', href: '/disp/roles' };
+const others = levels.filter((l) => l.slug !== page.slug);
+---
+<DispShell title={page.title} description={page.description} crumbs={crumbs(parent, { label: page.label, href: `/disp/${page.slug}` })}>
+  <PageHero title={page.heroTitle} text={page.heroText} actions={[dispCta]}>
+    {level && (
+      <dl slot="media" class="class-card"><dt>Information access</dt><dd>{level.classification}</dd></dl>
+    )}
+  </PageHero>
+
+  {level && (
+    <section class="section detail">
+      <div class="container two-col">
+        <div>
+          <h2>Is <span class="gold">{level.label}</span> right for you?</h2>
+          <ul class="ticks">{level.fit.map((f) => <li>{f}</li>)}</ul>
+          {level.notes.map((n) => <p class="note">{n}</p>)}
+        </div>
+        <div class="scope">
+          <h2>What we <span class="gold">deliver</span></h2>
+          <ol>{level.scope.map((s) => <li>{s}</li>)}</ol>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {topic && (
+    <section class="section detail">
+      <div class="container">
+        <div class="point-grid">
+          {topic.points.map((p) => (
+            <article class="point">
+              <h3>{p.title}</h3>
+              <p>{p.text}</p>
+            </article>
+          ))}
+        </div>
+        <p class="level-line"><span class="gold">Which level?</span> {topic.level} <a href="/disp/levels">Compare DISP levels ›</a></p>
+      </div>
+    </section>
+  )}
+
+  <section class="section related">
+    <div class="container">
+      <h2 class="rel-title">{level ? <>Other <span class="gold">DISP levels</span></> : <>Find your <span class="gold">DISP level</span></>}</h2>
+      <LinkCards cards={(level ? others : levels).map((l) => ({ href: `/disp/${l.slug}`, title: l.label, text: l.short, tag: l.classification }))} />
+    </div>
+  </section>
+</DispShell>
+
+<style>
+  .class-card { margin: 0; padding: 32px; background: var(--bg-faq); border-radius: var(--radius-card); text-align: center; }
+  .class-card dt { font-size: 14px; color: var(--muted); }
+  .class-card dd { margin: 8px 0 0; font-family: var(--font-heading); font-weight: 700; font-size: 26px; color: var(--gold); }
+
+  .detail { background: var(--bg-faq); }
+  .two-col { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; }
+  .detail h2 { font-size: 30px; line-height: 1.3; margin-bottom: 20px; }
+  .ticks { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; font-size: 15px; line-height: 1.5; }
+  .ticks li::before { content: '✓'; margin-right: 10px; color: var(--gold); font-weight: 700; }
+  .note { margin: 24px 0 0; font-size: 14px; line-height: 1.5; color: var(--text); }
+  .scope ol { margin: 0; padding: 28px 28px 28px 52px; background: #fff; border-radius: var(--radius-card); display: grid; gap: 10px; font-size: 15px; line-height: 1.45; }
+
+  .point-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .point { padding: 28px; background: #fff; border-radius: var(--radius-card); }
+  .point h3 { font-size: 20px; }
+  .point p { margin: 12px 0 0; font-size: 14px; line-height: 1.5; }
+  .level-line { margin: 32px 0 0; text-align: center; font-size: 15px; }
+  .level-line a { color: var(--gold); margin-left: 6px; }
+
+  .rel-title { text-align: center; font-size: 32px; margin-bottom: 32px; }
+  @media (max-width: 860px) {
+    .two-col, .point-grid { grid-template-columns: 1fr; }
+  }
+</style>

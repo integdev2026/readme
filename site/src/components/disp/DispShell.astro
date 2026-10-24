@@ -1,0 +1,56 @@
+---
+// Wrapper for every DISP page: breadcrumbs (with BreadcrumbList data), the in-section menu,
+// page content and a DISP-specific booking band.
+import Base from '../../layouts/Base.astro';
+import ContactBand from '../ContactBand.astro';
+import { dispNav, type Crumb } from '../../data/disp';
+
+interface Props { title: string; description: string; crumbs: Crumb[] }
+const { title, description, crumbs } = Astro.props;
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: new URL(c.href, Astro.site).href })),
+};
+const isActive = (href: string) => (href === '/disp' ? path === href : path.startsWith(href));
+---
+<Base title={title} description={description}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <div class="disp-bar">
+    <div class="container bar">
+      <nav aria-label="Breadcrumb">
+        <ol class="crumbs">
+          {crumbs.map((c, i) => (
+            <li>{i === crumbs.length - 1 ? <span aria-current="page">{c.label}</span> : <a href={c.href}>{c.label}</a>}</li>
+          ))}
+        </ol>
+      </nav>
+      <nav aria-label="DISP section">
+        <ul class="subnav">
+          {dispNav.map((n) => <li><a href={n.href} class:list={{ active: isActive(n.href) }}>{n.label}</a></li>)}
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <slot />
+
+  <ContactBand
+    title='Book a <span class="gold">Free DISP Consult</span>'
+    sub="Talk to us about your Defence contract requirements and which DISP level fits your business."
+    showDetails={false}
+  />
+</Base>
+
+<style>
+  .disp-bar { border-bottom: 1px solid var(--line); background: var(--bg-soft); }
+  .bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; padding: 10px 0; }
+  .crumbs, .subnav { display: flex; flex-wrap: wrap; list-style: none; margin: 0; padding: 0; font-size: 13px; }
+  .crumbs li + li::before { content: '›'; margin: 0 8px; color: var(--muted); }
+  .crumbs span { color: var(--muted); }
+  .crumbs a:hover { color: var(--gold); }
+  .subnav { gap: 4px; }
+  .subnav a { display: inline-block; padding: 4px 12px; border-radius: 999px; font-family: var(--font-heading); }
+  .subnav a:hover, .subnav a.active { background: var(--gold-light); color: var(--ink); }
+</style>
