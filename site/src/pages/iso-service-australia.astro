@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import IsoBar from '../components/iso-service-australia/IsoBar.astro';
+import VideoEmbed from '../components/VideoEmbed.astro';
 import ContactBand from '../components/ContactBand.astro';
 import CenterHero from '../components/iso-service-australia/CenterHero.astro';
 import ServicePackages from '../components/iso-service-australia/ServicePackages.astro';
@@ -88,6 +89,8 @@ const faqs = [
     bg="/images/iso-service-australia/hero-bg.webp"
   />
 
+  <VideoEmbed id="t0kn4f4Xg0w" title="ISO certification explained: video" spaced />
+
   <section class="section why">
     <div class="container">
       <div class="section-head light">
@@ -168,7 +171,7 @@ const faqs = [
   .section-head.light h2 { font-weight: 400; }
   .section-head .wide { max-width: 640px; }
 
-  .why { padding-top: 100px; }
+  .why { padding-top: 24px; }
   .mini-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
   .mini { display: grid; justify-items: center; gap: 22px; padding: 34px 16px 40px; background: #fff; border-radius: 16px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06); text-align: center; }
   .mini img { width: 48px; height: 48px; border-radius: 50%; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); }
@@ -215,7 +218,8 @@ const faqs = [
     .tab-bar label { font-size: 14px; }
     .tab-panel { grid-template-columns: 1fr; gap: 0; padding: 28px 24px; }
     .card-grid { grid-template-columns: 1fr; }
-    .benefits, .why { padding-top: 56px; }
+    .benefits { padding-top: 56px; }
+    .why { padding-top: 16px; }
   }
   /* Phones: trim the empty space at the bottom of cards. */
   @media (max-width: 760px) {
