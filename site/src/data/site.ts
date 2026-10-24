@@ -45,6 +45,7 @@ export const footerColumns = [
   {
     title: 'Services',
     links: [
+      { label: 'All services', href: '/services' },
       { label: 'ISO', href: '/iso-service-australia' },
       { label: 'DISP', href: '/disp' },
     ],

@@ -1,6 +1,6 @@
 # Archived: /iso-disp-services (combined ISO & DISP services page)
 
-Retired 2026-10-24 at the owner's request to keep ISO and DISP as separate services. `/iso-disp-services` now 301-redirects to `/iso-service-australia`.
+Retired 2026-10-24 at the owner's request to keep ISO and DISP as separate services. `/iso-disp-services` now 301-redirects to `/services` (the services hub).
 
 Where its content went:
 - ISO service packages → `site/src/components/iso-service-australia/ServicePackages.astro` (on /iso-service-australia)
