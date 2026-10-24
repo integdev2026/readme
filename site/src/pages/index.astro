@@ -75,8 +75,11 @@ const faqSchema = {
         <h1><span class="line">Achieve Excellence in</span> <span class="gold">Management System</span></h1>
         <p>At integPRO, our mission is to simplify management systems and ensure they work for the people who use them. We focus on reducing risks, improving efficiency, and supporting businesses in achieving compliance.</p>
         <div class="hero-actions">
-          <a href="/free-consultation" class="btn btn-primary">Start Your Journey<Chevron /></a>
-          <a href="/iso-service-australia" class="btn btn-outline">Explore Services</a>
+          <div class="hero-buttons">
+            <a href="/free-consultation" class="btn btn-primary">Start Your Journey<Chevron /></a>
+            <a href="/iso-service-australia" class="btn btn-outline">Explore Services</a>
+          </div>
+          <img class="hero-ring-sm" src="/images/hero-ring.webp" alt="" width="104" height="104" aria-hidden="true" />
         </div>
         <dl class="stats">
           {stats.map((s) => <div><dt>{s.value}</dt><dd>{s.label}</dd></div>)}
@@ -257,6 +260,8 @@ const faqSchema = {
   .stats { display: flex; gap: 64px; margin: 30px 0 0 14px; padding-top: 24px; border-top: 1px solid var(--line); max-width: 492px; }
   .stats dt { font-family: var(--font-heading); font-weight: 700; font-size: 20px; color: var(--text); }
   .stats dd { margin: 2px 0 0; font-size: 14px; }
+  .hero-buttons { display: flex; gap: 18px; flex-wrap: wrap; }
+  .hero-ring-sm { display: none; }
   .hero-ring { width: 419px; margin-top: 6px; animation: spin 24s linear infinite; will-change: transform; }
   @keyframes spin { to { transform: rotate(360deg); } }
   @media (prefers-reduced-motion: reduce) { .hero-ring { animation: none; } }
@@ -360,9 +365,17 @@ const faqSchema = {
     .hero-grid > *, .partner-grid > *, .team > * { min-width: 0; }
     .partner-mark { display: none; }
   }
+  @media (max-width: 360px) {
+    .hero-ring-sm { width: 64px !important; height: 64px !important; }
+    .hero-buttons .btn { padding: 0 18px; }
+  }
   @media (max-width: 760px) {
-    /* Phones: the decorative ring is hidden so the message and buttons come first. */
+    /* Phones: the large ring is replaced by a small, still one beside the buttons. */
     .hero-ring { display: none; }
+    .hero-actions { flex-wrap: nowrap; align-items: center; justify-content: space-between; gap: 12px; }
+    .hero-buttons { flex-direction: column; align-items: flex-start; gap: 12px; }
+    .hero-ring-sm { display: block; flex: none; width: 104px; height: 104px; }
+    .hero-buttons .btn { white-space: nowrap; }
     .hero { padding-top: 40px; }
     .hero h1 { font-size: 30px; line-height: 38px; padding: 0; }
     .hero h1 .line { white-space: normal; }
