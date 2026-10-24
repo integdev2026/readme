@@ -15,7 +15,7 @@ interface Props {
 
 const { title, description, noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname.replace(/(.)\/$/, '$1'), Astro.site);
-// Business details for search engines. Service-area business: no street address is published.
+// Business details for search engines.
 const business = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
@@ -25,6 +25,14 @@ const business = {
   telephone: company.phone,
   email: company.email,
   foundingDate: company.founded,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Level 35, 252 Pitt St',
+    addressLocality: 'Sydney',
+    addressRegion: 'NSW',
+    postalCode: '2000',
+    addressCountry: 'AU',
+  },
   areaServed: { '@type': 'Country', name: 'Australia' },
   sameAs: social.map((s) => s.href),
 };

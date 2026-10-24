@@ -86,7 +86,7 @@ export const company = {
   name: 'integPRO',
   email: 'info@integpro.com.au',
   phone: '1300 60 50 22',
-  location: 'Serving businesses across Australia',
+  address: 'Level 35/252 Pitt St, Sydney NSW 2000',
   founded: '2019',
   abn: '23 633 745 516',
 };

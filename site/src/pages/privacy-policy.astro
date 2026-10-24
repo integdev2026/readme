@@ -128,6 +128,7 @@ import { company } from '../data/site';
       <p class="tight">If you have any questions, concerns, or complaints about this Privacy Policy or our handling of your personal information, please contact:</p>
       <address>
         integPRO Pty Ltd<br />
+        {company.address}<br />
         Email: <a href={`mailto:${company.email}`}>{company.email}</a><br />
         Phone: <a href={`tel:${company.phone.replace(/\s/g, '')}`}>{company.phone}</a>
       </address>
