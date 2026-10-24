@@ -1,17 +1,19 @@
 ---
-// Responsive YouTube video (privacy-enhanced domain, lazy-loaded), centred in its own band.
+// Responsive YouTube video (privacy-enhanced domain), centred in its own band. With `autoplay` it starts
+// muted as soon as the page loads (browsers only allow autoplay without sound); visitors can unmute it.
 // `spaced` adds room above, for pages whose hero ends in a background image.
-interface Props { id: string; title: string; spaced?: boolean }
-const { id, title, spaced = false } = Astro.props;
+interface Props { id: string; title: string; spaced?: boolean; autoplay?: boolean }
+const { id, title, spaced = false, autoplay = false } = Astro.props;
+const params = autoplay ? 'rel=0&autoplay=1&mute=1&playsinline=1' : 'rel=0';
 ---
 <section class:list={['video-wrap', { spaced }]}>
   <div class="container">
     <div class="video">
       <iframe
-        src={`https://www.youtube-nocookie.com/embed/${id}?rel=0`}
+        src={`https://www.youtube-nocookie.com/embed/${id}?${params}`}
         title={title}
-        loading="lazy"
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        loading={autoplay ? 'eager' : 'lazy'}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
