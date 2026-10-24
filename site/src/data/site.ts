@@ -5,8 +5,18 @@ export const nav = [
     href: '/iso-disp-services',
     children: [
       { label: 'ISO', href: '/iso-service-australia' },
-      { label: 'DISP', href: '/disp' },
       { label: 'Medical Device iso', href: '/medical-iso' },
+    ],
+  },
+  {
+    label: 'DISP',
+    href: '/disp',
+    children: [
+      { label: 'DISP Levels', href: '/disp/levels' },
+      { label: 'Industries', href: '/disp/industries' },
+      { label: 'Roles', href: '/disp/roles' },
+      { label: 'Our Process', href: '/disp/process' },
+      { label: 'DISP FAQ', href: '/disp/faq' },
     ],
   },
   { label: 'Industries', href: '/industries' },
@@ -23,7 +33,6 @@ export const footerColumns = [
     links: [
       { label: 'What we do', href: '/iso-disp-services' },
       { label: 'ISO', href: '/iso-service-australia' },
-      { label: 'DISP', href: '/disp' },
       { label: 'Medical', href: '/medical-iso' },
     ],
   },

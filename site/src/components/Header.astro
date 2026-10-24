@@ -56,6 +56,12 @@ const isActive = (href: string, children?: { href: string }[]) =>
   .submenu a:hover { background: var(--gold-light); }
   .cta { height: 40px; font-size: 14px; letter-spacing: 1px; }
   .nav-toggle, .burger { display: none; }
+  .menu-link, .cta { white-space: nowrap; }
+
+  @media (max-width: 1180px) {
+    .menu { gap: 16px; }
+    .menu-link { padding: 0 10px; }
+  }
 
   @media (max-width: 1000px) {
     .burger { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 40px; height: 40px; cursor: pointer; }
