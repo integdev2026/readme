@@ -29,7 +29,7 @@ export const nav = [
     href: '/disp',
     children: [
       { label: 'DISP Levels', href: '/disp/levels' },
-      { label: 'Industries', href: '/disp/industries' },
+      { label: 'DISP by Industry', href: '/disp/industries' },
       { label: 'Roles', href: '/disp/roles' },
       { label: 'Our Process', href: '/disp/process' },
       { label: 'DISP FAQ', href: '/disp/faq' },
