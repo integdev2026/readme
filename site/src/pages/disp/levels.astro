@@ -1,0 +1,24 @@
+---
+import HubPage from '../../components/disp/HubPage.astro';
+import LevelLadder from '../../components/disp/LevelLadder.astro';
+import LevelTable from '../../components/disp/LevelTable.astro';
+import { levels, levelIcons } from '../../data/disp';
+import { hubCopy } from '../../data/disp-copy';
+---
+<HubPage
+  copy={hubCopy.levels}
+  title="DISP Membership Levels Explained | Entry Level to Level 3 | integPRO"
+  description="Compare DISP Entry Level, Level 1, Level 2 and Level 3 membership: the information each level covers and who each level suits."
+  label="Levels"
+  heroTitle='DISP <span class="gold">Membership Levels</span>'
+  heroText="Each DISP level covers a higher classification of information and brings more security requirements. Choose the level your contracts need."
+  cards={levels.map((l, i) => ({ href: `/disp/${l.slug}`, title: l.label, text: l.short, tag: l.classification, icon: levelIcons[i] }))}
+>
+  <div slot="top" class="top"><LevelLadder /></div>
+  <div class="compare"><LevelTable /></div>
+</HubPage>
+
+<style>
+  .top { margin-bottom: 56px; }
+  .compare { margin-top: 56px; }
+</style>

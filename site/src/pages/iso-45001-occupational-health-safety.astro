@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import IsoBar from '../components/iso-service-australia/IsoBar.astro';
 import StandardHero from '../components/iso-standard/StandardHero.astro';
 import StandardIntro from '../components/iso-standard/StandardIntro.astro';
 import DeliverableGrid from '../components/iso-standard/DeliverableGrid.astro';
@@ -8,9 +9,10 @@ import StandardCta from '../components/iso-standard/StandardCta.astro';
 import { icons } from '../components/iso-standard/shared';
 ---
 <Base
-  title="ISO 45001 OH&S Certification for Austral | Integpro"
+  title="ISO 45001 OH&S Certification Australia | integPRO"
   description="Achieve ISO 45001 compliance and build a safer workplace. Expert OH&S management system consulting for Australian businesses. Book a free consultation."
 >
+  <IsoBar />
   <StandardHero
     title='<span class="gold">ISO 45001</span> Health &amp; Safety Management System'
     text="ISO 45001 is an international standard that brings structure and accountability to occupational health and safety. It's not just about compliance, it's about creating a workplace culture where safety is embedded in every decision, from operational risk management to worker consultation."

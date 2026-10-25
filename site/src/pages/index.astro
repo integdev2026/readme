@@ -53,7 +53,7 @@ const faqs = [
   { q: 'What is ISO consulting?', a: 'ISO consulting involves providing expert guidance and support to businesses seeking ISO certification. Consultants help organizations understand the requirements of ISO standards, identify gaps in their current systems, develop and implement necessary processes, and prepare for certification audits.' },
   { q: 'Why is ISO certification important?', a: 'ISO certification is important because it helps businesses improve their processes, increase efficiency, and enhance customer satisfaction. It also provides a competitive advantage by demonstrating compliance with internationally recognized standards, which can open up new market opportunities and build trust with stakeholders.' },
   { q: 'How long does ISO certification take?', a: 'The duration of the ISO certification process can vary depending on the size and complexity of the organization, as well as the specific ISO standard being implemented. Generally, it can take several months to over a year to achieve certification, including the time needed for preparation, implementation, and auditing.' },
-  { q: 'What factors influence the cost of ISO consulting services?', a: `The cost of ISO consulting services depends on factors like your organization's size, the complexity of your systems, and the specific ISO standard. For a customized quote, contact IntegPRO at our Castle Hill, NSW, or St Peters, SA offices, or email ${company.email}.` },
+  { q: 'What factors influence the cost of ISO consulting services?', a: `The cost of ISO consulting services depends on factors like your organization's size, the complexity of your systems, and the specific ISO standard. For a customised quote, call IntegPRO on ${company.phone} or email ${company.email}.` },
 ];
 
 const faqSchema = {
@@ -64,7 +64,7 @@ const faqSchema = {
 ---
 <Base
   title="integPRO | Cost Effective ISO & DISP Certification"
-  description="integPRO simplifies management systems: ISO 9001, 14001, 45001, 27001, 13485 and DISP consulting, auditing, documentation and training across Australia."
+  description="Sydney-based ISO and DISP consultants serving businesses across Australia: ISO 9001, 14001, 45001, 27001 and 13485 certification and DISP membership support."
 >
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqSchema)} />
 
@@ -75,8 +75,11 @@ const faqSchema = {
         <h1><span class="line">Achieve Excellence in</span> <span class="gold">Management System</span></h1>
         <p>At integPRO, our mission is to simplify management systems and ensure they work for the people who use them. We focus on reducing risks, improving efficiency, and supporting businesses in achieving compliance.</p>
         <div class="hero-actions">
-          <a href="/free-consultation" class="btn btn-primary">Start Your Journey<Chevron /></a>
-          <a href="/iso-disp-services" class="btn btn-outline">Explore Services</a>
+          <div class="hero-buttons">
+            <a href="/free-consultation" class="btn btn-primary">Start Your Journey<Chevron /></a>
+            <a href="/services" class="btn btn-outline">Explore Services</a>
+          </div>
+          <img class="hero-ring-sm" src="/images/hero-ring.webp" alt="" width="132" height="132" aria-hidden="true" />
         </div>
         <dl class="stats">
           {stats.map((s) => <div><dt>{s.value}</dt><dd>{s.label}</dd></div>)}
@@ -117,7 +120,7 @@ const faqSchema = {
           </article>
         ))}
       </div>
-      <p class="center more"><a href="/iso-disp-services" class="btn btn-primary">Learn More<Chevron /></a></p>
+      <p class="center more"><a href="/services" class="btn btn-primary">Learn More<Chevron /></a></p>
     </div>
   </section>
 
@@ -190,9 +193,9 @@ const faqSchema = {
     <div class="container partner-grid">
       <div>
         <h2>Your <span class="gold">Trusted Partner</span> in ISO &amp; DISP</h2>
-        <p>Since 1998, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.</p>
+        <p>Since 2019, IntegPro has been Australia’s leading provider of management system consulting, training, and certification services. Our mission is to help organizations achieve and maintain excellence through internationally recognized standards.</p>
         <p>With a team of highly qualified consultants, lead auditors, and trainers, we’ve successfully guided over 1,000 organizations through ISO certification, DISP compliance, and integrated management system implementation.</p>
-        <a href="/about-us-iso-team" class="btn btn-primary">Learn More</a>
+        <a href="/services" class="btn btn-primary">Learn More</a>
       </div>
       <img class="collage" src="/images/partner-collage.webp" alt="integPRO consultants at work and at Sydney Build Expo" width="573" height="542" loading="lazy" />
       <div class="partner-stats">
@@ -257,9 +260,11 @@ const faqSchema = {
   .stats { display: flex; gap: 64px; margin: 30px 0 0 14px; padding-top: 24px; border-top: 1px solid var(--line); max-width: 492px; }
   .stats dt { font-family: var(--font-heading); font-weight: 700; font-size: 20px; color: var(--text); }
   .stats dd { margin: 2px 0 0; font-size: 14px; }
+  .hero-buttons { display: flex; gap: 18px; flex-wrap: wrap; }
+  .hero-ring-sm { display: none; }
   .hero-ring { width: 419px; margin-top: 6px; animation: spin 24s linear infinite; will-change: transform; }
   @keyframes spin { to { transform: rotate(360deg); } }
-  @media (prefers-reduced-motion: reduce) { .hero-ring { animation: none; } }
+  @media (prefers-reduced-motion: reduce) { .hero-ring, .hero-ring-sm { animation: none !important; } }
 
   .clients { margin-top: 70px; }
   .clients h2 { font-size: 20px; margin-bottom: 20px; }
@@ -354,14 +359,25 @@ const faqSchema = {
 
   @media (max-width: 1000px) {
     .hero-grid, .partner-grid, .team { grid-template-columns: 1fr; }
-    .hero-ring { width: min(320px, 80%); margin: 0 auto; }
+    /* Tablets: smaller and still (the spin is distracting on touch screens). */
+    .hero-ring { width: min(240px, 60%); margin: 0 auto; animation: none; }
     .team img { width: 100%; max-width: 588px; }
     .hero-grid > *, .partner-grid > *, .team > * { min-width: 0; }
     .partner-mark { display: none; }
   }
+  @media (max-width: 360px) {
+    .hero-ring-sm { width: 84px !important; height: 84px !important; }
+    .hero-buttons .btn { padding: 0 18px; }
+  }
   @media (max-width: 760px) {
+    /* Phones: the large ring is replaced by a smaller one beside the buttons, spinning at the same speed. */
+    .hero-ring { display: none; }
+    .hero-actions { flex-wrap: nowrap; align-items: center; justify-content: space-between; gap: 12px; }
+    .hero-buttons { flex-direction: column; align-items: flex-start; gap: 12px; }
+    .hero-ring-sm { display: block; flex: none; width: 132px; height: 132px; animation: spin 24s linear infinite; will-change: transform; }
+    .hero-buttons .btn { white-space: nowrap; }
     .hero { padding-top: 40px; }
-    .hero h1 { font-size: 36px; line-height: 44px; padding: 0; }
+    .hero h1 { font-size: 30px; line-height: 38px; padding: 0; }
     .hero h1 .line { white-space: normal; }
     .hero-copy > p, .hero-actions { margin-left: 0; }
     .stats { gap: 24px; margin-left: 0; justify-content: space-between; }
@@ -375,5 +391,10 @@ const faqSchema = {
     .partner-stats div { width: auto; }
     .faq { padding: 16px 20px; }
     .faq h2 { font-size: 36px; }
+  }
+  /* Phones: trim the empty space at the bottom of cards. */
+  @media (max-width: 760px) {
+    .card { padding: 24px 22px 26px; }
+    .quote { padding: 24px 20px 28px; }
   }
 </style>

@@ -1,0 +1,55 @@
+---
+import DispShell from '../../components/disp/DispShell.astro';
+import CenterHero from '../../components/iso-service-australia/CenterHero.astro';
+import Icon from '../../components/Icon.astro';
+import Prose from '../../components/disp/Prose.astro';
+import { processSteps, dispCta, crumbs } from '../../data/disp';
+import { processDetail, processIntro } from '../../data/disp-copy';
+---
+<DispShell
+  title="Our DISP Process | Gap Analysis to Membership | integPRO"
+  description="How integPRO guides your business through DISP: gap analysis, action plan, implementation, governance, application and support. Entry Level: 3–6 months."
+  crumbs={crumbs({ label: 'Process', href: '/disp/process' })}
+>
+  <CenterHero
+    title='Our <span class="gold">DISP Process</span>'
+    text="Six steps from first assessment to ongoing membership. Typical timelines: Entry Level 3–6 months, Level 1 6–8 months, Levels 2 & 3 12 months or more, plus Defence’s assessment time."
+    actions={[dispCta]}
+  />
+  <section class="section steps-wrap">
+    <ol class="container timeline">
+      {processSteps.map((s, i) => (
+        <li>
+          <span class="dot"><Icon name={s.icon} size={26} /></span>
+          <div class="card">
+            <span class="num">Step {i + 1}</span>
+            <h2>{s.title}</h2>
+            <p>{s.text}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </section>
+  <Prose sections={[...processDetail.map((d) => ({ h: d.h, p: [d.p] })), ...processIntro]} />
+</DispShell>
+
+<style>
+  .steps-wrap { background: var(--bg-faq); }
+  /* Six steps in a row on wide screens, joined by a gold line; a vertical line on mobile. */
+  .timeline { list-style: none; margin: 0 auto; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
+  .timeline li { position: relative; display: flex; flex-direction: column; align-items: center; gap: 18px; }
+  .timeline li:not(:last-child)::after { content: ''; position: absolute; top: 31px; left: calc(50% + 34px); width: calc(100% - 54px); height: 3px; background: var(--gold-light); }
+  .dot { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--gold-gradient); color: #fff; box-shadow: 0 6px 16px rgba(150, 130, 68, 0.35); }
+  .card { flex: 1; width: 100%; padding: 18px 16px 22px; background: #fff; border-radius: 16px; border-top: 4px solid var(--gold); text-align: center; container-type: inline-size; }
+  .num { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold-dark); }
+  /* Shrink long one-word titles ("Implementation") to fit narrow cards, so they stay centred. */
+  .card h2 { margin-top: 6px; font-size: min(17px, 11cqi); }
+  .card p { margin: 8px 0 0; font-size: 13px; line-height: 1.5; }
+  @media (max-width: 1000px) {
+    .timeline { grid-template-columns: 1fr; max-width: 560px; gap: 18px; }
+    .timeline li { flex-direction: row; align-items: flex-start; }
+    .timeline li:not(:last-child)::after { top: 64px; left: 30px; width: 3px; height: calc(100% - 46px); }
+    .card { text-align: left; }
+    .card p { font-size: 15px; }
+  }
+</style>

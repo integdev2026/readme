@@ -1,0 +1,15 @@
+---
+import HubPage from '../../components/disp/HubPage.astro';
+import { industries } from '../../data/disp';
+import { hubCopy } from '../../data/disp-copy';
+---
+<HubPage
+  copy={hubCopy.industries}
+  title="DISP by Industry: Manufacturing, Construction, IT | integPRO"
+  description="How DISP membership applies to manufacturers, engineering firms, construction contractors and IT providers in the Defence supply chain."
+  label="Industries"
+  heroTitle='DISP by <span class="gold">Industry</span>'
+  heroText="DISP requirements are the same for every member, but the risks and starting points differ by industry."
+  cols={2}
+  cards={industries.map((t) => ({ href: `/disp/${t.slug}`, title: t.label, text: t.heroText, icon: t.icon }))}
+/>

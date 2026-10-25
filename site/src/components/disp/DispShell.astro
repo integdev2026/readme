@@ -1,0 +1,21 @@
+---
+// Wrapper for every DISP page: section bar (breadcrumbs and DISP menu), page content and a DISP-specific booking band.
+import Base from '../../layouts/Base.astro';
+import ContactBand from '../ContactBand.astro';
+import SectionBar from '../SectionBar.astro';
+import { dispNav, type Crumb } from '../../data/disp';
+
+interface Props { title: string; description: string; crumbs: Crumb[] }
+const { title, description, crumbs } = Astro.props;
+---
+<Base title={title} description={description}>
+  <SectionBar crumbs={crumbs} nav={dispNav} label="DISP section" />
+
+  <slot />
+
+  <ContactBand
+    title='Book a <span class="gold">Free DISP Consult</span>'
+    sub="Talk to us about your Defence contract requirements and which DISP level fits your business."
+    showDetails={false}
+  />
+</Base>

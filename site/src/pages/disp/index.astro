@@ -1,0 +1,153 @@
+---
+// DISP hub (pillar page). Child pages live under /disp/; wording is integPRO's own, not shared with any other site.
+import DispShell from '../../components/disp/DispShell.astro';
+import LinkCards from '../../components/disp/LinkCards.astro';
+import CenterHero from '../../components/iso-service-australia/CenterHero.astro';
+import ProcessSteps from '../../components/iso-service-australia/ProcessSteps.astro';
+import Faq from '../../components/iso-service-australia/Faq.astro';
+import LevelLadder from '../../components/disp/LevelLadder.astro';
+import VideoEmbed from '../../components/VideoEmbed.astro';
+import { categories, industries, roles, eligibility, processSteps, faq, dispCta, crumbs } from '../../data/disp';
+
+
+const img = (id: string) => `/images/disp/icon-${id}.webp`;
+const reasons = [
+  { icon: '153f8b', title: 'Meet Defence Requirements', text: 'Meet the security requirements set in Defence tenders, contracts and prime supply chains.' },
+  { icon: '334a55', title: 'Trusted Supplier', text: 'Show primes and Defence that your business protects their information.' },
+  { icon: '24d773', title: 'Stronger Security', text: 'Improve the security of your people, premises and systems.' },
+];
+---
+<DispShell
+  title="DISP Consultants Australia | Defence Industry Security Program | integPRO"
+  description="Sydney-based DISP consultants helping Defence suppliers across Australia prepare for Entry Level to Level 3 membership: gap analysis, policies, cyber controls."
+  crumbs={crumbs().slice(0, 2)}
+>
+  <CenterHero
+    title='DISP Membership for <span class="gold">Defence Suppliers</span>'
+    text="We help Australian businesses prepare for, achieve and maintain Defence Industry Security Program (DISP) membership."
+    actions={[dispCta, { label: 'Compare DISP levels', href: '/disp/levels', primary: false }]}
+  />
+
+  <VideoEmbed id="F1TDmqBMN7I" title="DISP explained: video" autoplay />
+
+  <section class="section what">
+    <div class="container">
+      <div class="section-head">
+        <h2>What is <span class="gold">DISP</span>?</h2>
+        <p class="wide">DISP is the Department of Defence’s security program for Australian industry. Members show they meet Defence’s security standards in four categories.</p>
+      </div>
+      <div class="mini-grid">
+        {categories.map((c) => (
+          <article class="mini">
+            <img src={img(c.icon)} alt="" width="48" height="48" loading="lazy" />
+            <h3>{c.title}</h3>
+            <p>{c.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Choose Your <span class="gold">DISP Level</span></h2>
+        <p class="wide">The level you need depends on the classification of the information you handle.</p>
+      </div>
+      <LevelLadder />
+    </div>
+  </section>
+
+  <section class="eligibility">
+    <div class="container elig-grid">
+      <div>
+        <h2><span class="gold">DISP</span> Eligibility</h2>
+        <p class="intro">To apply for membership, your business must meet these basic requirements.</p>
+        {eligibility.map((e) => <p><span class="gold">{e.k}</span> {e.v}</p>)}
+      </div>
+      <img src="/images/disp/eligibility.webp" alt="Military aircraft flying in formation" width="588" height="472" loading="lazy" />
+    </div>
+  </section>
+
+  <ProcessSteps sub="A clear path to DISP membership. Typical timeline: 3–6 months for Entry Level." steps={processSteps.map((s) => s.title)} />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>DISP by <span class="gold">Industry</span></h2>
+      </div>
+      <LinkCards cols={4} cards={industries.map((t) => ({ href: `/disp/${t.slug}`, title: t.label, text: t.heroText, icon: t.icon }))} />
+      <div class="section-head role-head">
+        <h2>DISP by <span class="gold">Role</span></h2>
+      </div>
+      <LinkCards cards={roles.map((t) => ({ href: `/disp/${t.slug}`, title: t.label, text: t.heroText, icon: t.icon }))} />
+    </div>
+  </section>
+
+  <section class="section reasons">
+    <div class="container">
+      <div class="section-head">
+        <h2>Why <span class="gold">DISP</span> Membership?</h2>
+      </div>
+      <div class="card-grid swipe">
+        {reasons.map((r) => (
+          <article class="card reason">
+            <img src={img(r.icon)} alt="" width="48" height="48" loading="lazy" />
+            <h3>{r.title}</h3>
+            <p>{r.text}</p>
+          </article>
+        ))}
+      </div>
+      <p class="note">DISP membership shows you meet Defence’s security requirements. It does not guarantee a contract.</p>
+    </div>
+  </section>
+
+  <Faq items={faq.slice(0, 4)} />
+  <p class="container faq-more"><a href="/disp/faq">See all DISP questions ›</a></p>
+</DispShell>
+
+<style>
+  .section-head .wide { max-width: 640px; }
+  .what { background: var(--bg-faq); padding: 66px 0 96px; }
+  .what .section-head { margin-bottom: 36px; }
+  .mini-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .mini { display: grid; justify-items: center; align-content: start; gap: 16px; padding: 34px 18px 36px; background: #fff; border-radius: 16px; text-align: center; }
+  .mini img { width: 48px; height: 48px; border-radius: 6px; }
+  .mini h3 { font-family: var(--font-body); font-size: 15px; }
+  .mini p { margin: 0; font-size: 13px; line-height: 1.45; }
+
+  .eligibility { padding: 28px 0 72px; }
+  .elig-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 588px); gap: 28px; align-items: center; }
+  .elig-grid > * { min-width: 0; }
+  .eligibility h2 { font-size: 40px; line-height: 1.3; }
+  .eligibility p { margin: 20px 0 0; max-width: 350px; font-size: 15px; line-height: 1.5; }
+  .eligibility .intro { margin-top: 10px; font-size: 16px; }
+  .eligibility img { width: 100%; aspect-ratio: 588 / 472; object-fit: cover; border-radius: 24px; }
+
+  .role-head { margin-top: 56px; }
+  .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: start; }
+  .card { background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
+  .reason { display: grid; justify-items: center; padding: 28px 30px 48px; text-align: center; }
+  .reason img { width: 48px; height: 48px; border-radius: 6px; }
+  .reason h3 { margin-top: 18px; font-size: 20px; letter-spacing: 0.8px; }
+  .reason p { margin: 18px 0 0; font-size: 14px; line-height: 1.45; }
+  .note { margin: 24px 0 0; text-align: center; font-size: 13px; color: var(--muted); }
+  .faq-more { margin-top: -56px; padding-bottom: 48px; text-align: right; color: var(--gold); }
+
+  @media (max-width: 860px) {
+    .mini-grid { grid-template-columns: 1fr 1fr; }
+    .elig-grid { grid-template-columns: 1fr; }
+    .eligibility p { max-width: none; }
+    .card-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 760px) {
+    .eligibility h2 { font-size: 30px; }
+    .mini p { font-size: 14px; }
+    .reason p { font-size: 15px; }
+  }
+  /* Phones: trim the empty space at the bottom of cards. */
+  @media (max-width: 760px) {
+    .reason { padding: 24px 22px 26px; }
+    .mini { padding: 24px 14px 22px; gap: 12px; }
+  }
+</style>

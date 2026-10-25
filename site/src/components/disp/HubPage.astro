@@ -1,0 +1,28 @@
+---
+// Shared layout for the DISP Levels, Industries and Roles hub pages.
+import DispShell from './DispShell.astro';
+import LinkCards from './LinkCards.astro';
+import CenterHero from '../iso-service-australia/CenterHero.astro';
+import Prose from './Prose.astro';
+import { dispCta, crumbs, type IconName } from '../../data/disp';
+import type { CopySection } from '../../data/disp-copy';
+
+interface Card { href: string; title: string; text: string; tag?: string; icon?: IconName }
+interface Props { title: string; description: string; label: string; heroTitle: string; heroText: string; cards: Card[]; cols?: number; copy?: CopySection[] }
+const { title, description, label, heroTitle, heroText, cards, cols, copy } = Astro.props;
+---
+<DispShell title={title} description={description} crumbs={crumbs({ label, href: Astro.url.pathname })}>
+  <CenterHero title={heroTitle} text={heroText} actions={[dispCta]} />
+  <section class="section hub">
+    <div class="container">
+      <slot name="top" />
+      <LinkCards cards={cards} cols={cols} />
+      <slot />
+    </div>
+  </section>
+  {copy && <Prose sections={copy} />}
+</DispShell>
+
+<style>
+  .hub { background: var(--bg-faq); }
+</style>

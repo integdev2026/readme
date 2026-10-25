@@ -4,6 +4,8 @@ import '@fontsource/open-sans/700.css';
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import MobileBar from '../components/MobileBar.astro';
+import { company, social } from '../data/site';
 
 interface Props {
   title: string;
@@ -13,12 +15,35 @@ interface Props {
 
 const { title, description, noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname.replace(/(.)\/$/, '$1'), Astro.site);
+// Business details for search engines.
+const business = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: company.name,
+  url: Astro.site?.href,
+  logo: new URL('/images/logo.png', Astro.site).href,
+  telephone: company.phone,
+  email: company.email,
+  foundingDate: company.founded,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Level 35, 252 Pitt St',
+    addressLocality: 'Sydney',
+    addressRegion: 'NSW',
+    postalCode: '2000',
+    addressCountry: 'AU',
+  },
+  areaServed: { '@type': 'Country', name: 'Australia' },
+  sameAs: social.map((s) => s.href),
+};
 ---
 <!doctype html>
 <html lang="en-AU">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-site-verification" content="eoaN_za6CafCb65fEkFJEnHfpLGlKQSHJGThzZjyKYk" />
+    <meta name="msvalidate.01" content="D501A2F8421C443890A1B4745C901888" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     {noindex && <meta name="robots" content="noindex" />}
@@ -31,13 +56,15 @@ const canonical = new URL(Astro.url.pathname.replace(/(.)\/$/, '$1'), Astro.site
     <link rel="icon" sizes="192x192" type="image/png" href="https://static.wixstatic.com/media/6d9105_404148c071ca4a80ba6d6fbe08832d27~mv2.png/v1/fill/w_192,h_192,lg_1,usm_0.66_1.00_0.01/favicon.png" />
     <link rel="icon" sizes="32x32" type="image/png" href="https://static.wixstatic.com/media/6d9105_404148c071ca4a80ba6d6fbe08832d27~mv2.png/v1/fill/w_32,h_32,lg_1,usm_0.66_1.00_0.01/favicon.png" />
     <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/6d9105_404148c071ca4a80ba6d6fbe08832d27~mv2.png/v1/fill/w_180,h_180,lg_1,usm_0.66_1.00_0.01/apple-touch-icon.png" />
+    <script type="application/ld+json" set:html={JSON.stringify(business)} />
     <slot name="head" />
   </head>
-  <body>
+  <body id="top">
     <Header />
     <main>
       <slot />
     </main>
     <Footer />
+    <MobileBar />
   </body>
 </html>

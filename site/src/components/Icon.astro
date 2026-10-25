@@ -1,0 +1,29 @@
+---
+// Brand line icons (24px grid, stroke uses currentColor). Add new shapes here rather than importing icon sets.
+interface Props { name: keyof typeof paths; size?: number; class?: string }
+
+const paths = {
+  shield: 'M12 3l7 3v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z',
+  shieldCheck: 'M12 3l7 3v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z M9 12l2 2 4-4',
+  lock: 'M6 11h12v9H6z M8.5 11V8a3.5 3.5 0 017 0v3 M12 15v2',
+  factory: 'M3 20V10l5 3V10l5 3V10l5 3V5h3v15z M7 17h2 M12 17h2 M17 17h2',
+  gear: 'M12 9a3 3 0 100 6 3 3 0 000-6z M12 2v3 M12 19v3 M4.9 4.9l2.1 2.1 M17 17l2.1 2.1 M2 12h3 M19 12h3 M4.9 19.1L7 17 M17 7l2.1-2.1',
+  helmet: 'M3 17h18 M5 17v-3a7 7 0 0114 0v3 M10 7.3V5h4v2.3 M4 20h16',
+  server: 'M4 4h16v6H4z M4 14h16v6H4z M8 7h.01 M8 17h.01 M12 7h4 M12 17h4',
+  user: 'M12 12a4 4 0 100-8 4 4 0 000 8z M4 21a8 8 0 0116 0',
+  briefcase: 'M3 8h18v12H3z M9 8V5h6v3 M3 13h18',
+  laptop: 'M5 5h14v10H5z M2 19h20',
+  search: 'M11 4a7 7 0 100 14 7 7 0 000-14z M16 16l5 5',
+  list: 'M9 6h11 M9 12h11 M9 18h11 M4 6h.01 M4 12h.01 M4 18h.01',
+  wrench: 'M14.7 6.3a4 4 0 00-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 005.4-5.4l-2.5 2.5-2.5-2.5z',
+  users: 'M9 11a3.5 3.5 0 100-7 3.5 3.5 0 000 7z M2 20a7 7 0 0114 0 M16 4.3a3.5 3.5 0 010 6.4 M18 13.5a7 7 0 014 6.5',
+  send: 'M22 2L11 13 M22 2l-7 20-4-9-9-4z',
+  refresh: 'M20 11a8 8 0 00-14.9-3 M4 4v4h4 M4 13a8 8 0 0014.9 3 M20 20v-4h-4',
+  check: 'M5 12l5 5 9-10',
+} as const;
+
+const { name, size = 24, class: cls } = Astro.props;
+---
+<svg class={cls} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  {paths[name].split(' M').map((d, i) => <path d={i === 0 ? d : `M${d}`} />)}
+</svg>

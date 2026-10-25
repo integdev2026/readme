@@ -4,24 +4,26 @@ import ContactBand from '../components/ContactBand.astro';
 import CenterHero from '../components/iso-service-australia/CenterHero.astro';
 import ProcessSteps from '../components/iso-service-australia/ProcessSteps.astro';
 import Faq from '../components/iso-service-australia/Faq.astro';
+import IsoBar from '../components/iso-service-australia/IsoBar.astro';
 import { company } from '../data/site';
 
 const img = (id: string) => `/images/industries/icon-${id}.webp`;
 
-// Grid order matches the live page (row by row).
+// ISO by industry. DISP has its own industry pages (/disp/industries); this page links there instead
+// of covering DISP, so the two don't compete. Each card goes to the most relevant ISO page.
 const industries = [
-  { icon: '62a189', title: 'Defence & DISP', text: 'DISP compliance for defense contractors', href: '/disp' },
-  { icon: '9b9169', title: 'Construction', text: 'Quality, safety & environmental compliance', href: '/iso-service-australia' },
-  { icon: '41e2bc', title: 'Medical Devices', text: 'TGA compliance & ISO 13485 certification', href: '/medical-iso' },
-  { icon: '14b95a', title: 'Government & Public', text: 'Compliance audits & governance frameworks', href: '/free-consultation' },
-  { icon: '0f67ec', title: 'Manufacturing', text: 'Quality, safety & environmental compliance', href: '/free-consultation' },
-  { icon: 'f7591b', title: 'Information & ICT', text: 'Cyber security & ISO 27001 compliance', href: '/free-consultation' },
+  { icon: '9b9169', title: 'Construction', text: 'Safety, quality & environmental systems (ISO 45001, 9001, 14001)', href: '/iso-45001-occupational-health-safety', link: 'ISO 45001' },
+  { icon: '0f67ec', title: 'Manufacturing', text: 'Quality management and process control (ISO 9001)', href: '/iso-9001-compliance-certification-sydney', link: 'ISO 9001' },
+  { icon: '41e2bc', title: 'Medical Devices', text: 'TGA compliance & ISO 13485 certification', href: '/iso-13485-medical-devices-quality-management-system', link: 'ISO 13485' },
+  { icon: 'f7591b', title: 'Information & ICT', text: 'Information security management (ISO 27001)', href: '/iso-27001-information-security-management-system', link: 'ISO 27001' },
+  { icon: '334a55', title: 'Environment & Energy', text: 'Environmental management and compliance (ISO 14001)', href: '/iso-14001-compliance-certification', link: 'ISO 14001' },
+  { icon: '14b95a', title: 'Government & Public', text: 'Compliance audits & governance frameworks', href: '/iso-service-australia', link: 'ISO services' },
 ];
 
 // Case studies: client names are placeholders (company policy). Real names/logos will come from Wix CMS.
 const results = [
-  { name: 'Medical device client', sector: 'Medical Devices', value: '100%', sub: 'Expert EQMS implementation', text: 'Ensuring full compliance with ISO 13485, ISO 9001, and medical-device regulatory requirements. Streamlined processes, risk management integration, and end-to-end quality system deployment.' },
-  { name: 'Construction client', sector: 'Construction', value: 'Fully Implemented', sub: '100% achieved', text: 'Professional ISO consultation covering ISO 9001, ISO 14001, ISO 45001 and other relevant standards for the building sector. Full implementation, documentation, and compliance support.' },
+  { name: 'Medical device client', sector: 'Medical Devices', value: 'EQMS', sub: 'Electronic QMS implemented', text: 'Ensuring full compliance with ISO 13485, ISO 9001, and medical-device regulatory requirements. Streamlined processes, risk management integration, and end-to-end quality system deployment.' },
+  { name: 'Construction client', sector: 'Construction', value: 'IMS', sub: 'ISO 9001, 14001 & 45001 implemented', text: 'Professional ISO consultation covering ISO 9001, ISO 14001, ISO 45001 and other relevant standards for the building sector. Full implementation, documentation, and compliance support.' },
   { name: 'Government client', sector: 'Community', value: 'Quality Audit', sub: 'Comprehensive audit delivered', text: 'Comprehensive quality audit delivered for a state government agency, ensuring compliance with sector requirements, evaluating system performance, and providing clear recommendations.' },
 ];
 
@@ -30,25 +32,25 @@ const faqs = [
   { q: 'What is ISO consulting?', a: 'ISO consulting involves providing expert guidance and support to businesses seeking ISO certification. Consultants help organizations understand the requirements of ISO standards, identify gaps in their current systems, develop and implement necessary processes, and prepare for certification audits.' },
   { q: 'Why is ISO certification important?', a: 'ISO certification is important because it helps businesses improve their processes, increase efficiency, and enhance customer satisfaction. It also provides a competitive advantage by demonstrating compliance with internationally recognized standards, which can open up new market opportunities and build trust with stakeholders.' },
   { q: 'How long does ISO certification take?', a: 'The duration of the ISO certification process can vary depending on the size and complexity of the organization, as well as the specific ISO standard being implemented. Generally, it can take several months to over a year to achieve certification, including the time needed for preparation, implementation, and auditing.' },
-  { q: 'What factors influence the cost of ISO consulting services?', a: `The cost of ISO consulting services depends on factors like your organization's size, the complexity of your systems, and the specific ISO standard. For a customized quote, contact IntegPRO at our Castle Hill, NSW, or St Peters, SA offices, or email ${company.email}.` },
+  { q: 'What factors influence the cost of ISO consulting services?', a: `The cost of ISO consulting services depends on factors like your organization's size, the complexity of your systems, and the specific ISO standard. For a customised quote, call IntegPRO on ${company.phone} or email ${company.email}.` },
 ];
 ---
 <Base
-  title="Industries | Integpro"
-  description="Discover IntegPRO's compliance solutions for renewable energy standards, ensuring efficiency and standards adherence."
+  title="ISO Certification by Industry in Australia | integPRO"
+  description="ISO certification for Australian construction, manufacturing, medical, ICT, environmental and government organisations: ISO 9001, 14001, 45001, 27001, 13485."
 >
+  <IsoBar />
   <CenterHero
-    title='<span class="gold">Industries</span> We Serve'
-    text="Tailored ISO & DISP solutions for Defence, Construction, Medical Devices, Government, and Manufacturing."
-    actions={[{ label: 'Free Gap Assessment', href: '/free-consultation' }, { label: 'View Services', href: '/iso-disp-services', primary: false }]}
-    stats={[{ value: '1,000+', label: 'Projects' }, { value: '7+', label: 'Years' }, { value: '100%', label: 'Success' }]}
+    title='ISO Solutions by <span class="gold">Industry</span>'
+    text="ISO certification tailored to construction, manufacturing, medical devices, ICT, environment and government."
+    actions={[{ label: 'Free Gap Assessment', href: '/free-consultation' }, { label: 'View Services', href: '/services', primary: false }]}
   />
 
   <section class="section solutions">
     <div class="container">
       <div class="section-head">
         <h2>Specialised <span class="gold">Industry Solutions</span></h2>
-        <p class="wide">Click any industry to see tailored compliance solutions, deliverables, and timelines</p>
+        <p class="wide">Choose your industry to see the ISO standard that fits it best.</p>
       </div>
       <div class="card-grid">
         {industries.map((it) => (
@@ -56,10 +58,11 @@ const faqs = [
             <img src={img(it.icon)} alt="" width="48" height="48" loading="lazy" />
             <h3>{it.title}</h3>
             <p>{it.text}</p>
-            <a href={it.href} class="btn btn-outline learn">Learn More</a>
+            <a href={it.href} class="btn btn-outline learn">{it.link} ›</a>
           </article>
         ))}
       </div>
+      <p class="disp-link">Working with Defence? <a href="/disp/industries">See DISP by industry ›</a></p>
     </div>
   </section>
 
@@ -88,7 +91,7 @@ const faqs = [
     </div>
   </section>
 
-  <ProcessSteps sub="A proven approach to ISO certification. Typical timeline: 4–6 months." bandOnly />
+  <ProcessSteps sub="A proven approach to ISO certification. Typical timeline: 4–6 months." steps={['Gap Analysis', 'Documentation', 'Implementation', 'Internal Audit', 'Certification', 'Ongoing Support']} bandOnly />
 
   <Faq items={faqs} />
 
@@ -97,6 +100,8 @@ const faqs = [
 
 <style>
   .section-head .wide { max-width: 680px; }
+  .disp-link { margin: 28px 0 0; text-align: center; font-size: 15px; }
+  .disp-link a { color: var(--gold); font-weight: 700; }
   .section-head h2 { font-weight: 400; }
   .results .section-head h2 { font-weight: 700; }
 

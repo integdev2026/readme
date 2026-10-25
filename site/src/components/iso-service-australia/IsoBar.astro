@@ -1,0 +1,11 @@
+---
+// ISO section bar: breadcrumbs and the ISO menu, shown on the ISO overview and each standard page.
+import SectionBar from '../SectionBar.astro';
+import { isoNav } from '../../data/site';
+
+const path = Astro.url.pathname.replace(/\/$/, '');
+const current = isoNav.find((n, i) => i > 0 && n.href === path);
+const crumbs = [{ label: 'Home', href: '/' }, { label: 'ISO', href: isoNav[0].href }];
+if (current) crumbs.push({ label: current.label, href: current.href });
+---
+<SectionBar crumbs={crumbs} nav={isoNav} label="ISO section" />

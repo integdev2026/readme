@@ -1,0 +1,30 @@
+---
+// Responsive YouTube video (privacy-enhanced domain), centred in its own band. With `autoplay` it starts
+// muted as soon as the page loads (browsers only allow autoplay without sound); visitors can unmute it.
+// `spaced` adds room above, for pages whose hero ends in a background image.
+interface Props { id: string; title: string; spaced?: boolean; autoplay?: boolean }
+const { id, title, spaced = false, autoplay = false } = Astro.props;
+const params = autoplay ? 'rel=0&autoplay=1&mute=1&playsinline=1' : 'rel=0';
+---
+<section class:list={['video-wrap', { spaced }]}>
+  <div class="container">
+    <div class="video">
+      <iframe
+        src={`https://www.youtube-nocookie.com/embed/${id}?${params}`}
+        title={title}
+        loading={autoplay ? 'eager' : 'lazy'}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<style>
+  .video-wrap { padding: 0 0 64px; }
+  .spaced { padding-top: 56px; }
+  @media (max-width: 760px) { .spaced { padding-top: 32px; } .video-wrap { padding-bottom: 40px; } }
+  .video { max-width: 860px; margin: 0 auto; aspect-ratio: 16 / 9; border-radius: var(--radius-card); overflow: hidden; box-shadow: var(--shadow-card); background: var(--navy); }
+  .video iframe { display: block; width: 100%; height: 100%; border: 0; }
+</style>

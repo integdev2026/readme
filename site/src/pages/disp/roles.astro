@@ -1,0 +1,14 @@
+---
+import HubPage from '../../components/disp/HubPage.astro';
+import { roles } from '../../data/disp';
+import { hubCopy } from '../../data/disp-copy';
+---
+<HubPage
+  copy={hubCopy.roles}
+  title="DISP by Role | Security Officers, Directors, IT Managers | integPRO"
+  description="DISP guidance for the people who make it happen: Security Officers and CSOs, directors and owners, and IT managers."
+  label="Roles"
+  heroTitle='DISP by <span class="gold">Role</span>'
+  heroText="DISP involves people across your business. Find out what it means for your role."
+  cards={roles.map((t) => ({ href: `/disp/${t.slug}`, title: t.label, text: t.heroText, icon: t.icon }))}
+/>

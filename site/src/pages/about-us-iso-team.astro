@@ -48,8 +48,8 @@ const certs = [
 ];
 ---
 <Base
-  title="ISO Certification and Integrated Management Systems | integPRO Services"
-  description="Discover expert support for ISO certifications and integrated management systems. Explore how integPRO can help your business succeed."
+  title="About integPRO | ISO and DISP Consultants Australia"
+  description="Meet integPRO, a Sydney-based team of ISO and DISP consultants helping businesses across Australia achieve certification and Defence security membership."
 >
   <section class="hero">
     <div class="container hero-grid">
@@ -244,5 +244,11 @@ const certs = [
     .tl-wrap :global(.tl-card) { padding: 20px 20px 22px; }
     .tl-wrap :global(.timeline::before) { left: 10px; }
     .tl-wrap :global(.timeline .l::after), .tl-wrap :global(.timeline .r::after) { left: 0; right: auto; }
+  }
+  /* Phones: trim the empty space at the bottom of cards. */
+  @media (max-width: 760px) {
+    .feature { padding: 24px 22px 26px; }
+    .card-grid { align-items: start; }
+    .mission, .today { padding: 26px 22px; }
   }
 </style>

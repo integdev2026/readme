@@ -1,21 +1,37 @@
 ---
 import type { Category } from '../../lib/wix';
+import { social } from '../../data/site';
 interface Props { categories: Category[]; active?: string; variant?: 'bar' | 'plain' }
 const { categories, active, variant = 'bar' } = Astro.props;
+const youtube = social.find((s) => s.label === 'YouTube')!.href;
 ---
 <nav class:list={['cat-nav', variant]} aria-label="Blog categories">
-  <a href="/blog" class:list={{ active: !active }}>All Posts</a>
-  {categories.map((c) => (
-    <a href={`/blog/categories/${c.slug}`} class:list={{ active: active === c.slug }}>{c.label}</a>
-  ))}
+  <div class="links">
+    <a href="/blog" class:list={{ active: !active }}>All Posts</a>
+    {categories.map((c) => (
+      <a href={`/blog/categories/${c.slug}`} class:list={{ active: active === c.slug }}>{c.label}</a>
+    ))}
+  </div>
+  {variant === 'bar' && (
+    <a href={youtube} class="yt-btn" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.7 15V9l5.8 3-5.8 3Z" /></svg>
+      Find us on YouTube
+    </a>
+  )}
 </nav>
 
 <style>
-  .cat-nav { display: flex; flex-wrap: wrap; gap: 4px 32px; }
+  .cat-nav { display: flex; align-items: center; gap: 12px 24px; }
+  .links { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; gap: 6px 28px; }
   .bar { padding: 26px 20px; background: var(--gold-light); }
   .cat-nav a { font-size: 14px; color: var(--ink); }
   .bar a { color: var(--gold-dark); }
   .cat-nav a.active, .cat-nav a:hover { color: var(--gold); }
-  .plain { gap: 4px 28px; padding: 16px 0; }
+  /* A distinct pill on the right of the bar, separate from the category links. */
+  .cat-nav a.yt-btn { flex: none; display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 18px; border-radius: 999px; background: #ff0000; color: #fff; font-weight: 700; box-shadow: 0 4px 12px rgba(255, 0, 0, 0.25); }
+  .cat-nav a.yt-btn:hover { background: #cc0000; color: #fff; }
+  @media (max-width: 760px) { .cat-nav { flex-direction: column; align-items: flex-start; } .cat-nav a.yt-btn { height: 44px; } }
+  .plain { padding: 16px 0; }
+  .plain .links { gap: 4px 28px; }
   .plain a { font-size: 12px; }
 </style>

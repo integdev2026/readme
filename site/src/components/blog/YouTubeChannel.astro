@@ -1,0 +1,55 @@
+---
+// integPRO YouTube channel band with three featured videos (shown on the main blog page).
+import { social } from '../../data/site';
+
+const channel = social.find((s) => s.label === 'YouTube')!.href.replace(/\/$/, '');
+const videos = ['raUfdWG3oRI', '4WB-NEOKMbM', '0VyygnZXwtk'];
+---
+<section class="yt" aria-labelledby="yt-title">
+  <div class="channel">
+    <span class="logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.7 15V9l5.8 3-5.8 3Z" /></svg>
+    </span>
+    <div class="text">
+      <h2 id="yt-title">integPRO on <span class="gold">YouTube</span></h2>
+      <p>Explainer videos on ISO certification, DISP membership and management systems.</p>
+    </div>
+    <div class="actions">
+      <a class="btn btn-primary" href={`${channel}?sub_confirmation=1`} target="_blank" rel="noopener">Subscribe</a>
+      <a class="btn btn-outline" href={channel} target="_blank" rel="noopener">Visit channel</a>
+    </div>
+  </div>
+  <div class="videos">
+    {videos.map((id, i) => (
+      <div class="video">
+        <iframe
+          src={`https://www.youtube-nocookie.com/embed/${id}?rel=0`}
+          title={`integPRO video ${i + 1}`}
+          loading="lazy"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .yt { margin-top: 64px; padding: 32px; background: var(--bg-faq); border-radius: var(--radius-card); }
+  .channel { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .logo { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: #fff; color: #ff0000; box-shadow: var(--shadow-card); flex: none; }
+  .text { flex: 1; min-width: 220px; }
+  .text h2 { font-size: 26px; }
+  .text p { margin: 6px 0 0; font-size: 15px; }
+  .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+  .videos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 28px; }
+  .video { aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden; background: var(--navy); box-shadow: var(--shadow-card); }
+  .video iframe { display: block; width: 100%; height: 100%; border: 0; }
+  @media (max-width: 860px) { .videos { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) {
+    .yt { padding: 22px 16px; margin-top: 48px; }
+    .actions { width: 100%; }
+    .actions .btn { flex: 1; justify-content: center; }
+  }
+</style>

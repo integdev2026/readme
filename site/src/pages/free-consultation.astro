@@ -3,11 +3,11 @@ import Base from '../layouts/Base.astro';
 import ContactBand from '../components/ContactBand.astro';
 import { company, social } from '../data/site';
 
-const mapQuery = encodeURIComponent('Parkline Place, Level 35/252 Pitt St, Sydney NSW 2000');
+const mapQuery = encodeURIComponent(company.address);
 ---
 <Base
   title="Contact Us | Free Business Consultation for ISO Certification - integPRO"
-  description="Discover expert ISO consulting and auditing services at integPRO. Book your free business consultation today to achieve ISO certification!"
+  description="Book a free consultation with integPRO's Sydney-based ISO and DISP consultants. We work with businesses across Australia, online or at our Pitt St office."
 >
   <!-- Hero -->
   <section class="hero">
@@ -34,7 +34,7 @@ const mapQuery = encodeURIComponent('Parkline Place, Level 35/252 Pitt St, Sydne
         <dl>
           <div class="row">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" /><circle cx="12" cy="10" r="2.5" /></svg>
-            <div><dt>Address:</dt><dd><b>Sydney:</b> Parkline Place, Level 35/252 Pitt St, Sydney NSW 2000</dd></div>
+            <div><dt>Address:</dt><dd>{company.address}</dd></div>
           </div>
           <div class="row">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2Z" /></svg>

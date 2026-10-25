@@ -1,0 +1,112 @@
+---
+// ISO service packages: deliverables, outcomes and timeline for each standard (moved from the old /iso-disp-services page).
+import Chevron from '../Chevron.astro';
+import SectionHead from '../SectionHead.astro';
+
+const img = (n: string) => `/images/iso-disp-services/${n}.webp`;
+
+const isoPackages = [
+  {
+    icon: 'icon-award', timeline: '3-6 months', title: 'ISO 9001 Quality Management',
+    items: ['Gap analysis report', 'Quality manual and procedures', 'Process documentation', 'Internal audit program', 'Management review framework'],
+    outcome: ['ISO 9001 Certificate', 'Customer Satisfaction and Business Growth', 'Continuous Improvement and Enhance Efficiency', 'Standardisation of Business Process'],
+    href: '/iso-9001-compliance-certification-sydney',
+  },
+  {
+    icon: 'icon-shield', timeline: '4-8 months', title: 'ISO 27001 Information Security',
+    items: ['Information security policy', 'Risk assessment and treatment plan', 'Statement of Applicability (SoA)', 'Security controls implementation', 'ISMS documentation'],
+    outcome: ['ISO 27001 Certificate', 'Information Security', 'Data Protection and Privacy Compliance', 'Protection of Intellectual Property'],
+    href: '/iso-27001-information-security-management-system',
+  },
+  {
+    icon: 'icon-environment', timeline: '3-6 months', title: 'ISO 14001 Environmental Management',
+    items: ['Environmental aspects register', 'Legal compliance matrix', 'Environmental policy and objectives', 'Operational controls', 'EMS documentation'],
+    outcome: ['ISO 14001 Certificate', 'Enhance Sustainability', 'Legal Compliance relevant to Environmental Protection', 'Protect Environment and minimise impacts'],
+    href: '/iso-14001-compliance-certification',
+  },
+  {
+    icon: 'icon-health-safety', timeline: '3-6 months', title: 'ISO 45001 Occupational Health & Safety',
+    items: ['Hazard identification & risk assessment', 'OH&S policy & objectives', 'Legal & compliance register', 'Worker consultation framework', 'OHSMS documentation'],
+    outcome: ['ISO 45001 Certificate', 'Legal Compliance relevant to Workplace Health and Safety', 'Positive and safe culture', 'Confidence to manage complex and high-risk operations'],
+    href: '/iso-45001-occupational-health-safety',
+  },
+  {
+    icon: 'icon-growth', timeline: '3-6 months', title: 'ISO 13485 Medical Devices Quality Management System', wide: true,
+    items: ['Regulatory & compliance gap analysis (TGA / FDA / EU MDR aligned)', 'Quality policy & quality objectives', 'Risk management framework (ISO 14971 aligned)', 'Design & development controls documentation', 'QMS procedures & records for medical devices'],
+    outcome: ['ISO 13485 Certificate', 'Compliance with regulatory requirements', 'Robust Design Control and Risk Management', 'Customer Satisfaction and Business Growth', 'Continuous Improvement and Enhance Efficiency', 'Full control and minimise Adverse Events'],
+    href: '/iso-13485-medical-devices-quality-management-system',
+  },
+];
+---
+<div class="pk">
+  <section class="section iso" id="servicepackages">
+    <div class="container">
+      <SectionHead title="Complete ISO Implementation" sub="Structured, transparent service delivery with clear deliverables, timelines, and outcomes." />
+      <div class="iso-grid">
+        {isoPackages.map((p) => (
+          <article class:list={['iso-card', { wide: p.wide }]}>
+            <header>
+              <img src={img(p.icon)} alt="" width="43" height="43" loading="lazy" />
+              <p class="timeline"><span>Timeline:</span><strong>{p.timeline}</strong></p>
+            </header>
+            <h3>{p.title}</h3>
+            <p class="get">What you get:</p>
+            <ul class="dots">{p.items.map((i) => <li>{i}</li>)}</ul>
+            <div class="outcome">
+              <p class="tick">Outcome</p>
+              <ul>{p.outcome.map((o) => <li>- {o}</li>)}</ul>
+            </div>
+            <div class="card-actions">
+              <a href="/free-consultation" class="btn btn-quote">Get Quote</a>
+              <a href={p.href} class="btn btn-olive">Start Your Certification<Chevron /></a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+  .pk :global(.section-head h2) { font-weight: 400; }
+  .tick { position: relative; padding-left: 20px; }
+  .tick::before { content: ''; position: absolute; left: 0; top: 0.2em; width: 13px; height: 13px; background: url('/images/iso-disp-services/tick.webp') center / contain no-repeat; }
+  /* ISO packages */
+  .iso { padding-top: 40px; }
+  .iso-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+  .iso-card { display: flex; flex-direction: column; padding: 30px 32px 32px; background: #fafafa; border-radius: 16px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+  .iso-card.wide { grid-column: 1 / -1; padding-inline: 56px 36px; }
+  .iso-card header { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; }
+  .iso-card header img { width: 43px; height: 43px; border-radius: 6px; }
+  .iso-card h3 { margin-top: 12px; font-family: var(--font-body); font-size: 18px; line-height: 25.2px; color: var(--gold); }
+  .timeline { display: grid; margin: 10px 0 0; font-size: 12px; line-height: 16.8px; flex: none; }
+  .timeline strong { color: var(--text); }
+  .get { margin: 28px 0 6px; font-size: 16px; }
+  .dots { list-style: none; margin: 0; padding: 0; font-size: 16px; line-height: 22.4px; }
+  .dots li::before { content: '• '; color: var(--gold); }
+  .outcome { margin-top: 32px; padding: 14px 22px 22px 10px; background: rgba(182, 232, 227, 0.3); border-radius: 16px; font-size: 12px; line-height: 16.8px; flex: 1; }
+  .wide .outcome { padding-left: 36px; }
+  .outcome p { margin: 0 0 6px 0; }
+  .outcome ul { list-style: none; margin: 0; padding-left: 20px; }
+  .card-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 16px; }
+  .wide .card-actions { justify-content: flex-end; margin-top: 20px; }
+  .btn-quote { height: 30px; padding: 0 24px; background: #fff; color: var(--gold); border: 2px solid var(--text); }
+  .btn-quote:hover { background: var(--gold-light); }
+  .btn-olive { height: 30px; padding: 0 20px; background: #4b5320; border-color: #4b5320; color: #fff; }
+  .btn-olive:hover { background: #363c17; }
+
+  @media (max-width: 860px) {
+    .iso-grid { grid-template-columns: minmax(0, 1fr); }
+    .iso-card.wide { padding-inline: 32px; }
+    .wide .card-actions { justify-content: center; }
+  }
+  @media (max-width: 760px) {
+    .iso-grid { gap: 16px; }
+    .iso-card, .iso-card.wide { padding: 22px 20px 20px; }
+    .iso-card h3 { margin-top: 8px; }
+    .dots, .get { font-size: 15px; }
+    .outcome { flex: none; margin-top: 20px; padding: 12px 16px 14px 10px; font-size: 14px; line-height: 1.45; }
+    .get { margin-top: 18px; }
+    .card-actions { margin-top: 14px; }
+  }
+</style>

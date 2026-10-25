@@ -1,0 +1,52 @@
+---
+// Side-by-side comparison of what each DISP level includes.
+import Icon from '../Icon.astro';
+import { comparison, ladder } from '../../data/disp';
+---
+<div class="table-wrap">
+  <table>
+    <caption>What each DISP level includes</caption>
+    <thead>
+      <tr>
+        <th scope="col">Requirement</th>
+        {ladder.map((l) => <th scope="col"><a href={l.href}>{l.label}</a><small>{l.classification}</small></th>)}
+      </tr>
+    </thead>
+    <tbody>
+      {comparison.map((c) => (
+        <tr>
+          <th scope="row">{c.row}</th>
+          {c.levels.map((on) => (
+            <td>{on ? <span class="yes"><Icon name="check" size={18} /><span class="sr">Included</span></span> : <span class="no" aria-label="Not required">–</span>}</td>
+          ))}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .table-wrap { max-width: 100%; overflow-x: auto; background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
+  table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 14px; }
+  caption { padding: 22px 24px 6px; text-align: left; font-family: var(--font-heading); font-weight: 700; font-size: 18px; color: var(--ink); }
+  th, td { padding: 12px 14px; border-bottom: 1px solid var(--line); text-align: center; }
+  tbody th { text-align: left; font-weight: 400; color: var(--text); }
+  thead th { vertical-align: bottom; font-family: var(--font-heading); }
+  thead th:first-child { text-align: left; color: var(--muted); font-weight: 400; }
+  thead a { color: var(--ink); }
+  thead a:hover { color: var(--gold); }
+  thead small { display: block; margin-top: 4px; font-family: var(--font-body); font-size: 11px; font-weight: 400; color: var(--gold-dark); }
+  tbody tr:nth-child(even) { background: var(--bg-soft); }
+  tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
+  .yes { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--gold-light); color: var(--gold-dark); }
+  .no { color: var(--muted); }
+  @media (max-width: 760px) {
+    table { min-width: 0; font-size: 12px; }
+    caption { padding: 18px 14px 4px; font-size: 16px; }
+    th, td { padding: 8px 4px; }
+    tbody th { padding-left: 12px; }
+    thead small { display: none; }
+    .yes { width: 22px; height: 22px; }
+  }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>
