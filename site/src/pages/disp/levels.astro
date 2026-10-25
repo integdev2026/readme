@@ -3,8 +3,10 @@ import HubPage from '../../components/disp/HubPage.astro';
 import LevelLadder from '../../components/disp/LevelLadder.astro';
 import LevelTable from '../../components/disp/LevelTable.astro';
 import { levels, levelIcons } from '../../data/disp';
+import { hubCopy } from '../../data/disp-copy';
 ---
 <HubPage
+  copy={hubCopy.levels}
   title="DISP Membership Levels Explained | Entry Level to Level 3 | integPRO"
   description="Compare DISP Entry Level, Level 1, Level 2 and Level 3 membership: the information each level covers and who each level suits."
   label="Levels"

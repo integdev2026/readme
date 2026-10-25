@@ -1,8 +1,10 @@
 ---
 import HubPage from '../../components/disp/HubPage.astro';
 import { roles } from '../../data/disp';
+import { hubCopy } from '../../data/disp-copy';
 ---
 <HubPage
+  copy={hubCopy.roles}
   title="DISP by Role | Security Officers, Directors, IT Managers | integPRO"
   description="DISP guidance for the people who make it happen: Security Officers and CSOs, directors and owners, and IT managers."
   label="Roles"

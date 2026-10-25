@@ -2,6 +2,7 @@
 import DispShell from '../../components/disp/DispShell.astro';
 import Faq from '../../components/iso-service-australia/Faq.astro';
 import { faq, crumbs } from '../../data/disp';
+import { moreFaq } from '../../data/disp-copy';
 ---
 <DispShell
   title="DISP FAQ | Cost, Timeline, Levels and Roles | integPRO"
@@ -12,7 +13,7 @@ import { faq, crumbs } from '../../data/disp';
     <h1>DISP <span class="gold">Questions</span></h1>
     <p>Common questions about the Defence Industry Security Program and membership.</p>
   </section>
-  <Faq items={faq} />
+  <Faq items={[...faq, ...moreFaq]} />
 </DispShell>
 
 <style>

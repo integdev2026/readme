@@ -1,9 +1,11 @@
 ---
 import HubPage from '../../components/disp/HubPage.astro';
 import { industries } from '../../data/disp';
+import { hubCopy } from '../../data/disp-copy';
 ---
 <HubPage
-  title="DISP by Industry | Manufacturing, Engineering, Construction, IT | integPRO"
+  copy={hubCopy.industries}
+  title="DISP by Industry: Manufacturing, Construction, IT | integPRO"
   description="How DISP membership applies to manufacturers, engineering firms, construction contractors and IT providers in the Defence supply chain."
   label="Industries"
   heroTitle='DISP by <span class="gold">Industry</span>'

@@ -1,11 +1,47 @@
 ---
-// Services hub: a signpost to the two separate services. Keep the copy short and free of ISO / DISP
-// keyword targeting; the detail lives on /iso-service-australia and /disp, which this page links to.
+// Services hub: a signpost to the two separate services. The copy explains how we work and how the
+// services differ; detailed ISO / DISP keyword targeting stays on /iso-service-australia and /disp.
 import Base from '../layouts/Base.astro';
 import ContactBand from '../components/ContactBand.astro';
 import CenterHero from '../components/iso-service-australia/CenterHero.astro';
 import Icon from '../components/Icon.astro';
 import Chevron from '../components/Chevron.astro';
+import Prose from '../components/disp/Prose.astro';
+
+const howWeWork = [
+  {
+    h: 'How we work',
+    p: [
+      'Every engagement starts with a free consult and a gap analysis. We look at what you already do well, what the standard or program actually requires, and what your customers or contracts are asking for. From there you get a written scope with clear stages, so you know what the work involves before you commit.',
+      'We build systems around how your business already operates. Policies and procedures are written for your people and your processes, not copied from a template, and we keep the paperwork to what you will actually use.',
+    ],
+  },
+  {
+    h: 'ISO certification and DISP membership are different',
+    p: [
+      'ISO certification is awarded by an independent certification body after an external audit against an international standard such as ISO 9001 or ISO 27001. It is usually driven by customers, tenders or regulators across many industries.',
+      'DISP membership is granted by the Department of Defence. It covers the security of Defence information, people, premises and systems, and is driven by Defence contracts and primes. Some businesses need both. Holding one does not give you the other, although well-run management systems make the second easier to achieve.',
+    ],
+  },
+  {
+    h: 'What you can expect from us',
+    list: [
+      'Consultants with hands-on experience across quality, environment, safety, information security, medical devices and Defence security.',
+      'A fixed scope and staged plan, with progress reviewed at regular check-ins.',
+      'Support through the external audit or Defence assessment, including responses to findings or requests for information.',
+      'Ongoing support after certification or membership, such as internal audits, management reviews and annual reporting.',
+    ],
+    p: [
+      'We do not issue certificates or grant membership ourselves. Certification decisions are made by accredited certification bodies, and DISP decisions are made by Defence. Our job is to get you ready and support you through the process.',
+    ],
+  },
+  {
+    h: 'Who we work with',
+    p: [
+      'Our clients range from small family businesses to established organisations across Australia, in construction, manufacturing, engineering, healthcare and medical devices, IT and managed services, and Defence supply. Many run integrated management systems that cover several ISO standards at once, which reduces duplication and audit time.',
+    ],
+  },
+];
 
 const services = [
   {
@@ -44,7 +80,7 @@ const schema = {
 };
 ---
 <Base
-  title="Our Services | integPRO"
+  title="ISO & DISP Consulting Services in Australia | integPRO"
   description="integPRO, Sydney: two specialist services for businesses across Australia, ISO certification consulting and DISP membership support. Choose the one you need."
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
@@ -83,6 +119,8 @@ const schema = {
       </ul>
     </div>
   </section>
+
+  <Prose sections={howWeWork} />
 
   <ContactBand title='Talk to <span class="gold">Our Team</span>' sub="Not sure where to start? Book a free consult and we'll point you in the right direction." showDetails={false} />
 </Base>

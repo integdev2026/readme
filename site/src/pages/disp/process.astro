@@ -2,7 +2,9 @@
 import DispShell from '../../components/disp/DispShell.astro';
 import CenterHero from '../../components/iso-service-australia/CenterHero.astro';
 import Icon from '../../components/Icon.astro';
+import Prose from '../../components/disp/Prose.astro';
 import { processSteps, dispCta, crumbs } from '../../data/disp';
+import { processDetail, processIntro } from '../../data/disp-copy';
 ---
 <DispShell
   title="Our DISP Process | Gap Analysis to Membership | integPRO"
@@ -28,6 +30,7 @@ import { processSteps, dispCta, crumbs } from '../../data/disp';
       ))}
     </ol>
   </section>
+  <Prose sections={[...processDetail.map((d) => ({ h: d.h, p: [d.p] })), ...processIntro]} />
 </DispShell>
 
 <style>

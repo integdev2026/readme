@@ -4,6 +4,9 @@ import DispShell from '../../components/disp/DispShell.astro';
 import LinkCards from '../../components/disp/LinkCards.astro';
 import PageHero from '../../components/PageHero.astro';
 import Icon from '../../components/Icon.astro';
+import Prose from '../../components/disp/Prose.astro';
+import Faq from '../../components/iso-service-australia/Faq.astro';
+import { pageCopy } from '../../data/disp-copy';
 import { levels, levelIcons, industries, roles, dispCta, crumbs, type Level, type Topic } from '../../data/disp';
 
 const { slug } = Astro.params;
@@ -18,6 +21,7 @@ const parent = level
   : industry
     ? { label: 'Industries', href: '/disp/industries' }
     : { label: 'Roles', href: '/disp/roles' };
+const copy = pageCopy[page.slug];
 const others = levels.filter((l) => l.slug !== page.slug);
 ---
 <DispShell title={page.title} description={page.description} crumbs={crumbs(parent, { label: page.label, href: `/disp/${page.slug}` })}>
@@ -67,6 +71,9 @@ const others = levels.filter((l) => l.slug !== page.slug);
       </div>
     </section>
   )}
+
+  {copy && <Prose sections={copy.sections} />}
+  {copy?.faqs && <Faq items={copy.faqs} />}
 
   <section class="section related">
     <div class="container">
