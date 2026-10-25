@@ -196,6 +196,7 @@ export const industries: Topic[] = [
   },
   {
     slug: 'it-managed-services',
+    image: { src: wixImage('6d9105_53e731139f624f17904215112052f2d5~mv2.png'), alt: 'Managed IT services team monitoring network and security dashboards' },
     icon: 'server',
     label: 'IT & Managed Services',
     title: 'DISP for IT & Managed Service Providers | integPRO',
