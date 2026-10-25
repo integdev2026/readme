@@ -4,11 +4,12 @@ import Base from '../../layouts/Base.astro';
 import ContactBand from '../ContactBand.astro';
 import SectionBar from '../SectionBar.astro';
 import { dispNav, type Crumb } from '../../data/disp';
+import type { Node, PageType } from '../../lib/schema';
 
-interface Props { title: string; description: string; crumbs: Crumb[] }
-const { title, description, crumbs } = Astro.props;
+interface Props { title: string; description: string; crumbs: Crumb[]; pageType?: PageType; schema?: Node[] }
+const { title, description, crumbs, pageType, schema } = Astro.props;
 ---
-<Base title={title} description={description}>
+<Base title={title} description={description} pageType={pageType} schema={schema}>
   <SectionBar crumbs={crumbs} nav={dispNav} label="DISP section" />
 
   <slot />

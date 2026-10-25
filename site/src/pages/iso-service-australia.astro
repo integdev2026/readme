@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { service } from '../lib/schema';
 import IsoBar from '../components/iso-service-australia/IsoBar.astro';
 import VideoEmbed from '../components/VideoEmbed.astro';
 import ContactBand from '../components/ContactBand.astro';
@@ -77,6 +78,7 @@ const faqs = [
 ];
 ---
 <Base
+  schema={[service(Astro.site!, { name: 'ISO Certification Consulting', description: 'ISO certification consulting across Australia for ISO 9001, 14001, 45001, 27001 and 13485, from gap analysis to certification audit and ongoing support.', path: '/iso-service-australia', serviceType: 'ISO certification consulting' })]}
   title="ISO Certification Consultants Australia | integPRO"
   description="Sydney-based ISO consultants helping businesses across Australia achieve ISO 9001, 14001, 45001, 27001 and 13485 certification, from gap analysis to audit."
 >

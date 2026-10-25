@@ -7,6 +7,7 @@ import Icon from '../../components/Icon.astro';
 import Prose from '../../components/disp/Prose.astro';
 import Faq from '../../components/iso-service-australia/Faq.astro';
 import { pageCopy } from '../../data/disp-copy';
+import { service } from '../../lib/schema';
 import { levels, levelIcons, industries, roles, dispCta, crumbs, type Level, type Topic } from '../../data/disp';
 
 const { slug } = Astro.params;
@@ -22,9 +23,16 @@ const parent = level
     ? { label: 'Industries', href: '/disp/industries' }
     : { label: 'Roles', href: '/disp/roles' };
 const copy = pageCopy[page.slug];
+const schema = [service(Astro.site!, {
+  name: `DISP ${level ? `${page.label} Membership` : `Consulting for ${page.label}`}`,
+  description: page.description,
+  path: `/disp/${page.slug}`,
+  serviceType: 'DISP membership consulting',
+  audience: topic ? page.label : undefined,
+})];
 const others = levels.filter((l) => l.slug !== page.slug);
 ---
-<DispShell title={page.title} description={page.description} crumbs={crumbs(parent, { label: page.label, href: `/disp/${page.slug}` })}>
+<DispShell title={page.title} description={page.description} schema={schema} crumbs={crumbs(parent, { label: page.label, href: `/disp/${page.slug}` })}>
   <PageHero title={page.heroTitle} text={page.heroText} actions={[dispCta]}>
     {topic && (
       <div slot="media" class="topic-media">

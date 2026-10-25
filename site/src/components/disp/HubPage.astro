@@ -11,7 +11,7 @@ interface Card { href: string; title: string; text: string; tag?: string; icon?:
 interface Props { title: string; description: string; label: string; heroTitle: string; heroText: string; cards: Card[]; cols?: number; copy?: CopySection[] }
 const { title, description, label, heroTitle, heroText, cards, cols, copy } = Astro.props;
 ---
-<DispShell title={title} description={description} crumbs={crumbs({ label, href: Astro.url.pathname })}>
+<DispShell title={title} description={description} pageType="CollectionPage" crumbs={crumbs({ label, href: Astro.url.pathname })}>
   <CenterHero title={heroTitle} text={heroText} actions={[dispCta]} />
   <section class="section hub">
     <div class="container">

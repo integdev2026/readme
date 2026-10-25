@@ -5,8 +5,10 @@ import Icon from '../../components/Icon.astro';
 import Prose from '../../components/disp/Prose.astro';
 import { processSteps, dispCta, crumbs } from '../../data/disp';
 import { processDetail, processIntro } from '../../data/disp-copy';
+import { itemList } from '../../lib/schema';
 ---
 <DispShell
+  schema={[itemList('integPRO DISP process', processSteps.map((s, i) => ({ name: s.title, description: processDetail[i].p })))]}
   title="Our DISP Process | Gap Analysis to Membership | integPRO"
   description="How integPRO guides your business through DISP: gap analysis, action plan, implementation, governance, application and support. Entry Level: 3–6 months."
   crumbs={crumbs({ label: 'Process', href: '/disp/process' })}

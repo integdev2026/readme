@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { service } from '../lib/schema';
 import IsoBar from '../components/iso-service-australia/IsoBar.astro';
 import StandardPage from '../components/iso-standard-2/StandardPage.astro';
 import { icon } from '../components/iso-standard-2/data';
@@ -77,6 +78,7 @@ const cta = {
 };
 ---
 <Base
+  schema={[service(Astro.site!, { name: 'ISO 27001 Information Security Management System Consulting', description: 'ISO 27001 certification consulting: ISMS scope, risk assessment, Statement of Applicability, documentation and audit support.', path: '/iso-27001-information-security-management-system', serviceType: 'ISO 27001 certification consulting' })]}
   title="ISO 27001 Information Security Certification | integPRO"
   description="ISO 27001 certification in Australia: implement an Information Security Management System (ISMS), strengthen cyber security, protect business information."
 >

@@ -1,6 +1,7 @@
 ---
 // DISP hub (pillar page). Child pages live under /disp/; wording is integPRO's own, not shared with any other site.
 import DispShell from '../../components/disp/DispShell.astro';
+import { service } from '../../lib/schema';
 import LinkCards from '../../components/disp/LinkCards.astro';
 import CenterHero from '../../components/iso-service-australia/CenterHero.astro';
 import ProcessSteps from '../../components/iso-service-australia/ProcessSteps.astro';
@@ -18,6 +19,7 @@ const reasons = [
 ];
 ---
 <DispShell
+  schema={[service(Astro.site!, { name: 'DISP Membership Consulting', description: 'Preparing Australian businesses for Defence Industry Security Program membership, from Entry Level to Level 3: gap analysis, security policies, cyber controls and application support.', path: '/disp', serviceType: 'DISP membership consulting' })]}
   title="DISP Consultants Australia | Defence Industry Security Program | integPRO"
   description="Sydney-based DISP consultants helping Defence suppliers across Australia prepare for Entry Level to Level 3 membership: gap analysis, policies, cyber controls."
   crumbs={crumbs().slice(0, 2)}

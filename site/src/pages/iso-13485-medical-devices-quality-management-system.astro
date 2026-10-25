@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { service } from '../lib/schema';
 import IsoBar from '../components/iso-service-australia/IsoBar.astro';
 import StandardPage from '../components/iso-standard-2/StandardPage.astro';
 import { icon } from '../components/iso-standard-2/data';
@@ -77,6 +78,7 @@ const cta = {
 };
 ---
 <Base
+  schema={[service(Astro.site!, { name: 'ISO 13485 Medical Device Quality Management System Consulting', description: 'ISO 13485 certification consulting for medical device organisations: QMS design, documentation, internal audits and audit support.', path: '/iso-13485-medical-devices-quality-management-system', serviceType: 'ISO 13485 certification consulting' })]}
   title="ISO 13485 Medical Device QMS Consultants | integPRO"
   description="ISO 13485 certification and consulting for Australian medical device businesses. Build a compliant QMS, manage risk, and meet TGA requirements."
 >

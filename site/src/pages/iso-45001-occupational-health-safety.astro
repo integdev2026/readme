@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { service } from '../lib/schema';
 import IsoBar from '../components/iso-service-australia/IsoBar.astro';
 import StandardHero from '../components/iso-standard/StandardHero.astro';
 import StandardIntro from '../components/iso-standard/StandardIntro.astro';
@@ -9,6 +10,7 @@ import StandardCta from '../components/iso-standard/StandardCta.astro';
 import { icons } from '../components/iso-standard/shared';
 ---
 <Base
+  schema={[service(Astro.site!, { name: 'ISO 45001 Occupational Health and Safety Consulting', description: 'ISO 45001 certification consulting: OH&S management system design, hazard and risk processes, documentation and audit support.', path: '/iso-45001-occupational-health-safety', serviceType: 'ISO 45001 certification consulting' })]}
   title="ISO 45001 OH&S Certification Australia | integPRO"
   description="Achieve ISO 45001 compliance and build a safer workplace. Expert OH&S management system consulting for Australian businesses. Book a free consultation."
 >

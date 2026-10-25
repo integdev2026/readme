@@ -6,20 +6,25 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import MobileBar from '../components/MobileBar.astro';
 import { company, social } from '../data/site';
+import { orgId, websiteId, type Node, type PageType } from '../lib/schema';
 
 interface Props {
   title: string;
   description?: string;
   noindex?: boolean;
+  pageType?: PageType;
+  schema?: Node[];
 }
 
-const { title, description, noindex = false } = Astro.props;
+const { title, description, noindex = false, pageType = 'WebPage', schema = [] } = Astro.props;
 const canonical = new URL(Astro.url.pathname.replace(/(.)\/$/, '$1'), Astro.site);
 // Business details for search engines.
+const site = Astro.site!;
 const business = {
-  '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
+  '@id': orgId(site),
   name: company.name,
+  legalName: 'integPRO Pty Ltd',
   url: Astro.site?.href,
   logo: new URL('/images/logo.png', Astro.site).href,
   telephone: company.phone,
@@ -36,6 +41,18 @@ const business = {
   areaServed: { '@type': 'Country', name: 'Australia' },
   sameAs: social.map((s) => s.href),
 };
+const website = { '@type': 'WebSite', '@id': websiteId(site), url: site.href, name: company.name, inLanguage: 'en-AU', publisher: { '@id': orgId(site) } };
+const webpage = {
+  '@type': pageType,
+  '@id': `${canonical.href}#webpage`,
+  url: canonical.href,
+  name: title,
+  ...(description && { description }),
+  inLanguage: 'en-AU',
+  isPartOf: { '@id': websiteId(site) },
+  about: { '@id': orgId(site) },
+};
+const graph = { '@context': 'https://schema.org', '@graph': [business, website, webpage, ...schema] };
 ---
 <!doctype html>
 <html lang="en-AU">
@@ -56,7 +73,7 @@ const business = {
     <link rel="icon" sizes="192x192" type="image/png" href="https://static.wixstatic.com/media/6d9105_404148c071ca4a80ba6d6fbe08832d27~mv2.png/v1/fill/w_192,h_192,lg_1,usm_0.66_1.00_0.01/favicon.png" />
     <link rel="icon" sizes="32x32" type="image/png" href="https://static.wixstatic.com/media/6d9105_404148c071ca4a80ba6d6fbe08832d27~mv2.png/v1/fill/w_32,h_32,lg_1,usm_0.66_1.00_0.01/favicon.png" />
     <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/6d9105_404148c071ca4a80ba6d6fbe08832d27~mv2.png/v1/fill/w_180,h_180,lg_1,usm_0.66_1.00_0.01/apple-touch-icon.png" />
-    <script type="application/ld+json" set:html={JSON.stringify(business)} />
+    <script type="application/ld+json" set:html={JSON.stringify(graph)} />
     <slot name="head" />
   </head>
   <body id="top">

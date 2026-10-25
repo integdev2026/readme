@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { service } from '../lib/schema';
 import IsoBar from '../components/iso-service-australia/IsoBar.astro';
 import StandardHero from '../components/iso-standard/StandardHero.astro';
 import StandardIntro from '../components/iso-standard/StandardIntro.astro';
@@ -9,6 +10,7 @@ import StandardCta from '../components/iso-standard/StandardCta.astro';
 import { icons } from '../components/iso-standard/shared';
 ---
 <Base
+  schema={[service(Astro.site!, { name: 'ISO 9001 Quality Management System Consulting', description: 'ISO 9001 certification consulting: quality management system design, documentation, internal audits and certification audit support.', path: '/iso-9001-compliance-certification-sydney', serviceType: 'ISO 9001 certification consulting' })]}
   title="ISO 9001 Certification Consultants Sydney | integPRO"
   description="ISO 9001 certification consultants in Sydney, supporting businesses across Australia with quality management system design, documentation and audits."
 >

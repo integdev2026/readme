@@ -1,11 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
+
 import ContactBand from '../components/ContactBand.astro';
 import { company, social } from '../data/site';
 
 const mapQuery = encodeURIComponent(company.address);
 ---
 <Base
+  pageType="ContactPage"
   title="Contact Us | Free Business Consultation for ISO Certification - integPRO"
   description="Book a free consultation with integPRO's Sydney-based ISO and DISP consultants. We work with businesses across Australia, online or at our Pitt St office."
 >

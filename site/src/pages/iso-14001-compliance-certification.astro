@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { service } from '../lib/schema';
 import IsoBar from '../components/iso-service-australia/IsoBar.astro';
 import StandardHero from '../components/iso-standard/StandardHero.astro';
 import StandardIntro from '../components/iso-standard/StandardIntro.astro';
@@ -9,6 +10,7 @@ import StandardCta from '../components/iso-standard/StandardCta.astro';
 import { icons } from '../components/iso-standard/shared';
 ---
 <Base
+  schema={[service(Astro.site!, { name: 'ISO 14001 Environmental Management System Consulting', description: 'ISO 14001 certification consulting: environmental management system design, aspects and impacts, documentation and audit support.', path: '/iso-14001-compliance-certification', serviceType: 'ISO 14001 certification consulting' })]}
   title="ISO 14001 Environmental Management Certification | integPRO"
   description="ISO 14001 environmental management consulting for Australian businesses. Reduce costs, manage risk, improve compliance. Talk to an expert today."
 >
