@@ -37,9 +37,10 @@ import { processSteps, dispCta, crumbs } from '../../data/disp';
   .timeline li { position: relative; display: flex; flex-direction: column; align-items: center; gap: 18px; }
   .timeline li:not(:last-child)::after { content: ''; position: absolute; top: 31px; left: calc(50% + 34px); width: calc(100% - 54px); height: 3px; background: var(--gold-light); }
   .dot { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--gold-gradient); color: #fff; box-shadow: 0 6px 16px rgba(150, 130, 68, 0.35); }
-  .card { flex: 1; width: 100%; padding: 18px 16px 22px; background: #fff; border-radius: 16px; border-top: 4px solid var(--gold); text-align: center; }
+  .card { flex: 1; width: 100%; padding: 18px 16px 22px; background: #fff; border-radius: 16px; border-top: 4px solid var(--gold); text-align: center; container-type: inline-size; }
   .num { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold-dark); }
-  .card h2 { margin-top: 6px; font-size: 17px; }
+  /* Shrink long one-word titles ("Implementation") to fit narrow cards, so they stay centred. */
+  .card h2 { margin-top: 6px; font-size: min(17px, 11cqi); }
   .card p { margin: 8px 0 0; font-size: 13px; line-height: 1.5; }
   @media (max-width: 1000px) {
     .timeline { grid-template-columns: 1fr; max-width: 560px; gap: 18px; }
