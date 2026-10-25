@@ -39,6 +39,9 @@ Decisions parked for later. Ask the owner before go-live.
 - Sitemaps: `sitemap-index.xml` (pages) and `sitemap-posts.xml` (blog posts, built from Wix at request time). Old Wix editor sitemaps (`sitemap-integpro.xml`, `pages-sitemap.xml`) 301 to `sitemap-index.xml`.
 - `site/public/robots.txt` replaces the Wix-generated one. Check after deploy that the live /robots.txt is ours.
 
+## Bing Webmaster Tools (done 2026-10-25)
+- Verification meta tags (`msvalidate.01` and `google-site-verification`, same codes as the old Wix site) restored in `site/src/layouts/Base.astro`. Owner confirmed Bing set-up done.
+
 ## Blog clean-up (2026-10-24)
 - Duplicate posts redirected (see `site/src/data/retired-posts.ts`); they can also be deleted in the Wix blog dashboard.
 - Rename in Wix: "specialised-industry-solutions-for-iso-and-disp-compliance" shares its title with another post. Suggested: "Specialised Industry Solutions for ISO and DISP Compliance".
