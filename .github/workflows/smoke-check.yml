@@ -28,10 +28,10 @@ jobs:
           done
           # Google Ads relies on the GA4 tag on every page.
           curl -s "$BASE/" | grep -q 'G-8HG19XQE77' && echo "GA4 tag present" || { echo "::error::GA4 tag missing on home page"; fail=1; }
-          # The domain without www must permanently redirect to www.
+          # Every other form of the domain must end up on https://www. through permanent redirects.
           for u in https://integpro.com.au/ http://integpro.com.au/ http://www.integpro.com.au/; do
-            read code loc < <(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' "$u")
-            echo "$code $u -> $loc"
-            case "$code $loc" in 301\ https://www.integpro.com.au/*|308\ https://www.integpro.com.au/*) ;; *) echo "::error::$u should 301 to https://www.integpro.com.au/"; fail=1 ;; esac
+            out=$(curl -s -o /dev/null -L -w '%{http_code} %{url_effective} %{num_redirects}' "$u" || true)
+            echo "$u -> $out"
+            case "$out" in "200 https://www.integpro.com.au/ "[1-9]*) ;; *) echo "::error::$u should redirect to https://www.integpro.com.au/"; fail=1 ;; esac
           done
           exit ${fail:-0}
