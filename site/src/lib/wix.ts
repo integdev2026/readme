@@ -2,7 +2,7 @@
 // Docs: https://dev.wix.com/docs/go-headless/authentication/visitors/authenticate-visitors-rest
 import config from '../../wix.config.json';
 import { retiredPosts } from '../data/retired-posts';
-import { postDescriptions } from '../data/post-descriptions';
+import { postDescriptions, postTitles } from '../data/post-descriptions';
 
 const API = 'https://www.wixapis.com';
 
@@ -168,6 +168,11 @@ export function mediaUrl(id: string, width?: number) {
 export function coverUrl(post: Post, width = 640) {
   const img = post.media?.wixMedia?.image;
   return img?.id ? mediaUrl(img.id, width) : undefined;
+}
+
+/** SEO <title> for a post: an override from postTitles, else the Wix post title. */
+export function seoTitle(post: Post) {
+  return postTitles[post.slug] ?? post.title;
 }
 
 export function metaDescription(post: Post) {
