@@ -2,9 +2,11 @@ name: Deploy to Wix Headless
 
 # Builds the Astro site and releases it to the Wix-managed headless site
 # configured in site/wix.config.json. Needs the WIX_API_KEY repository secret.
+# Only main deploys: a push to a feature branch must not replace the live site
+# (that is how the GA4 tracking was lost before). Merge a pull request to release.
 on:
   push:
-    branches: ['main', 'claude/**']
+    branches: ['main']
     paths:
       - 'site/**'
       - '.github/workflows/deploy-wix.yml'

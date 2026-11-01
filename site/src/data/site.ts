@@ -90,3 +90,13 @@ export const company = {
   founded: '2019',
   abn: '23 633 745 516',
 };
+
+/**
+ * Google Tag Manager container ID (GTM-XXXXXXX). Empty means no tag is loaded.
+ * Left empty on purpose: Google Ads conversions come from GA4 (import booking_complete).
+ * If GTM is turned on later, make sure it does not also send to the GA4 ID below, or hits are counted twice.
+ */
+export const gtmId = '';
+
+/** Google Analytics 4 measurement ID, loaded on every page with gtag.js. Empty means no tag is loaded. */
+export const gaId = 'G-8HG19XQE77';

@@ -250,7 +250,8 @@ const faqSchema = {
 
 <style>
   /* Hero */
-  .hero { padding: 100px 0 40px; }
+  /* clip: the spinning ring's rotated box would otherwise make phones scroll sideways */
+  .hero { padding: 100px 0 40px; overflow-x: clip; }
   .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 419px; gap: 32px; align-items: start; }
   .hero h1 { font-size: 55px; line-height: 66px; padding-left: 10px; }
   .hero h1 .gold { display: block; }
