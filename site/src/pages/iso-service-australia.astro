@@ -21,7 +21,7 @@ const why = [
 const standards = [
   {
     id: '9001', title: 'ISO 9001', sub: 'Quality Management Systems',
-    text: 'The world’s most recognized quality management standard. Demonstrates your commitment to quality and customer satisfaction.',
+    text: 'The world’s most recognised quality management standard. Demonstrates your commitment to quality and customer satisfaction.',
     industries: 'All industries',
     benefits: ['Improved customer satisfaction', 'Enhanced operational efficiency', 'Better decision making', 'Competitive advantage', 'Increased market opportunities'],
   },
@@ -53,7 +53,7 @@ const standards = [
 
 // Grid order matches the live page (row by row).
 const benefits = [
-  { icon: '153f8b', title: 'Business Growth', text: 'Access new markets and win more contracts with internationally recognized certification.' },
+  { icon: '153f8b', title: 'Business Growth', text: 'Access new markets and win more contracts with internationally recognised certification.' },
   { icon: '187f81', title: 'Customer Confidence', text: 'Demonstrate commitment to quality and build trust with customers and stakeholders.' },
   { icon: '334a55', title: 'Enhanced Security', text: 'Stand out from competitors and meet tender requirements with ISO certification.' },
   { icon: '30076e', title: 'Cost Reduction', text: 'Improve efficiency, reduce waste, and lower operational costs through better processes.' },
@@ -61,20 +61,16 @@ const benefits = [
   { icon: '405fa1', title: 'Global Recognition', text: 'Achieve international credibility and expand into global markets confidently.' },
 ];
 
-// FAQ copied verbatim from the live ISO page (it currently carries the ISO 13485 FAQ set).
+// General ISO FAQ for this all-standards page (replaces the ISO 13485 set copied from the old site).
 const faqs = [
-  { q: 'What does ISO 13485 mean for your business?', a: 'ISO 13485 is the global standard for Quality Management Systems (QMS) in the medical device sector. It ensures your business meets regulatory requirements and consistently delivers safe, effective medical devices, building trust with stakeholders.' },
-  { q: 'Why is ISO 13485 important for my business?', a: 'ISO 13485 certification:\nDemonstrates compliance with global medical device regulations.\nImproves product quality and patient safety.\nBuilds trust with regulators, customers, and stakeholders.\nOpens access to international markets.' },
-  { q: 'Who needs ISO 13485 certification?', a: 'Manufacturers, suppliers, and service providers in the medical device supply chain including design, production, installation, and servicing should implement ISO 13485.' },
-  { q: 'What are the key requirements of ISO 13485?', a: 'The standard focuses on:\nRisk management throughout the product lifecycle.\nRegulatory compliance.\nDocumented processes for design, production, and post-market activities.\nContinual improvement of the QMS.' },
-  { q: 'What does ISO 13485 certification involve?', a: 'The process includes:\nGap analysis and planning.\nImplementing QMS aligned with ISO 13485.\nInternal audits and management reviews.\nCertification audit by an accredited body.' },
-  { q: 'What is the typical timeline for ISO 13485 certification?', a: 'The timeline for ISO 13485 certification usually ranges from 4 to 8 months, depending on your organization’s size, complexity, and readiness. We help streamline the process to meet your goals efficiently.' },
-  { q: 'Which regulators recognize ISO 13485?', a: 'ISO 13485 is widely accepted by major regulators, including:\nFDA (Food and Drug Administration) – U.S.\nTGA (Therapeutic Goods Administration) – Australia\nHealth Canada – Canada\nEuropean Commission (CE Marking) – EU\nMHRA (Medicines and Healthcare products Regulatory Agency) – UK\nPMDA (Pharmaceuticals and Medical Devices Agency) – Japan' },
-  { q: 'How much does ISO 13485 certification cost?', a: 'The cost of ISO 13485 certification varies based on your organization\'s size, complexity, certification scope, and associated consulting and certification body fees. At IntegPro, we provide transparent pricing and customized solutions to meet your needs.' },
-  { q: 'Do we need a consultant for ISO 13485?', a: 'While you can implement ISO 13485 internally, working with IntegPro ensures:\nFaster implementation.\nExpert guidance on regulatory compliance.\nReduced risk of non-conformities.' },
-  { q: 'What should you do after getting certified?', a: 'After achieving ISO 13485 certification, you need to maintain compliance through regular internal audits, continuous improvement initiatives, and periodic surveillance audits conducted by the certification body.' },
-  { q: 'How does ISO 13485 integrate with other standards?', a: 'ISO 13485 can be integrated with:\nISO 9001 (Quality Management)\nISO 14971 (Risk Management for Medical Devices)\nISO 27001 (Information Security) This creates a comprehensive compliance framework.' },
-  { q: 'What kind of support does IntegPro offer?', a: 'IntegPro provides comprehensive support, including end-to-end ISO 13485 implementation, guidance on regulatory compliance, staff training and awareness programs, and ongoing assistance for audits and system maintenance.' },
+  { q: 'Which ISO standard does my business need?', a: 'It depends on what your customers, tenders and regulators ask for. ISO 9001 covers quality management, ISO 14001 environmental management, ISO 45001 occupational health and safety, ISO 27001 information security and ISO 13485 quality management for medical devices. In a free consultation we look at your contracts and goals and recommend where to start.' },
+  { q: 'Does integPRO issue the ISO certificate?', a: 'No. Certificates are issued by an independent, accredited certification body after its audit. Certification bodies must stay independent of consultants, so we prepare your business for the audit and support you through it, and you choose the certification body.' },
+  { q: 'How long does ISO certification take?', a: 'It depends on the size of your business, the standard and how much is already in place. A small business with good existing processes can move faster than a larger or more complex one. After a gap analysis we give you a realistic timeline.' },
+  { q: 'How much does ISO certification cost?', a: 'There are two costs: consulting to build and implement the management system, and the certification body\'s audit fees. Both depend on your size, scope and the number of sites. We give you a fixed quote after the free consultation.' },
+  { q: 'What happens at the certification audit?', a: 'Accredited certification is normally a two-stage audit. Stage 1 reviews your documented system and readiness. Stage 2 checks that the system works in practice. Any nonconformities must be addressed before the certificate is issued.' },
+  { q: 'What happens after certification?', a: 'The certification body runs surveillance audits, usually every year, and a recertification audit every three years. You keep the system working through internal audits, management reviews and continual improvement. We can support you with these.' },
+  { q: 'Can we certify to more than one standard at once?', a: 'Yes. Standards such as ISO 9001, 14001 and 45001 share a common structure, so they can be combined into one integrated management system with shared processes, audits and reviews. This usually saves time and effort compared with running them separately.' },
+  { q: 'Do we need a consultant?', a: 'Not necessarily. Some businesses implement a standard themselves. A consultant helps you interpret the requirements, avoid unnecessary paperwork and prepare for the audit, which can save time for busy teams.' },
 ];
 ---
 <Base
@@ -87,7 +83,7 @@ const faqs = [
     title='Achieve <span class="gold">ISO Certification</span> with <span class="gold">Confidence</span>'
     text="Expert guidance from gap analysis to certification. We make ISO compliance straightforward, efficient, and aligned with your business goals."
     actions={[{ label: 'Get Started', href: '#contact' }]}
-    stats={[{ value: '200+', label: 'Projects' }, { value: '5+', label: 'Years' }, { value: '100%', label: 'Success' }]}
+    stats={[{ value: '2019', label: 'Established' }, { value: '5', label: 'ISO Standards' }, { value: 'Free', label: 'First Consultation' }]}
     bg="/images/iso-service-australia/hero-bg.webp"
   />
 
@@ -97,7 +93,7 @@ const faqs = [
     <div class="container">
       <div class="section-head light">
         <h2>Why <span class="gold">ISO</span> Certification?</h2>
-        <p class="wide">ISO standards provide internationally recognized frameworks for quality management, risk mitigation, and operational excellence across all industries.</p>
+        <p class="wide">ISO standards provide internationally recognised frameworks for quality management, risk mitigation, and operational excellence across all industries.</p>
       </div>
       <div class="mini-grid">
         {why.map((w) => (
@@ -145,7 +141,7 @@ const faqs = [
     <div class="container">
       <div class="section-head light">
         <h2><span class="gold">Benefits</span> of ISO Certification</h2>
-        <p class="wide">Transform your business with internationally recognized quality standards.</p>
+        <p class="wide">Transform your business with internationally recognised quality standards.</p>
       </div>
       <div class="card-grid swipe">
         {benefits.map((b) => (
