@@ -107,6 +107,10 @@ const isoPackages = [
     .dots, .get { font-size: 15px; }
     .outcome { flex: none; margin-top: 20px; padding: 12px 16px 14px 10px; font-size: 14px; line-height: 1.45; }
     .get { margin-top: 18px; }
-    .card-actions { margin-top: 14px; }
+    /* Phones: both buttons on one row; Get Quote takes its own width, the main action fills the rest. */
+    .card-actions { margin-top: 14px; flex-wrap: nowrap; gap: 8px; justify-content: center; }
+    .card-actions .btn { white-space: nowrap; letter-spacing: 0; font-size: clamp(13px, 3.7vw, 15px); justify-content: center; gap: 4px; }
+    .card-actions .btn-quote { flex: 0 0 auto; padding: 0 16px; }
+    .card-actions .btn-olive { flex: 1 1 auto; min-width: 0; padding: 0 12px; }
   }
 </style>
