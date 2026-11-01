@@ -390,6 +390,13 @@ export const hubCopy: Record<'levels' | 'industries' | 'roles', CopySection[]> =
         'Choose your CSO and SO before the gap analysis starts. They will own the program, and Defence expects them to understand it. Bring your IT manager or MSP in from the first meeting, because cyber requirements often set the timeline.',
       ],
     },
+    {
+      h: 'Keeping the roles working after membership',
+      p: [
+        'Membership is not the finish line. The CSO and SO stay accountable for the program, including the annual security report, reporting changes and security incidents to Defence, and keeping staff training current. Directors need regular updates so security decisions and budgets stay on the agenda.',
+        'When people change roles or leave, plan the handover early. Appoint and brief a replacement before the change takes effect, update your records and tell Defence where required. Gaps in these roles are a common reason programs slip, so we help you build simple routines that keep DISP running when your team changes.',
+      ],
+    },
   ],
 };
 

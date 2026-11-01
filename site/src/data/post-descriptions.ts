@@ -90,3 +90,12 @@ export const postDescriptions: Record<string, string> = {
   'why-iso-consultants-in-sydney-matter-for-iso-compliance-services':
     "What a Sydney ISO consultant brings to your certification: gap analysis, practical documentation, audit preparation and support after certification.",
 };
+
+// SEO <title> overrides for blog posts, used where two Wix posts share the same title.
+// The post's heading on the page stays as written in Wix.
+export const postTitles: Record<string, string> = {
+  'iso-and-quality-services-from-assessment-to-finalisation-in-all-industries-across-australia':
+    'ISO Services From Assessment to Certification | integPRO',
+  'specialised-industry-solutions-for-iso-and-disp-compliance':
+    'Industry-Specific ISO and DISP Compliance | integPRO',
+};
