@@ -1,0 +1,367 @@
+---
+// Google Ads landing page for ISO (Sydney and Australia-wide ad groups).
+// noindex, left out of the sitemap (astro.config.mjs) and not linked from the site.
+// Every "Book" button opens the booking pop-up; the calendar loads only when it is opened.
+// Booking embed: see docs/BOOKING-EMBED.md. Conversion: /thank-you sends booking_complete.
+import Base from '../../layouts/Base.astro';
+import { getClientLogos, getTestimonials, type Testimonial } from '../../lib/wix';
+
+// Client names, logos and testimonials stay in the Wix CMS (company policy), as on the home page.
+const clientLogos = await getClientLogos();
+const fallbackTestimonials: Testimonial[] = [
+  { quote: 'The team at IntegPro have been incredibly helpful in managing our DISP requirements. As a small business, it can be challenging to stay on top of every obligation while juggling multiple roles, and their support has made a huge difference.', name: 'Client', role: 'OS of DISP' },
+  { quote: 'From our first call to the Stage 2 audit, Maria and Mehrdad at IntegPro were outstanding. They combined deep expertise with practical guidance, were responsive and calm, and worked alongside our team to embed an Integrated Management System', name: 'Client', role: 'Security Director' },
+];
+const cms = await getTestimonials();
+const testimonials = (cms.length ? cms : fallbackTestimonials).slice(0, 3);
+const initials = (n: string) => n.split(/\s+/).map((w) => w[0]).join('').slice(0, 2).toUpperCase();
+
+const img = (p: string) => `/images/${p}`;
+const standards = [
+  { n: '9001', title: 'Quality', text: 'Win tenders and deliver consistent quality.', photo: img('iso-9001-compliance-certification-sydney/hero-quality-meeting.webp') },
+  { n: '14001', title: 'Environment', text: 'Manage environmental impact and compliance.', photo: img('iso-14001-compliance-certification/hero-seedling.webp') },
+  { n: '45001', title: 'Health & Safety', text: 'Reduce workplace risk and protect your people.', photo: img('iso-45001-occupational-health-safety/hero-safety-manual.webp') },
+  { n: '27001', title: 'Information Security', text: 'Protect data and meet client security demands.', photo: img('iso-27001-information-security-management-system/hero-data-centre.webp') },
+  { n: '13485', title: 'Medical Devices', text: 'Quality system aligned with TGA expectations.', photo: img('iso-13485-medical-devices-quality-management-system/hero-exam-room.webp') },
+];
+const steps = [
+  { icon: 'icon-team', title: 'Free consultation', text: 'We learn your goals and recommend the right standard.' },
+  { icon: 'icon-search', title: 'Gap analysis', text: "A clear plan showing what's in place and what's missing." },
+  { icon: 'icon-document', title: 'Build & implement', text: 'Practical documents, training and internal audit.' },
+  { icon: 'icon-award', title: 'Certification audit', text: 'We prepare you and support you through the audit.' },
+];
+const values = [
+  { icon: 'icon-checkbox', title: 'Practical, not paperwork', text: 'Systems that fit how your business already works.' },
+  { icon: 'icon-team', title: 'One team, start to finish', text: 'The consultants you meet are the ones who see you through the audit.' },
+  { icon: 'icon-book', title: 'Several standards, one system', text: 'Combine ISO 9001, 14001 and 45001 to save time and effort.' },
+  { icon: 'icon-shield', title: 'DISP experience too', text: 'Useful if you supply, or plan to supply, Defence.' },
+];
+const faqs = [
+  { q: 'Does integPRO issue the certificate?', a: 'No. An independent, accredited certification body issues it after its audit. We prepare you and support you through it.' },
+  { q: 'How long does it take?', a: "It depends on your size, the standard and what's already in place. After the gap analysis we give you a realistic timeline." },
+  { q: 'What does it cost?', a: "Two parts: our consulting and the certification body's audit fees. We give you a quote after the free consultation." },
+  { q: 'Can we do more than one standard?', a: 'Yes. ISO 9001, 14001 and 45001 combine well into one integrated management system.' },
+];
+const phone = '1300 60 50 22';
+const tel = 'tel:1300605022';
+---
+<Base
+  bare
+  noindex
+  title="ISO Certification Consultants Sydney & Australia | integPRO"
+  description="Sydney-based ISO consultants working with businesses across Australia. ISO 9001, 14001, 45001, 27001 and 13485. Book a free consultation."
+>
+  <header class="lp-head">
+    <div class="wrap">
+      <a href="/" target="_blank" rel="noopener" class="lp-logo"><img src="/images/logo.webp" alt="integPRO ISO Consultant" width="135" height="34" /></a>
+      <div class="hact">
+        <a class="tel" href={tel} aria-label={`Call ${phone}`}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span>{phone}</span>
+        </a>
+        <a class="btn-lp gold hbook" href="#book" data-open>Book free consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Sydney-based · Australia-wide</span>
+        <h1><span class="gold-t">ISO Certification</span> Consultants in Sydney &amp; Across Australia</h1>
+        <p class="lead">We build practical management systems and get your business ready for its certification audit.</p>
+        <ul class="ticks">
+          <li>ISO 9001, 14001, 45001, 27001 and 13485, or combined in one integrated system</li>
+          <li>From gap analysis to audit day, with one consultant team</li>
+          <li>Free first conversation, then a clear quote</li>
+        </ul>
+        <div class="stats"><div><b>2019</b><span>Established</span></div><div><b>5</b><span>ISO standards</span></div><div><b>Free</b><span>Consultation</span></div></div>
+        <div class="team-chip"><img src="/images/team.webp" alt="The integPRO team" width="92" height="64" /><div><b>Your Sydney consultants</b><span>The same team from first call to audit day</span></div></div>
+      </div>
+      <div class="book" id="book">
+        <h2>Book a free consultation</h2>
+        <p>Talk to a Sydney-based ISO consultant. No obligation.</p>
+        <ul class="ticks small">
+          <li>Find out which standard fits your business</li>
+          <li>Understand the steps and what's involved</li>
+          <li>Get a clear quote afterwards</li>
+        </ul>
+        <button type="button" class="btn-lp gold big" data-open>Choose a time &rsaquo;</button>
+        <div class="or"><span>or call</span></div>
+        <a class="callrow" href={tel}>{phone}</a>
+      </div>
+    </div>
+  </section>
+
+  {clientLogos.length > 0 && (
+    <div class="logos">
+      <div class="wrap">
+        <p>Trusted by businesses across Australia</p>
+        <div class="logo-row">{clientLogos.map((c) => <img src={c.src} alt={c.name} height="40" loading="lazy" decoding="async" />)}</div>
+      </div>
+    </div>
+  )}
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="head"><h2>Which standard do you need?</h2><p>Not sure? That's what the free consultation is for.</p></div>
+      <div class="stds">
+        {standards.map((s) => (
+          <a class="std" href="#book" data-open>
+            <div class="ph" style={`background-image:url('${s.photo}')`}><span class="n">{s.n}</span></div>
+            <div class="bd"><h3>{s.title}</h3><p>{s.text}</p></div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tint">
+    <div class="wrap">
+      <div class="head"><h2>How it works</h2></div>
+      <ol class="steps">
+        {steps.map((s, i) => (
+          <li class="step"><span class="num">{i + 1}</span><img src={img(`iso-disp-services/${s.icon}.webp`)} alt="" width="44" height="44" loading="lazy" /><h3>{s.title}</h3><p>{s.text}</p></li>
+        ))}
+      </ol>
+      <p class="note">Certificates are issued by an independent, accredited certification body of your choice.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap value">
+      <img src="/images/partner-collage.webp" alt="integPRO consultants working with clients" width="1080" height="1021" loading="lazy" />
+      <div>
+        <h2>Why businesses choose <span class="gold-t">integPRO</span></h2>
+        <ul class="vlist">
+          {values.map((v) => (
+            <li><img src={img(`iso-disp-services/${v.icon}.webp`)} alt="" width="42" height="42" loading="lazy" /><div><b>{v.title}</b><span>{v.text}</span></div></li>
+          ))}
+        </ul>
+        <a class="btn-lp gold" href="#book" data-open>Book free consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tint">
+    <div class="wrap">
+      <div class="head"><h2>What our clients say</h2></div>
+      <div class="quotes">
+        {testimonials.map((t) => (
+          <figure class="q">
+            <div class="top"><span class="stars" aria-label="5 stars">★★★★★</span><img src="/images/icon-quote.webp" alt="" width="34" height="34" loading="lazy" /></div>
+            <blockquote>"{t.quote}"</blockquote>
+            <figcaption><span class="av">{initials(t.name)}</span><span><b>{t.name}</b><br />{t.role}</span></figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="head"><h2>Common questions</h2></div>
+      <div class="faq">
+        {faqs.map((f, i) => (
+          <details open={i === 0}><summary>{f.q}</summary><p>{f.a}</p></details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <h2>Ready to get started?</h2>
+      <p>Book a free consultation with our Sydney-based team.</p>
+      <a class="btn-lp gold" href="#book" data-open>Book free consultation</a>
+      <a class="btn-lp ghost" href={tel}>Call {phone}</a>
+    </div>
+  </section>
+
+  <footer class="lp-foot">
+    <div class="wrap">
+      integPRO Pty Ltd · ABN 23 633 745 516 · Level 35/252 Pitt St, Sydney NSW 2000 · <a href="mailto:info@integpro.com.au">info@integpro.com.au</a><br />
+      <a href="/about-us-iso-team" target="_blank" rel="noopener">About us</a> · <a href="/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <div class="mbar">
+    <a class="btn-lp ghost-d" href={tel}>Call</a>
+    <a class="btn-lp gold" href="#book" data-open>Book a free consult</a>
+  </div>
+
+  <div class="modal" id="lp-modal" hidden>
+    <div class="mbox" role="dialog" aria-modal="true" aria-label="Book a free consultation">
+      <button type="button" class="mclose" data-close aria-label="Close">&times;</button>
+      <h2>Choose a time</h2>
+      <p>Free consultation with integPRO. Pick a date and time below.</p>
+      <!-- Booking widget (LeadConnector). form_embed.js resizes the iframe to its content. -->
+      <div class="booking">
+        <iframe data-src="https://api.leadconnectorhq.com/widget/booking/PtfPVxonsWeiroiaMa1y"
+                style="width: 100%;border:none;overflow: hidden;" scrolling="no"
+                id="PtfPVxonsWeiroiaMa1y_1761187771648"
+                title="Book a consultation with integPRO"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline>
+    (function () {
+      var m = document.getElementById('lp-modal');
+      var f = m.querySelector('iframe');
+      function open(e) {
+        e.preventDefault();
+        if (!f.getAttribute('src')) {
+          f.setAttribute('src', f.getAttribute('data-src'));
+          var s = document.createElement('script');
+          s.src = 'https://link.msgsndr.com/js/form_embed.js';
+          s.type = 'text/javascript';
+          document.body.appendChild(s);
+        }
+        m.hidden = false;
+        document.body.style.overflow = 'hidden';
+      }
+      function close() { m.hidden = true; document.body.style.overflow = ''; }
+      document.querySelectorAll('[data-open]').forEach(function (el) { el.addEventListener('click', open); });
+      m.addEventListener('click', function (e) { if (e.target === m || e.target.closest('[data-close]')) close(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+    })();
+  </script>
+</Base>
+
+<style>
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+  .gold-t { color: var(--gold); }
+  h1, h2, h3 { font-family: var(--font-heading); color: var(--ink); margin: 0; }
+  .btn-lp { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 48px; padding: 0 26px; border-radius: 999px; font-weight: 700; text-decoration: none; font-size: 15px; border: 2px solid transparent; cursor: pointer; font-family: inherit; }
+  .btn-lp.gold { background: var(--gold); color: #fff; }
+  .btn-lp.gold:hover { background: var(--gold-dark); }
+  .btn-lp.ghost { border-color: #fff; color: #fff; background: transparent; margin-left: 10px; }
+  .btn-lp.ghost-d { border-color: var(--gold); color: var(--gold); background: #fff; }
+
+  .lp-head { position: sticky; top: 0; z-index: 20; background: #fff; border-bottom: 1px solid var(--line); }
+  .lp-head .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .lp-logo img { height: 34px; width: auto; display: block; }
+  .hact { display: flex; align-items: center; gap: 22px; }
+  .tel { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; color: var(--ink); text-decoration: none; }
+  .tel svg { width: 20px; height: 20px; }
+  .hbook { height: 42px; font-size: 14px; }
+
+  .hero { background: linear-gradient(rgba(255,255,255,.88), rgba(255,255,255,.93)), url('/images/iso-service-australia/hero-bg.webp') center / cover; padding: 56px 0 64px; }
+  .hero .wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: center; }
+  .eyebrow { display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--gold-dark); background: #fff; border: 1px solid var(--gold-light); padding: 6px 12px; border-radius: 999px; }
+  .hero h1 { font-size: 44px; line-height: 1.15; margin: 18px 0 16px; font-weight: 800; }
+  .lead { font-size: 18px; margin: 0 0 22px; color: #333; }
+  .ticks { list-style: none; padding: 0; margin: 0 0 26px; display: grid; gap: 10px; }
+  .ticks li { display: flex; gap: 10px; align-items: flex-start; font-size: 16px; color: #222; }
+  .ticks li::before { content: ''; flex: none; width: 22px; height: 22px; border-radius: 50%; margin-top: 1px; background: var(--gold) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center / 14px no-repeat; }
+  .ticks.small { margin: 4px 0 22px; gap: 8px; }
+  .ticks.small li { font-size: 15px; }
+  .stats { display: flex; gap: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+  .stats b { display: block; font-family: var(--font-heading); font-size: 26px; color: var(--ink); }
+  .stats span { font-size: 14px; color: var(--muted); }
+  .team-chip { display: flex; align-items: center; gap: 14px; margin-top: 22px; background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 10px 16px 10px 10px; width: max-content; max-width: 100%; box-shadow: 0 6px 18px rgba(0,0,0,.05); }
+  .team-chip img { width: 92px; height: 64px; object-fit: cover; object-position: center 18%; border-radius: 10px; }
+  .team-chip b { display: block; color: var(--ink); font-size: 15px; }
+  .team-chip span { font-size: 13px; color: var(--muted); }
+  .book { background: #fff; border-radius: 24px; box-shadow: 0 20px 50px rgba(25,35,51,.14); padding: 28px; border-top: 6px solid var(--gold); }
+  .book h2 { font-size: 22px; margin-bottom: 4px; }
+  .book > p { margin: 0 0 16px; color: var(--muted); font-size: 14px; }
+  .btn-lp.big { width: 100%; height: 56px; font-size: 17px; }
+  .or { display: flex; align-items: center; gap: 10px; margin: 16px 0 8px; color: var(--muted); font-size: 13px; }
+  .or::before, .or::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+  .callrow { display: block; text-align: center; font-weight: 800; font-size: 20px; color: var(--ink); text-decoration: none; font-family: var(--font-heading); }
+
+  .logos { padding: 30px 0; border-bottom: 1px solid var(--line); }
+  .logos p { text-align: center; margin: 0 0 16px; font-size: 13px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  .logo-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 18px 34px; }
+  .logo-row img { height: 40px; width: auto; max-width: 150px; object-fit: contain; filter: grayscale(1); opacity: .75; }
+
+  .sec { padding: 64px 0; }
+  .sec.tint { background: #fbfaf6; }
+  .head { text-align: center; max-width: 640px; margin: 0 auto 34px; }
+  .head h2 { font-size: 32px; font-weight: 700; }
+  .head p { margin: 8px 0 0; color: var(--muted); }
+  .stds { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+  .std { display: block; text-decoration: none; color: inherit; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: #fff; transition: .2s; }
+  .std:hover { border-color: var(--gold); box-shadow: 0 10px 30px rgba(0,0,0,.06); }
+  .std .ph { height: 110px; background-size: cover; background-position: center; position: relative; }
+  .std .n { position: absolute; left: 14px; bottom: -14px; font-family: var(--font-heading); font-weight: 800; font-size: 18px; color: #fff; background: var(--gold-gradient); border-radius: 10px; padding: 6px 10px; box-shadow: 0 6px 14px rgba(150,130,68,.35); }
+  .std .bd { padding: 24px 18px 18px; }
+  .std h3 { font-size: 16px; margin-bottom: 6px; }
+  .std p { margin: 0; font-size: 14px; color: var(--muted); }
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; list-style: none; margin: 0; padding: 0; }
+  .step { position: relative; padding: 22px; border-radius: 18px; background: #f3f0e6; }
+  .step .num { position: absolute; right: 16px; top: 16px; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: var(--gold); color: #fff; font-weight: 800; font-size: 13px; }
+  .step img { width: 44px; height: 44px; display: block; margin-bottom: 12px; }
+  .step h3 { font-size: 16px; margin-bottom: 4px; }
+  .step p { margin: 0; font-size: 14px; }
+  .note { text-align: center; font-size: 13px; color: var(--muted); margin: 18px 0 0; }
+  .value { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+  .value > img { width: 100%; height: auto; border-radius: 24px; display: block; box-shadow: 0 20px 50px rgba(0,0,0,.12); }
+  .value h2 { font-size: 32px; margin-bottom: 18px; }
+  .vlist { display: grid; gap: 18px; margin: 0 0 26px; padding: 0; list-style: none; }
+  .vlist li { display: flex; gap: 14px; }
+  .vlist img { width: 42px; height: 42px; flex: none; }
+  .vlist b { display: block; color: var(--ink); font-size: 16px; margin-bottom: 2px; }
+  .vlist span { font-size: 15px; }
+  .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .q { margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 24px; display: flex; flex-direction: column; }
+  .q .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+  .q .top img { width: 34px; height: 34px; border-radius: 8px; }
+  .stars { color: #f5b301; letter-spacing: 2px; }
+  .q blockquote { margin: 0 0 16px; font-size: 15px; color: #222; flex: 1; }
+  .q figcaption { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+  .q figcaption b { color: var(--ink); }
+  .av { width: 38px; height: 38px; border-radius: 50%; background: var(--gold-gradient); color: #fff; display: grid; place-items: center; font-weight: 800; font-size: 14px; flex: none; }
+  .faq { max-width: 760px; margin: 0 auto; }
+  details { border-bottom: 1px solid var(--line); padding: 16px 4px; }
+  summary { cursor: pointer; font-weight: 700; color: var(--ink); list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: '+'; color: var(--gold); font-size: 20px; }
+  details[open] summary::after { content: '–'; }
+  details p { margin: 10px 0 0; font-size: 15px; }
+  .cta { background: var(--navy); color: #fff; text-align: center; padding: 56px 0; }
+  .cta h2 { color: #fff; font-size: 30px; margin-bottom: 8px; }
+  .cta p { margin: 0 0 24px; color: #cfd6e2; }
+  .lp-foot { background: #10171f; color: #9aa3b2; font-size: 13px; text-align: center; padding: 22px 0; line-height: 1.8; }
+  .lp-foot a { color: #cfd6e2; }
+
+  .mbar { display: none; }
+  .modal { position: fixed; inset: 0; background: rgba(16,23,31,.55); display: grid; place-items: center; z-index: 50; padding: 24px; }
+  .modal[hidden] { display: none; }
+  .mbox { position: relative; background: #fff; border-radius: 24px; width: min(760px, 100%); max-height: calc(100vh - 48px); overflow: auto; padding: 28px 28px 20px; box-shadow: 0 30px 80px rgba(0,0,0,.3); }
+  .mbox h2 { font-size: 24px; }
+  .mbox > p { margin: 4px 0 16px; color: var(--muted); font-size: 14px; }
+  .mclose { position: absolute; right: 16px; top: 12px; border: 0; background: none; font-size: 30px; line-height: 1; cursor: pointer; color: #666; }
+  .booking iframe { min-height: 560px; }
+
+  @media (max-width: 980px) {
+    .hero .wrap, .value { grid-template-columns: 1fr; }
+    .stds { grid-template-columns: repeat(3, 1fr); }
+    .steps { grid-template-columns: repeat(2, 1fr); }
+    .quotes { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 760px) {
+    .wrap { padding: 0 16px; }
+    .lp-head .wrap { height: 64px; }
+    .hbook, .tel span { display: none; }
+    .tel svg { width: 26px; height: 26px; }
+    .hero { padding: 32px 0 40px; }
+    .hero h1 { font-size: 30px; }
+    .lead { font-size: 16px; }
+    .stats { gap: 24px; }
+    .stats b { font-size: 22px; }
+    .stds { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .std .ph { height: 90px; }
+    .steps { grid-template-columns: 1fr; }
+    .sec { padding: 44px 0; }
+    .head h2, .value h2 { font-size: 26px; }
+    .value { gap: 28px; }
+    .cta .btn-lp { display: flex; margin: 10px 0 0; }
+    .lp-foot { padding-bottom: 90px; }
+    .mbar { display: grid; grid-template-columns: 1fr 1.6fr; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: #fff; box-shadow: 0 -6px 20px rgba(0,0,0,.08); }
+    .modal { padding: 0; place-items: end stretch; }
+    .mbox { width: 100%; max-height: 92vh; border-radius: 20px 20px 0 0; padding: 22px 16px 16px; }
+  }
+</style>

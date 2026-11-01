@@ -19,6 +19,8 @@ export default defineConfig({
     react(),
     sitemap({
       customPages: dispPaths.map((p) => `https://www.integpro.com.au${p}`),
+      // Keep noindex pages out of the sitemap: ads landing pages and the booking thank-you page.
+      filter: (page) => !/\/(lp\/|thank-you)/.test(page),
       // Match the canonical URLs in Base.astro, which drop the trailing slash (except on the home page).
       serialize: (item) => ({ ...item, url: item.url.replace(/([^/])\/$/, '$1') }),
     }),

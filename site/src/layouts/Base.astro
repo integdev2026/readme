@@ -14,9 +14,11 @@ interface Props {
   noindex?: boolean;
   pageType?: PageType;
   schema?: Node[];
+  /** Landing pages: no site header, footer or mobile bar (the page supplies its own). */
+  bare?: boolean;
 }
 
-const { title, description, noindex = false, pageType = 'WebPage', schema = [] } = Astro.props;
+const { title, description, noindex = false, pageType = 'WebPage', schema = [], bare = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname.replace(/(.)\/$/, '$1'), Astro.site);
 // Business details for search engines.
 const site = Astro.site!;
@@ -106,11 +108,11 @@ const graph = { '@context': 'https://schema.org', '@graph': [business, website, 
     {gtmId && (
       <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`} height="0" width="0" style="display:none;visibility:hidden" /></noscript>
     )}
-    <Header />
+    {!bare && <Header />}
     <main>
       <slot />
     </main>
-    <Footer />
-    <MobileBar />
+    {!bare && <Footer />}
+    {!bare && <MobileBar />}
   </body>
 </html>
