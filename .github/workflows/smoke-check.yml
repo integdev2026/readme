@@ -30,7 +30,7 @@ jobs:
           curl -s "$BASE/" | grep -q 'G-8HG19XQE77' && echo "GA4 tag present" || { echo "::error::GA4 tag missing on home page"; fail=1; }
           # The domain without www must permanently redirect to www.
           for u in https://integpro.com.au/ http://integpro.com.au/ http://www.integpro.com.au/; do
-            read code loc < <(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' "$u")
+            read code loc < <(curl -s -o /dev/null -w '%{http_code} %{redirect_url}\n' "$u" || echo "000 ") || true
             echo "$code $u -> $loc"
             case "$code $loc" in 301\ https://www.integpro.com.au/*|308\ https://www.integpro.com.au/*) ;; *) echo "::error::$u should 301 to https://www.integpro.com.au/"; fail=1 ;; esac
           done
