@@ -20,8 +20,12 @@ jobs:
         run: |
           sleep 180 # give the deploy workflow time to release
           BASE=https://www.integpro.com.au
-          for p in / /disp /about-us-iso-team /iso-disp-services /iso-9001-compliance-certification-sydney /medical-iso /free-consultation /privacy-policy /blog /blog/page/2 /blog/categories/disp-compliance /post/what-is-iso /images/logo.png /robots.txt; do
+          for p in / /disp /about-us-iso-team /services /iso-service-australia /iso-9001-compliance-certification-sydney /iso-14001-compliance-certification /iso-45001-occupational-health-safety /iso-27001-information-security-management-system /iso-13485-medical-devices-quality-management-system /free-consultation /thank-you /privacy-policy /blog /post/what-is-iso /images/logo.webp /robots.txt /sitemap-posts.xml; do
             code=$(curl -s -o /tmp/body -w '%{http_code}' -L "$BASE$p")
             title=$(grep -o '<title>[^<]*' /tmp/body | head -1 | sed 's/<title>//')
             echo "$code $p :: $title"
+            case "$code" in 2*) ;; *) fail=1 ;; esac
           done
+          # Google Ads relies on the GA4 tag on every page.
+          curl -s "$BASE/" | grep -q 'G-8HG19XQE77' && echo "GA4 tag present" || { echo "::error::GA4 tag missing on home page"; fail=1; }
+          exit ${fail:-0}
