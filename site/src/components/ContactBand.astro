@@ -1,6 +1,6 @@
 ---
 // Closing "Start Your Certification Journey" block with booking widget and contact details.
-import { company } from '../data/site';
+import { company, telHref } from '../data/site';
 
 interface Props { title?: string; sub?: string; showDetails?: boolean }
 const {
@@ -24,7 +24,7 @@ const {
       <div class="details">
         <h3>Get in touch</h3>
         <dl>
-          <div><dt>Phone</dt><dd><a href={`tel:${company.phone.replace(/\s/g, '')}`}>{company.phone}</a></dd></div>
+          <div><dt>Phone</dt><dd>{company.phones.map((p, i) => <>{i > 0 && <br />}{p.label}: <a href={telHref(p.number)}>{p.number}</a></>)}</dd></div>
           <div><dt>Email</dt><dd><a href={`mailto:${company.email}`}>{company.email}</a></dd></div>
           <div><dt>Location</dt><dd>{company.location}</dd></div>
         </dl>

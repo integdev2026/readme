@@ -1,5 +1,5 @@
 ---
-import { footerColumns, social, company } from '../data/site';
+import { footerColumns, social, company, telHref } from '../data/site';
 ---
 <footer class="site-footer">
   <img class="mark" src="/images/brand-mark.webp" alt="" width="362" height="364" loading="lazy" />
@@ -14,6 +14,12 @@ import { footerColumns, social, company } from '../data/site';
           certification services. Our mission is to help organizations achieve and maintain excellence through
           internationally recognized standards.
         </p>
+        <ul class="phones">
+          {company.phones.map((p) => (
+            <li>{p.label}: <a href={telHref(p.number)}>{p.number}</a></li>
+          ))}
+          <li><a href={`mailto:${company.email}`}>{company.email}</a></li>
+        </ul>
         <ul class="social">
           {social.map((s) => (
             <li><a href={s.href} target="_blank" rel="noopener" aria-label={s.label}><img src={s.icon} alt="" width="31" height="31" loading="lazy" /></a></li>
@@ -40,6 +46,8 @@ import { footerColumns, social, company } from '../data/site';
   .top { position: relative; display: grid; grid-template-columns: 1.9fr 0.8fr 0.9fr 0.8fr; gap: 32px; padding: 0 22px 60px; }
   .logo-box { display: inline-block; background: #fff; border-radius: 6px; padding: 12px 10px; }
   .about p { margin: 24px 0 36px; max-width: 220px; font-size: 12px; line-height: 1.4; }
+  .phones { list-style: none; margin: -20px 0 28px; padding: 0; display: grid; gap: 6px; font-size: 13px; }
+  .phones a:hover { color: var(--gold-light); }
   .social { display: flex; gap: 12px; list-style: none; margin: 0; padding: 0; }
   .social img { width: 31px; height: 31px; }
   h4 { color: #fff; font-size: 18px; margin: 0 0 12px; }

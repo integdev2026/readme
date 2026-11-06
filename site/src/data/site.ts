@@ -58,6 +58,12 @@ export const company = {
   name: 'integPRO',
   email: 'info@integpro.com.au',
   phone: '1300 60 50 22',
+  phones: [
+    { label: 'Australia-wide', number: '1300 60 50 22' },
+    { label: 'Sydney', number: '02 9080 4633' },
+  ],
   location: 'Sydney, Australia',
   abn: '23 633 745 516',
 };
+
+export const telHref = (n: string) => `tel:${n.startsWith('0') ? '+61' + n.slice(1) : n}`.replace(/\s/g, '');
