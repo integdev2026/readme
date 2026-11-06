@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { company } from '../data/site';
+import { company, telHref } from '../data/site';
 ---
 <Base
   title="Privacy Policy | integPRO ISO & DISP Consultants"
@@ -139,7 +139,7 @@ import { company } from '../data/site';
         integPRO Pty Ltd<br />
         {company.address}<br />
         Email: <a href={`mailto:${company.email}`}>{company.email}</a><br />
-        Phone: <a href={`tel:${company.phone.replace(/\s/g, '')}`}>{company.phone}</a>
+        Phone: {company.phones.map((p, i) => <>{i > 0 && <br />}{p.label}: <a href={telHref(p.number)}>{p.number}</a></>)}
       </address>
     </section>
   </article>

@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 
 import ContactBand from '../components/ContactBand.astro';
-import { company, social } from '../data/site';
+import { company, telHref, social } from '../data/site';
 
 const mapQuery = encodeURIComponent(company.address);
 ---
@@ -40,7 +40,7 @@ const mapQuery = encodeURIComponent(company.address);
           </div>
           <div class="row">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2Z" /></svg>
-            <div><dt>Phone:</dt><dd><a href={`tel:${company.phone.replace(/\s/g, '')}`}>{company.phone}</a></dd></div>
+            <div><dt>Phone:</dt><dd>{company.phones.map((p, i) => <>{i > 0 && <br />}{p.label}: <a href={telHref(p.number)}>{p.number}</a></>)}</dd></div>
           </div>
           <div class="row">
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2" /><path d="m3 6 9 7 9-7" /></svg>
