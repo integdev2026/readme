@@ -60,6 +60,7 @@ const graph = { '@context': 'https://schema.org', '@graph': [business, website, 
 <html lang="en-AU">
   <head>
     <meta charset="utf-8" />
+    <meta name="build-sha" content={__BUILD_SHA__} />
     {gaId && <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />}
     {gaId && (
       <script is:inline define:vars={{ gaId }}>

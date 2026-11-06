@@ -1,0 +1,43 @@
+name: Keep live site on latest main
+
+# Compares the commit the live site was built from (<meta name="build-sha">)
+# with the latest main. If they differ, it starts a fresh deploy of main.
+# Runs after every deploy, every 6 hours, and on demand.
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_run:
+    workflows: ['Deploy to Wix Headless']
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: live-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Compare live build with latest main
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          sleep 60 # let Wix finish switching to a new release
+          main=$(gh api "repos/$REPO/commits/main" --jq .sha)
+          live=$(curl -s https://www.integpro.com.au/ | grep -o '<meta name="build-sha" content="[0-9a-f]*"' | grep -o '[0-9a-f]\{40\}' || true)
+          echo "main: $main"; echo "live: ${live:-unknown}"
+          if [ "$live" = "$main" ]; then echo "Live site is on the latest main."; exit 0; fi
+          if [ "${{ github.event_name }}" = "workflow_run" ]; then
+            # Report only: redeploying straight after a deploy could loop if something is broken.
+            echo "::error::The deploy finished but the live site is not on the latest main. The 6-hourly check will retry."; exit 1
+          fi
+          running=$(gh run list -R "$REPO" -w deploy-wix.yml -b main --json status --jq '[.[] | select(.status != "completed")] | length')
+          if [ "$running" != "0" ]; then echo "A deploy is already running; it will be checked when it finishes."; exit 0; fi
+          echo "::warning::Live site is not on the latest main. Starting a deploy of main."
+          gh workflow run deploy-wix.yml -R "$REPO" --ref main

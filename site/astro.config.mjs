@@ -39,4 +39,6 @@ export default defineConfig({
   },
   security: { checkOrigin: false },
   devToolbar: { enabled: false },
+  // Commit the live site was built from; checked by the live-sync workflow.
+  vite: { define: { __BUILD_SHA__: JSON.stringify(process.env.GITHUB_SHA || 'local') } },
 });
