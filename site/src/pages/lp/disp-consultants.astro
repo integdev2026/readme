@@ -1,0 +1,297 @@
+---
+// Google Ads landing page for DISP (Defence Industry Security Program) membership.
+// noindex, left out of the sitemap (astro.config.mjs) and not linked from the site.
+// Same layout and booking pop-up as /lp/iso-consultants; shared styles in src/styles/landing.css.
+// DISP rules (docs/OPEN-ITEMS.md): no ISO standards, no company stats, no prices, integPRO's own wording.
+// Levels, classifications, timelines, categories, industries, process and FAQ come from src/data/disp.ts,
+// so this page always says the same as /disp.
+import Base from '../../layouts/Base.astro';
+import '../../styles/landing.css';
+import { getTestimonials, type Testimonial } from '../../lib/wix';
+import { categories, ladder, levels, industries, processSteps, faq as dispFaq } from '../../data/disp';
+
+// Only testimonials about DISP work, from the Wix CMS; otherwise the DISP quote below.
+const fallbackTestimonials: Testimonial[] = [
+  { quote: 'The team at IntegPro have been incredibly helpful in managing our DISP requirements. As a small business, it can be challenging to stay on top of every obligation while juggling multiple roles, and their support has made a huge difference.', name: 'Client', role: 'OS of DISP' },
+];
+const cms = (await getTestimonials()).filter((t) => /\bDISP\b|defence/i.test(`${t.quote} ${t.role}`));
+const testimonials = (cms.length ? cms : fallbackTestimonials).slice(0, 3);
+const initials = (n: string) => n.split(/\s+/).map((w) => w[0]).join('').slice(0, 2).toUpperCase();
+
+const icon = (id: string) => `/images/disp/icon-${id}.webp`;
+const img = (p: string) => `/images/${p}`;
+const levelText = [levels[0].short, levels[1].short, 'For businesses handling SECRET information on classified programs.', 'For businesses handling TOP SECRET information on classified programs.'];
+const levelCards = ladder.map((l, i) => ({ ...l, badge: i === 0 ? 'Entry' : `L${i}`, text: levelText[i] }));
+const values = [
+  { icon: 'icon-team', title: 'Security Officer support', text: 'We brief your Chief Security Officer and Security Officer and help them run the program.' },
+  { icon: 'icon-shield', title: 'Cyber uplift, made practical', text: 'Essential Eight controls turned into a clear plan your IT team or provider can deliver.' },
+  { icon: 'icon-checkbox', title: 'Application to assessment', text: "We prepare your application and help you answer Defence's questions." },
+  { icon: 'icon-book', title: 'Support after membership', text: 'Annual security report, change reporting and keeping your controls in place.' },
+];
+const faqQuestions = ['Which DISP level do I need?', 'How long does it take?', 'Does DISP membership cost anything?', 'What are the CSO and SO roles?', 'Does DISP membership guarantee Defence contracts?'];
+const faqs = faqQuestions.map((q) => dispFaq.find((f) => f.q === q)).filter((f) => !!f);
+const phone = '1300 60 50 22';
+const tel = 'tel:1300605022';
+---
+<Base
+  bare
+  noindex
+  title="DISP Consultants Sydney & Australia | Defence Security | integPRO"
+  description="Sydney-based DISP consultants helping Defence suppliers across Australia prepare for Entry Level to Level 3 membership. Book a free consultation."
+>
+  <header class="lp-head">
+    <div class="wrap">
+      <a href="/" target="_blank" rel="noopener" class="lp-logo"><img src="/images/logo.webp" alt="integPRO" width="135" height="34" /></a>
+      <div class="hact">
+        <div class="tel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          <a href={tel} aria-label={`Call ${phone}`}>{phone}</a>
+          <span class="sep" aria-hidden="true"></span>
+          <a href="tel:+61290804633" aria-label="Call 02 9080 4633">02 9080 4633</a>
+        </div>
+        <a class="btn-lp gold hbook" href="#book" data-open>Book free consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero disp-hero">
+    <div class="wrap">
+      <div class="intro">
+        <span class="eyebrow">Defence Industry Security Program</span>
+        <h1><span class="gold-t">DISP Membership</span> Consultants for Australian Defence Suppliers</h1>
+        <p class="lead">We get your business ready for DISP membership, from first gap analysis to a submitted application, and support you after it.</p>
+      </div>
+      <div class="more">
+        <ul class="ticks">
+          <li>Entry Level to Level 3, scoped to the information you handle</li>
+          <li>Governance, personnel, physical and cyber security in one plan</li>
+          <li>Free first conversation, then a clear scope of work</li>
+        </ul>
+        <div class="stats"><div><b>4</b><span>Security categories</span></div><div><b>Entry–L3</b><span>DISP levels</span></div><div><b>Free</b><span>Consultation</span></div></div>
+        <div class="team-chip"><img src="/images/team.webp" alt="The integPRO team" width="92" height="64" /><div><b>Your Sydney consultants</b><span>The same team from gap analysis to membership</span></div></div>
+      </div>
+      <div class="book" id="book">
+        <h2>Book a free consultation</h2>
+        <p>Talk to a Sydney-based DISP consultant. No obligation.</p>
+        <ul class="ticks small">
+          <li>Find out which DISP level you need</li>
+          <li>Understand the steps and what's involved</li>
+          <li>Get a clear scope and quote afterwards</li>
+        </ul>
+        <button type="button" class="btn-lp gold big" data-open>Choose a time &rsaquo;</button>
+        <div class="or"><span>or call</span></div>
+        <a class="callrow" href={tel}>{phone}</a>
+        <a class="callrow" href="tel:+61290804633">02 9080 4633</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="head"><h2>Which DISP level do you need?</h2><p>It depends on the classification of the information you handle. Not sure? That's what the free consultation is for.</p></div>
+      <div class="lvls">
+        {levelCards.map((l) => (
+          <a class="lvl" href="#book" data-open>
+            <span class="lv-n">{l.badge}</span>
+            <h3>{l.label}</h3>
+            <span class="cls">{l.classification}</span>
+            <p>{l.text}</p>
+            <span class="tl">Typical timeline: <b>{l.timeline}</b></span>
+          </a>
+        ))}
+      </div>
+      <p class="note">Most suppliers start with Entry Level. Levels 2 and 3 are always scoped as custom programs.</p>
+    </div>
+  </section>
+
+  <section class="sec tint">
+    <div class="wrap">
+      <div class="head"><h2>What DISP membership covers</h2><p>Members show Defence they meet its security standards in four categories.</p></div>
+      <div class="cats">
+        {categories.map((c) => (
+          <div class="cat"><img src={icon(c.icon)} alt="" width="48" height="48" loading="lazy" /><h3>{c.title}</h3><p>{c.text}</p></div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="head"><h2>Who we help</h2><p>Businesses supplying Defence and its primes.</p></div>
+      <div class="stds four">
+        {industries.map((d) => (
+          <a class="std" href="#book" data-open>
+            <div class="ph" style={`background-image:url('${d.image?.src}')`} role="img" aria-label={d.image?.alt}></div>
+            <div class="bd"><h3>{d.label}</h3><p>{d.level}</p></div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tint">
+    <div class="wrap">
+      <div class="head"><h2>How it works</h2></div>
+      <ol class="steps six">
+        {processSteps.map((s, i) => (
+          <li class="step"><span class="num">{i + 1}</span><h3>{s.title}</h3><p>{s.text}</p></li>
+        ))}
+      </ol>
+      <p class="note">Membership is granted by Defence after its own assessment. We prepare you and support you through it.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap value">
+      <img src="/images/partner-collage.webp" alt="integPRO consultants working with clients" width="1080" height="1021" loading="lazy" />
+      <div>
+        <h2>Why Defence suppliers choose <span class="gold-t">integPRO</span></h2>
+        <ul class="vlist">
+          {values.map((v) => (
+            <li><img src={img(`iso-disp-services/${v.icon}.webp`)} alt="" width="42" height="42" loading="lazy" /><div><b>{v.title}</b><span>{v.text}</span></div></li>
+          ))}
+        </ul>
+        <a class="btn-lp gold" href="#book" data-open>Book free consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tint">
+    <div class="wrap">
+      <div class="head"><h2>What our clients say</h2></div>
+      <div class={`quotes${testimonials.length === 1 ? ' one' : ''}`}>
+        {testimonials.map((t) => (
+          <figure class="q">
+            <div class="top"><span class="stars" aria-label="5 stars">★★★★★</span><img src="/images/icon-quote.webp" alt="" width="34" height="34" loading="lazy" /></div>
+            <blockquote>"{t.quote}"</blockquote>
+            <figcaption><span class="av">{initials(t.name)}</span><span><b>{t.name}</b><br />{t.role}</span></figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="head"><h2>Common questions</h2></div>
+      <div class="faq">
+        {faqs.map((f, i) => (
+          <details open={i === 0}><summary>{f!.q}</summary><p>{f!.a}</p></details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <h2>Ready to start your DISP membership?</h2>
+      <p>Book a free consultation with our Sydney-based DISP team.</p>
+      <a class="btn-lp gold" href="#book" data-open>Book free consultation</a>
+      <a class="btn-lp ghost" href={tel}>Call {phone}</a>
+    </div>
+  </section>
+
+  <footer class="lp-foot">
+    <div class="wrap">
+      integPRO Pty Ltd · ABN 23 633 745 516 · Level 35/252 Pitt St, Sydney NSW 2000 · <a href="mailto:info@integpro.com.au">info@integpro.com.au</a><br />
+      <a href="/disp" target="_blank" rel="noopener">About DISP</a> · <a href="/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <div class="mbar">
+    <a class="btn-lp ghost-d" href={tel}>Call</a>
+    <a class="btn-lp gold" href="#book" data-open>Book a free consult</a>
+  </div>
+
+  <div class="modal" id="lp-modal" hidden>
+    <div class="mbox" role="dialog" aria-modal="true" aria-label="Book a free consultation">
+      <button type="button" class="mclose" data-close aria-label="Close">&times;</button>
+      <h2>Choose a time</h2>
+      <p>Free DISP consultation with integPRO. Pick a date and time below.</p>
+      <!-- Booking widget (LeadConnector). form_embed.js resizes the iframe to its content. -->
+      <div class="booking">
+        <iframe data-src="https://api.leadconnectorhq.com/widget/booking/PtfPVxonsWeiroiaMa1y"
+                style="width: 100%;border:none;overflow: hidden;" scrolling="no"
+                id="PtfPVxonsWeiroiaMa1y_1761187771648"
+                title="Book a consultation with integPRO"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline>
+    (function () {
+      var m = document.getElementById('lp-modal');
+      var f = m.querySelector('iframe');
+      function open(e) {
+        e.preventDefault();
+        if (!f.getAttribute('src')) {
+          f.setAttribute('src', f.getAttribute('data-src'));
+          var s = document.createElement('script');
+          s.src = 'https://link.msgsndr.com/js/form_embed.js';
+          s.type = 'text/javascript';
+          document.body.appendChild(s);
+        }
+        m.hidden = false;
+        document.body.style.overflow = 'hidden';
+      }
+      function close() { m.hidden = true; document.body.style.overflow = ''; }
+      document.querySelectorAll('[data-open]').forEach(function (el) { el.addEventListener('click', open); });
+      m.addEventListener('click', function (e) { if (e.target === m || e.target.closest('[data-close]')) close(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+      // Phones: show the bottom Call/Book bar only once the booking card has scrolled out of view.
+      var bar = document.querySelector('.mbar'), card = document.getElementById('book');
+      if (bar && card && 'IntersectionObserver' in window) {
+        new IntersectionObserver(function (en) { bar.classList.toggle('show', !en[0].isIntersecting); }).observe(card);
+      } else if (bar) { bar.classList.add('show'); }
+    })();
+  </script>
+</Base>
+
+<style>
+  .disp-hero { background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.94)), url('/images/disp/eligibility.webp') center / cover; }
+  .lvls { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  .lvl { position: relative; display: flex; flex-direction: column; gap: 6px; padding: 22px 20px; border: 1px solid var(--line); border-top: 5px solid var(--gold-light); border-radius: 18px; background: #fff; text-decoration: none; color: inherit; }
+  .lvl:nth-child(2) { border-top-color: var(--gold); }
+  .lvl:nth-child(3) { border-top-color: var(--gold-dark); }
+  .lvl:nth-child(4) { border-top-color: var(--navy); }
+  .lv-n { position: absolute; right: 16px; top: 16px; font-family: var(--font-heading); font-weight: 800; font-size: 13px; color: #fff; background: var(--gold-gradient); border-radius: 8px; padding: 4px 8px; }
+  .lvl h3 { font-size: 18px; padding-right: 56px; }
+  .cls { align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; color: var(--gold-dark); background: #f6f1e2; border-radius: 999px; padding: 4px 10px; }
+  .lvl p { margin: 4px 0 0; font-size: 14px; color: var(--muted); flex: 1; }
+  .tl { font-size: 13px; color: var(--muted); padding-top: 10px; border-top: 1px solid var(--line); }
+  .tl b { color: var(--ink); }
+  .cats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+  .cat { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
+  .cat img { width: 48px; height: 48px; display: block; margin-bottom: 12px; }
+  .cat h3 { font-size: 16px; margin-bottom: 6px; }
+  .cat p { margin: 0; font-size: 14px; }
+  .stds.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .stds.four .ph { height: 140px; }
+  .steps.six { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .steps.six .step { background: #fff; border: 1px solid var(--line); }
+  .quotes.one { grid-template-columns: minmax(0, 640px); justify-content: center; }
+
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .lvl, .lv-n, .cat, .cat img { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+    .lvl:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(0,0,0,.1); border-color: var(--gold); }
+    .lvl:hover .lv-n { transform: scale(1.1); }
+    .lvl:hover h3 { color: var(--gold-dark); }
+    .cat:hover { transform: translateY(-5px); border-color: var(--gold-light); box-shadow: 0 14px 32px rgba(0,0,0,.08); }
+    .cat:hover img { transform: scale(1.12) rotate(-4deg); }
+  }
+  .lvl:focus-visible { outline: 3px solid var(--gold-light); outline-offset: 3px; }
+
+  @media (max-width: 980px) {
+    .lvls, .cats, .stds.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .steps.six { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 760px) {
+    .lvls, .cats { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+    .stds.four { grid-template-columns: minmax(0, 1fr); }
+    .lvl, .cat { padding: 16px; border-radius: 14px; }
+    .cat { display: grid; grid-template-columns: 40px minmax(0, 1fr); column-gap: 12px; }
+    .cat img { width: 40px; height: 40px; margin: 0; grid-row: span 2; }
+    .steps.six { grid-template-columns: minmax(0, 1fr); }
+    .steps.six .step { display: block; padding: 14px 44px 14px 14px; }
+  }
+</style>
