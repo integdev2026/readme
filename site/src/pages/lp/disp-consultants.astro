@@ -24,6 +24,7 @@ const googleReviews = [
 const icon = (id: string) => `/images/disp/icon-${id}.webp`;
 const img = (p: string) => `/images/${p}`;
 const levelText = [levels[0].short, levels[1].short, 'For businesses handling SECRET information on classified programs.', 'For businesses handling TOP SECRET information on classified programs.'];
+const lvIcons = [`<path d="M12 2.5 4 5.5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10v-6z"/>`, `<path d="M12 2.5 4 5.5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10v-6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/>`, `<rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.3"/>`, `<rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/><path d="M9 15.5h6M9 18h6"/>`];
 const levelCards = ladder.map((l, i) => ({ ...l, badge: i === 0 ? 'Entry' : `L${i}`, text: levelText[i] }));
 const values = [
   { icon: 'icon-team', title: 'Security Officer support', text: 'We brief your Chief Security Officer and Security Officer and help them run the program.' },
@@ -89,21 +90,23 @@ const tel = 'tel:1300605022';
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec lv-sec">
     <div class="wrap">
-      <div class="head"><h2>Which DISP level do you need?</h2><p>It depends on the classification of the information you handle. Not sure? That's what the free consultation is for.</p></div>
+      <div class="head"><h2>Which DISP level do you need?</h2><p>Security requirements step up with the classification of the information you handle. Not sure? That's what the free consultation is for.</p></div>
       <div class="lvls">
-        {levelCards.map((l) => (
+        {levelCards.map((l, i) => (
           <a class="lvl" href="#book" data-open>
+            <span class="lv-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" set:html={lvIcons[i]} /></span>
             <span class="lv-n">{l.badge}</span>
             <h3>{l.label}</h3>
             <span class="cls">{l.classification}</span>
+            <span class="meter" role="img" aria-label={`Security requirements: ${i + 1} of 4`}>{[0, 1, 2, 3].map((n) => <i class={n <= i ? 'on' : ''}></i>)}</span>
             <p>{l.text}</p>
             <span class="tl">Typical timeline: <b>{l.timeline}</b></span>
           </a>
         ))}
       </div>
-      <p class="note">Most suppliers start with Entry Level. Levels 2 and 3 are always scoped as custom programs.</p>
+      <p class="note">Most suppliers start with Entry Level. Levels 2 and 3 are always scoped as custom programs. Membership is assessed and granted by Defence.</p>
     </div>
   </section>
 
@@ -259,6 +262,23 @@ const tel = 'tel:1300605022';
 
 <style>
   .disp-hero { background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.94)), url('/images/disp/eligibility.webp') center / cover; }
+  .lv-sec { position: relative; background: linear-gradient(180deg, rgba(16,23,31,.86), rgba(25,35,51,.92)), url('/images/disp/levels-vault.webp') center 40% / cover; }
+  .lv-sec .head h2 { color: #fff; }
+  .lv-sec .head p { color: #cfd6e2; }
+  .lv-sec .note { color: #aab4c4; }
+  .lvls { align-items: start; }
+  .lvl { box-shadow: 0 20px 50px rgba(0,0,0,.35); border-color: transparent; }
+  .lvl:nth-child(1) { margin-top: 54px; }
+  .lvl:nth-child(2) { margin-top: 36px; }
+  .lvl:nth-child(3) { margin-top: 18px; }
+  .lv-ic { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 12px; background: var(--gold-gradient); color: #fff; margin-bottom: 6px; box-shadow: 0 8px 18px rgba(150,130,68,.35); }
+  .lvl:nth-child(4) .lv-ic { background: linear-gradient(135deg, #2b3a52, var(--navy)); box-shadow: 0 8px 18px rgba(25,35,51,.4); }
+  .lv-ic svg { width: 24px; height: 24px; }
+  .meter { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin: 6px 0 2px; }
+  .meter i { height: 6px; border-radius: 3px; background: #ece7d8; }
+  .meter i.on { background: var(--gold); }
+  .lvl:nth-child(3) .meter i.on { background: var(--gold-dark); }
+  .lvl:nth-child(4) .meter i.on { background: var(--navy); }
   .lvls { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
   .lvl { position: relative; display: flex; flex-direction: column; gap: 6px; padding: 22px 20px; border: 1px solid var(--line); border-top: 5px solid var(--gold-light); border-radius: 18px; background: #fff; text-decoration: none; color: inherit; }
   .lvl:nth-child(2) { border-top-color: var(--gold); }
@@ -318,6 +338,7 @@ const tel = 'tel:1300605022';
   @media (max-width: 980px) {
     .gcards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .lvls, .cats, .stds.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .lvl:nth-child(n) { margin-top: 0; }
     .steps.six { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
   @media (max-width: 760px) {
