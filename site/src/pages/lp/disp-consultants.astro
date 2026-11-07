@@ -161,21 +161,20 @@ const tel = 'tel:1300605022';
 
   <section class="sec tint">
     <div class="wrap">
-      <div class="head"><h2>What our clients say</h2></div>
-      <div class="greview">
-        <svg class="g" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.1C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 7l7.5 5.8c4.4-4 6.8-10 6.8-17.3z"/><path fill="#FBBC05" d="M10.6 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.8 2.3-8.4 2.3-6.2 0-11.5-4.1-13.4-9.9l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg>
-        <div class="gtxt">
-          <span class="glabel">Google Reviews</span>
+      <div class="ghead">
+        <span class="gbadge"><svg class="g" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.1C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 7l7.5 5.8c4.4-4 6.8-10 6.8-17.3z"/><path fill="#FBBC05" d="M10.6 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.8 2.3-8.4 2.3-6.2 0-11.5-4.1-13.4-9.9l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg></span>
+        <h2>What our clients say</h2>
+        <div class="grating">
           <span class="gstars" aria-label="5 out of 5 stars">★★★★★</span>
-          <span class="gsub">Five-star reviews from our clients</span>
+          <span class="gdiv" aria-hidden="true"></span>
+          <span>Five-star reviews on <b>Google</b></span>
         </div>
       </div>
       <div class="gcards">
         {googleReviews.map((r) => (
-          <figure class="gcard">
-            <div class="gtop"><span class="gstars sm" aria-label="5 out of 5 stars">★★★★★</span><svg class="g sm" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.1C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 7l7.5 5.8c4.4-4 6.8-10 6.8-17.3z"/><path fill="#FBBC05" d="M10.6 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.8 2.3-8.4 2.3-6.2 0-11.5-4.1-13.4-9.9l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg></div>
+          <figure class="gcard" aria-label={`Google review by ${r.name}`}>
+            <div class="gtop"><span class="gstars sm" aria-label="5 out of 5 stars">★★★★★</span><b class="gname">{r.name}</b><svg class="g sm" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.1C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 7l7.5 5.8c4.4-4 6.8-10 6.8-17.3z"/><path fill="#FBBC05" d="M10.6 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.8 2.3-8.4 2.3-6.2 0-11.5-4.1-13.4-9.9l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg></div>
             <blockquote>"{r.text}"</blockquote>
-            <figcaption><span class="av">{r.name[0]}</span><span><b>{r.name}</b><br />Google review</span></figcaption>
           </figure>
         ))}
       </div>
@@ -280,24 +279,27 @@ const tel = 'tel:1300605022';
   .stds.four .ph { height: 140px; }
   .steps.six { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .steps.six .step { background: #fff; border: 1px solid var(--line); }
-  .greview { display: flex; align-items: center; gap: 22px; max-width: 760px; margin: 0 auto; padding: 26px 30px; background: #fff; border: 1px solid var(--line); border-radius: 20px; text-decoration: none; color: inherit; box-shadow: 0 10px 30px rgba(0,0,0,.05); }
-  .greview .g { width: 56px; height: 56px; flex: none; }
-  .gtxt { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
-  .glabel { font-family: var(--font-heading); font-weight: 800; font-size: 20px; color: var(--ink); }
+  .ghead { position: relative; text-align: center; max-width: 760px; margin: 0 auto 34px; padding: 34px 24px 28px; border-radius: 28px; background: radial-gradient(120% 140% at 50% 0%, #fff 0%, #fff 45%, #f6efdc 100%); border: 1px solid var(--gold-light); box-shadow: 0 24px 60px rgba(150,130,68,.14); }
+  .gbadge { position: absolute; left: 50%; top: 0; transform: translate(-50%, -50%); width: 72px; height: 72px; display: grid; place-items: center; background: #fff; border-radius: 50%; box-shadow: 0 10px 28px rgba(0,0,0,.12); }
+  .gbadge .g { width: 40px; height: 40px; }
+  .ghead h2 { font-size: 32px; margin: 18px 0 14px; }
+  .grating { display: inline-flex; align-items: center; gap: 14px; padding: 10px 22px; border-radius: 999px; background: #fff; border: 1px solid var(--line); font-size: 15px; color: var(--muted); }
+  .grating b { color: var(--ink); }
+  .grating .gstars { font-size: 24px; letter-spacing: 3px; text-shadow: 0 2px 10px rgba(251,188,5,.45); }
+  .gdiv { width: 1px; height: 22px; background: linear-gradient(to bottom, transparent, var(--gold), transparent); }
   .gstars { color: #fbbc05; font-size: 28px; letter-spacing: 3px; line-height: 1.1; }
-  .gsub { font-size: 14px; color: var(--muted); }
-  .greview { margin-bottom: 18px; box-shadow: none; max-width: 1100px; }
   .gstars.sm { font-size: 20px; letter-spacing: 2px; }
   .gcards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; max-width: 1100px; margin: 0 auto; }
   .gcard { display: flex; flex-direction: column; }
   .gcard blockquote { flex: 1; }
   .gcard { margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 26px 30px; }
-  .gtop { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+  .gtop { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .gtop .g { margin-left: auto; flex: none; }
+  .gname { color: var(--ink); font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .gcard blockquote { margin-bottom: 0; }
   .g.sm { width: 26px; height: 26px; }
-  .gcard blockquote { margin: 0 0 16px; font-size: 15px; color: #222; line-height: 1.6; }
+  .gcard blockquote { margin: 0; font-size: 15px; color: #222; line-height: 1.6; }
   .gcard blockquote p { margin: 0 0 10px; }
-  .gcard figcaption { display: flex; align-items: center; gap: 10px; font-size: 14px; }
-  .gcard figcaption b { color: var(--ink); }
 
   @media (hover: hover) and (prefers-reduced-motion: no-preference) {
     .lvl, .lv-n, .cat, .cat img { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
@@ -326,9 +328,11 @@ const tel = 'tel:1300605022';
     .cat img { width: 40px; height: 40px; margin: 0; grid-row: span 2; }
     .steps.six { grid-template-columns: minmax(0, 1fr); }
     .steps.six .step { display: block; padding: 14px 44px 14px 14px; }
-    .greview { padding: 18px; gap: 14px; }
-    .greview .g { width: 44px; height: 44px; }
-    .gcards { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+        .gcards { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+    .ghead { padding: 30px 16px 22px; margin-top: 20px; }
+    .ghead h2 { font-size: 24px; }
+    .grating { flex-direction: column; gap: 4px; padding: 10px 18px; border-radius: 18px; }
+    .gdiv { display: none; }
     .gcard { padding: 20px 18px; }
     .gcard blockquote { font-size: 15px; }
   }
