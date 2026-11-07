@@ -55,14 +55,12 @@ const tel = 'tel:1300605022';
     <div class="wrap">
       <a href="/" target="_blank" rel="noopener" class="lp-logo"><img src="/images/logo.webp" alt="integPRO ISO Consultant" width="135" height="34" /></a>
       <div class="hact">
-        <a class="tel" href={tel} aria-label={`Call ${phone}`}>
+        <div class="tel">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-          <span>{phone}</span>
-        </a>
-        <a class="tel tel2" href="tel:+61290804633" aria-label="Call 02 9080 4633">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-          <span>02 9080 4633</span>
-        </a>
+          <a href={tel} aria-label={`Call ${phone}`}>{phone}</a>
+          <span class="sep" aria-hidden="true"></span>
+          <a href="tel:+61290804633" aria-label="Call 02 9080 4633">02 9080 4633</a>
+        </div>
         <a class="btn-lp gold hbook" href="#book" data-open>Book free consultation</a>
       </div>
     </div>
@@ -255,10 +253,12 @@ const tel = 'tel:1300605022';
   .lp-head .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; }
   .lp-logo img { height: 34px; width: auto; display: block; }
   .hact { display: flex; align-items: center; gap: 22px; }
-  .tel { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; color: var(--ink); text-decoration: none; }
-  .tel svg { width: 20px; height: 20px; }
+  .tel { display: inline-flex; align-items: center; gap: clamp(6px, 1vw, 12px); font-weight: 700; font-size: clamp(12.5px, 0.55vw + 10px, 16px); color: var(--ink); white-space: nowrap; }
+  .tel svg { width: 1.25em; height: 1.25em; flex: none; color: var(--gold-dark); }
+  .tel a { color: inherit; text-decoration: none; }
+  @media (max-width: 380px) { .lp-logo img { height: 24px !important; } .tel { font-size: 12px; gap: 5px; } }
+  .tel .sep { width: 1px; height: 1.4em; border-radius: 1px; background: linear-gradient(to bottom, transparent, var(--gold) 25%, var(--gold) 75%, transparent); }
   .hbook { height: 42px; font-size: 14px; }
-  @media (max-width: 1100px) and (min-width: 761px) { .tel2 { display: none; } }
 
   .hero { background: linear-gradient(rgba(255,255,255,.88), rgba(255,255,255,.93)), url('/images/iso-service-australia/hero-bg.webp') center / cover; padding: 56px 0 64px; }
   .hero .wrap { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); grid-template-areas: 'intro book' 'more book'; column-gap: 48px; align-items: center; }
@@ -366,8 +366,9 @@ const tel = 'tel:1300605022';
     .btn-lp.ghost:hover { background: #fff; color: var(--navy); }
     .btn-lp.ghost-d:hover { background: var(--gold); color: #fff; }
     .lp-logo img:hover { opacity: .8; }
-    .tel:hover, .callrow:hover { color: var(--gold-dark); }
+    .callrow:hover { color: var(--gold-dark); }
     .tel:hover svg { transform: rotate(-12deg) scale(1.1); }
+    .tel a:hover { color: var(--gold-dark); }
     .tel svg { transition: transform .25s ease; }
     .callrow:hover { transform: scale(1.04); }
     .eyebrow:hover { background: var(--gold); color: #fff; border-color: var(--gold); }
@@ -395,7 +396,7 @@ const tel = 'tel:1300605022';
     details:hover { background: #fcfbf7; }
     .lp-foot a:hover { color: var(--gold-light); }
   }
-  .btn-lp:focus-visible, .std:focus-visible, .tel:focus-visible, .callrow:focus-visible, summary:focus-visible { outline: 3px solid var(--gold-light); outline-offset: 3px; }
+  .btn-lp:focus-visible, .std:focus-visible, .tel a:focus-visible, .callrow:focus-visible, summary:focus-visible { outline: 3px solid var(--gold-light); outline-offset: 3px; }
 
   @media (max-width: 980px) {
     .hero .wrap { grid-template-columns: minmax(0, 1fr); grid-template-areas: 'intro' 'book' 'more'; row-gap: 24px; }
@@ -407,10 +408,9 @@ const tel = 'tel:1300605022';
   @media (max-width: 760px) {
     .wrap { padding: 0 16px; }
     .lp-head .wrap { height: 60px; }
-    .lp-logo img { height: 30px; }
-    .hbook, .tel span, .tel2 { display: none; }
-    .tel { width: 44px; height: 44px; justify-content: center; border: 1.5px solid var(--gold-light); border-radius: 50%; color: var(--gold-dark); }
-    .tel svg { width: 22px; height: 22px; }
+    .lp-logo img { height: 28px; }
+    .lp-head .wrap { gap: 10px; }
+    .hbook { display: none; }
 
     .hero { padding: 24px 0 36px; }
     .eyebrow { font-size: 11px; letter-spacing: .8px; padding: 5px 10px; }
