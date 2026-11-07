@@ -9,12 +9,21 @@ import Base from '../../layouts/Base.astro';
 import '../../styles/landing.css';
 import { categories, ladder, levels, industries, processSteps, faq as dispFaq } from '../../data/disp';
 
-// Google review shown word for word (owner-supplied screenshot). Reviewer shown as first name + initial.
-// Only DISP reviews here: ISO reviews stay off DISP pages (docs/OPEN-ITEMS.md).
-const googleReview = {
-  name: 'Emily P.',
-  text: 'We have had an excellent experience working with the Integpro team. They have been assisting us with our DISP readiness and have been extremely thorough, knowledgeable, and responsive throughout the entire process. Their support and guidance has been invaluable and I would highly recommend the team for professional and reliable support.',
-};
+// Google reviews shown word for word (owner-supplied screenshots; owner chose to show all of them here,
+// ISO reviews included). Reviewer shown as first name + initial; "Google reviewer" where no name was supplied.
+const googleReviews = [
+  { name: 'Emily P.', text: ['We have had an excellent experience working with the Integpro team. They have been assisting us with our DISP readiness and have been extremely thorough, knowledgeable, and responsive throughout the entire process. Their support and guidance has been invaluable and I would highly recommend the team for professional and reliable support.'] },
+  { name: 'Google reviewer', text: [
+    'We recently worked with IntegPRO to implement ISO management systems for Safety (ISO 45001), Environment (ISO 14001), and Quality (ISO 9001) at Bishop Building. Their team demonstrated a high level of professionalism, industry knowledge, and a practical understanding of construction operations.',
+    'They guided us through every stage of the process; developing tailored documentation, training our staff, and preparing us thoroughly for certification. Thanks to their support, our first external ISO audit went smoothly, and the auditors were very satisfied with the systems in place.',
+    'We are extremely pleased with the outcome and highly recommend IntegPRO to any business looking to achieve ISO certification. Their expertise and hands-on approach made all the difference.',
+  ] },
+  { name: 'Google reviewer', text: ['From our first call to the Stage 2 audit, Maria and Mehrdad at IntegPro were outstanding. They combined deep expertise with practical guidance, were responsive and calm, and worked alongside our team to embed an Integrated Management System that suits DustForge today and positions us for growth. They were always cognisant of our stage and team size, shaping a solution that was fit for purpose without compromising on quality. Their support helped us achieve certification to ISO 9001, ISO 14001 and ISO 45001 with BSI. We would recommend IntegPro, Maria and Mehrdad to any business seeking an effective and sustainable Integrated Management System.'] },
+  { name: 'Jayesh', text: [
+    'We engaged IntegPRO to help us achieve ISO certification for Safety (ISO 45001), Environment (ISO 14001), and Quality (ISO 9001) management systems. Right from the start, their team showed a practical understanding of our specialised construction work (waterproofing, soil stabilisation, concrete remediation, and carbon fibre strengthening).',
+    'They took the time to understand how we operate, developed systems that genuinely suit our projects, and provided training that gave our team confidence throughout the process. Thanks to their support — and Maria’s active involvement every step of the way — our certification was a success. The auditors were genuinely impressed with how well our systems were implemented.',
+  ] },
+];
 
 const icon = (id: string) => `/images/disp/icon-${id}.webp`;
 const img = (p: string) => `/images/${p}`;
@@ -165,11 +174,15 @@ const tel = 'tel:1300605022';
           <span class="gsub">Five-star reviews from our clients</span>
         </div>
       </div>
-      <figure class="gcard">
-        <div class="gtop"><span class="gstars sm" aria-label="5 out of 5 stars">★★★★★</span><svg class="g sm" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.1C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 7l7.5 5.8c4.4-4 6.8-10 6.8-17.3z"/><path fill="#FBBC05" d="M10.6 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.8 2.3-8.4 2.3-6.2 0-11.5-4.1-13.4-9.9l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg></div>
-        <blockquote>"{googleReview.text}"</blockquote>
-        <figcaption><span class="av">{googleReview.name[0]}</span><span><b>{googleReview.name}</b><br />Google review</span></figcaption>
-      </figure>
+      <div class="gcards">
+        {googleReviews.map((r) => (
+          <figure class="gcard">
+            <div class="gtop"><span class="gstars sm" aria-label="5 out of 5 stars">★★★★★</span><svg class="g sm" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.1C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 7l7.5 5.8c4.4-4 6.8-10 6.8-17.3z"/><path fill="#FBBC05" d="M10.6 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.8 2.3-8.4 2.3-6.2 0-11.5-4.1-13.4-9.9l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg></div>
+            <blockquote>{r.text.map((t, i) => <p>{i === 0 ? '"' : ''}{t}{i === r.text.length - 1 ? '"' : ''}</p>)}</blockquote>
+            <figcaption><span class="av">{r.name[0]}</span><span><b>{r.name}</b><br />Google review</span></figcaption>
+          </figure>
+        ))}
+      </div>
     </div>
   </section>
 
@@ -277,12 +290,14 @@ const tel = 'tel:1300605022';
   .glabel { font-family: var(--font-heading); font-weight: 800; font-size: 20px; color: var(--ink); }
   .gstars { color: #fbbc05; font-size: 28px; letter-spacing: 3px; line-height: 1.1; }
   .gsub { font-size: 14px; color: var(--muted); }
-  .greview { margin-bottom: 18px; box-shadow: none; }
+  .greview { margin-bottom: 18px; box-shadow: none; max-width: 1100px; }
   .gstars.sm { font-size: 20px; letter-spacing: 2px; }
-  .gcard { max-width: 760px; margin: 0 auto; background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 26px 30px; }
+  .gcards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; max-width: 1100px; margin: 0 auto; align-items: start; }
+  .gcard { margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 26px 30px; }
   .gtop { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
   .g.sm { width: 26px; height: 26px; }
-  .gcard blockquote { margin: 0 0 16px; font-size: 16px; color: #222; line-height: 1.6; }
+  .gcard blockquote { margin: 0 0 16px; font-size: 15px; color: #222; line-height: 1.6; }
+  .gcard blockquote p { margin: 0 0 10px; }
   .gcard figcaption { display: flex; align-items: center; gap: 10px; font-size: 14px; }
   .gcard figcaption b { color: var(--ink); }
 
@@ -314,6 +329,7 @@ const tel = 'tel:1300605022';
     .steps.six .step { display: block; padding: 14px 44px 14px 14px; }
     .greview { padding: 18px; gap: 14px; }
     .greview .g { width: 44px; height: 44px; }
+    .gcards { grid-template-columns: minmax(0, 1fr); gap: 12px; }
     .gcard { padding: 20px 18px; }
     .gcard blockquote { font-size: 15px; }
   }
