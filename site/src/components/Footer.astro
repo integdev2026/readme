@@ -55,12 +55,13 @@ import { footerColumns, social, company, telHref } from '../data/site';
   .social { display: flex; gap: 12px; list-style: none; margin: 0; padding: 0; }
   .social img { width: 31px; height: 31px; }
   /* Link columns: small gold label with a soft underline, then calm, evenly spaced links. */
-  h4 { position: relative; color: var(--gold-light); font-family: var(--font-body); font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin: 4px 0 18px; padding-bottom: 12px; white-space: nowrap; }
-  /* Gold bullet before each column title. */
-  h4 { display: flex; align-items: center; gap: 9px; }
-  h4::before { content: ''; width: 7px; height: 7px; flex: none; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 3px rgba(150,130,68,.22); }
+  h4 { position: relative; color: var(--gold-light); font-family: var(--font-body); font-size: 12.5px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; margin: 4px 0 18px; padding-bottom: 12px; white-space: nowrap; }
   h4::after { content: ''; position: absolute; left: 0; bottom: 0; width: 28px; height: 2px; border-radius: 2px; background: var(--gold-gradient); }
   .col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 11px; }
+  /* Small gold bullet before each link. */
+  .col li { position: relative; padding-left: 16px; }
+  .col li::before { content: ''; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); opacity: .75; transition: opacity .2s ease, transform .2s ease; }
+  .col li:hover::before { opacity: 1; transform: scale(1.25); }
   .col a { display: inline-block; font-size: 14px; line-height: 1.4; color: rgba(255,255,255,.72); text-decoration: none; transition: color .2s ease, transform .2s ease; }
   .col a:hover, .col a:focus-visible { color: #fff; transform: translateX(3px); }
   .bottom a:hover { color: var(--gold-light); }
