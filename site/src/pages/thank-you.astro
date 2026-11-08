@@ -14,6 +14,8 @@ import Base from '../layouts/Base.astro';
   <!-- GA4 key event for a completed booking; mark "booking_complete" as a key event in GA4 and import it into Google Ads. -->
   <script is:inline>
     window.gtag && gtag('event', 'booking_complete');
+    // Google Ads conversion: ISO THANK YOU PAGE (1).
+    window.gtag && gtag('event', 'conversion', { send_to: 'AW-10996724305/Vy7rCOnQmrQdENHk0vso' });
     // Bookings that started from the year-end ISO offer (set in components/offer/IsoOffer.astro).
     try {
       var offer = sessionStorage.getItem('integpro_offer');
