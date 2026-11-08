@@ -54,10 +54,14 @@ import { footerColumns, social, company, telHref } from '../data/site';
   .fcta:hover { background: var(--gold-dark); }
   .social { display: flex; gap: 12px; list-style: none; margin: 0; padding: 0; }
   .social img { width: 31px; height: 31px; }
-  h4 { color: #fff; font-size: 18px; margin: 0 0 12px; white-space: nowrap; }
-  .col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-  .col a { font-size: 14px; line-height: 1.35; }
-  .col a:hover, .bottom a:hover { color: var(--gold-light); }
+  /* Link columns: small gold label with a soft underline, then calm, evenly spaced links. */
+  h4 { position: relative; color: var(--gold-light); font-family: var(--font-body); font-size: 12.5px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; margin: 4px 0 18px; padding-bottom: 12px; white-space: nowrap; }
+  h4::after { content: ''; position: absolute; left: 0; bottom: 0; width: 28px; height: 2px; border-radius: 2px; background: var(--gold-gradient); }
+  .col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 11px; }
+  .col a { display: inline-block; font-size: 14px; line-height: 1.4; color: rgba(255,255,255,.72); text-decoration: none; transition: color .2s ease, transform .2s ease; }
+  .col a:hover, .col a:focus-visible { color: #fff; transform: translateX(3px); }
+  .bottom a:hover { color: var(--gold-light); }
+  @media (prefers-reduced-motion: reduce) { .col a { transition: none; } .col a:hover { transform: none; } }
   .bottom { display: flex; justify-content: space-between; align-items: center; gap: 16px; border-top: 1px solid rgba(255, 255, 255, 0.25); padding: 28px 22px 0; font-size: 14px; }
   .bottom p { margin: 0; }
   .bottom a { margin-right: 60px; }
