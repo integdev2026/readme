@@ -1,0 +1,105 @@
+---
+// Year-end ISO offer section: 3 standards for the price of 2, or save 35%.
+// `openBooking` makes the button open the page's own booking pop-up (landing pages use [data-open]);
+// otherwise it goes to /free-consultation. Tracking: offer_view, offer_click, and
+// offer_booking_complete on /thank-you (see thank-you.astro).
+import { isoOffer, isoOfferActive, isoOfferEndsAt } from '../../data/offer';
+
+interface Props { openBooking?: boolean }
+const { openBooking = false } = Astro.props;
+const show = isoOfferActive();
+---
+{show && (
+  <section class="iso-offer" id="iso-offer" data-offer-ends={isoOfferEndsAt.toISOString()} data-offer-id={isoOffer.id} aria-label="Year-end ISO offer">
+    <div class="po-wrap">
+      <div class="po-main">
+        <span class="po-eb">◆ Integrated management system offer</span>
+        <h2>3 ISO standards for <span>the price of 2</span></h2>
+        <p class="po-lead"><b>Or save 35%.</b> ISO 9001, 14001 and 45001, integrated and working like one: one project, one team, one set of documents.</p>
+        <div class="po-std">
+          <div class="po-st"><small>ISO</small><b>9001</b><span>Quality</span></div>
+          <span class="po-ln" aria-hidden="true"></span>
+          <div class="po-st"><small>ISO</small><b>14001</b><span>Environment</span></div>
+          <span class="po-ln" aria-hidden="true"></span>
+          <div class="po-st"><span class="po-tag">3 for 2</span><small>ISO</small><b>45001</b><span>Health &amp; safety</span></div>
+        </div>
+        <p class="po-rev"><span class="po-stars" aria-label="5 out of 5 stars">★★★★★</span> Five-star reviews on Google from clients who built integrated systems with us</p>
+      </div>
+      <div class="po-card">
+        <h3>Year-end offer</h3>
+        <p>Book a free consultation and lock in the offer.</p>
+        <div class="po-date">
+          <span class="po-cal" aria-hidden="true"><i>DEC</i><em>31</em></span>
+          <span>Offer valid until<b>{isoOffer.endsLabel}</b></span>
+        </div>
+        {openBooking
+          ? <a class="po-btn" href="#book" data-open data-offer-click>Claim the offer ›</a>
+          : <a class="po-btn" href="/free-consultation" data-offer-click>Claim the offer ›</a>}
+      </div>
+    </div>
+  </section>
+)}
+
+<script is:inline>
+  (function () {
+    var s = document.querySelector('.iso-offer');
+    if (!s) return;
+    // Switch off after the end date even if an old copy of the page is served.
+    if (new Date() > new Date(s.getAttribute('data-offer-ends'))) { s.remove(); return; }
+    var id = s.getAttribute('data-offer-id');
+    var ev = function (name) { window.gtag && gtag('event', name, { offer_id: id, page_path: location.pathname }); };
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (e) { if (e[0].isIntersecting) { ev('offer_view'); io.disconnect(); } }, { threshold: 0.4 });
+      io.observe(s);
+    }
+    s.querySelectorAll('[data-offer-click]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        ev('offer_click');
+        try { sessionStorage.setItem('integpro_offer', id); } catch (e) {}
+      });
+    });
+  })();
+</script>
+
+<style>
+  .iso-offer { background: #fbfaf6; padding: 56px 0; }
+  .po-wrap { position: relative; overflow: hidden; max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 40px; align-items: center; background: #fff; border: 1px solid var(--gold-light); border-radius: 28px; padding: 40px; box-shadow: 0 24px 60px rgba(150,130,68,.14); }
+  .po-wrap::before { content: ''; position: absolute; right: -120px; top: -120px; width: 360px; height: 360px; border-radius: 50%; background: radial-gradient(circle, rgba(219,206,162,.45), transparent 70%); pointer-events: none; }
+  .po-main, .po-card { position: relative; }
+  .po-eb { display: inline-block; font-size: 12px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--gold-dark); background: #f6efdc; border-radius: 999px; padding: 6px 12px; }
+  .iso-offer h2 { font-size: 38px; line-height: 1.15; margin: 14px 0 10px; font-weight: 800; }
+  .iso-offer h2 span { color: var(--gold); }
+  .po-lead { font-size: 16px; color: #444; margin: 0 0 20px; }
+  .po-lead b { color: var(--ink); }
+  .po-std { display: flex; align-items: center; margin: 4px 0 20px; }
+  .po-st { position: relative; flex: 1; text-align: center; border: 1px solid var(--gold-light); border-radius: 16px; padding: 14px 6px; background: #fff; }
+  .po-st small { display: block; font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--gold); }
+  .po-st b { display: block; font-family: var(--font-heading); font-size: 26px; color: var(--navy); }
+  .po-st span { font-size: 12px; color: var(--muted); }
+  .po-ln { width: 26px; height: 3px; flex: none; background: var(--gold-gradient); }
+  .po-st .po-tag { position: absolute; top: -12px; right: -8px; background: var(--navy); color: #e6d39a; font-size: 11px; font-weight: 800; border-radius: 8px; padding: 4px 8px; transform: rotate(4deg); }
+  .po-rev { margin: 0; font-size: 14px; color: var(--muted); }
+  .po-stars { color: #fbbc05; letter-spacing: 2px; }
+  .po-card { background: linear-gradient(180deg, var(--navy), #243247); color: #fff; border-radius: 22px; padding: 28px; }
+  .po-card h3 { color: #fff; font-size: 20px; margin: 0 0 6px; }
+  .po-card > p { margin: 0 0 16px; font-size: 14px; color: #cfd6e2; }
+  .po-date { display: flex; align-items: center; gap: 12px; background: rgba(255,255,255,.08); border: 1px solid rgba(219,206,162,.5); border-radius: 14px; padding: 12px 14px; margin-bottom: 16px; font-size: 14px; color: #cfd6e2; }
+  .po-date b { display: block; color: #fff; font-size: 16px; }
+  .po-cal { width: 44px; height: 48px; flex: none; border-radius: 8px; background: #fff; text-align: center; overflow: hidden; line-height: 1; }
+  .po-cal i { display: block; background: var(--gold); color: #fff; font: 700 10px/1 sans-serif; font-style: normal; padding: 3px 0; }
+  .po-cal em { display: block; padding-top: 6px; font-style: normal; font-weight: 800; font-size: 18px; color: var(--navy); }
+  .po-btn { display: flex; justify-content: center; align-items: center; height: 52px; border-radius: 999px; background: var(--gold); color: #fff; font-weight: 700; font-size: 16px; text-decoration: none; }
+  .po-btn:focus-visible { outline: 3px solid var(--gold-light); outline-offset: 3px; }
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .po-btn, .po-st { transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease; }
+    .po-btn:hover { background: var(--gold-dark); transform: translateY(-2px); box-shadow: 0 10px 22px rgba(150,130,68,.35); }
+    .po-st:hover { transform: translateY(-4px); box-shadow: 0 12px 26px rgba(0,0,0,.08); }
+  }
+  @media (max-width: 860px) {
+    .iso-offer { padding: 32px 16px; }
+    .po-wrap { grid-template-columns: minmax(0, 1fr); padding: 22px 18px; gap: 22px; border-radius: 22px; }
+    .iso-offer h2 { font-size: 26px; }
+    .po-st b { font-size: 19px; }
+    .po-ln { width: 10px; }
+  }
+</style>

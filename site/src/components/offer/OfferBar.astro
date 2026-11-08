@@ -1,0 +1,41 @@
+---
+// Slim year-end ISO offer bar (home page). Links to the offer section on the same page.
+// Closable for the visit; switches itself off after the offer's end date.
+import { isoOffer, isoOfferActive, isoOfferEndsAt } from '../../data/offer';
+const show = isoOfferActive();
+---
+{show && (
+  <div class="po-bar" data-offer-ends={isoOfferEndsAt.toISOString()}>
+    <span class="po-bar-tag">ISO offer</span>
+    <span class="po-bar-txt">3 ISO standards for the price of 2, or save 35% · Valid until <b>{isoOffer.endsShort}</b></span>
+    <a href="#iso-offer" class="po-bar-link">See offer</a>
+    <button type="button" class="po-bar-x" aria-label="Close offer bar">&times;</button>
+  </div>
+)}
+
+<script is:inline>
+  (function () {
+    var b = document.querySelector('.po-bar');
+    if (!b) return;
+    var hidden = false;
+    try { hidden = sessionStorage.getItem('integpro_offer_bar') === 'closed'; } catch (e) {}
+    if (hidden || new Date() > new Date(b.getAttribute('data-offer-ends'))) { b.remove(); return; }
+    b.querySelector('.po-bar-x').addEventListener('click', function () {
+      b.remove();
+      try { sessionStorage.setItem('integpro_offer_bar', 'closed'); } catch (e) {}
+    });
+    b.querySelector('.po-bar-link').addEventListener('click', function () {
+      window.gtag && gtag('event', 'offer_bar_click', { page_path: location.pathname });
+    });
+  })();
+</script>
+
+<style>
+  .po-bar { position: relative; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 6px 14px; padding: 10px 48px; background: linear-gradient(90deg, var(--navy), #2b3a52); color: #fff; font-size: 14px; font-weight: 600; text-align: center; }
+  .po-bar-tag { background: var(--gold-gradient); color: var(--navy); font-size: 12px; font-weight: 800; letter-spacing: .6px; text-transform: uppercase; border-radius: 999px; padding: 4px 10px; }
+  .po-bar b { color: #e6d39a; }
+  .po-bar-link { color: #fff; text-decoration: underline; white-space: nowrap; }
+  .po-bar-x { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); border: 0; background: none; color: #fff; opacity: .75; font-size: 22px; line-height: 1; cursor: pointer; padding: 6px; }
+  .po-bar-x:hover { opacity: 1; }
+  @media (max-width: 760px) { .po-bar { font-size: 13px; padding: 9px 40px; } }
+</style>

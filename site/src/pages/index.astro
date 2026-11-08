@@ -61,12 +61,16 @@ const faqSchema = {
   '@type': 'FAQPage',
   mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
 };
+import IsoOffer from '../components/offer/IsoOffer.astro';
+import OfferBar from '../components/offer/OfferBar.astro';
 ---
 <Base
   title="integPRO | Cost Effective ISO & DISP Certification"
   description="Sydney-based ISO and DISP consultants serving businesses across Australia: ISO 9001, 14001, 45001, 27001 and 13485 certification and DISP membership support."
 >
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqSchema)} />
+
+  <OfferBar />
 
   <!-- Hero -->
   <section class="hero">
@@ -103,6 +107,8 @@ const faqSchema = {
       </div>
     </div>
   </section>
+
+  <IsoOffer />
 
   <!-- Services -->
   <section class="section">

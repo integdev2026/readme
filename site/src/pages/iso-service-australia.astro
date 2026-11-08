@@ -72,6 +72,7 @@ const faqs = [
   { q: 'Can we certify to more than one standard at once?', a: 'Yes. Standards such as ISO 9001, 14001 and 45001 share a common structure, so they can be combined into one integrated management system with shared processes, audits and reviews. This usually saves time and effort compared with running them separately.' },
   { q: 'Do we need a consultant?', a: 'Not necessarily. Some businesses implement a standard themselves. A consultant helps you interpret the requirements, avoid unnecessary paperwork and prepare for the audit, which can save time for busy teams.' },
 ];
+import IsoOffer from '../components/offer/IsoOffer.astro';
 ---
 <Base
   schema={[service(Astro.site!, { name: 'ISO Certification Consulting', description: 'ISO certification consulting across Australia for ISO 9001, 14001, 45001, 27001 and 13485, from gap analysis to certification audit and ongoing support.', path: '/iso-service-australia', serviceType: 'ISO certification consulting' })]}
@@ -86,6 +87,8 @@ const faqs = [
     stats={[{ value: '2019', label: 'Established' }, { value: '5', label: 'ISO Standards' }, { value: 'Free', label: 'Consultation' }]}
     bg="/images/iso-service-australia/hero-bg.webp"
   />
+
+  <IsoOffer />
 
   <VideoEmbed id="t0kn4f4Xg0w" title="ISO certification explained: video" spaced autoplay />
 
