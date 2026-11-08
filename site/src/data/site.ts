@@ -61,7 +61,7 @@ export const footerColumns = [
   {
     title: 'Resources',
     links: [
-      { label: 'ISO Certification Guides', href: '/blog/categories/iso-certification' },
+      { label: 'ISO Certification Resources', href: '/blog/categories/iso-certification' },
       { label: 'Blog', href: '/blog' },
       { label: 'ISO by Industry', href: '/industries' },
     ],
