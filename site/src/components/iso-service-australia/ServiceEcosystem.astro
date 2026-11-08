@@ -5,11 +5,11 @@ import SectionHead from '../SectionHead.astro';
 const img = (n: string) => `/images/iso-disp-services/${n}.webp`;
 
 const ecosystem = [
-  { icon: 'icon-document', title: 'Gap Analysis & Auditing', text: 'Identify compliance gaps before certification', items: ['Current state assessment', 'Gap identification', 'Action plan development', 'Pre-audit simulation'] },
-  { icon: 'icon-checkbox', title: 'Documentation Services', text: 'Professional policy and procedure development', items: ['Manuals & policies', 'Work instructions', 'Forms & templates', 'Process maps'] },
-  { icon: 'icon-book', title: 'Training Academy', text: 'Build internal capability and expertise', items: ['Internal auditor courses', 'Lead auditor programs', 'Management training', 'Custom workshops'] },
-  { icon: 'icon-book', title: 'One System Management', text: 'Combine multiple standards efficiently', items: ['ISO Standards', 'Unified documentation', 'Reduced audit burden', 'Cost optimisation'] },
-  { icon: 'icon-book', title: 'Enterprise Quality Management Software (EQMS)', text: 'Digitise and automate your management systems', items: ['Centralised Digital Hub', 'Automated Workflows & CAPA', 'Real-time Analytics & Dashboards', 'Continuous Audit Readiness'], wide: true },
+  { icon: 'icon-document', id: 'gap-analysis', title: 'Gap Analysis & Auditing', text: 'Identify compliance gaps before certification', items: ['Current state assessment', 'Gap identification', 'Action plan development', 'Pre-audit simulation'] },
+  { icon: 'icon-checkbox', id: 'documentation', title: 'Documentation Services', text: 'Professional policy and procedure development', items: ['Manuals & policies', 'Work instructions', 'Forms & templates', 'Process maps'] },
+  { icon: 'icon-book', id: 'training', title: 'Training Academy', text: 'Build internal capability and expertise', items: ['Internal auditor courses', 'Lead auditor programs', 'Management training', 'Custom workshops'] },
+  { icon: 'icon-book', id: 'integrated-management-systems', title: 'One System Management', text: 'Combine multiple standards efficiently', items: ['ISO Standards', 'Unified documentation', 'Reduced audit burden', 'Cost optimisation'] },
+  { icon: 'icon-book', id: 'eqms', title: 'Enterprise Quality Management Software (EQMS)', text: 'Digitise and automate your management systems', items: ['Centralised Digital Hub', 'Automated Workflows & CAPA', 'Real-time Analytics & Dashboards', 'Continuous Audit Readiness'], wide: true },
 ];
 
 const addOns = ['Extra Consulting Hours', 'Annual surveillance support', 'Maintenance', 'Learning Management System'];
@@ -29,7 +29,7 @@ const journey = [
       <SectionHead title="Complete Service Ecosystem" sub="Additional services to support your management system journey" />
       <div class="eco-grid swipe">
         {ecosystem.map((e) => (
-          <article class:list={['eco-card', { wide: e.wide }]}>
+          <article id={e.id} class:list={['eco-card', { wide: e.wide }]}>
             <img src={img(e.icon)} alt="" width="42" height="42" loading="lazy" />
             <h3>{e.title}</h3>
             <p>{e.text}</p>
@@ -63,6 +63,7 @@ const journey = [
 </div>
 
 <style>
+  .eco-card { scroll-margin-top: 120px; }
   .eco-wrap :global(.section-head) { max-width: none; }
   .eco-wrap :global(.section-head h2) { font-weight: 400; }
   .tick { position: relative; padding-left: 20px; }
