@@ -122,12 +122,15 @@ export const company = {
 
 /**
  * Google Tag Manager container ID (GTM-XXXXXXX). Empty means no tag is loaded.
- * Left empty on purpose: Google Ads conversions come from GA4 (import booking_complete).
+ * Left empty on purpose: the Google Ads tag (adsId) is loaded directly with gtag.js.
  * If GTM is turned on later, make sure it does not also send to the GA4 ID below, or hits are counted twice.
  */
 export const gtmId = '';
 
 /** Google Analytics 4 measurement ID, loaded on every page with gtag.js. Empty means no tag is loaded. */
 export const gaId = 'G-8HG19XQE77';
+
+/** Google Ads tag ID (AW-…), configured on every page through the same gtag.js. Empty means it is not loaded. */
+export const adsId = 'AW-10996724305';
 
 export const telHref = (n: string) => `tel:${n.startsWith('0') ? '+61' + n.slice(1) : n}`.replace(/\s/g, '');
