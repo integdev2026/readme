@@ -53,10 +53,13 @@ export const footerColumns = [
   {
     title: 'Services',
     links: [
-      { label: 'All services', href: '/services' },
-      { label: 'ISO certification', href: '/iso-service-australia' },
-      { label: 'DISP membership', href: '/disp' },
-      { label: 'Free consultation', href: '/free-consultation' },
+      { label: 'Gap analysis & audits', href: '/iso-service-australia#gap-analysis' },
+      { label: 'Documentation', href: '/iso-service-australia#documentation' },
+      { label: 'Integrated systems (IMS)', href: '/iso-service-australia#integrated-management-systems' },
+      { label: 'Training courses', href: '/iso-service-australia#training' },
+      { label: 'EQMS software', href: '/iso-service-australia#eqms' },
+      { label: 'DISP support', href: '/disp' },
+      { label: 'All services →', href: '/services' },
     ],
   },
   {
