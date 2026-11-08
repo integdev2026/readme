@@ -54,8 +54,31 @@ export const footerColumns = [
     title: 'Services',
     links: [
       { label: 'All services', href: '/services' },
-      { label: 'ISO', href: '/iso-service-australia' },
-      { label: 'DISP', href: '/disp' },
+      { label: 'ISO certification', href: '/iso-service-australia' },
+      { label: 'DISP membership', href: '/disp' },
+      { label: 'Free consultation', href: '/free-consultation' },
+    ],
+  },
+  {
+    title: 'ISO Standards',
+    links: [
+      { label: 'ISO 9001 Quality', href: '/iso-9001-compliance-certification-sydney' },
+      { label: 'ISO 14001 Environment', href: '/iso-14001-compliance-certification' },
+      { label: 'ISO 45001 Health & Safety', href: '/iso-45001-occupational-health-safety' },
+      { label: 'ISO 27001 Information Security', href: '/iso-27001-information-security-management-system' },
+      { label: 'ISO 13485 Medical Devices', href: '/iso-13485-medical-devices-quality-management-system' },
+      { label: 'ISO by Industry', href: '/industries' },
+    ],
+  },
+  {
+    title: 'DISP',
+    links: [
+      { label: 'DISP overview', href: '/disp' },
+      { label: 'DISP levels', href: '/disp/levels' },
+      { label: 'DISP process', href: '/disp/process' },
+      { label: 'DISP by industry', href: '/disp/industries' },
+      { label: 'DISP roles', href: '/disp/roles' },
+      { label: 'DISP FAQ', href: '/disp/faq' },
     ],
   },
   {
@@ -63,14 +86,13 @@ export const footerColumns = [
     links: [
       { label: 'ISO Certification Resources', href: '/blog/categories/iso-certification' },
       { label: 'Blog', href: '/blog' },
-      { label: 'ISO by Industry', href: '/industries' },
     ],
   },
   {
     title: 'Company',
     links: [
-      { label: 'About', href: '/about-us-iso-team' },
-      { label: 'Contact', href: '/free-consultation' },
+      { label: 'About us', href: '/about-us-iso-team' },
+      { label: 'Contact us', href: '/free-consultation' },
     ],
   },
 ];
