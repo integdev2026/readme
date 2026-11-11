@@ -4,4 +4,6 @@ export const retiredPosts: Record<string, string> = {
   'iso-14001-environmental-management-building-sustainability-into-your-business-1':
     'iso-14001-environmental-management-building-sustainability-into-your-business',
   'understanding-iso-compliance-a-guide-to-key-international-standards': 'understanding-iso-compliance-key-standards',
+  'iso-certifying-authorities-australia-your-guide-to-certification-bodies-1':
+    'choosing-the-right-iso-certification-body-in-australia-australian-iso-certifiers-guide',
 };
