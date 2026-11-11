@@ -32,6 +32,8 @@ export default defineConfig({
     '/iso-disp-services': { status: 301, destination: '/services' },
     // Old contact page; Google Ads sitelinks still point here.
     '/contact': { status: 301, destination: '/free-consultation' },
+    // Old Wix training page; training is now a section of the ISO services page.
+    '/academy': { status: 301, destination: '/iso-service-australia#training' },
     // Sitemap addresses left over from the old Wix editor site.
     '/sitemap-integpro.xml': { status: 301, destination: '/sitemap-index.xml' },
     '/pages-sitemap.xml': { status: 301, destination: '/sitemap-index.xml' },
