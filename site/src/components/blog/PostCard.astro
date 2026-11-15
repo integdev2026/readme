@@ -1,26 +1,36 @@
 ---
-import { coverUrl, type Post } from '../../lib/wix';
-interface Props { post: Post }
-const { post } = Astro.props;
+import { coverUrl, type Category, type Post } from '../../lib/wix';
+interface Props { post: Post; category?: Category; hidden?: boolean }
+const { post, category, hidden = false } = Astro.props;
 const cover = coverUrl(post, 640);
+const date = post.firstPublishedDate ? new Date(post.firstPublishedDate) : undefined;
+const dateLabel = date?.toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Australia/Sydney' });
+const text = `${post.title} ${post.excerpt} ${category?.label ?? ''}`.toLowerCase();
 ---
-<article class="post-card">
+<article class="post-card" hidden={hidden} data-card data-date={date?.getTime() ?? 0} data-mins={post.minutesToRead ?? 0} data-text={text}>
   <a href={`/post/${post.slug}`} class="cover" tabindex="-1" aria-hidden="true">
-    {cover ? <img src={cover} alt="" width="320" height="211" loading="lazy" /> : <span class="ph"></span>}
+    {cover ? <img src={cover} alt="" width="320" height="183" loading="lazy" /> : <span class="ph"></span>}
   </a>
   <div class="body">
-    <span class="meta">{post.minutesToRead} min read</span>
+    {category && <a class="tag" href={`/blog/categories/${category.slug}`}>{category.label}</a>}
     <h3><a href={`/post/${post.slug}`}>{post.title}</a></h3>
     <p>{post.excerpt}</p>
+    <span class="meta">{dateLabel && <time datetime={date!.toISOString()}>{dateLabel}</time>}{dateLabel && ' · '}{post.minutesToRead} min read</span>
   </div>
 </article>
 
 <style>
-  .post-card { background: #fff; display: flex; flex-direction: column; }
-  .cover img, .ph { display: block; width: 100%; aspect-ratio: 320 / 180; object-fit: cover; background: var(--bg-faq); }
-  .body { padding: 16px 12px 24px; }
-  .meta { font-size: 11px; color: var(--text); }
-  h3 { margin: 12px 0 10px; font-size: 18px; line-height: 1.3; color: var(--gold); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-  h3 a:hover { text-decoration: underline; }
-  p { margin: 0; font-size: 14px; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .post-card { background: #fff; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
+  .post-card[hidden] { display: none; }
+  .post-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-card); }
+  .cover { overflow: hidden; }
+  .cover img, .ph { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--bg-faq); transition: transform 0.35s; }
+  .post-card:hover .cover img { transform: scale(1.04); }
+  .body { flex: 1; display: flex; flex-direction: column; padding: 16px 18px 20px; }
+  .tag { align-self: flex-start; padding: 4px 10px; border-radius: 999px; background: var(--gold-light); color: var(--gold-dark); font-size: 11px; font-weight: 700; letter-spacing: 0.03em; }
+  .tag:hover { background: var(--gold); color: #fff; }
+  h3 { margin: 12px 0 8px; font-size: 18px; line-height: 1.3; color: var(--navy); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  h3 a:hover { color: var(--gold); }
+  p { flex: 1; margin: 0 0 14px; font-size: 14px; line-height: 1.5; color: var(--text); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .meta { font-size: 12px; color: var(--muted); }
 </style>

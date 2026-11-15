@@ -1,55 +1,63 @@
 ---
-// integPRO YouTube channel band with three featured videos (shown on the main blog page).
+// integPRO YouTube band on the first blog page: channel header + clickable video thumbnails that open YouTube.
+// Thumbnails are plain images (no iframes), so the page stays light and each click sends visitors to the channel.
 import { social } from '../../data/site';
 
 const channel = social.find((s) => s.label === 'YouTube')!.href.replace(/\/$/, '');
 const videos = ['raUfdWG3oRI', '4WB-NEOKMbM', '0VyygnZXwtk'];
+const ytIcon = 'M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.7 15V9l5.8 3-5.8 3Z';
 ---
 <section class="yt" aria-labelledby="yt-title">
   <div class="channel">
-    <span class="logo" aria-hidden="true">
-      <svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.7 15V9l5.8 3-5.8 3Z" /></svg>
-    </span>
+    <span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30"><path fill="currentColor" d={ytIcon} /></svg></span>
     <div class="text">
-      <h2 id="yt-title">integPRO on <span class="gold">YouTube</span></h2>
-      <p>Explainer videos on ISO certification, DISP membership and management systems.</p>
+      <h2 id="yt-title">Watch integPRO on <span class="red">YouTube</span></h2>
+      <p>Short explainer videos on ISO certification, DISP membership and management systems.</p>
     </div>
     <div class="actions">
-      <a class="btn btn-primary" href={`${channel}?sub_confirmation=1`} target="_blank" rel="noopener">Subscribe</a>
-      <a class="btn btn-outline" href={channel} target="_blank" rel="noopener">Visit channel</a>
+      <a class="btn yt-sub" href={`${channel}?sub_confirmation=1`} target="_blank" rel="noopener">Subscribe</a>
+      <a class="btn yt-visit" href={`${channel}/videos`} target="_blank" rel="noopener">All videos ›</a>
     </div>
   </div>
   <div class="videos">
     {videos.map((id, i) => (
-      <div class="video">
-        <iframe
-          src={`https://www.youtube-nocookie.com/embed/${id}?rel=0`}
-          title={`integPRO video ${i + 1}`}
-          loading="lazy"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
+      <a class="video" href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener" aria-label={`Watch integPRO video ${i + 1} on YouTube (opens in a new tab)`}>
+        <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt="" width="480" height="360" loading="lazy" />
+        <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="64" height="64"><path fill="#ff0000" d={ytIcon} /><path fill="#fff" d="M9.7 15V9l5.8 3-5.8 3Z" /></svg></span>
+        <span class="label">Watch on YouTube</span>
+      </a>
     ))}
   </div>
 </section>
 
 <style>
-  .yt { margin-top: 64px; padding: 32px; background: var(--bg-faq); border-radius: var(--radius-card); }
-  .channel { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-  .logo { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: #fff; color: #ff0000; box-shadow: var(--shadow-card); flex: none; }
+  .yt { margin: 0 0 36px; padding: 26px; background: #fff; border: 1px solid var(--line); border-radius: 16px; }
+  .channel { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+  .logo { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: #fff0f0; color: #ff0000; flex: none; }
   .text { flex: 1; min-width: 220px; }
-  .text h2 { font-size: 26px; }
-  .text p { margin: 6px 0 0; font-size: 15px; }
-  .actions { display: flex; gap: 12px; flex-wrap: wrap; }
-  .videos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 28px; }
-  .video { aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden; background: var(--navy); box-shadow: var(--shadow-card); }
-  .video iframe { display: block; width: 100%; height: 100%; border: 0; }
-  @media (max-width: 860px) { .videos { grid-template-columns: 1fr; } }
+  .text h2 { margin: 0; font-size: 24px; color: var(--navy); }
+  .red { color: #ff0000; }
+  .text p { margin: 4px 0 0; font-size: 14px; color: var(--text); }
+  .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; height: 42px; padding: 0 20px; border-radius: 999px; font-size: 14px; font-weight: 700; }
+  .yt-sub { background: #ff0000; color: #fff; }
+  .yt-sub:hover { background: #cc0000; }
+  .yt-visit { border: 1px solid var(--line); color: var(--navy); }
+  .yt-visit:hover { border-color: #ff0000; color: #cc0000; }
+  .videos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 22px; }
+  .video { position: relative; display: block; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; background: var(--navy); }
+  .video img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.35s; }
+  .video::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.6) 100%); }
+  .play { position: absolute; inset: 0; display: grid; place-items: center; z-index: 1; transition: transform 0.2s; }
+  .label { position: absolute; left: 12px; bottom: 10px; z-index: 1; font-size: 12px; font-weight: 700; color: #fff; }
+  .video:hover img { transform: scale(1.05); }
+  .video:hover .play { transform: scale(1.1); }
+  @media (max-width: 860px) { .videos { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; } .play svg { width: 44px; height: 44px; } .label { display: none; } }
   @media (max-width: 560px) {
-    .yt { padding: 22px 16px; margin-top: 48px; }
+    .yt { padding: 18px 14px; }
+    .videos { grid-template-columns: 1fr; }
+    .label { display: block; }
     .actions { width: 100%; }
-    .actions .btn { flex: 1; justify-content: center; }
+    .actions .btn { flex: 1; }
   }
 </style>
