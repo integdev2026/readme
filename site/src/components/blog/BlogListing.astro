@@ -6,7 +6,7 @@
 import Base from '../../layouts/Base.astro';
 import PostCard from './PostCard.astro';
 import YouTubeChannel from './YouTubeChannel.astro';
-import { cta } from '../../data/site';
+import { cta, social } from '../../data/site';
 import { POSTS_PER_PAGE, type Category, type Post } from '../../lib/wix';
 
 interface Props {
@@ -24,6 +24,8 @@ interface Props {
 }
 const { title, description, heading, posts, categories, activeCategory, page, baseHref, paged = true } = Astro.props;
 const perPage = paged ? POSTS_PER_PAGE : Math.max(1, posts.length);
+const youtube = social.find((s) => s.label === 'YouTube')!.href;
+const ytPath = 'M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.7 15V9l5.8 3-5.8 3Z';
 const pages = Math.max(1, Math.ceil(posts.length / perPage));
 const href = (n: number) => (n === 1 ? baseHref : `${baseHref.replace(/\/$/, '')}/page/${n}`);
 const start = (page - 1) * perPage;
@@ -57,6 +59,7 @@ const schema = {
       )}
       <p class="lede">{active?.description || 'Practical guidance, explainer videos and real-world examples on ISO certification, DISP membership, risk and management systems for Australian businesses.'}</p>
       <div class="facts"><span>ISO 9001 · 14001 · 45001 · 27001 · 13485</span><span>DISP</span>{page > 1 && <span>Page {page} of {pages}</span>}</div>
+      <a class="hero-yt" href={youtube} target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d={ytPath} /></svg>Watch our videos on YouTube</a>
     </div>
   </header>
 
@@ -75,12 +78,14 @@ const schema = {
         {categories.map((c) => (
           <a href={`/blog/categories/${c.slug}`} class:list={['chip', { on: activeCategory === c.slug }]}>{c.label}</a>
         ))}
+        <a href={youtube} class="chip chip-yt" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d={ytPath} /></svg>YouTube</a>
       </div>
     </div>
   </div>
 
   <section class="list">
     <div class="container">
+      {!activeCategory && page === 1 && <YouTubeChannel />}
       {posts.length === 0 ? (
         <p class="empty">Posts are loading from Wix and will appear on the published site.</p>
       ) : (
@@ -103,14 +108,16 @@ const schema = {
           {page < pages && <a href={href(page + 1)} aria-label="Next page">Next ›</a>}
         </nav>
       )}
-      {!activeCategory && page === 1 && <YouTubeChannel />}
     </div>
   </section>
 
   <section class="cta">
     <div class="container cta-inner">
       <h2>Planning ISO certification or DISP membership? <em>Talk to a consultant.</em></h2>
-      <a class="btn" href={cta.href}>Book a free meeting</a>
+      <div class="cta-btns">
+        <a class="btn" href={cta.href}>Book a free meeting</a>
+        <a class="btn btn-yt" href={youtube} target="_blank" rel="noopener">Watch on YouTube</a>
+      </div>
     </div>
   </section>
 </Base>
@@ -175,6 +182,8 @@ const schema = {
   .facts { display: flex; flex-wrap: wrap; gap: 8px; }
   .facts span { padding: 6px 12px; border: 1px solid rgba(219, 206, 162, 0.5); border-radius: 999px; font-size: 12px; color: var(--gold-light); }
 
+  .hero-yt { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; height: 44px; padding: 0 20px; border-radius: 999px; background: #ff0000; color: #fff; font-size: 14px; font-weight: 700; box-shadow: 0 6px 16px rgba(255, 0, 0, 0.3); }
+  .hero-yt:hover { background: #cc0000; }
   .filters { position: sticky; top: 0; z-index: 5; background: #fff; border-bottom: 1px solid var(--line); box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04); }
   .filters .container { padding-top: 16px; padding-bottom: 14px; }
   .row1 { display: flex; gap: 10px; margin-bottom: 12px; }
@@ -187,6 +196,8 @@ const schema = {
   .chip:hover { border-color: var(--gold); color: var(--gold-dark); }
   .chip.on { background: var(--gold); border-color: var(--gold); color: #fff; }
 
+  .chip-yt { display: inline-flex; align-items: center; gap: 6px; border-color: #ffd0d0; color: #cc0000; }
+  .chip-yt:hover { background: #ff0000; border-color: #ff0000; color: #fff; }
   .list { padding: 36px 0 72px; background: var(--bg-soft); }
   .count { margin: 0 0 14px; font-size: 13px; color: var(--muted); }
   .count:empty { display: none; }
@@ -205,6 +216,9 @@ const schema = {
   .cta h2 em { font-style: normal; color: var(--gold-light); }
   .cta .btn { flex: none; display: inline-flex; align-items: center; height: 48px; padding: 0 26px; border-radius: 999px; background: var(--gold); color: #fff; font-weight: 700; }
   .cta .btn:hover { background: var(--gold-dark); }
+  .cta-btns { display: flex; flex-wrap: wrap; gap: 10px; }
+  .cta .btn-yt { background: transparent; border: 1px solid rgba(255, 255, 255, 0.5); }
+  .cta .btn-yt:hover { background: #ff0000; border-color: #ff0000; }
 
   @media (max-width: 860px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 560px) {
