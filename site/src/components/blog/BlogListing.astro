@@ -1,66 +1,218 @@
 ---
-// Shared listing layout for /blog, /blog/page/N and category pages (9 posts per page, like the live site).
+// Shared listing layout for /blog, /blog/page/N and category pages.
+// Structure: breadcrumbs → image hero → filter bar (search, sort, topic chips) → 3-column card grid → pager → CTA band.
+// Every listing page renders all posts in its scope; posts outside the current page are `hidden`, so without
+// JavaScript each page shows its own 9 posts, and with JavaScript search/sort/topic filters work across all of them.
 import Base from '../../layouts/Base.astro';
 import PostCard from './PostCard.astro';
-import CategoryNav from './CategoryNav.astro';
 import YouTubeChannel from './YouTubeChannel.astro';
-import type { Category, Post } from '../../lib/wix';
+import { cta } from '../../data/site';
+import { POSTS_PER_PAGE, type Category, type Post } from '../../lib/wix';
 
 interface Props {
   title: string;
   description: string;
   heading: string;
+  /** All posts in this listing's scope (whole blog or one category), newest first. */
   posts: Post[];
   categories: Category[];
   activeCategory?: string;
   page: number;
-  pages: number;
   baseHref: string;
+  /** false: show every post on one page (category pages have no /page/N routes). */
+  paged?: boolean;
 }
-const { title, description, heading, posts, categories, activeCategory, page, pages, baseHref } = Astro.props;
+const { title, description, heading, posts, categories, activeCategory, page, baseHref, paged = true } = Astro.props;
+const perPage = paged ? POSTS_PER_PAGE : Math.max(1, posts.length);
+const pages = Math.max(1, Math.ceil(posts.length / perPage));
 const href = (n: number) => (n === 1 ? baseHref : `${baseHref.replace(/\/$/, '')}/page/${n}`);
+const start = (page - 1) * perPage;
+const catLabel = new Map(categories.map((c) => [c.id, c]));
+const active = categories.find((c) => c.slug === activeCategory);
+const crumbs = [{ label: 'Home', href: '/' }, { label: 'Blog', href: '/blog' }, ...(active ? [{ label: active.label, href: `/blog/categories/${active.slug}` }] : [])];
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: new URL(c.href, Astro.site).href })),
+};
 ---
 <Base title={title} description={description} pageType="CollectionPage">
-  <section class="blog">
-    <div class="container">
-      <h1>{heading}</h1>
-      {!activeCategory && (
-        <div class="intro">
-          <p>At integPRO, we’re not just about certification, we’re about clarity, confidence, and continuous learning. That’s why we’ve launched <em>integPRO Insight</em>, a dedicated space where we share academic insights, practical guidance, explainer videos, and real-world case examples on all things ISO, compliance, risk, and management systems.</p>
-          <p>Whether you're a business leader, compliance officer, or simply curious about how international standards shape industries like construction, defence, or healthcare, this is for you.</p>
-        </div>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol class="container">
+      {crumbs.map((c, i) => (
+        <li>{i === crumbs.length - 1 ? <span aria-current="page">{c.label}</span> : <a href={c.href}>{c.label}</a>}</li>
+      ))}
+    </ol>
+  </nav>
+
+  <header class="hero">
+    <img class="hero-media" src="/images/industries-bg.webp" alt="" aria-hidden="true" />
+    <div class="container hero-inner">
+      <p class="eyebrow">integPRO Insight</p>
+      {active ? (
+        <h1>{heading}</h1>
+      ) : (
+        <h1>ISO guides, DISP updates <em>and compliance insights</em></h1>
       )}
-      <CategoryNav categories={categories} active={activeCategory} />
+      <p class="lede">{active?.description || 'Practical guidance, explainer videos and real-world examples on ISO certification, DISP membership, risk and management systems for Australian businesses.'}</p>
+      <div class="facts"><span>ISO 9001 · 14001 · 45001 · 27001 · 13485</span><span>DISP</span>{page > 1 && <span>Page {page} of {pages}</span>}</div>
+    </div>
+  </header>
+
+  <div class="filters" data-filters>
+    <div class="container">
+      <div class="row1">
+        <input class="search" type="search" placeholder="Search articles, e.g. ISO 9001, internal audit, DISP" aria-label="Search articles" data-search />
+        <select class="sort" aria-label="Sort articles" data-sort>
+          <option value="new">Newest first</option>
+          <option value="old">Oldest first</option>
+          <option value="short">Quick reads first</option>
+        </select>
+      </div>
+      <div class="chips" aria-label="Blog topics">
+        <a href="/blog" class:list={['chip', { on: !activeCategory }]}>All topics</a>
+        {categories.map((c) => (
+          <a href={`/blog/categories/${c.slug}`} class:list={['chip', { on: activeCategory === c.slug }]}>{c.label}</a>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <section class="list">
+    <div class="container">
       {posts.length === 0 ? (
         <p class="empty">Posts are loading from Wix and will appear on the published site.</p>
       ) : (
-        <div class="grid">{posts.map((p) => <PostCard post={p} />)}</div>
+        <>
+          <p class="count" aria-live="polite" data-count></p>
+          <div class="grid" data-grid>
+            {posts.map((p, i) => (
+              <PostCard post={p} category={p.categoryIds?.map((id) => catLabel.get(id)).find(Boolean)} hidden={i < start || i >= start + perPage} />
+            ))}
+          </div>
+          <p class="empty" hidden data-none>No articles match your search. Try another term or <a href="/blog">view all topics</a>.</p>
+        </>
       )}
       {pages > 1 && (
-        <nav class="pager" aria-label="Pagination">
-          {page > 1 && <a href={href(page - 1)} aria-label="Previous page">‹</a>}
+        <nav class="pager" aria-label="Pagination" data-pager>
+          {page > 1 && <a href={href(page - 1)} aria-label="Previous page">‹ Prev</a>}
           {Array.from({ length: pages }, (_, i) => i + 1).map((n) => (
             <a href={href(n)} class:list={{ current: n === page }} aria-current={n === page ? 'page' : undefined}>{n}</a>
           ))}
-          {page < pages && <a href={href(page + 1)} aria-label="Next page">›</a>}
+          {page < pages && <a href={href(page + 1)} aria-label="Next page">Next ›</a>}
         </nav>
       )}
       {!activeCategory && page === 1 && <YouTubeChannel />}
     </div>
   </section>
+
+  <section class="cta">
+    <div class="container cta-inner">
+      <h2>Planning ISO certification or DISP membership? <em>Talk to a consultant.</em></h2>
+      <a class="btn" href={cta.href}>Book a free meeting</a>
+    </div>
+  </section>
 </Base>
 
+<script>
+  const root = document.querySelector('[data-filters]');
+  const grid = document.querySelector<HTMLElement>('[data-grid]');
+  if (root && grid) {
+    const search = root.querySelector<HTMLInputElement>('[data-search]')!;
+    const sort = root.querySelector<HTMLSelectElement>('[data-sort]')!;
+    const pager = document.querySelector<HTMLElement>('[data-pager]');
+    const none = document.querySelector<HTMLElement>('[data-none]');
+    const count = document.querySelector<HTMLElement>('[data-count]');
+    const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-card]'));
+    const pageSet = cards.filter((c) => !c.hidden);
+    const order = (mode: string) =>
+      [...cards].sort((a, b) =>
+        mode === 'short' ? Number(a.dataset.mins) - Number(b.dataset.mins) || Number(b.dataset.date) - Number(a.dataset.date)
+        : mode === 'old' ? Number(a.dataset.date) - Number(b.dataset.date)
+        : Number(b.dataset.date) - Number(a.dataset.date));
+    const apply = () => {
+      const q = search.value.trim().toLowerCase();
+      const filtering = q !== '' || sort.value !== 'new';
+      if (!filtering) {
+        order('new').forEach((c) => { grid.append(c); c.hidden = !pageSet.includes(c); });
+        if (pager) pager.hidden = false;
+        if (none) none.hidden = true;
+        if (count) count.textContent = '';
+        return;
+      }
+      let shown = 0;
+      order(sort.value).forEach((c) => {
+        grid.append(c);
+        const match = !q || (c.dataset.text || '').includes(q);
+        c.hidden = !match;
+        if (match) shown++;
+      });
+      if (pager) pager.hidden = true;
+      if (none) none.hidden = shown > 0;
+      if (count) count.textContent = `${shown} article${shown === 1 ? '' : 's'}`;
+    };
+    search.addEventListener('input', apply);
+    sort.addEventListener('change', apply);
+  }
+</script>
+
 <style>
-  .blog { padding: 30px 0 80px; }
-  h1 { font-size: 40px; color: var(--gold); margin-bottom: 16px; }
-  .intro { padding: 20px 20px; border-radius: 12px; box-shadow: var(--shadow-card); font-size: 12px; line-height: 1.5; margin-bottom: 40px; }
-  .intro p { margin: 0 0 12px; }
-  .intro p:last-child { margin: 0; }
-  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 20px; padding: 32px 20px 0; }
-  .empty { padding: 40px 20px; color: var(--muted); }
-  .pager { display: flex; justify-content: center; gap: 18px; margin-top: 48px; font-size: 14px; }
-  .pager a { color: var(--text); }
-  .pager a.current { color: var(--gold); font-weight: 700; }
+  .crumbs { background: var(--bg-soft); border-bottom: 1px solid var(--line); font-size: 13px; }
+  .crumbs ol { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 0 auto; padding-top: 10px; padding-bottom: 10px; }
+  .crumbs li + li::before { content: '›'; margin-right: 6px; color: var(--muted); }
+  .crumbs a { color: var(--gold-dark); }
+  .crumbs span { color: var(--muted); }
+
+  .hero { position: relative; overflow: hidden; background: var(--navy); color: #fff; }
+  .hero-media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.28; }
+  .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(25, 35, 51, 0.95) 0%, rgba(25, 35, 51, 0.55) 100%); }
+  .hero-inner { position: relative; z-index: 1; padding-top: 64px; padding-bottom: 56px; }
+  .eyebrow { margin: 0 0 10px; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); }
+  .hero h1 { margin: 0 0 14px; max-width: 720px; font-size: 42px; line-height: 1.15; color: #fff; }
+  .hero h1 em { font-style: normal; color: var(--gold-light); }
+  .lede { margin: 0 0 22px; max-width: 620px; font-size: 16px; line-height: 1.55; color: rgba(255, 255, 255, 0.85); }
+  .facts { display: flex; flex-wrap: wrap; gap: 8px; }
+  .facts span { padding: 6px 12px; border: 1px solid rgba(219, 206, 162, 0.5); border-radius: 999px; font-size: 12px; color: var(--gold-light); }
+
+  .filters { position: sticky; top: 0; z-index: 5; background: #fff; border-bottom: 1px solid var(--line); box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04); }
+  .filters .container { padding-top: 16px; padding-bottom: 14px; }
+  .row1 { display: flex; gap: 10px; margin-bottom: 12px; }
+  .search, .sort { height: 44px; border: 1px solid var(--line); border-radius: 10px; padding: 0 14px; font: inherit; font-size: 14px; background: #fff; color: var(--text); }
+  .search { flex: 1; min-width: 0; }
+  .search:focus, .sort:focus { outline: 2px solid var(--gold-light); border-color: var(--gold); }
+  .chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip { flex: none; padding: 7px 14px; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; color: var(--text); white-space: nowrap; }
+  .chip:hover { border-color: var(--gold); color: var(--gold-dark); }
+  .chip.on { background: var(--gold); border-color: var(--gold); color: #fff; }
+
+  .list { padding: 36px 0 72px; background: var(--bg-soft); }
+  .count { margin: 0 0 14px; font-size: 13px; color: var(--muted); }
+  .count:empty { display: none; }
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 24px; }
+  .empty { padding: 40px 0; color: var(--muted); }
+  .empty a { color: var(--gold-dark); text-decoration: underline; }
+  .pager { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 48px; font-size: 14px; }
+  .pager[hidden] { display: none; }
+  .pager a { min-width: 40px; height: 40px; padding: 0 12px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--text); }
+  .pager a:hover { border-color: var(--gold); color: var(--gold-dark); }
+  .pager a.current { background: var(--gold); border-color: var(--gold); color: #fff; font-weight: 700; }
+
+  .cta { background: var(--navy); color: #fff; }
+  .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 48px; padding-bottom: 48px; }
+  .cta h2 { margin: 0; max-width: 620px; font-size: 28px; line-height: 1.25; color: #fff; }
+  .cta h2 em { font-style: normal; color: var(--gold-light); }
+  .cta .btn { flex: none; display: inline-flex; align-items: center; height: 48px; padding: 0 26px; border-radius: 999px; background: var(--gold); color: #fff; font-weight: 700; }
+  .cta .btn:hover { background: var(--gold-dark); }
+
   @media (max-width: 860px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 560px) { .grid { grid-template-columns: 1fr; padding: 24px 0 0; } h1 { font-size: 30px; } }
+  @media (max-width: 560px) {
+    .grid { grid-template-columns: 1fr; }
+    .hero-inner { padding-top: 44px; padding-bottom: 40px; }
+    .hero h1 { font-size: 30px; }
+    .row1 { flex-direction: column; }
+    .cta-inner { flex-direction: column; align-items: flex-start; }
+    .cta h2 { font-size: 22px; }
+  }
 </style>

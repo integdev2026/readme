@@ -17,6 +17,6 @@ const inCategory = posts.filter((p) => p.categoryIds?.includes(category.id));
   categories={categories}
   activeCategory={category.slug}
   page={1}
-  pages={1}
+  paged={false}
   baseHref={`/blog/categories/${category.slug}`}
 />
