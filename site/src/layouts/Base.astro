@@ -69,6 +69,11 @@ const graph = { '@context': 'https://schema.org', '@graph': [business, website, 
         gtag('js', new Date());
         if (gaId) gtag('config', gaId);
         if (adsId) gtag('config', adsId);
+        // Count taps on any phone number link, so calls show up as leads in GA4 (and can be imported into Google Ads).
+        document.addEventListener('click', function (e) {
+          var a = e.target && e.target.closest && e.target.closest('a[href^="tel:"]');
+          if (a) gtag('event', 'phone_click', { phone_number: a.getAttribute('href').slice(4), page_path: location.pathname });
+        });
       </script>
     )}
     {gtmId && (
