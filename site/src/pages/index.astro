@@ -17,8 +17,8 @@ const clientLogos = await getClientLogos();
 const placeholders = Array.from({ length: 8 }, (_, i) => `Client ${i + 1}`);
 
 const services = [
-  { icon: 'icon-award', title: 'ISO Certification', text: 'Expert guidance for ISO 9001, 14001, 45001, 27001 & other international standards. Full implementation support.' },
-  { icon: 'icon-shield', title: 'DISP Compliance', text: 'Defence Industry Security Program consulting and compliance services for defence contractors and suppliers.' },
+  { icon: 'icon-award', title: 'ISO Certification', href: '/iso-service-australia', text: 'Expert guidance for ISO 9001, 14001, 45001, 27001 & other international standards. Full implementation support.' },
+  { icon: 'icon-shield', title: 'DISP Compliance', href: '/disp', text: 'Defence Industry Security Program consulting and compliance services for defence contractors and suppliers.' },
   { icon: 'icon-book', title: 'Training Academy', text: 'Comprehensive training programs, workshops, and courses for internal auditors, lead auditors, and management representatives.' },
   { icon: 'icon-check', title: 'Gap Analysis & Auditing', text: 'Thorough assessments to identify compliance gaps and prepare your organisation for successful certification.' },
   { icon: 'icon-doc', title: 'Documentation Services', text: 'Professional development of manuals, procedures, work instructions, and forms aligned with standard requirements.' },
@@ -65,7 +65,7 @@ import IsoOffer from '../components/offer/IsoOffer.astro';
 import OfferBar from '../components/offer/OfferBar.astro';
 ---
 <Base
-  title="integPRO | Cost Effective ISO & DISP Certification"
+  title="ISO Certification & DISP Consultants Australia | integPRO"
   description="Sydney-based ISO and DISP consultants serving businesses across Australia: ISO 9001, 14001, 45001, 27001 and 13485 certification and DISP membership support."
 >
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqSchema)} />
@@ -76,8 +76,8 @@ import OfferBar from '../components/offer/OfferBar.astro';
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <h1><span class="line">Achieve Excellence in</span> <span class="gold">Management System</span></h1>
-        <p>At integPRO, our mission is to simplify management systems and ensure they work for the people who use them. We focus on reducing risks, improving efficiency, and supporting businesses in achieving compliance.</p>
+        <h1><span class="line">ISO Certification &amp; DISP</span> <span class="gold">Consultants Australia</span></h1>
+        <p>integPRO is a Sydney-based team of <a href="/iso-service-australia">ISO certification consultants</a> and <a href="/disp">DISP consultants</a>, supporting businesses across Australia. We simplify management systems so they work for the people who use them, reduce risk, improve efficiency and get you compliant.</p>
         <div class="hero-actions">
           <div class="hero-buttons">
             <a href="/free-consultation" class="btn btn-primary">Start Your Journey<Chevron /></a>
@@ -115,13 +115,13 @@ import OfferBar from '../components/offer/OfferBar.astro';
     <div class="container">
       <div class="section-head">
         <h2>Comprehensive Management System <span class="gold">Solutions</span></h2>
-        <p>From initial gap analysis to certification and beyond, we provide end-to-end support for your management system journey.</p>
+        <p>From initial gap analysis to certification and beyond, we provide end-to-end support for your management system journey. Based in Sydney, we work with clients Australia-wide, on site or remotely, in every state and territory.</p>
       </div>
       <div class="card-grid">
         {services.map((s) => (
           <article class="card service">
             <img src={`/images/${s.icon}.webp`} alt="" width="48" height="48" loading="lazy" />
-            <h3>{s.title}</h3>
+            <h3>{s.href ? <a href={s.href}>{s.title}</a> : s.title}</h3>
             <p>{s.text}</p>
           </article>
         ))}
@@ -291,6 +291,9 @@ import OfferBar from '../components/offer/OfferBar.astro';
   .card { background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-card); padding: 30px 36px 44px; }
   .service img { width: 48px; margin-bottom: 26px; }
   .service h3 { font-size: 20px; line-height: 27px; margin-bottom: 8px; }
+  .service h3 a { color: inherit; text-decoration: none; }
+  .service h3 a:hover { text-decoration: underline; }
+  .hero-copy p a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
   .service p { margin: 0; font-size: 14px; line-height: 19.6px; }
   .more { margin-top: 50px; }
 
